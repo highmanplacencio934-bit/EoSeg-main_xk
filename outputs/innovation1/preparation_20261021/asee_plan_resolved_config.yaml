@@ -1,0 +1,157 @@
+# lightning.pytorch==2.6.6
+seed_everything: 0
+trainer:
+  accelerator: auto
+  strategy: auto
+  devices: 1
+  num_nodes: 1
+  precision: 16-mixed
+  logger:
+    class_path: lightning.pytorch.loggers.wandb.WandbLogger
+    init_args:
+      name: vit_query_mul_scale_fusion_asee_plan
+      save_dir: outputs/innovation1
+      version: null
+      offline: false
+      dir: null
+      id: null
+      anonymous: null
+      project: eomt
+      log_model: false
+      experiment: null
+      prefix: ''
+      checkpoint_name: null
+      add_file_policy: mutable
+      entity: null
+      notes: null
+      tags: null
+      config: null
+      config_exclude_keys: null
+      config_include_keys: null
+      allow_val_change: null
+      group: null
+      job_type: null
+      mode: null
+      force: null
+      reinit: null
+      resume: allow
+      resume_from: null
+      fork_from: null
+      save_code: null
+      tensorboard: null
+      sync_tensorboard: null
+      monitor_gym: null
+      settings: null
+  callbacks:
+  - class_path: training.synapse_test_selection.SynapseTestSelection
+    init_args:
+      last_n_epochs: 50
+      expected_test_cases: 12
+      output_dir: outputs/innovation1/asee_plan
+  fast_dev_run: false
+  max_epochs: 220
+  min_epochs: null
+  max_steps: -1
+  min_steps: null
+  max_time: null
+  limit_train_batches: null
+  limit_val_batches: 0.0
+  limit_test_batches: null
+  limit_predict_batches: null
+  overfit_batches: 0.0
+  val_check_interval: null
+  check_val_every_n_epoch: 1000000
+  num_sanity_val_steps: null
+  log_every_n_steps: null
+  enable_checkpointing: false
+  enable_progress_bar: null
+  enable_model_summary: false
+  accumulate_grad_batches: 1
+  gradient_clip_val: 0.01
+  gradient_clip_algorithm: norm
+  deterministic: null
+  benchmark: null
+  inference_mode: true
+  use_distributed_sampler: true
+  profiler: null
+  detect_anomaly: false
+  barebones: false
+  plugins: null
+  sync_batchnorm: false
+  reload_dataloaders_every_n_epochs: 0
+  default_root_dir: outputs/innovation1/asee_plan
+  enable_autolog_hparams: true
+  model_registry: null
+model:
+  class_path: training.mask_classification_semantic.MaskClassificationSemantic
+  init_args:
+    network:
+      class_path: models.eoseg_asee.EoSegMultiQSegFusionASEE
+      init_args:
+        encoder:
+          class_path: models.vit.ViT
+          init_args:
+            patch_size: 16
+            backbone_name: vit_large_patch14_reg4_dinov2
+        prior_path: priors/synapse_asee_v1.pt
+        num_q: 16
+        queries_per_class: 2
+        patch_update: plan
+        freeze_text_projection: false
+        enhance_patch: true
+        enhance_query: true
+        use_text: true
+        use_probability: true
+    attn_mask_annealing_enabled: false
+    attn_mask_annealing_start_steps: null
+    attn_mask_annealing_end_steps: null
+    ignore_idx: 255
+    lr: 0.0002
+    llrd: 0.8
+    llrd_l2_enabled: true
+    lr_mult: 1.0
+    weight_decay: 0.05
+    num_points: 12544
+    oversample_ratio: 3.0
+    importance_sample_ratio: 0.75
+    poly_power: 0.9
+    warmup_steps:
+    - 500
+    - 1000
+    no_object_coefficient: 0.1
+    mask_coefficient: 5.0
+    dice_coefficient: 5.0
+    class_coefficient: 2.0
+    mask_thresh: 0.8
+    overlap_thresh: 0.8
+    ckpt_path: null
+    delta_weights: false
+    load_ckpt_class_head: true
+data:
+  class_path: datasets.synapse_semantic.SynapseSemantic
+  init_args:
+    train_base_dir: project_TransUNet/data/Synapse/train_npz
+    test_base_dir: project_TransUNet/data/Synapse/test_vol_h5
+    list_dir: project_TransUNet/TransUNet/lists/lists_Synapse
+    img_size:
+    - 384
+    - 384
+    num_classes: 9
+    batch_size: 16
+    num_workers: 8
+    color_jitter_enabled: true
+    scale_range:
+    - 0.5
+    - 2.0
+    check_empty_targets: true
+    ignore_idx: 255
+    drop_background: false
+    make_rgb: true
+    train_split: train
+    test_split: test_vol
+compile_disabled: false
+compile_test: false
+optimizer: null
+lr_scheduler: null
+ckpt_path: null
+weights_only: null

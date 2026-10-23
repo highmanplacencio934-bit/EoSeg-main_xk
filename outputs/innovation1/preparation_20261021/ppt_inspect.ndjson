@@ -1,0 +1,559 @@
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"A","textShapes":11}
+{"kind":"shape","id":"sh/547294r6","slide":1,"name":"矩形 1","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/ul4vaxgb","slide":1,"name":"矩形 11","bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/vmdcj2xw","slide":1,"name":"矩形 12","bbox":[80,34,26,26]}
+{"kind":"textbox","id":"sh/4r6dg7et","slide":1,"name":"文本框 13","text":"A","textPreview":"A","textChars":1,"textLines":1,"bbox":[88,39,11,17]}
+{"kind":"textbox","id":"sh/ipovexwn","slide":1,"name":"文本框 15","text":"2026.10","textPreview":"2026.10","textChars":7,"textLines":1,"bbox":[814,39,54,16]}
+{"kind":"shape","id":"sh/3qxwn2x8","slide":1,"name":"圆角矩形 16","bbox":[86,96,1193.67,575.87]}
+{"kind":"shape","id":"sh/sfqdkrep","slide":1,"name":"任意多边形 17","bbox":[85,96,775,571.67]}
+{"kind":"shape","id":"sh/dgzetcfa","slide":1,"name":"圆角矩形 18","bbox":[198,134,112,22]}
+{"kind":"textbox","id":"sh/1cvuxc7e","slide":1,"name":"文本框 19","text":"算法改进方案","textPreview":"算法改进方案","textChars":6,"textLines":1,"bbox":[212,137,84,16]}
+{"kind":"textbox","id":"sh/0bmd476t","slide":1,"name":"文本框 20","text":"MEDICAL IMAGE SEGMENTATION","textPreview":"MEDICAL IMAGE SEGMENTATION","textChars":26,"textLines":1,"bbox":[320,137,239,16]}
+{"kind":"textbox","id":"sh/zadcv2p8","slide":1,"name":"文本框 21","text":"解剖语义增强编码（ASEE）","textPreview":"解剖语义增强编码（ASEE）","textChars":14,"textLines":1,"bbox":[198,170,692,78]}
+{"kind":"textbox","id":"sh/e94v2hon","slide":1,"name":"文本框 22","text":"Anatomical Semantic Enhanced Encoding\nfor EoSeg-based Medical Image Segmentation","textPreview":"Anatomical Semantic Enhanced Encoding | for EoSeg-based Medical Image Segmentation","textChars":80,"textLines":2,"bbox":[198,254,570,63]}
+{"kind":"shape","id":"sh/ozmd8r65","slide":1,"name":"矩形 24","bbox":[198,336,96,3]}
+{"kind":"textbox","id":"sh/nydczmpk","slide":1,"name":"文本框 25","text":"在 EoSeg 纯编码器架构中注入解剖先验知识","textPreview":"在 EoSeg 纯编码器架构中注入解剖先验知识","textChars":23,"textLines":1,"bbox":[198,354,692,38]}
+{"kind":"textbox","id":"sh/mx4v6hoz","slide":1,"name":"文本框 26","text":"面向腹部 CT（Synapse）与心脏 MRI（ACDC）的多器官分割","textPreview":"面向腹部 CT（Synapse）与心脏 MRI（ACDC）的多器官分割","textChars":35,"textLines":1,"bbox":[198,396,692,29]}
+{"kind":"shape","id":"sh/p4bu5s76","slide":1,"name":"矩形 27","bbox":[198,496,692,1]}
+{"kind":"textbox","id":"sh/432dwn6l","slide":1,"name":"文本框 28","text":"方法脉络：MGTN 语义位置编码 → ASEE 解剖语义增强编码","textPreview":"方法脉络：MGTN 语义位置编码 → ASEE 解剖语义增强编码","textChars":32,"textLines":1,"bbox":[198,512,692,27]}
+{"kind":"shape","id":"sh/uxgjq907","slide":1,"name":"圆角矩形 29","bbox":[209.33,604,140,25]}
+{"kind":"textbox","id":"sh/vyp0je1s","slide":1,"name":"文本框 30","text":"EoSeg 纯编码器基线","textPreview":"EoSeg 纯编码器基线","textChars":12,"textLines":1,"bbox":[223.33,609,112,15]}
+{"kind":"shape","id":"sh/wzy1szid","slide":1,"name":"圆角矩形 31","bbox":[361.33,604,141,25]}
+{"kind":"textbox","id":"sh/h072l4jy","slide":1,"name":"文本框 32","text":"MGTN 语义位置编码","textPreview":"MGTN 语义位置编码","textChars":11,"textLines":1,"bbox":[375.33,609,113,15]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":""}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"00 / 方案速览","textShapes":23}
+{"kind":"shape","id":"sh/6xgbilk7","slide":2,"name":"矩形 231","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/rypcbq1s","slide":2,"name":"矩形 232","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/gnitof2p","slide":2,"name":"文本框 233","text":"00 / 方案速览","textPreview":"00 / 方案速览","textChars":9,"textLines":1,"bbox":[40,23,618,15]}
+{"kind":"textbox","id":"sh/1oruh0ju","slide":2,"name":"文本框 234","text":"三句话说清：要解决什么、怎么改、值不值","textPreview":"三句话说清：要解决什么、怎么改、值不值","textChars":19,"textLines":1,"bbox":[40,42,618,39]}
+{"kind":"shape","id":"sh/elgbm5kj","slide":2,"name":"圆角矩形 235","bbox":[1058,39,182,27]}
+{"kind":"textbox","id":"sh/fmpcfa14","slide":2,"name":"文本框 236","text":"EXECUTIVE SUMMARY","textPreview":"EXECUTIVE SUMMARY","textChars":17,"textLines":1,"bbox":[1072,45,154,15]}
+{"kind":"shape","id":"sh/oritsf2l","slide":2,"name":"矩形 237","bbox":[40,92,1200,1]}
+{"kind":"shape","id":"sh/psrulkj6","slide":2,"name":"圆角矩形 238","bbox":[44,106,1196,86]}
+{"kind":"shape","id":"sh/90ju1076","slide":2,"name":"任意多边形 239","bbox":[44,106,1196,86]}
+{"kind":"textbox","id":"sh/ozat8v6l","slide":2,"name":"文本框 240","text":"核心命题","textPreview":"核心命题","textChars":4,"textLines":1,"bbox":[66,142,62,15]}
+{"kind":"textbox","id":"sh/ny1czapg","slide":2,"name":"文本框 241","text":"把解剖语义描述与类别共现概率编码成先验知识库，在 Query 建模之前双向注入， 使随机初始化的可学习查询获得明确的解剖指向性。","textPreview":"把解剖语义描述与类别共现概率编码成先验知识库，在 Query 建模之前双向注入， 使随机初始化的可学习查询获得明确的解剖指向性。","textChars":64,"textLines":1,"bbox":[144,132,1074,35]}
+{"kind":"shape","id":"sh/mx8b65ov","slide":2,"name":"任意多边形 242","bbox":[40,214,1200,92]}
+{"kind":"textbox","id":"sh/1wzux07a","slide":2,"name":"文本框 243","text":"问题","textPreview":"问题","textChars":2,"textLines":1,"bbox":[40,229,84,30]}
+{"kind":"textbox","id":"sh/0vqt4v6p","slide":2,"name":"文本框 244","text":"Query 从零开始","textPreview":"Query 从零开始","textChars":10,"textLines":1,"bbox":[124,229,210,33]}
+{"kind":"textbox","id":"sh/zuhcvqp4","slide":2,"name":"文本框 245","text":"EoSeg 的 Query 随机初始化、纯视觉驱动，对解剖位置一无所知； Synapse 上胆囊 74.99%、胰腺 75.89%，与肝脏 94.87% 差近 20 点， 说明瓶颈不在表征能力，而在类别竞争。","textPreview":"EoSeg 的 Query 随机初始化、纯视觉驱动，对解剖位置一无所知； Synapse 上胆囊 74.99%、胰腺 75.89%，与肝脏 94.87% 差近 20 点， 说明瓶颈不在表征能力，而在类别竞争。","textChars":104,"textLines":1,"bbox":[334,229,906,63]}
+{"kind":"shape","id":"sh/et8b2loj","slide":2,"name":"任意多边形 246","bbox":[40,306,1200,92]}
+{"kind":"textbox","id":"sh/5s3u9kne","slide":2,"name":"文本框 247","text":"方法","textPreview":"方法","textChars":2,"textLines":1,"bbox":[40,321,84,30]}
+{"kind":"textbox","id":"sh/krudgf6t","slide":2,"name":"文本框 248","text":"建库 + 双向注入","textPreview":"建库 + 双向注入","textChars":9,"textLines":1,"bbox":[124,321,210,33]}
+{"kind":"textbox","id":"sh/i14jex0z","slide":2,"name":"文本框 249","text":"文本语义 S 与共现概率 CP 合成 E_prior；上支路让 Patch Token 检索先验， 下支路用先验初始化查询，再拼接回灌后 3 个 Block。 三步全部发生在前向入口，主干一行不改。","textPreview":"文本语义 S 与共现概率 CP 合成 E_prior；上支路让 Patch Token 检索先验， 下支路用先验初始化查询，再拼接回灌后 3 个 Block。 三步全部发生在前向入口，主干一行不改。","textChars":99,"textLines":1,"bbox":[334,321,906,63]}
+{"kind":"shape","id":"sh/3md0n21k","slide":2,"name":"任意多边形 250","bbox":[40,398,1200,92]}
+{"kind":"shape","id":"sh/4nm1g7i5","slide":2,"name":"任意多边形 251","bbox":[40,398,1200,92]}
+{"kind":"textbox","id":"sh/5ovipszq","slide":2,"name":"文本框 252","text":"收益","textPreview":"收益","textChars":2,"textLines":1,"bbox":[40,413,84,30]}
+{"kind":"textbox","id":"sh/uxkzad03","slide":2,"name":"文本框 253","text":"不改主干，定向改善","textPreview":"不改主干，定向改善","textChars":9,"textLines":1,"bbox":[124,413,210,33]}
+{"kind":"textbox","id":"sh/vyt0ji1o","slide":2,"name":"文本框 254","text":"后 3 层 Block、融合层与预测头全部沿用原实现； 预期改善集中在胆囊、胰腺两个 Dice 洼地，而非全线均匀抬高。 代价是新增一个映射层与一次交叉注意力。","textPreview":"后 3 层 Block、融合层与预测头全部沿用原实现； 预期改善集中在胆囊、胰腺两个 Dice 洼地，而非全线均匀抬高。 代价是新增一个映射层与一次交叉注意力。","textChars":80,"textLines":1,"bbox":[334,413,906,63]}
+{"kind":"shape","id":"sh/gz2hcni9","slide":2,"name":"任意多边形 255","bbox":[40,522,402,110]}
+{"kind":"textbox","id":"sh/h0bilsju","slide":2,"name":"文本框 256","text":"C 个","textPreview":"C 个","textChars":3,"textLines":1,"bbox":[60,522,380,53]}
+{"kind":"textbox","id":"sh/etojmh07","slide":2,"name":"文本框 257","text":"解剖类别 → S、CP 的行数","textPreview":"解剖类别 → S、CP 的行数","textChars":15,"textLines":1,"bbox":[60,579,380,25]}
+{"kind":"shape","id":"sh/fux0vmhs","slide":2,"name":"任意多边形 258","bbox":[440,522,402,110]}
+{"kind":"textbox","id":"sh/bypg7eh4","slide":2,"name":"文本框 259","text":"K = 3","textPreview":"K = 3","textChars":5,"textLines":1,"bbox":[460,522,380,53]}
+{"kind":"textbox","id":"sh/axgfe9gz","slide":2,"name":"文本框 260","text":"末尾引入 Query 的 Block 数","textPreview":"末尾引入 Query 的 Block 数","textChars":20,"textLines":1,"bbox":[460,579,380,25]}
+{"kind":"shape","id":"sh/x07y94za","slide":2,"name":"任意多边形 261","bbox":[840,522,402,110]}
+{"kind":"textbox","id":"sh/czyxgjyp","slide":2,"name":"文本框 262","text":"2C","textPreview":"2C","textChars":2,"textLines":1,"bbox":[860,522,380,53]}
+{"kind":"textbox","id":"sh/j29gbehg","slide":2,"name":"文本框 263","text":"可学习 Query 总数（每类 2 个）","textPreview":"可学习 Query 总数（每类 2 个）","textChars":20,"textLines":1,"bbox":[860,579,380,25]}
+{"kind":"textbox","id":"sh/y1gfi9gv","slide":2,"name":"文本框 264","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/l4rydozm","slide":2,"name":"文本框 265","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/k3ixkjy1","slide":2,"name":"文本框 266","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":""}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"汇报大纲 · 三章结构","textShapes":27}
+{"kind":"shape","id":"sh/beh0zupg","slide":3,"name":"矩形 268","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/t8725sry","slide":3,"name":"矩形 269","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/s7ylcnqd","slide":3,"name":"文本框 270","text":"汇报大纲 · 三章结构","textPreview":"汇报大纲 · 三章结构","textChars":11,"textLines":1,"bbox":[40,30,123,15]}
+{"kind":"textbox","id":"sh/76pk329s","slide":3,"name":"文本框 271","text":"3 章 · 正文 P4–P14","textPreview":"3 章 · 正文 P4–P14","textChars":15,"textLines":1,"bbox":[1125,30,115,15]}
+{"kind":"shape","id":"sh/65w3ax87","slide":3,"name":"矩形 272","bbox":[40,60,1200,1]}
+{"kind":"shape","id":"sh/hc729cru","slide":3,"name":"矩形 273","bbox":[40,74,360,534]}
+{"kind":"shape","id":"sh/gbylg7q9","slide":3,"name":"矩形 274","bbox":[72,108,3,16]}
+{"kind":"textbox","id":"sh/fapk729o","slide":3,"name":"文本框 275","text":"CONTENTS","textPreview":"CONTENTS","textChars":8,"textLines":1,"bbox":[83,109,81,15]}
+{"kind":"textbox","id":"sh/u9g3ex83","slide":3,"name":"文本框 276","text":"目录","textPreview":"目录","textChars":2,"textLines":1,"bbox":[72,138,296,61]}
+{"kind":"shape","id":"sh/xgn2x8rq","slide":3,"name":"矩形 277","bbox":[72,217,64,2]}
+{"kind":"textbox","id":"sh/wfe143q5","slide":3,"name":"文本框 278","text":"三章递进：先证明缺口确实存在， 再给出可推导的方法设计， 最后落到一行不改主干的改造路径。","textPreview":"三章递进：先证明缺口确实存在， 再给出可推导的方法设计， 最后落到一行不改主干的改造路径。","textChars":45,"textLines":1,"bbox":[72,237,296,103]}
+{"kind":"shape","id":"sh/ozap4bil","slide":3,"name":"任意多边形 279","bbox":[72,374,296,2]}
+{"kind":"textbox","id":"sh/p036xgz6","slide":3,"name":"文本框 280","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[72,391,16,25]}
+{"kind":"textbox","id":"sh/2ds7210v","slide":3,"name":"文本框 281","text":"建库  E_prior = S ⊕ CP","textPreview":"建库  E_prior = S ⊕ CP","textChars":20,"textLines":1,"bbox":[98,391,137,27]}
+{"kind":"textbox","id":"sh/ny1ov6h0","slide":3,"name":"文本框 282","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[72,418,16,25]}
+{"kind":"textbox","id":"sh/0bap0rip","slide":3,"name":"文本框 283","text":"注图  T⁽⁰⁾ 交叉注意力查询先验","textPreview":"注图  T⁽⁰⁾ 交叉注意力查询先验","textChars":18,"textLines":1,"bbox":[98,418,175,27]}
+{"kind":"textbox","id":"sh/1cj6twza","slide":3,"name":"文本框 284","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[72,445,16,25]}
+{"kind":"textbox","id":"sh/e9s7yh0j","slide":3,"name":"文本框 285","text":"注查询  Q̃⁽⁰⁾ = Q_init + MLP(E_prior)","textPreview":"注查询  Q̃⁽⁰⁾ = Q_init + MLP(E_prior)","textChars":34,"textLines":1,"bbox":[98,445,220,27]}
+{"kind":"shape","id":"sh/fa1ormh4","slide":3,"name":"任意多边形 286","bbox":[72,505,296,70]}
+{"kind":"textbox","id":"sh/k7upcvit","slide":3,"name":"文本框 287","text":"汇报范围：P4–P14\n核心模块：ASEE","textPreview":"汇报范围：P4–P14 | 核心模块：ASEE","textChars":21,"textLines":2,"bbox":[72,520,296,54]}
+{"kind":"shape","id":"sh/l8nq50ze","slide":3,"name":"任意多边形 288","bbox":[448,74,792,179]}
+{"kind":"textbox","id":"sh/v2psbu1g","slide":3,"name":"文本框 289","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[448,101,92,51]}
+{"kind":"textbox","id":"sh/u1gr2pkb","slide":3,"name":"文本框 290","text":"研究背景与动机","textPreview":"研究背景与动机","textChars":7,"textLines":1,"bbox":[540,101,645,41]}
+{"kind":"textbox","id":"sh/ho7adkjm","slide":3,"name":"文本框 291","text":"EoSeg 抛掉 U-Net 解码器后，Query 只能在纯视觉信号里自我生长； 而胆囊、胰腺这类小器官的 Dice 恰是最低的两格。","textPreview":"EoSeg 抛掉 U-Net 解码器后，Query 只能在纯视觉信号里自我生长； 而胆囊、胰腺这类小器官的 Dice 恰是最低的两格。","textChars":67,"textLines":1,"bbox":[540,152,645,63]}
+{"kind":"textbox","id":"sh/gny94z21","slide":3,"name":"文本框 292","text":"P4–P6","textPreview":"P4–P6","textChars":5,"textLines":1,"bbox":[1201,101,39,25]}
+{"kind":"shape","id":"sh/3qpsfu1s","slide":3,"name":"任意多边形 293","bbox":[448,252,792,178]}
+{"kind":"textbox","id":"sh/ipgb6pk7","slide":3,"name":"文本框 294","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[448,279,92,51]}
+{"kind":"textbox","id":"sh/5srah4jy","slide":3,"name":"文本框 295","text":"方法设计：ASEE","textPreview":"方法设计：ASEE","textChars":9,"textLines":1,"bbox":[540,279,638,41]}
+{"kind":"textbox","id":"sh/4rit8z2d","slide":3,"name":"文本框 296","text":"语义模板 → 条件概率编码 → 双向注入，三步把解剖常识变成 E_prior，再让 Patch Token 与 Query 各取所需。","textPreview":"语义模板 → 条件概率编码 → 双向注入，三步把解剖常识变成 E_prior，再让 Patch Token 与 Query 各取所需。","textChars":67,"textLines":1,"bbox":[540,330,638,63]}
+{"kind":"textbox","id":"sh/ju5s3a18","slide":3,"name":"文本框 297","text":"P7–P11","textPreview":"P7–P11","textChars":6,"textLines":1,"bbox":[1194,279,46,25]}
+{"kind":"shape","id":"sh/ytwru5k3","slide":3,"name":"任意多边形 298","bbox":[448,429,792,181]}
+{"kind":"shape","id":"sh/l4ba1gb6","slide":3,"name":"任意多边形 299","bbox":[448,429,792,181]}
+{"kind":"textbox","id":"sh/03i9sba1","slide":3,"name":"文本框 300","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[448,456,92,51]}
+{"kind":"textbox","id":"sh/z298z6tg","slide":3,"name":"文本框 301","text":"实现路径与预期收益","textPreview":"实现路径与预期收益","textChars":9,"textLines":1,"bbox":[540,456,630,41]}
+{"kind":"textbox","id":"sh/y10rq1sv","slide":3,"name":"文本框 302","text":"改动只发生在前向传播的一个节点，后 3 层 Block 与预测头全部保持原样， 收益则定向落在两个弱势器官上。","textPreview":"改动只发生在前向传播的一个节点，后 3 层 Block 与预测头全部保持原样， 收益则定向落在两个弱势器官上。","textChars":55,"textLines":1,"bbox":[540,507,630,63]}
+{"kind":"textbox","id":"sh/d0rqxgba","slide":3,"name":"文本框 303","text":"P12–P14","textPreview":"P12–P14","textChars":7,"textLines":1,"bbox":[1186,456,54,25]}
+{"kind":"textbox","id":"sh/czi9obap","slide":3,"name":"文本框 304","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/by98v6t4","slide":3,"name":"文本框 305","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/qx0rm1cj","slide":3,"name":"文本框 306","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":""}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"01","textShapes":13}
+{"kind":"shape","id":"sh/10z2d032","slide":4,"name":"矩形 308","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/bul43u54","slide":4,"name":"矩形 309","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/qtcnap4z","slide":4,"name":"文本框 310","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[484,54,313,288]}
+{"kind":"textbox","id":"sh/dw3m5kna","slide":4,"name":"文本框 311","text":"CHAPTER 01 · BACKGROUND","textPreview":"CHAPTER 01 · BACKGROUND","textChars":23,"textLines":1,"bbox":[514,302,252,16]}
+{"kind":"textbox","id":"sh/cvu5czmp","slide":4,"name":"文本框 312","text":"研究背景与动机","textPreview":"研究背景与动机","textChars":7,"textLines":1,"bbox":[444,330,392,65]}
+{"kind":"shape","id":"sh/zylo7u5g","slide":4,"name":"矩形 313","bbox":[604,410,72,3]}
+{"kind":"textbox","id":"sh/yxcnep4v","slide":4,"name":"文本框 314","text":"纯编码器把解码器省掉了，但 Query 的「从哪里开始找」这个问题并没有被回答—— 这一章先把这个缺口对齐到具体的数据证据上。","textPreview":"纯编码器把解码器省掉了，但 Query 的「从哪里开始找」这个问题并没有被回答—— 这一章先把这个缺口对齐到具体的数据证据上。","textChars":63,"textLines":1,"bbox":[290,434,700,73]}
+{"kind":"textbox","id":"sh/0ju5gzm1","slide":4,"name":"文本框 316","text":"纯编码器范式","textPreview":"纯编码器范式","textChars":6,"textLines":1,"bbox":[295,562,90,27]}
+{"kind":"textbox","id":"sh/f214va5c","slide":4,"name":"文本框 317","text":"解码器被移除\nQuery 只能从零学起","textPreview":"解码器被移除 | Query 只能从零学起","textChars":19,"textLines":2,"bbox":[280,595,121,54]}
+{"kind":"textbox","id":"sh/e18n254r","slide":4,"name":"文本框 318","text":"解剖空间拓扑","textPreview":"解剖空间拓扑","textChars":6,"textLines":1,"bbox":[595,562,90,27]}
+{"kind":"textbox","id":"sh/ihg7adof","slide":4,"name":"文本框 319","text":"器官位置高度规律\n共现关系可被显式编码","textPreview":"器官位置高度规律 | 共现关系可被显式编码","textChars":19,"textLines":2,"bbox":[575,595,130,54]}
+{"kind":"textbox","id":"sh/jip83ipk","slide":4,"name":"文本框 320","text":"Dice 结构性失衡","textPreview":"Dice 结构性失衡","textChars":10,"textLines":1,"bbox":[884,562,113,27]}
+{"kind":"textbox","id":"sh/kjypcn65","slide":4,"name":"文本框 321","text":"胆囊与胰腺垫底\n缺口集中在弱势类别","textPreview":"胆囊与胰腺垫底 | 缺口集中在弱势类别","textChars":17,"textLines":2,"bbox":[882,595,117,54]}
+{"kind":"textbox","id":"sh/5krq587q","slide":4,"name":"文本框 322","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/adg76to3","slide":4,"name":"文本框 323","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/vep8zypo","slide":4,"name":"文本框 324","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"image","id":"im/1gbit4ru","slide":4,"name":"图片 315","bbox":[190,520,900,26]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":""}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"01 / 研究背景与动机","textShapes":30}
+{"kind":"shape","id":"sh/9kv29cj6","slide":5,"name":"矩形 326","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/al4j2h0r","slide":5,"name":"矩形 327","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/bmxkbm1c","slide":5,"name":"文本框 328","text":"01 / 研究背景与动机","textPreview":"01 / 研究背景与动机","textChars":12,"textLines":1,"bbox":[40,23,612,15]}
+{"kind":"textbox","id":"sh/lgzm1g3e","slide":5,"name":"文本框 329","text":"EoSeg 的结构性缺口：有 Query，无先验","textPreview":"EoSeg 的结构性缺口：有 Query，无先验","textChars":24,"textLines":1,"bbox":[40,42,612,39]}
+{"kind":"shape","id":"sh/kfql8v2t","slide":5,"name":"圆角矩形 330","bbox":[1118,39,122,27]}
+{"kind":"textbox","id":"sh/jeh4zql8","slide":5,"name":"文本框 331","text":"图 1 / 前向结构","textPreview":"图 1 / 前向结构","textChars":10,"textLines":1,"bbox":[1132,45,94,15]}
+{"kind":"shape","id":"sh/ydo36lkn","slide":5,"name":"矩形 332","bbox":[40,92,1200,1]}
+{"kind":"shape","id":"sh/t4zm503a","slide":5,"name":"圆角矩形 333","bbox":[40,108,736,74]}
+{"kind":"textbox","id":"sh/83q5cv25","slide":5,"name":"文本框 334","text":"DINOv2 Backbone · Block 1 … L−3","textPreview":"DINOv2 Backbone · Block 1 … L−3","textChars":31,"textLines":1,"bbox":[58,121,700,26]}
+{"kind":"textbox","id":"sh/72h43qlk","slide":5,"name":"文本框 335","text":"保持原样，不参与本次改造","textPreview":"保持原样，不参与本次改造","textChars":12,"textLines":1,"bbox":[58,147,700,22]}
+{"kind":"shape","id":"sh/h8jm903m","slide":5,"name":"圆角矩形 337","bbox":[40,202,736,62]}
+{"kind":"textbox","id":"sh/g7a5gf21","slide":5,"name":"文本框 338","text":"Patch Tokens  T⁽⁰⁾ · N_p × d 维","textPreview":"Patch Tokens  T⁽⁰⁾ · N_p × d 维","textChars":30,"textLines":1,"bbox":[58,209,700,26]}
+{"kind":"textbox","id":"sh/cfeho3ql","slide":5,"name":"文本框 339","text":"ASEE 的注入点就在这一步之后","textPreview":"ASEE 的注入点就在这一步之后","textChars":16,"textLines":1,"bbox":[58,235,700,22]}
+{"kind":"shape","id":"sh/qdwfmt8f","slide":5,"name":"圆角矩形 341","bbox":[40,284,736,204]}
+{"kind":"textbox","id":"sh/be5gvy90","slide":5,"name":"文本框 342","text":"最后 K = 3 个 Transformer Block","textPreview":"最后 K = 3 个 Transformer Block","textChars":28,"textLines":1,"bbox":[60,300,696,27]}
+{"kind":"textbox","id":"sh/obexkjq9","slide":5,"name":"文本框 343","text":"Multi-level Query Modeling 阶段","textPreview":"Multi-level Query Modeling 阶段","textChars":29,"textLines":1,"bbox":[60,331,696,22]}
+{"kind":"shape","id":"sh/pcnytoru","slide":5,"name":"圆角矩形 344","bbox":[60,367,306,32]}
+{"kind":"textbox","id":"sh/29cfit8j","slide":5,"name":"文本框 345","text":"Q⁽⁰⁾ · 随机初始化","textPreview":"Q⁽⁰⁾ · 随机初始化","textChars":12,"textLines":1,"bbox":[161,375,104,16]}
+{"kind":"shape","id":"sh/87yhwnqt","slide":5,"name":"圆角矩形 347","bbox":[450,367,306,32]}
+{"kind":"textbox","id":"sh/987y5sre","slide":5,"name":"文本框 348","text":"T⁽⁰⁾ · 图像特征","textPreview":"T⁽⁰⁾ · 图像特征","textChars":11,"textLines":1,"bbox":[559,375,89,16]}
+{"kind":"textbox","id":"sh/j2tkvmtg","slide":5,"name":"文本框 349","text":"每个类别 2 个 Query，共 N_q = 2C；自注意力交互中，Query 的起点是「零信息」。","textPreview":"每个类别 2 个 Query，共 N_q = 2C；自注意力交互中，Query 的起点是「零信息」。","textChars":50,"textLines":1,"bbox":[60,411,696,24]}
+{"kind":"shape","id":"sh/54b2xwbm","slide":5,"name":"圆角矩形 351","bbox":[40,508,360,64]}
+{"kind":"textbox","id":"sh/k321ora1","slide":5,"name":"文本框 352","text":"Learnable Block Fusion","textPreview":"Learnable Block Fusion","textChars":22,"textLines":1,"bbox":[143,532,154,17]}
+{"kind":"shape","id":"sh/76tkz6tc","slide":5,"name":"圆角矩形 353","bbox":[416,508,360,64]}
+{"kind":"textbox","id":"sh/65kjq1sr","slide":5,"name":"文本框 354","text":"Prediction Head","textPreview":"Prediction Head","textChars":15,"textLines":1,"bbox":[542,532,108,17]}
+{"kind":"textbox","id":"sh/tsb21wbi","slide":5,"name":"文本框 355","text":"改造范围示意：入口到 T⁽⁰⁾ 之间为新增模块，其余环节保持 EoSeg 原始逻辑。","textPreview":"改造范围示意：入口到 T⁽⁰⁾ 之间为新增模块，其余环节保持 EoSeg 原始逻辑。","textChars":42,"textLines":1,"bbox":[40,616,736,24]}
+{"kind":"shape","id":"sh/s721srax","slide":5,"name":"圆角矩形 356","bbox":[803,108,440,208]}
+{"kind":"shape","id":"sh/na90n2t8","slide":5,"name":"任意多边形 357","bbox":[803,108,440,208]}
+{"kind":"textbox","id":"sh/m9gjexsn","slide":5,"name":"文本框 358","text":"基线的三个事实","textPreview":"基线的三个事实","textChars":7,"textLines":1,"bbox":[823,126,397,37]}
+{"kind":"textbox","id":"sh/qpo3m5cb","slide":5,"name":"文本框 359","text":"·","textPreview":"·","textChars":1,"textLines":1,"bbox":[823,175,6,31]}
+{"kind":"textbox","id":"sh/rqx4vadw","slide":5,"name":"文本框 360","text":"纯编码器架构，彻底移除了 U-Net 解码器","textPreview":"纯编码器架构，彻底移除了 U-Net 解码器","textChars":22,"textLines":1,"bbox":[837,175,383,31]}
+{"kind":"textbox","id":"sh/cr65ofuh","slide":5,"name":"文本框 361","text":"·","textPreview":"·","textChars":1,"textLines":1,"bbox":[823,206,6,31]}
+{"kind":"textbox","id":"sh/dszmxkvm","slide":5,"name":"文本框 362","text":"仅在最后 K = 3 个 Block 内引入 Query","textPreview":"仅在最后 K = 3 个 Block 内引入 Query","textChars":28,"textLines":1,"bbox":[837,206,383,31]}
+{"kind":"textbox","id":"sh/21o3i5cz","slide":5,"name":"文本框 363","text":"·","textPreview":"·","textChars":1,"textLines":1,"bbox":[823,237,6,31]}
+{"kind":"textbox","id":"sh/3mx4rqdk","slide":5,"name":"文本框 364","text":"Query 由随机初始化得到，无类别语义","textPreview":"Query 由随机初始化得到，无类别语义","textChars":20,"textLines":1,"bbox":[837,237,383,31]}
+{"kind":"shape","id":"sh/4n6lkvu5","slide":5,"name":"任意多边形 365","bbox":[823,268,397,37]}
+{"kind":"textbox","id":"sh/pofmt0vq","slide":5,"name":"文本框 366","text":"纯视觉驱动 · 零解剖先验","textPreview":"纯视觉驱动 · 零解剖先验","textChars":13,"textLines":1,"bbox":[823,279,397,25]}
+{"kind":"shape","id":"sh/ux43elc3","slide":5,"name":"圆角矩形 367","bbox":[800,334,440,186]}
+{"kind":"textbox","id":"sh/fyd4nqdo","slide":5,"name":"文本框 368","text":"为什么这会伤到小器官","textPreview":"为什么这会伤到小器官","textChars":10,"textLines":1,"bbox":[820,352,400,34]}
+{"kind":"textbox","id":"sh/xc36tof6","slide":5,"name":"文本框 369","text":"结构极简换来效率，但 Query 的起点对解剖位置一无所知。 在腹部切片里，胆囊像素占比极低、边界与肝实质相邻， 只能靠数据量硬扛；当大器官占据主导梯度时，它很难被优先选中。","textPreview":"结构极简换来效率，但 Query 的起点对解剖位置一无所知。 在腹部切片里，胆囊像素占比极低、边界与肝实质相邻， 只能靠数据量硬扛；当大器官占据主导梯度时，它很难被优先选中。","textChars":87,"textLines":1,"bbox":[820,396,400,96]}
+{"kind":"shape","id":"sh/wbup0jel","slide":5,"name":"圆角矩形 370","bbox":[800,538,440,102]}
+{"kind":"textbox","id":"sh/vq1orex0","slide":5,"name":"文本框 371","text":"判断","textPreview":"判断","textChars":2,"textLines":1,"bbox":[820,554,400,15]}
+{"kind":"textbox","id":"sh/aps7ytwf","slide":5,"name":"文本框 372","text":"瓶颈不在表征能力，而在 Query 缺少解剖锚点。","textPreview":"瓶颈不在表征能力，而在 Query 缺少解剖锚点。","textChars":25,"textLines":1,"bbox":[820,575,400,31]}
+{"kind":"textbox","id":"sh/9oj6pofu","slide":5,"name":"文本框 373","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/8napwjep","slide":5,"name":"文本框 374","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/nm1onex4","slide":5,"name":"文本框 375","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"image","id":"im/fi1ojutc","slide":5,"name":"图片 336","bbox":[398,182,20,20]}
+{"kind":"image","id":"im/sva58zul","slide":5,"name":"图片 340","bbox":[398,264,20,20]}
+{"kind":"image","id":"im/tgj6h4v6","slide":5,"name":"图片 346","bbox":[380,374,56,18]}
+{"kind":"image","id":"im/lsnelwvu","slide":5,"name":"图片 350","bbox":[398,488,20,20]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":""}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"01 / 研究背景与动机","textShapes":31}
+{"kind":"shape","id":"sh/ed8vuh83","slide":6,"name":"矩形 377","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/fehc329o","slide":6,"name":"矩形 378","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/z6x8zedo","slide":6,"name":"文本框 379","text":"01 / 研究背景与动机","textPreview":"01 / 研究背景与动机","textChars":12,"textLines":1,"bbox":[40,23,537,15]}
+{"kind":"textbox","id":"sh/y5o7q9cj","slide":6,"name":"文本框 380","text":"证据：Dice 的失衡集中在两个小器官","textPreview":"证据：Dice 的失衡集中在两个小器官","textChars":19,"textLines":1,"bbox":[40,42,537,39]}
+{"kind":"shape","id":"sh/l8fq1ovu","slide":6,"name":"圆角矩形 381","bbox":[1041,39,199,27]}
+{"kind":"textbox","id":"sh/k769sju9","slide":6,"name":"文本框 382","text":"Synapse · EoSeg 实验结果","textPreview":"Synapse · EoSeg 实验结果","textChars":20,"textLines":1,"bbox":[1055,45,171,15]}
+{"kind":"shape","id":"sh/7ax83ed0","slide":6,"name":"矩形 383","bbox":[40,92,1200,1]}
+{"kind":"shape","id":"sh/m9oru9cf","slide":6,"name":"矩形 384","bbox":[43,106,1197,54]}
+{"kind":"shape","id":"sh/9wzq5ov6","slide":6,"name":"任意多边形 385","bbox":[40,106,1200,54]}
+{"kind":"textbox","id":"sh/8b69wjul","slide":6,"name":"文本框 386","text":"同一个模型、同一套训练配置，为什么类别间能拉开近 20 个 Dice 点？","textPreview":"同一个模型、同一套训练配置，为什么类别间能拉开近 20 个 Dice 点？","textChars":37,"textLines":1,"bbox":[61,119,1161,29]}
+{"kind":"shape","id":"sh/vyh87ydw","slide":6,"name":"任意多边形 387","bbox":[40,178,400,134]}
+{"kind":"textbox","id":"sh/ux8rytcb","slide":6,"name":"文本框 388","text":"94.87","textPreview":"94.87","textChars":5,"textLines":1,"bbox":[40,194,183,82]}
+{"kind":"textbox","id":"sh/s3apo3ap","slide":6,"name":"文本框 389","text":"%","textPreview":"%","textChars":1,"textLines":1,"bbox":[229,194,18,82]}
+{"kind":"textbox","id":"sh/t4jqh8ra","slide":6,"name":"文本框 390","text":"肝脏 Liver","textPreview":"肝脏 Liver","textChars":8,"textLines":1,"bbox":[40,282,376,17]}
+{"kind":"shape","id":"sh/6187mtsj","slide":6,"name":"任意多边形 391","bbox":[440,178,400,134]}
+{"kind":"textbox","id":"sh/r2h8fy94","slide":6,"name":"文本框 392","text":"74.99","textPreview":"74.99","textChars":5,"textLines":1,"bbox":[440,194,183,82]}
+{"kind":"textbox","id":"sh/4zqpkjad","slide":6,"name":"文本框 393","text":"%","textPreview":"%","textChars":1,"textLines":1,"bbox":[629,194,18,82]}
+{"kind":"textbox","id":"sh/50zqdory","slide":6,"name":"文本框 394","text":"胆囊 Gallbladder · 垫底","textPreview":"胆囊 Gallbladder · 垫底","textChars":19,"textLines":1,"bbox":[440,282,376,17]}
+{"kind":"shape","id":"sh/id87itsn","slide":6,"name":"任意多边形 395","bbox":[840,178,400,134]}
+{"kind":"textbox","id":"sh/jyhobe98","slide":6,"name":"文本框 396","text":"75.89","textPreview":"75.89","textChars":5,"textLines":1,"bbox":[840,194,183,82]}
+{"kind":"textbox","id":"sh/wb6pgjah","slide":6,"name":"文本框 397","text":"%","textPreview":"%","textChars":1,"textLines":1,"bbox":[1029,194,18,82]}
+{"kind":"textbox","id":"sh/hcz69or2","slide":6,"name":"文本框 398","text":"胰腺 Pancreas · 次低","textPreview":"胰腺 Pancreas · 次低","textChars":16,"textLines":1,"bbox":[840,282,376,17]}
+{"kind":"textbox","id":"sh/w7qtkr6p","slide":6,"name":"文本框 399","text":"肝脏","textPreview":"肝脏","textChars":2,"textLines":1,"bbox":[40,344,64,17]}
+{"kind":"shape","id":"sh/x8zudw7a","slide":6,"name":"圆角矩形 400","bbox":[118,340,900,24]}
+{"kind":"shape","id":"sh/a58bihoj","slide":6,"name":"圆角矩形 401","bbox":[118,340,854,24]}
+{"kind":"textbox","id":"sh/b6hcbmp4","slide":6,"name":"文本框 402","text":"94.87","textPreview":"94.87","textChars":5,"textLines":1,"bbox":[1032,344,34,16]}
+{"kind":"textbox","id":"sh/o3qtg76t","slide":6,"name":"文本框 403","text":"胆囊","textPreview":"胆囊","textChars":2,"textLines":1,"bbox":[40,388,64,17]}
+{"kind":"shape","id":"sh/94za9c7e","slide":6,"name":"圆角矩形 404","bbox":[118,384,900,24]}
+{"kind":"shape","id":"sh/m18bexon","slide":6,"name":"圆角矩形 405","bbox":[118,384,675,24]}
+{"kind":"textbox","id":"sh/n2hs72p8","slide":6,"name":"文本框 406","text":"−19.88","textPreview":"−19.88","textChars":6,"textLines":1,"bbox":[1032,388,44,16]}
+{"kind":"textbox","id":"sh/8zatsb6x","slide":6,"name":"文本框 407","text":"胰腺","textPreview":"胰腺","textChars":2,"textLines":1,"bbox":[40,432,64,17]}
+{"kind":"shape","id":"sh/t03ulg7i","slide":6,"name":"圆角矩形 408","bbox":[118,428,900,24]}
+{"kind":"shape","id":"sh/3u5wra9k","slide":6,"name":"圆角矩形 409","bbox":[118,428,683,24]}
+{"kind":"textbox","id":"sh/itwfi58z","slide":6,"name":"文本框 410","text":"−18.98","textPreview":"−18.98","textChars":6,"textLines":1,"bbox":[1032,432,44,16]}
+{"kind":"textbox","id":"sh/5wnetkrq","slide":6,"name":"文本框 411","text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[118,462,200,14]}
+{"kind":"textbox","id":"sh/4vexkfq5","slide":6,"name":"文本框 412","text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[318,462,201,14]}
+{"kind":"textbox","id":"sh/ry5wva9w","slide":6,"name":"文本框 413","text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[519,462,200,14]}
+{"kind":"textbox","id":"sh/qxwfm58b","slide":6,"name":"文本框 414","text":"75","textPreview":"75","textChars":2,"textLines":1,"bbox":[719,462,200,14]}
+{"kind":"textbox","id":"sh/d07exkrm","slide":6,"name":"文本框 415","text":"100","textPreview":"100","textChars":3,"textLines":1,"bbox":[919,462,99,14]}
+{"kind":"shape","id":"sh/szyxofq1","slide":6,"name":"圆角矩形 416","bbox":[40,499,590,146]}
+{"kind":"shape","id":"sh/72lwjq9c","slide":6,"name":"任意多边形 417","bbox":[40,499,590,146]}
+{"kind":"textbox","id":"sh/61cval8r","slide":6,"name":"文本框 418","text":"所以呢","textPreview":"所以呢","textChars":3,"textLines":1,"bbox":[58,513,554,15]}
+{"kind":"textbox","id":"sh/ah0zitsf","slide":6,"name":"文本框 419","text":"20 点的落差说明瓶颈不是整体表征能力，而是弱势类别在类别竞争中持续被大器官压制； 继续堆数据只会同时抬高所有类别，不会自动补上这一格。","textPreview":"20 点的落差说明瓶颈不是整体表征能力，而是弱势类别在类别竞争中持续被大器官压制； 继续堆数据只会同时抬高所有类别，不会自动补上这一格。","textChars":68,"textLines":1,"bbox":[58,534,554,61]}
+{"kind":"shape","id":"sh/bi90ryt0","slide":6,"name":"圆角矩形 420","bbox":[650,499,590,146]}
+{"kind":"shape","id":"sh/wj2hk3al","slide":6,"name":"任意多边形 421","bbox":[650,499,590,146]}
+{"kind":"textbox","id":"sh/xkbitob6","slide":6,"name":"文本框 422","text":"这决定了改进方向","textPreview":"这决定了改进方向","textChars":8,"textLines":1,"bbox":[668,513,554,15]}
+{"kind":"textbox","id":"sh/2t0ze9sj","slide":6,"name":"文本框 423","text":"需要一种能显式告诉模型「小器官在哪、和谁相邻」的解剖先验， 而不是继续加参数。","textPreview":"需要一种能显式告诉模型「小器官在哪、和谁相邻」的解剖先验， 而不是继续加参数。","textChars":39,"textLines":1,"bbox":[668,534,554,31]}
+{"kind":"textbox","id":"sh/nu9gnet4","slide":6,"name":"文本框 424","text":"数据来源：规划文档引用的 EoSeg 在 Synapse 上的类别 Dice","textPreview":"数据来源：规划文档引用的 EoSeg 在 Synapse 上的类别 Dice","textChars":38,"textLines":1,"bbox":[40,665,358,16]}
+{"kind":"textbox","id":"sh/ovihgja9","slide":6,"name":"文本框 425","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/pgripobu","slide":6,"name":"文本框 426","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":""}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"02","textShapes":11}
+{"kind":"shape","id":"sh/pcbyl8r6","slide":7,"name":"矩形 428","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/7690vyd8","slide":7,"name":"矩形 429","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/650zmtcn","slide":7,"name":"文本框 430","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[903,36,337,312]}
+{"kind":"shape","id":"sh/t8bix8ve","slide":7,"name":"矩形 431","bbox":[80,196,48,4]}
+{"kind":"textbox","id":"sh/s7iho3ut","slide":7,"name":"文本框 432","text":"CHAPTER 02 · METHOD DESIGN","textPreview":"CHAPTER 02 · METHOD DESIGN","textChars":26,"textLines":1,"bbox":[80,216,700,16]}
+{"kind":"textbox","id":"sh/fat0zid4","slide":7,"name":"文本框 433","text":"方法设计：ASEE","textPreview":"方法设计：ASEE","textChars":9,"textLines":1,"bbox":[80,244,700,75]}
+{"kind":"textbox","id":"sh/e9kzqdcz","slide":7,"name":"文本框 434","text":"核心思路是把「放射科医生的读片常识」变成可计算的先验： 先用文本描述与共现统计建一个知识库，再在 Query 建模之前把它双向注进去。","textPreview":"核心思路是把「放射科医生的读片常识」变成可计算的先验： 先用文本描述与共现统计建一个知识库，再在 Query 建模之前把它双向注进去。","textChars":67,"textLines":1,"bbox":[80,339,700,73]}
+{"kind":"shape","id":"sh/1cbi18va","slide":7,"name":"圆角矩形 435","bbox":[80,520,344,46]}
+{"kind":"textbox","id":"sh/gb2hs3up","slide":7,"name":"文本框 436","text":"① 语义描述模板","textPreview":"① 语义描述模板","textChars":8,"textLines":1,"bbox":[197,534,110,18]}
+{"kind":"shape","id":"sh/2dkjudcv","slide":7,"name":"圆角矩形 438","bbox":[468,520,344,46]}
+{"kind":"textbox","id":"sh/mtcbmlo3","slide":7,"name":"文本框 439","text":"② 条件概率编码","textPreview":"② 条件概率编码","textChars":8,"textLines":1,"bbox":[585,534,110,18]}
+{"kind":"shape","id":"sh/8vutov69","slide":7,"name":"圆角矩形 441","bbox":[856,520,344,46]}
+{"kind":"textbox","id":"sh/9w3uh0nu","slide":7,"name":"文本框 442","text":"③ 双向注入 Query","textPreview":"③ 双向注入 Query","textChars":12,"textLines":1,"bbox":[963,534,131,18]}
+{"kind":"shape","id":"sh/ahwbqlof","slide":7,"name":"矩形 443","bbox":[80,594,3,14]}
+{"kind":"textbox","id":"sh/vi5cjq50","slide":7,"name":"文本框 444","text":"三步全部发生在前向传播的入口处，EoSeg 的主干 Block、融合层与预测头均不改动。","textPreview":"三步全部发生在前向传播的入口处，EoSeg 的主干 Block、融合层与预测头均不改动。","textChars":44,"textLines":1,"bbox":[95,588,496,25]}
+{"kind":"textbox","id":"sh/wjetsv6l","slide":7,"name":"文本框 445","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/xknul0nq","slide":7,"name":"文本框 446","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/q1sbe1ob","slide":7,"name":"文本框 447","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"image","id":"im/i9snut8z","slide":7,"name":"图片 437","bbox":[431,536,30,14]}
+{"kind":"image","id":"im/gzu5k36x","slide":7,"name":"图片 440","bbox":[819,536,30,14]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":""}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"02 / 方法设计：ASEE","textShapes":37}
+{"kind":"shape","id":"sh/g7m907q1","slide":8,"name":"矩形 449","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/h8va9c7m","slide":8,"name":"矩形 450","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/u5kryh8v","slide":8,"name":"文本框 451","text":"02 / 方法设计：ASEE","textPreview":"02 / 方法设计：ASEE","textChars":14,"textLines":1,"bbox":[40,23,553,15]}
+{"kind":"textbox","id":"sh/v6ds7mpg","slide":8,"name":"文本框 452","text":"总体框架：先建知识库，再做双向注入","textPreview":"总体框架：先建知识库，再做双向注入","textChars":17,"textLines":1,"bbox":[40,42,553,39]}
+{"kind":"shape","id":"sh/4vmt4rqx","slide":8,"name":"圆角矩形 453","bbox":[1105,39,135,27]}
+{"kind":"textbox","id":"sh/5wvadw7i","slide":8,"name":"文本框 454","text":"图 2 / ASEE 模块","textPreview":"图 2 / ASEE 模块","textChars":13,"textLines":1,"bbox":[1119,45,107,15]}
+{"kind":"shape","id":"sh/i94r2h87","slide":8,"name":"矩形 455","bbox":[40,92,1200,1]}
+{"kind":"shape","id":"sh/3udsbmps","slide":8,"name":"圆角矩形 456","bbox":[40,104,1200,152]}
+{"kind":"textbox","id":"sh/kz29snqt","slide":8,"name":"文本框 457","text":"① 先验知识库构建 · 离线完成，与训练解耦","textPreview":"① 先验知识库构建 · 离线完成，与训练解耦","textChars":22,"textLines":1,"bbox":[70,120,1140,15]}
+{"kind":"shape","id":"sh/l0ba1s7e","slide":8,"name":"圆角矩形 458","bbox":[96,147,320,82]}
+{"kind":"textbox","id":"sh/1w3qpoj2","slide":8,"name":"文本框 459","text":"S · 解剖语义嵌入","textPreview":"S · 解剖语义嵌入","textChars":10,"textLines":1,"bbox":[112,163,288,26]}
+{"kind":"textbox","id":"sh/0vupwjih","slide":8,"name":"文本框 460","text":"BioClinicalBERT 编码 + 线性映射 → C × d","textPreview":"BioClinicalBERT 编码 + 线性映射 → C × d","textChars":33,"textLines":1,"bbox":[112,189,288,24]}
+{"kind":"textbox","id":"sh/zu18ne1c","slide":8,"name":"文本框 461","text":"⊕","textPreview":"⊕","textChars":1,"textLines":1,"bbox":[438,174,20,29]}
+{"kind":"shape","id":"sh/ets7u90r","slide":8,"name":"圆角矩形 462","bbox":[480,147,320,82]}
+{"kind":"textbox","id":"sh/903qt8ze","slide":8,"name":"文本框 463","text":"CP · 条件概率嵌入","textPreview":"CP · 条件概率嵌入","textChars":11,"textLines":1,"bbox":[496,163,288,26]}
+{"kind":"textbox","id":"sh/8zup03it","slide":8,"name":"文本框 464","text":"共现统计对数比 M 经 MLP 映射 → C × d","textPreview":"共现统计对数比 M 经 MLP 映射 → C × d","textChars":26,"textLines":1,"bbox":[496,189,288,24]}
+{"kind":"textbox","id":"sh/nyl8ryh8","slide":8,"name":"文本框 465","text":"=","textPreview":"=","textChars":1,"textLines":1,"bbox":[824,175,17,27]}
+{"kind":"shape","id":"sh/mxc7yt0n","slide":8,"name":"圆角矩形 466","bbox":[864,147,320,82]}
+{"kind":"textbox","id":"sh/xonqx8za","slide":8,"name":"文本框 467","text":"E_prior · 先验知识库","textPreview":"E_prior · 先验知识库","textChars":15,"textLines":1,"bbox":[880,163,288,26]}
+{"kind":"textbox","id":"sh/wnep43ip","slide":8,"name":"文本框 468","text":"唯一被注入到主干的中间表示","textPreview":"唯一被注入到主干的中间表示","textChars":13,"textLines":1,"bbox":[880,189,288,24]}
+{"kind":"shape","id":"sh/fax4rahs","slide":8,"name":"圆角矩形 470","bbox":[40,282,250,72]}
+{"kind":"textbox","id":"sh/gb650fyd","slide":8,"name":"文本框 471","text":"T⁽⁰⁾ · Patch Tokens","textPreview":"T⁽⁰⁾ · Patch Tokens","textChars":19,"textLines":1,"bbox":[54,299,222,24]}
+{"kind":"textbox","id":"sh/hczmtkzy","slide":8,"name":"文本框 472","text":"N_p × d","textPreview":"N_p × d","textChars":7,"textLines":1,"bbox":[54,323,222,15]}
+{"kind":"shape","id":"sh/3yh4vax4","slide":8,"name":"圆角矩形 474","bbox":[332,282,300,72]}
+{"kind":"textbox","id":"sh/4zq54fy9","slide":8,"name":"文本框 475","text":"Cross-Attention","textPreview":"Cross-Attention","textChars":15,"textLines":1,"bbox":[346,299,272,24]}
+{"kind":"textbox","id":"sh/p0zmxkfu","slide":8,"name":"文本框 476","text":"T⁽⁰⁾ 作 Q，E_prior 作 K / V","textPreview":"T⁽⁰⁾ 作 Q，E_prior 作 K / V","textChars":24,"textLines":1,"bbox":[346,323,272,15]}
+{"kind":"shape","id":"sh/r2hozux0","slide":8,"name":"圆角矩形 478","bbox":[674,282,206,72]}
+{"kind":"textbox","id":"sh/bux0vm1g","slide":8,"name":"文本框 479","text":"T̃⁽⁰⁾ 语义增强图像特征","textPreview":"T̃⁽⁰⁾ 语义增强图像特征","textChars":14,"textLines":1,"bbox":[688,299,178,24]}
+{"kind":"textbox","id":"sh/atoj2hkv","slide":8,"name":"文本框 480","text":"看到「该看哪儿」","textPreview":"看到「该看哪儿」","textChars":8,"textLines":1,"bbox":[688,323,178,15]}
+{"kind":"textbox","id":"sh/xwfixwjm","slide":8,"name":"文本框 481","text":"同一套先验，两条支路各取所需","textPreview":"同一套先验，两条支路各取所需","textChars":14,"textLines":1,"bbox":[40,363,840,15]}
+{"kind":"shape","id":"sh/wv614r21","slide":8,"name":"圆角矩形 482","bbox":[40,386,250,72]}
+{"kind":"textbox","id":"sh/jyhkz61c","slide":8,"name":"文本框 483","text":"Q_init · 可学习参数","textPreview":"Q_init · 可学习参数","textChars":14,"textLines":1,"bbox":[54,403,222,24]}
+{"kind":"textbox","id":"sh/yx8j61kr","slide":8,"name":"文本框 484","text":"N_q = 2C，随机初始化","textPreview":"N_q = 2C，随机初始化","textChars":14,"textLines":1,"bbox":[54,427,222,15]}
+{"kind":"shape","id":"sh/kzq18b2x","slide":8,"name":"圆角矩形 486","bbox":[332,386,300,72]}
+{"kind":"textbox","id":"sh/7mhk361o","slide":8,"name":"文本框 487","text":"MLP_proj(E_prior)","textPreview":"MLP_proj(E_prior)","textChars":17,"textLines":1,"bbox":[346,403,272,24]}
+{"kind":"textbox","id":"sh/6l8ja1k3","slide":8,"name":"文本框 488","text":"类别先验映射回 d 维并相加","textPreview":"类别先验映射回 d 维并相加","textChars":14,"textLines":1,"bbox":[346,427,272,15]}
+{"kind":"shape","id":"sh/5sjitgzm","slide":8,"name":"圆角矩形 490","bbox":[674,386,206,72]}
+{"kind":"textbox","id":"sh/ipszil0b","slide":8,"name":"文本框 491","text":"Q̃⁽⁰⁾ 解剖指向 Query","textPreview":"Q̃⁽⁰⁾ 解剖指向 Query","textChars":16,"textLines":1,"bbox":[688,403,178,24]}
+{"kind":"textbox","id":"sh/3q10rqhw","slide":8,"name":"文本框 492","text":"知道「该找什么」","textPreview":"知道「该找什么」","textChars":8,"textLines":1,"bbox":[688,427,178,15]}
+{"kind":"shape","id":"sh/gnqhgbi5","slide":8,"name":"圆角矩形 493","bbox":[923,315,320,110]}
+{"kind":"shape","id":"sh/hojipgzq","slide":8,"name":"任意多边形 494","bbox":[923,315,320,110]}
+{"kind":"textbox","id":"sh/u18ze10z","slide":8,"name":"文本框 495","text":"汇合后回灌主干","textPreview":"汇合后回灌主干","textChars":7,"textLines":1,"bbox":[941,333,281,15]}
+{"kind":"textbox","id":"sh/vmh0n6hk","slide":8,"name":"文本框 496","text":"Z⁽⁰⁾ = Concat(Q̃⁽⁰⁾, T̃⁽⁰⁾)","textPreview":"Z⁽⁰⁾ = Concat(Q̃⁽⁰⁾, T̃⁽⁰⁾)","textChars":27,"textLines":1,"bbox":[941,354,281,29]}
+{"kind":"textbox","id":"sh/8zqhcri9","slide":8,"name":"文本框 497","text":"→ 后 3 层 Block → Fusion → Head","textPreview":"→ 后 3 层 Block → Fusion → Head","textChars":29,"textLines":1,"bbox":[941,383,281,25]}
+{"kind":"shape","id":"sh/t0zilwze","slide":8,"name":"任意多边形 498","bbox":[40,500,384,134]}
+{"kind":"textbox","id":"sh/e98bilc3","slide":8,"name":"文本框 499","text":"一次交叉注意力","textPreview":"一次交叉注意力","textChars":7,"textLines":1,"bbox":[40,514,384,32]}
+{"kind":"textbox","id":"sh/fahcrqto","slide":8,"name":"文本框 500","text":"在线只做一次 patch 与先验的交互，E_prior 可离线缓存，训练时随 batch 复用。","textPreview":"在线只做一次 patch 与先验的交互，E_prior 可离线缓存，训练时随 batch 复用。","textChars":48,"textLines":1,"bbox":[40,554,384,59]}
+{"kind":"shape","id":"sh/gbqtkbut","slide":8,"name":"任意多边形 501","bbox":[448,500,384,134]}
+{"kind":"textbox","id":"sh/1czutgbe","slide":8,"name":"文本框 502","text":"增量参数极小","textPreview":"增量参数极小","textChars":6,"textLines":1,"bbox":[448,514,384,32]}
+{"kind":"textbox","id":"sh/2x8bmlcz","slide":8,"name":"文本框 503","text":"新增一个线性映射、一个轻量 MLP 与一次注意力的投影矩阵，不改动主干权重结构。","textPreview":"新增一个线性映射、一个轻量 MLP 与一次注意力的投影矩阵，不改动主干权重结构。","textChars":40,"textLines":1,"bbox":[448,554,384,59]}
+{"kind":"shape","id":"sh/3yhcvqtk","slide":8,"name":"任意多边形 504","bbox":[856,500,384,134]}
+{"kind":"textbox","id":"sh/ozqtovu5","slide":8,"name":"文本框 505","text":"主干零改动","textPreview":"主干零改动","textChars":5,"textLines":1,"bbox":[856,514,384,32]}
+{"kind":"textbox","id":"sh/p0zux0bq","slide":8,"name":"文本框 506","text":"后 3 个 Transformer Block、Learnable Block Fusion 与预测头完整沿用原实现。","textPreview":"后 3 个 Transformer Block、Learnable Block Fusion 与预测头完整沿用原实现。","textChars":59,"textLines":1,"bbox":[856,554,384,59]}
+{"kind":"textbox","id":"sh/q1sbq5cb","slide":8,"name":"文本框 507","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/b21czatg","slide":8,"name":"文本框 508","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/l8n65ozu","slide":8,"name":"文本框 509","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"image","id":"im/lkzqtsbe","slide":8,"name":"图片 469","bbox":[627,256,26,26]}
+{"kind":"image","id":"im/yxoridsn","slide":8,"name":"图片 473","bbox":[297,311,28,14]}
+{"kind":"image","id":"im/zyh8rit8","slide":8,"name":"图片 477","bbox":[639,311,28,14]}
+{"kind":"image","id":"im/cv69gnax","slide":8,"name":"图片 485","bbox":[297,415,28,14]}
+{"kind":"image","id":"im/xwfqp8b2","slide":8,"name":"图片 489","bbox":[639,415,28,14]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":""}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"02 / 方法设计 · 步骤 1","textShapes":29}
+{"kind":"shape","id":"sh/jm98n2l0","slide":9,"name":"矩形 511","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/yl07ex4v","slide":9,"name":"矩形 512","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/x0rqlcna","slide":9,"name":"文本框 513","text":"02 / 方法设计 · 步骤 1","textPreview":"02 / 方法设计 · 步骤 1","textChars":16,"textLines":1,"bbox":[40,23,488,15]}
+{"kind":"textbox","id":"sh/wzipc7mp","slide":9,"name":"文本框 514","text":"把读片常识写成一句可编码的描述","textPreview":"把读片常识写成一句可编码的描述","textChars":15,"textLines":1,"bbox":[40,42,488,39]}
+{"kind":"shape","id":"sh/by9oj254","slide":9,"name":"圆角矩形 515","bbox":[1092,39,148,27]}
+{"kind":"textbox","id":"sh/ax07ax4j","slide":9,"name":"文本框 516","text":"步骤 1 / 语义嵌入 S","textPreview":"步骤 1 / 语义嵌入 S","textChars":13,"textLines":1,"bbox":[1106,45,120,15]}
+{"kind":"shape","id":"sh/9wr6hsny","slide":9,"name":"矩形 517","bbox":[40,92,1200,1]}
+{"kind":"shape","id":"sh/ovyp8nmd","slide":9,"name":"圆角矩形 518","bbox":[40,106,680,58]}
+{"kind":"textbox","id":"sh/gf2ponu9","slide":9,"name":"文本框 519","text":"含 C 个解剖类别的目标数据集","textPreview":"含 C 个解剖类别的目标数据集","textChars":15,"textLines":1,"bbox":[58,111,644,26]}
+{"kind":"textbox","id":"sh/10bqxsvu","slide":9,"name":"文本框 520","text":"腹部 CT（Synapse）/ 心脏 MRI（ACDC）","textPreview":"腹部 CT（Synapse）/ 心脏 MRI（ACDC）","textChars":28,"textLines":1,"bbox":[58,137,644,22]}
+{"kind":"shape","id":"sh/fet8v2do","slide":9,"name":"圆角矩形 522","bbox":[43,186,680,156]}
+{"kind":"shape","id":"sh/sb2pknud","slide":9,"name":"任意多边形 523","bbox":[43,186,680,156]}
+{"kind":"textbox","id":"sh/tcbqtsvy","slide":9,"name":"文本框 524","text":"解剖空间关系描述模板","textPreview":"解剖空间关系描述模板","textChars":10,"textLines":1,"bbox":[61,196,641,26]}
+{"kind":"textbox","id":"sh/6907idc7","slide":9,"name":"文本框 525","text":"每类一句，写清「在哪 · 挨着谁」","textPreview":"每类一句，写清「在哪 · 挨着谁」","textChars":17,"textLines":1,"bbox":[61,228,641,24]}
+{"kind":"shape","id":"sh/rat8rids","slide":9,"name":"圆角矩形 526","bbox":[61,260,641,76]}
+{"kind":"textbox","id":"sh/c7mpw7uh","slide":9,"name":"文本框 527","text":"胆囊：位于肝脏下缘的胆囊窝，紧邻肝右叶\n左心室：心腔，被心肌包裹；主动脉：位于脊椎前方","textPreview":"胆囊：位于肝脏下缘的胆囊窝，紧邻肝右叶 | 左心室：心腔，被心肌包裹；主动脉：位于脊椎前方","textChars":43,"textLines":2,"bbox":[73,268,617,60]}
+{"kind":"shape","id":"sh/72hsv6x4","slide":9,"name":"圆角矩形 529","bbox":[40,364,680,58]}
+{"kind":"textbox","id":"sh/m18bmlwj","slide":9,"name":"文本框 530","text":"BioClinicalBERT · 预训练医学文本编码器","textPreview":"BioClinicalBERT · 预训练医学文本编码器","textChars":28,"textLines":1,"bbox":[58,369,644,26]}
+{"kind":"textbox","id":"sh/94zaxgfa","slide":9,"name":"文本框 531","text":"让「胆囊窝」这类术语落在有意义的向量位置上","textPreview":"让「胆囊窝」这类术语落在有意义的向量位置上","textChars":21,"textLines":1,"bbox":[58,395,644,22]}
+{"kind":"shape","id":"sh/vqhszqxg","slide":9,"name":"圆角矩形 533","bbox":[40,444,680,58]}
+{"kind":"textbox","id":"sh/u58bqlwv","slide":9,"name":"文本框 534","text":"线性层映射到 d 维","textPreview":"线性层映射到 d 维","textChars":10,"textLines":1,"bbox":[58,449,644,26]}
+{"kind":"textbox","id":"sh/hsja10v6","slide":9,"name":"文本框 535","text":"与 DINOv2 特征维度对齐，可直接参与注意力计算","textPreview":"与 DINOv2 特征维度对齐，可直接参与注意力计算","textChars":26,"textLines":1,"bbox":[58,475,644,22]}
+{"kind":"shape","id":"sh/buxsnmxw","slide":9,"name":"圆角矩形 537","bbox":[40,524,680,76]}
+{"kind":"textbox","id":"sh/a9ore1wr","slide":9,"name":"文本框 538","text":"解剖语义嵌入矩阵 S","textPreview":"解剖语义嵌入矩阵 S","textChars":10,"textLines":1,"bbox":[58,538,574,26]}
+{"kind":"textbox","id":"sh/2d8ba147","slide":9,"name":"文本框 539","text":"每行对应一个类别，每列对应一个特征维度","textPreview":"每行对应一个类别，每列对应一个特征维度","textChars":19,"textLines":1,"bbox":[58,564,574,22]}
+{"kind":"textbox","id":"sh/3e1s365s","slide":9,"name":"文本框 540","text":"C × d","textPreview":"C × d","textChars":5,"textLines":1,"bbox":[632,548,70,29]}
+{"kind":"textbox","id":"sh/ofatcbmd","slide":9,"name":"文本框 541","text":"设计取舍","textPreview":"设计取舍","textChars":4,"textLines":1,"bbox":[760,106,480,15]}
+{"kind":"textbox","id":"sh/pgja5wny","slide":9,"name":"文本框 542","text":"为什么不直接学一个类别向量？","textPreview":"为什么不直接学一个类别向量？","textChars":14,"textLines":1,"bbox":[760,129,480,37]}
+{"kind":"textbox","id":"sh/qhsbe14j","slide":9,"name":"文本框 543","text":"纯可学习的类别向量只能记住「这类东西长什么样」， 却记不住「它通常出现在哪、和谁相邻」。 而空间关系在医学图像里高度稳定——胆囊几乎总在肝下缘， 左心室总被心肌包裹。把它写进文本模板，等于把这些规律从数据里 提前搬到参数里。","textPreview":"纯可学习的类别向量只能记住「这类东西长什么样」， 却记不住「它通常出现在哪、和谁相邻」。 而空间关系在医学图像里高度稳定——胆囊几乎总在肝下缘， 左心室总被心肌包裹。把它写进文本模板，等于把这些规律从数据里 提前搬到参数里。","textChars":112,"textLines":1,"bbox":[760,178,480,132]}
+{"kind":"shape","id":"sh/bi1s7654","slide":9,"name":"任意多边形 544","bbox":[760,328,480,2]}
+{"kind":"textbox","id":"sh/cjatgbmp","slide":9,"name":"文本框 545","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[760,343,18,29]}
+{"kind":"textbox","id":"sh/dkja9gnu","slide":9,"name":"文本框 546","text":"模板只需写一次，与数据集类别表同步维护","textPreview":"模板只需写一次，与数据集类别表同步维护","textChars":19,"textLines":1,"bbox":[788,343,452,31]}
+{"kind":"textbox","id":"sh/y5sbil4f","slide":9,"name":"文本框 547","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[760,374,18,29]}
+{"kind":"textbox","id":"sh/z6lcbq50","slide":9,"name":"文本框 548","text":"编码器冻结，S 可在训练前离线算好并缓存","textPreview":"编码器冻结，S 可在训练前离线算好并缓存","textChars":20,"textLines":1,"bbox":[788,374,452,31]}
+{"kind":"textbox","id":"sh/9c7mx4be","slide":9,"name":"文本框 549","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[760,405,18,29]}
+{"kind":"textbox","id":"sh/8by5ozat","slide":9,"name":"文本框 550","text":"映射层可训练，让语义空间向视觉特征空间靠拢","textPreview":"映射层可训练，让语义空间向视觉特征空间靠拢","textChars":21,"textLines":1,"bbox":[788,405,452,31]}
+{"kind":"shape","id":"sh/7q54veto","slide":9,"name":"圆角矩形 551","bbox":[760,446,480,108]}
+{"kind":"textbox","id":"sh/mpwnm9s3","slide":9,"name":"文本框 552","text":"S 的形状：C 行（类别）× d 列（特征维）","textPreview":"S 的形状：C 行（类别）× d 列（特征维）","textChars":23,"textLines":1,"bbox":[776,456,448,22]}
+{"kind":"shape","id":"sh/wfy5sja5","slide":9,"name":"圆角矩形 554","bbox":[760,563,480,77]}
+{"kind":"textbox","id":"sh/vep4zetk","slide":9,"name":"文本框 555","text":"说明：这一步只产出「语义」，还没用到共现统计； 空间上的强弱关系由步骤 2 的条件概率补上。","textPreview":"说明：这一步只产出「语义」，还没用到共现统计； 空间上的强弱关系由步骤 2 的条件概率补上。","textChars":46,"textLines":1,"bbox":[776,573,448,57]}
+{"kind":"textbox","id":"sh/udgnq9sz","slide":9,"name":"文本框 556","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/5kr65obm","slide":9,"name":"文本框 557","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/4ji5wja1","slide":9,"name":"文本框 558","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"image","id":"im/x4nilk3m","slide":9,"name":"图片 521","bbox":[370,165,20,20]}
+{"kind":"image","id":"im/c3u1cf2h","slide":9,"name":"图片 528","bbox":[370,343,20,20]}
+{"kind":"image","id":"im/b2l0jalw","slide":9,"name":"图片 532","bbox":[370,423,20,20]}
+{"kind":"image","id":"im/a1cja5kb","slide":9,"name":"图片 536","bbox":[370,503,20,20]}
+{"kind":"image","id":"im/p03ihk3q","slide":9,"name":"图片 553","bbox":[776,486,252,58]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":""}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"02 / 方法设计 · 步骤 2","textShapes":38}
+{"kind":"shape","id":"sh/103qxcbq","slide":10,"name":"矩形 36","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/u187adsv","slide":10,"name":"矩形 37","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/f2h8jitg","slide":10,"name":"文本框 38","text":"02 / 方法设计 · 步骤 2","textPreview":"02 / 方法设计 · 步骤 2","textChars":16,"textLines":1,"bbox":[40,23,488,15]}
+{"kind":"textbox","id":"sh/bmpgrah8","slide":10,"name":"文本框 39","text":"把「谁和谁一起出现」变成对数比","textPreview":"把「谁和谁一起出现」变成对数比","textChars":15,"textLines":1,"bbox":[40,42,488,39]}
+{"kind":"shape","id":"sh/algfy50n","slide":10,"name":"圆角矩形 40","bbox":[1082,39,158,27]}
+{"kind":"textbox","id":"sh/xo7ytkzy","slide":10,"name":"文本框 41","text":"步骤 2 / 条件概率 CP","textPreview":"步骤 2 / 条件概率 CP","textChars":14,"textLines":1,"bbox":[1096,45,130,15]}
+{"kind":"shape","id":"sh/wnyx0fit","slide":10,"name":"矩形 42","bbox":[40,92,1200,1]}
+{"kind":"textbox","id":"sh/jq9gvuh4","slide":10,"name":"文本框 43","text":"推导三步","textPreview":"推导三步","textChars":4,"textLines":1,"bbox":[40,106,440,15]}
+{"kind":"shape","id":"sh/ip0f2p0j","slide":10,"name":"圆角矩形 44","bbox":[40,133,440,113]}
+{"kind":"textbox","id":"sh/5cryx4za","slide":10,"name":"文本框 45","text":"① 训练集上统计两个量","textPreview":"① 训练集上统计两个量","textChars":11,"textLines":1,"bbox":[56,145,408,26]}
+{"kind":"textbox","id":"sh/kbix4zyp","slide":10,"name":"文本框 46","text":"类别出现频率 P(K_j)，以及类别 i 出现时 j 出现的条件频率 P(K_j | S_i)。","textPreview":"类别出现频率 P(K_j)，以及类别 i 出现时 j 出现的条件频率 P(K_j | S_i)。","textChars":48,"textLines":1,"bbox":[56,177,408,57]}
+{"kind":"shape","id":"sh/7e9gzuhg","slide":10,"name":"圆角矩形 47","bbox":[40,256,440,165]}
+{"kind":"textbox","id":"sh/6d0f6pgv","slide":10,"name":"文本框 48","text":"② 取对数比，得到关联强度","textPreview":"② 取对数比，得到关联强度","textChars":13,"textLines":1,"bbox":[56,268,408,26]}
+{"kind":"shape","id":"sh/4j2xwzet","slide":10,"name":"圆角矩形 49","bbox":[56,302,408,70]}
+{"kind":"textbox","id":"sh/pkbep4fe","slide":10,"name":"文本框 50","text":"M(i,j) = log[ ( P(K_j | S_i) + ε )","textPreview":"M(i,j) = log[ ( P(K_j | S_i) + ε )","textChars":34,"textLines":1,"bbox":[66,310,388,27]}
+{"kind":"textbox","id":"sh/2hkfu9w3","slide":10,"name":"文本框 51","text":"　　　　　/ ( P(K_j) + ε ) ]","textPreview":"/ ( P(K_j) + ε ) ]","textChars":23,"textLines":1,"bbox":[66,337,388,27]}
+{"kind":"textbox","id":"sh/3itwnex8","slide":10,"name":"文本框 52","text":"正 = 比偶然共现更强，负 = 被先验预期压制。","textPreview":"正 = 比偶然共现更强，负 = 被先验预期压制。","textChars":24,"textLines":1,"bbox":[56,380,408,29]}
+{"kind":"shape","id":"sh/gfixszex","slide":10,"name":"圆角矩形 53","bbox":[40,431,440,85]}
+{"kind":"textbox","id":"sh/hgrel4fi","slide":10,"name":"文本框 54","text":"③ 轻量 MLP 映射到 d 维","textPreview":"③ 轻量 MLP 映射到 d 维","textChars":16,"textLines":1,"bbox":[56,443,408,26]}
+{"kind":"textbox","id":"sh/ud0vqpwr","slide":10,"name":"文本框 55","text":"CP = MLP(M)，CP ∈ R^(C×d)","textPreview":"CP = MLP(M)，CP ∈ R^(C×d)","textChars":24,"textLines":1,"bbox":[56,475,408,29]}
+{"kind":"shape","id":"sh/fe9wjuxc","slide":10,"name":"圆角矩形 56","bbox":[40,568,440,72]}
+{"kind":"textbox","id":"sh/sridofel","slide":10,"name":"文本框 57","text":"融合","textPreview":"融合","textChars":2,"textLines":1,"bbox":[56,580,408,15]}
+{"kind":"textbox","id":"sh/tsrehkf6","slide":10,"name":"文本框 58","text":"E_prior = S ⊕ CP","textPreview":"E_prior = S ⊕ CP","textChars":16,"textLines":1,"bbox":[56,599,408,29]}
+{"kind":"textbox","id":"sh/98julg7a","slide":10,"name":"文本框 59","text":"对数比矩阵 M 的形状示意","textPreview":"对数比矩阵 M 的形状示意","textChars":13,"textLines":1,"bbox":[540,106,700,15]}
+{"kind":"textbox","id":"sh/87atcb6p","slide":10,"name":"文本框 60","text":"行为条件类别 S_i，列为被条件类别 K_j；颜色越深表示关联越强","textPreview":"行为条件类别 S_i，列为被条件类别 K_j；颜色越深表示关联越强","textChars":33,"textLines":1,"bbox":[540,127,700,25]}
+{"kind":"textbox","id":"sh/n61cj6p4","slide":10,"name":"文本框 61","text":"弱","textPreview":"弱","textChars":1,"textLines":1,"bbox":[540,553,11,14]}
+{"kind":"shape","id":"sh/mlsba18j","slide":10,"name":"矩形 62","bbox":[559,554,18,12]}
+{"kind":"shape","id":"sh/lkzuhw7y","slide":10,"name":"矩形 63","bbox":[585,554,18,12]}
+{"kind":"shape","id":"sh/0jqt8bqd","slide":10,"name":"矩形 64","bbox":[611,554,18,12]}
+{"kind":"shape","id":"sh/zihcf6ps","slide":10,"name":"矩形 65","bbox":[637,554,18,12]}
+{"kind":"shape","id":"sh/yh8bm18n","slide":10,"name":"矩形 66","bbox":[663,554,18,12]}
+{"kind":"textbox","id":"sh/5g3ut072","slide":10,"name":"文本框 67","text":"强","textPreview":"强","textChars":1,"textLines":1,"bbox":[689,553,11,14]}
+{"kind":"textbox","id":"sh/4fudkv6x","slide":10,"name":"文本框 68","text":"示意图，非实测数据；对角线的强关联来自类别自身的共现","textPreview":"示意图，非实测数据；对角线的强关联来自类别自身的共现","textChars":26,"textLines":1,"bbox":[732,550,286,20]}
+{"kind":"textbox","id":"sh/2l4rexof","slide":10,"name":"文本框 69","text":"肝","textPreview":"肝","textChars":1,"textLines":1,"bbox":[618,162,44,14]}
+{"kind":"textbox","id":"sh/3mxsn25k","slide":10,"name":"文本框 70","text":"胆","textPreview":"胆","textChars":1,"textLines":1,"bbox":[662,162,44,14]}
+{"kind":"textbox","id":"sh/on69g765","slide":10,"name":"文本框 71","text":"胰","textPreview":"胰","textChars":1,"textLines":1,"bbox":[706,162,44,14]}
+{"kind":"textbox","id":"sh/pofapcnq","slide":10,"name":"文本框 72","text":"脾","textPreview":"脾","textChars":1,"textLines":1,"bbox":[750,162,44,14]}
+{"kind":"textbox","id":"sh/eh4rado3","slide":10,"name":"文本框 73","text":"胃","textPreview":"胃","textChars":1,"textLines":1,"bbox":[794,162,44,14]}
+{"kind":"textbox","id":"sh/fid8ji5o","slide":10,"name":"文本框 74","text":"肾","textPreview":"肾","textChars":1,"textLines":1,"bbox":[838,162,44,14]}
+{"kind":"textbox","id":"sh/gjm9cn69","slide":10,"name":"文本框 75","text":"主动脉","textPreview":"主动脉","textChars":3,"textLines":1,"bbox":[882,162,44,14]}
+{"kind":"textbox","id":"sh/1kvqlsnu","slide":10,"name":"文本框 76","text":"腔静脉","textPreview":"腔静脉","textChars":3,"textLines":1,"bbox":[926,162,44,14]}
+{"kind":"textbox","id":"sh/yd8rmh47","slide":10,"name":"文本框 77","text":"肝脏","textPreview":"肝脏","textChars":2,"textLines":1,"bbox":[540,203,74,14]}
+{"kind":"textbox","id":"sh/zehsvm5s","slide":10,"name":"文本框 78","text":"胆囊","textPreview":"胆囊","textChars":2,"textLines":1,"bbox":[540,247,74,14]}
+{"kind":"textbox","id":"sh/nyt0jit0","slide":10,"name":"文本框 79","text":"胰腺","textPreview":"胰腺","textChars":2,"textLines":1,"bbox":[540,291,74,14]}
+{"kind":"textbox","id":"sh/mxkzqdsf","slide":10,"name":"文本框 80","text":"脾脏","textPreview":"脾脏","textChars":2,"textLines":1,"bbox":[540,335,74,14]}
+{"kind":"textbox","id":"sh/90bilsbq","slide":10,"name":"文本框 81","text":"胃","textPreview":"胃","textChars":1,"textLines":1,"bbox":[540,379,74,14]}
+{"kind":"textbox","id":"sh/8z21snal","slide":10,"name":"文本框 82","text":"肾脏","textPreview":"肾脏","textChars":2,"textLines":1,"bbox":[540,423,74,14]}
+{"kind":"textbox","id":"sh/zu90fito","slide":10,"name":"文本框 83","text":"主动脉","textPreview":"主动脉","textChars":3,"textLines":1,"bbox":[540,467,74,14]}
+{"kind":"textbox","id":"sh/yt0zmds3","slide":10,"name":"文本框 84","text":"腔静脉","textPreview":"腔静脉","textChars":3,"textLines":1,"bbox":[540,511,74,14]}
+{"kind":"textbox","id":"sh/0v2ho3a9","slide":10,"name":"文本框 86","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/bq90byts","slide":10,"name":"文本框 87","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/q50zits7","slide":10,"name":"文本框 88","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"image","id":"im/3654nm90","slide":10,"name":"图片 85","bbox":[618,188,352,352]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":""}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"02 / 方法设计 · 步骤 3","textShapes":34}
+{"kind":"shape","id":"sh/d8nml4ja","slide":11,"name":"矩形 90","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/q5w3a9kz","slide":11,"name":"矩形 91","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/b65kje1k","slide":11,"name":"文本框 92","text":"02 / 方法设计 · 步骤 3","textPreview":"02 / 方法设计 · 步骤 3","textChars":16,"textLines":1,"bbox":[40,23,715,15]}
+{"kind":"textbox","id":"sh/ojel8z2t","slide":11,"name":"文本框 93","text":"双向注入：一条改「看到的」，一条改「想找的」","textPreview":"双向注入：一条改「看到的」，一条改「想找的」","textChars":22,"textLines":1,"bbox":[40,42,715,39]}
+{"kind":"shape","id":"sh/pkn2h4je","slide":11,"name":"圆角矩形 94","bbox":[1105,39,135,27]}
+{"kind":"textbox","id":"sh/2hc36pkn","slide":11,"name":"文本框 95","text":"步骤 3 / 双向注入","textPreview":"步骤 3 / 双向注入","textChars":11,"textLines":1,"bbox":[1119,45,107,15]}
+{"kind":"shape","id":"sh/3ilkfu18","slide":11,"name":"矩形 96","bbox":[40,92,1200,1]}
+{"kind":"shape","id":"sh/8fylk32x","slide":11,"name":"圆角矩形 97","bbox":[40,136,168,286]}
+{"kind":"textbox","id":"sh/907mtoji","slide":11,"name":"文本框 98","text":"先验知识库","textPreview":"先验知识库","textChars":5,"textLines":1,"bbox":[54,152,140,14]}
+{"kind":"textbox","id":"sh/2t8zalk3","slide":11,"name":"文本框 99","text":"E_prior","textPreview":"E_prior","textChars":7,"textLines":1,"bbox":[54,174,140,29]}
+{"kind":"textbox","id":"sh/nu103qlo","slide":11,"name":"文本框 100","text":"S ⊕ CP\nC × d","textPreview":"S ⊕ CP | C × d","textChars":12,"textLines":2,"bbox":[54,209,140,49]}
+{"kind":"textbox","id":"sh/ovahcv29","slide":11,"name":"文本框 101","text":"同一条先验，\n被两处复用","textPreview":"同一条先验， | 被两处复用","textChars":12,"textLines":2,"bbox":[54,363,140,43]}
+{"kind":"shape","id":"sh/f6hgz6lc","slide":11,"name":"圆角矩形 104","bbox":[256,162,232,92]}
+{"kind":"textbox","id":"sh/0rqh8b2x","slide":11,"name":"文本框 105","text":"Cross-Attention","textPreview":"Cross-Attention","textChars":15,"textLines":1,"bbox":[270,172,204,24]}
+{"kind":"textbox","id":"sh/1szy1g3i","slide":11,"name":"文本框 106","text":"T⁽⁰⁾ 作 Query，E_prior 作 Key / Value","textPreview":"T⁽⁰⁾ 作 Query，E_prior 作 Key / Value","textChars":34,"textLines":1,"bbox":[270,200,204,49]}
+{"kind":"shape","id":"sh/q1oz214v","slide":11,"name":"圆角矩形 107","bbox":[256,320,232,92]}
+{"kind":"textbox","id":"sh/r2xgv6lg","slide":11,"name":"文本框 108","text":"＋ MLP_proj(E_prior)","textPreview":"＋ MLP_proj(E_prior)","textChars":19,"textLines":1,"bbox":[270,330,204,24]}
+{"kind":"textbox","id":"sh/9wn2h4ny","slide":11,"name":"文本框 109","text":"与 Q_init 相加，而非替换","textPreview":"与 Q_init 相加，而非替换","textChars":16,"textLines":1,"bbox":[270,358,204,25]}
+{"kind":"shape","id":"sh/mtcj6p47","slide":11,"name":"圆角矩形 112","bbox":[535,162,195,92]}
+{"kind":"shape","id":"sh/ls32dkn2","slide":11,"name":"任意多边形 113","bbox":[535,162,195,92]}
+{"kind":"textbox","id":"sh/kru14zmh","slide":11,"name":"文本框 114","text":"T̃⁽⁰⁾","textPreview":"T̃⁽⁰⁾","textChars":5,"textLines":1,"bbox":[549,181,167,26]}
+{"kind":"textbox","id":"sh/zqlkbu5w","slide":11,"name":"文本框 115","text":"图像特征已含语义与位置","textPreview":"图像特征已含语义与位置","textChars":11,"textLines":1,"bbox":[549,211,167,25]}
+{"kind":"shape","id":"sh/ypcj2p4b","slide":11,"name":"圆角矩形 116","bbox":[535,320,195,92]}
+{"kind":"shape","id":"sh/xo329knq","slide":11,"name":"任意多边形 117","bbox":[535,320,195,92]}
+{"kind":"textbox","id":"sh/cnu10fm5","slide":11,"name":"文本框 118","text":"Q̃⁽⁰⁾","textPreview":"Q̃⁽⁰⁾","textChars":5,"textLines":1,"bbox":[549,339,167,26]}
+{"kind":"textbox","id":"sh/o7ylgfe1","slide":11,"name":"文本框 119","text":"查询带上了解剖起点","textPreview":"查询带上了解剖起点","textChars":9,"textLines":1,"bbox":[549,369,167,25]}
+{"kind":"shape","id":"sh/p872pkvm","slide":11,"name":"圆角矩形 120","bbox":[80,458,650,56]}
+{"kind":"textbox","id":"sh/25wjepwv","slide":11,"name":"文本框 121","text":"Z⁽⁰⁾ = Concat(Q̃⁽⁰⁾, T̃⁽⁰⁾) → 进入最后 3 个 Transformer Block","textPreview":"Z⁽⁰⁾ = Concat(Q̃⁽⁰⁾, T̃⁽⁰⁾) → 进入最后 3 个 Transformer Block","textChars":56,"textLines":1,"bbox":[98,473,385,26]}
+{"kind":"textbox","id":"sh/365knadg","slide":11,"name":"文本框 122","text":"后续逻辑不变","textPreview":"后续逻辑不变","textChars":6,"textLines":1,"bbox":[640,479,72,15]}
+{"kind":"shape","id":"sh/g3e1cfe5","slide":11,"name":"圆角矩形 123","bbox":[40,548,690,96]}
+{"kind":"textbox","id":"sh/14n2lkvq","slide":11,"name":"文本框 124","text":"注入前后的差别","textPreview":"注入前后的差别","textChars":7,"textLines":1,"bbox":[58,560,654,15]}
+{"kind":"textbox","id":"sh/e1wja5wz","slide":11,"name":"文本框 125","text":"原版：Query 从零信息出发，先学「大概是什么」再学「具体在哪」； 增强后：起点已带类别方向，收敛路径被缩短，小器官不必等到后期才被选中。","textPreview":"原版：Query 从零信息出发，先学「大概是什么」再学「具体在哪」； 增强后：起点已带类别方向，收敛路径被缩短，小器官不必等到后期才被选中。","textChars":70,"textLines":1,"bbox":[58,581,654,57]}
+{"kind":"textbox","id":"sh/f25kjadk","slide":11,"name":"文本框 126","text":"对应的四行计算","textPreview":"对应的四行计算","textChars":7,"textLines":1,"bbox":[780,116,460,15]}
+{"kind":"shape","id":"sh/0zilozu9","slide":11,"name":"圆角矩形 127","bbox":[780,141,460,152]}
+{"kind":"textbox","id":"sh/l0r2x4vu","slide":11,"name":"文本框 128","text":"L = LN( FFN(T⁽⁰⁾) + T⁽⁰⁾ )","textPreview":"L = LN( FFN(T⁽⁰⁾) + T⁽⁰⁾ )","textChars":26,"textLines":1,"bbox":[796,153,428,32]}
+{"kind":"textbox","id":"sh/vutonyxw","slide":11,"name":"文本框 129","text":"A = Softmax( L · E_priorᵀ / √d )","textPreview":"A = Softmax( L · E_priorᵀ / √d )","textChars":32,"textLines":1,"bbox":[796,185,428,32]}
+{"kind":"textbox","id":"sh/atknetwb","slide":11,"name":"文本框 130","text":"T̃⁽⁰⁾ = LN( FFN(A·E_prior) + A·E_prior + T⁽⁰⁾ )","textPreview":"T̃⁽⁰⁾ = LN( FFN(A·E_prior) + A·E_prior + T⁽⁰⁾ )","textChars":47,"textLines":1,"bbox":[796,217,428,32]}
+{"kind":"textbox","id":"sh/xwb6p8f2","slide":11,"name":"文本框 131","text":"Q̃⁽⁰⁾ = Q_init + MLP_proj( Ê_prior )","textPreview":"Q̃⁽⁰⁾ = Q_init + MLP_proj( Ê_prior )","textChars":36,"textLines":1,"bbox":[796,249,428,32]}
+{"kind":"textbox","id":"sh/wv25g3eh","slide":11,"name":"文本框 132","text":"LN 为 LayerNorm，d 为特征维度；A 的每一行沿类别维做归一化","textPreview":"LN 为 LayerNorm，d 为特征维度；A 的每一行沿类别维做归一化","textChars":37,"textLines":1,"bbox":[780,301,460,23]}
+{"kind":"textbox","id":"sh/jydorix8","slide":11,"name":"文本框 133","text":"A 的物理含义是「这个 patch 该关注哪些类别」的软权重。 乘上 E_prior 后，图像特征被拉向与其位置相符的类别语义， 而不是均匀地吸收所有类别的描述。","textPreview":"A 的物理含义是「这个 patch 该关注哪些类别」的软权重。 乘上 E_prior 后，图像特征被拉向与其位置相符的类别语义， 而不是均匀地吸收所有类别的描述。","textChars":81,"textLines":1,"bbox":[780,340,460,99]}
+{"kind":"shape","id":"sh/ixknidwn","slide":11,"name":"任意多边形 134","bbox":[780,455,224,91]}
+{"kind":"textbox","id":"sh/50v6tsfy","slide":11,"name":"文本框 135","text":"上支路改「看到什么」","textPreview":"上支路改「看到什么」","textChars":10,"textLines":1,"bbox":[780,467,224,25]}
+{"kind":"textbox","id":"sh/kzm5knet","slide":11,"name":"文本框 136","text":"每个 patch 检索一遍类别先验，图像侧先获得语义上下文。","textPreview":"每个 patch 检索一遍类别先验，图像侧先获得语义上下文。","textChars":30,"textLines":1,"bbox":[780,492,224,52]}
+{"kind":"shape","id":"sh/z294fexo","slide":11,"name":"任意多边形 137","bbox":[1016,455,224,91]}
+{"kind":"textbox","id":"sh/y10n69g3","slide":11,"name":"文本框 138","text":"下支路改「找什么」","textPreview":"下支路改「找什么」","textChars":9,"textLines":1,"bbox":[1016,467,224,25]}
+{"kind":"textbox","id":"sh/qhofidsb","slide":11,"name":"文本框 139","text":"每个类别查询拿到解剖起点，减少从随机初值试错。","textPreview":"每个类别查询拿到解剖起点，减少从随机初值试错。","textChars":23,"textLines":1,"bbox":[1016,492,224,52]}
+{"kind":"shape","id":"sh/bixwri9w","slide":11,"name":"矩形 140","bbox":[783,568,460,72]}
+{"kind":"shape","id":"sh/cj6xknah","slide":11,"name":"任意多边形 141","bbox":[780,568,463,72]}
+{"kind":"textbox","id":"sh/dkfedsr2","slide":11,"name":"文本框 142","text":"注意：Ê_prior 需扩展到 N_q = 2C 的 Query 序列，同一类别的两个 Query 共享同一行先验。","textPreview":"注意：Ê_prior 需扩展到 N_q = 2C 的 Query 序列，同一类别的两个 Query 共享同一行先验。","textChars":58,"textLines":1,"bbox":[797,578,429,52]}
+{"kind":"textbox","id":"sh/ylofmxsn","slide":11,"name":"文本框 143","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/zmxwf29s","slide":11,"name":"文本框 144","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/0n6xonad","slide":11,"name":"文本框 145","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"image","id":"im/cv6t8ryx","slide":11,"name":"图片 102","bbox":[216,201,34,14]}
+{"kind":"image","id":"im/vq1cb6xw","slide":11,"name":"图片 103","bbox":[216,359,34,14]}
+{"kind":"image","id":"im/apsvi1gb","slide":11,"name":"图片 110","bbox":[492,201,26,14]}
+{"kind":"image","id":"im/sb29w3et","slide":11,"name":"图片 111","bbox":[492,359,26,14]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":""}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"CHAPTER 03 · IMPLEMENTATION","textShapes":16}
+{"kind":"shape","id":"sh/mxsj2hkr","slide":12,"name":"矩形 147","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/ny10vm1c","slide":12,"name":"矩形 148","bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/xsn21g3e","slide":12,"name":"矩形 149","bbox":[40,96,48,4]}
+{"kind":"textbox","id":"sh/wrelsbm9","slide":12,"name":"文本框 150","text":"CHAPTER 03 · IMPLEMENTATION","textPreview":"CHAPTER 03 · IMPLEMENTATION","textChars":27,"textLines":1,"bbox":[40,116,740,16]}
+{"kind":"textbox","id":"sh/bqlkz6lo","slide":12,"name":"文本框 151","text":"实现路径与预期收益","textPreview":"实现路径与预期收益","textChars":9,"textLines":1,"bbox":[40,144,740,72]}
+{"kind":"textbox","id":"sh/apc3q143","slide":12,"name":"文本框 152","text":"方法再好，也要落到「改哪一行、动多少参数、换来什么」这三件事上。 这一章把 ASEE 收敛成一次局部改造。","textPreview":"方法再好，也要落到「改哪一行、动多少参数、换来什么」这三件事上。 这一章把 ASEE 收敛成一次局部改造。","textChars":53,"textLines":1,"bbox":[40,234,740,73]}
+{"kind":"textbox","id":"sh/lwnm5g3q","slide":12,"name":"文本框 153","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[956,58,284,264]}
+{"kind":"shape","id":"sh/kvelwvm5","slide":12,"name":"矩形 154","bbox":[40,330,1200,1]}
+{"kind":"textbox","id":"sh/ju5k3qlk","slide":12,"name":"文本框 155","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[40,377,120,34]}
+{"kind":"textbox","id":"sh/ytw3ul4z","slide":12,"name":"文本框 156","text":"改动局部","textPreview":"改动局部","textChars":4,"textLines":1,"bbox":[160,377,260,34]}
+{"kind":"textbox","id":"sh/tk7m903m","slide":12,"name":"文本框 157","text":"只在前向传播的入口处插入一个模块，DINOv2 主干与预测头不参与改动。","textPreview":"只在前向传播的入口处插入一个模块，DINOv2 主干与预测头不参与改动。","textChars":36,"textLines":1,"bbox":[420,379,820,31]}
+{"kind":"shape","id":"sh/8jyl0vm1","slide":12,"name":"矩形 158","bbox":[40,436,1200,1]}
+{"kind":"textbox","id":"sh/cf6xs3ep","slide":12,"name":"文本框 159","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[40,481,120,34]}
+{"kind":"textbox","id":"sh/dgzel8fa","slide":12,"name":"文本框 160","text":"参数增量小","textPreview":"参数增量小","textChars":5,"textLines":1,"bbox":[160,481,260,34]}
+{"kind":"textbox","id":"sh/qdovqtwj","slide":12,"name":"文本框 161","text":"新增一个线性映射、一个轻量 MLP 与一次交叉注意力的投影，文本编码器完全冻结。","textPreview":"新增一个线性映射、一个轻量 MLP 与一次交叉注意力的投影，文本编码器完全冻结。","textChars":40,"textLines":1,"bbox":[420,483,820,31]}
+{"kind":"shape","id":"sh/rexwjyx4","slide":12,"name":"矩形 162","bbox":[40,540,1200,1]}
+{"kind":"textbox","id":"sh/03qxw3el","slide":12,"name":"文本框 163","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[40,585,120,34]}
+{"kind":"textbox","id":"sh/14zep8f6","slide":12,"name":"文本框 164","text":"收益定向","textPreview":"收益定向","textChars":4,"textLines":1,"bbox":[160,585,260,34]}
+{"kind":"textbox","id":"sh/eh8fudwv","slide":12,"name":"文本框 165","text":"预期改善集中在胆囊、胰腺两个 Dice 洼地，而不是全线均匀抬高。","textPreview":"预期改善集中在胆囊、胰腺两个 Dice 洼地，而不是全线均匀抬高。","textChars":33,"textLines":1,"bbox":[420,587,820,31]}
+{"kind":"shape","id":"sh/z2hwnixg","slide":12,"name":"矩形 166","bbox":[40,644,1200,1]}
+{"kind":"textbox","id":"sh/g7mdkjeh","slide":12,"name":"文本框 167","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/h8vedof2","slide":12,"name":"文本框 168","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/j2l0jmhk","slide":12,"name":"文本框 169","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":""}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"03 / 实现路径与预期收益","textShapes":22}
+{"kind":"shape","id":"sh/e5wny90b","slide":13,"name":"矩形 171","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/z6p4ruhw","slide":13,"name":"矩形 172","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/oby54jid","slide":13,"name":"文本框 173","text":"03 / 实现路径与预期收益","textPreview":"03 / 实现路径与预期收益","textChars":14,"textLines":1,"bbox":[40,23,520,15]}
+{"kind":"textbox","id":"sh/9c76xozy","slide":13,"name":"文本框 174","text":"改造路径：只动前向传播的一个节点","textPreview":"改造路径：只动前向传播的一个节点","textChars":16,"textLines":1,"bbox":[40,42,520,39]}
+{"kind":"shape","id":"sh/m9gn2907","slide":13,"name":"圆角矩形 175","bbox":[1118,39,122,27]}
+{"kind":"textbox","id":"sh/napovehs","slide":13,"name":"文本框 176","text":"表 1 / 改造清单","textPreview":"表 1 / 改造清单","textChars":10,"textLines":1,"bbox":[1132,45,94,15]}
+{"kind":"shape","id":"sh/4fe5sfi9","slide":13,"name":"矩形 177","bbox":[40,92,1200,1]}
+{"kind":"textbox","id":"sh/pgnmlkzu","slide":13,"name":"文本框 178","text":"三条实施原则","textPreview":"三条实施原则","textChars":6,"textLines":1,"bbox":[40,112,380,15]}
+{"kind":"textbox","id":"sh/tkj2tgfm","slide":13,"name":"文本框 179","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[40,139,16,28]}
+{"kind":"textbox","id":"sh/sja10by1","slide":13,"name":"文本框 180","text":"先离线跑通 S 与 M 的生成脚本，把 E_prior 存成张量再接入训练","textPreview":"先离线跑通 S 与 M 的生成脚本，把 E_prior 存成张量再接入训练","textChars":37,"textLines":1,"bbox":[66,139,354,60]}
+{"kind":"textbox","id":"sh/7i1krqxg","slide":13,"name":"文本框 181","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[40,207,16,28]}
+{"kind":"textbox","id":"sh/6hsjylgv","slide":13,"name":"文本框 182","text":"文本编码器与映射层先冻结，仅训练 MLP 与注意力投影，避免早期不稳定","textPreview":"文本编码器与映射层先冻结，仅训练 MLP 与注意力投影，避免早期不稳定","textChars":35,"textLines":1,"bbox":[66,207,354,60]}
+{"kind":"textbox","id":"sh/5gj2pgza","slide":13,"name":"文本框 183","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[40,275,16,28]}
+{"kind":"textbox","id":"sh/kfa1wbyp","slide":13,"name":"文本框 184","text":"保持张量形状不变，改造对下游 Block 完全透明","textPreview":"保持张量形状不变，改造对下游 Block 完全透明","textChars":25,"textLines":1,"bbox":[66,275,354,30]}
+{"kind":"shape","id":"sh/jehkn6h4","slide":13,"name":"圆角矩形 185","bbox":[40,323,380,190]}
+{"kind":"textbox","id":"sh/yd8ju1gz","slide":13,"name":"文本框 186","text":"FORWARD 伪代码","textPreview":"FORWARD 伪代码","textChars":11,"textLines":1,"bbox":[56,337,348,14]}
+{"kind":"textbox","id":"sh/pc3210fe","slide":13,"name":"文本框 187","text":"T, Q = backbone_prefix(x)","textPreview":"T, Q = backbone_prefix(x)","textChars":25,"textLines":1,"bbox":[56,359,348,28]}
+{"kind":"textbox","id":"sh/4bul8vy9","slide":13,"name":"文本框 188","text":"T = asee_patch(T, E_prior)","textPreview":"T = asee_patch(T, E_prior)","textChars":26,"textLines":1,"bbox":[56,387,348,28]}
+{"kind":"textbox","id":"sh/mxozmxwr","slide":13,"name":"文本框 189","text":"Q = Q_init + mlp(E_prior)","textPreview":"Q = Q_init + mlp(E_prior)","textChars":25,"textLines":1,"bbox":[56,415,348,28]}
+{"kind":"textbox","id":"sh/nyx0v2dw","slide":13,"name":"文本框 190","text":"Z = concat(Q, T)","textPreview":"Z = concat(Q, T)","textChars":16,"textLines":1,"bbox":[56,443,348,28]}
+{"kind":"textbox","id":"sh/oj6ho7eh","slide":13,"name":"文本框 191","text":"return head(blocks_tail(Z))","textPreview":"return head(blocks_tail(Z))","textChars":27,"textLines":1,"bbox":[56,471,348,28]}
+{"kind":"shape","id":"sh/9kfixcv2","slide":13,"name":"任意多边形 192","bbox":[40,601,380,40]}
+{"kind":"textbox","id":"sh/et4zixwf","slide":13,"name":"文本框 193","text":"伪代码仅示意改动位置与顺序，具体命名以 EoSeg 实现为准。","textPreview":"伪代码仅示意改动位置与顺序，具体命名以 EoSeg 实现为准。","textChars":31,"textLines":1,"bbox":[40,614,380,26]}
+{"kind":"shape","id":"sh/0vmhknel","slide":13,"name":"圆角矩形 195","bbox":[463,544,777,100]}
+{"kind":"shape","id":"sh/1wfytsf6","slide":13,"name":"任意多边形 196","bbox":[463,544,777,100]}
+{"kind":"textbox","id":"sh/yp8zuhwj","slide":13,"name":"文本框 197","text":"改造边界","textPreview":"改造边界","textChars":4,"textLines":1,"bbox":[481,558,741,15]}
+{"kind":"textbox","id":"sh/jqh03md4","slide":13,"name":"文本框 198","text":"全表 7 项里只有 4 项需要写代码，且全部集中在同一条数据通路上； 消融实验只要逐个关掉上支路、下支路，就能定位收益来自「看图」还是「找类」。","textPreview":"全表 7 项里只有 4 项需要写代码，且全部集中在同一条数据通路上； 消融实验只要逐个关掉上支路、下支路，就能定位收益来自「看图」还是「找类」。","textChars":72,"textLines":1,"bbox":[481,579,741,63]}
+{"kind":"textbox","id":"sh/q98v21c3","slide":13,"name":"文本框 199","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/bahcb6do","slide":13,"name":"文本框 200","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/cbqd4ru9","slide":13,"name":"文本框 201","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":""}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"CONCLUSION","textShapes":18}
+{"kind":"shape","id":"sh/t87mdgfq","slide":14,"name":"矩形 203","bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/87ylkbyl","slide":14,"name":"矩形 204","bbox":[0,0,1280,8]}
+{"kind":"textbox","id":"sh/7mp4b6x0","slide":14,"name":"文本框 205","text":"CONCLUSION","textPreview":"CONCLUSION","textChars":10,"textLines":1,"bbox":[150,74,980,15]}
+{"kind":"textbox","id":"sh/mlg3i1gf","slide":14,"name":"文本框 206","text":"瓶颈不在解码器，在 Query 的起点","textPreview":"瓶颈不在解码器，在 Query 的起点","textChars":19,"textLines":1,"bbox":[150,103,980,78]}
+{"kind":"shape","id":"sh/pcn21cfm","slide":14,"name":"矩形 207","bbox":[150,199,72,3]}
+{"kind":"shape","id":"sh/obel8ry1","slide":14,"name":"任意多边形 208","bbox":[150,216,980,86]}
+{"kind":"textbox","id":"sh/ehsjidwz","slide":14,"name":"文本框 209","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[150,231,74,38]}
+{"kind":"textbox","id":"sh/fi10bidk","slide":14,"name":"文本框 210","text":"缺口定位","textPreview":"缺口定位","textChars":4,"textLines":1,"bbox":[224,231,150,31]}
+{"kind":"textbox","id":"sh/0ju1kne5","slide":14,"name":"文本框 211","text":"问题出在 Query 的初始状态缺乏解剖锚点，而不是编码器的表征能力不够。","textPreview":"问题出在 Query 的初始状态缺乏解剖锚点，而不是编码器的表征能力不够。","textChars":37,"textLines":1,"bbox":[374,231,756,32]}
+{"kind":"shape","id":"sh/1k3idsvq","slide":14,"name":"任意多边形 212","bbox":[150,302,980,86]}
+{"kind":"textbox","id":"sh/2lcjmxwv","slide":14,"name":"文本框 213","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[150,317,74,38]}
+{"kind":"textbox","id":"sh/nml0f2dg","slide":14,"name":"文本框 214","text":"方法落点","textPreview":"方法落点","textChars":4,"textLines":1,"bbox":[224,317,150,31]}
+{"kind":"textbox","id":"sh/onu1o7e1","slide":14,"name":"文本框 215","text":"把文本语义 S 与共现概率 CP 合成 E_prior：上支路增强图像特征，下支路初始化查询。","textPreview":"把文本语义 S 与共现概率 CP 合成 E_prior：上支路增强图像特征，下支路初始化查询。","textChars":47,"textLines":1,"bbox":[374,317,756,32]}
+{"kind":"shape","id":"sh/po3ihcvm","slide":14,"name":"任意多边形 216","bbox":[150,388,980,86]}
+{"kind":"shape","id":"sh/ip8zatwr","slide":14,"name":"任意多边形 217","bbox":[150,388,980,86]}
+{"kind":"textbox","id":"sh/3qh03ydc","slide":14,"name":"文本框 218","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[150,403,74,38]}
+{"kind":"textbox","id":"sh/7uxgbut4","slide":14,"name":"文本框 219","text":"预期收益","textPreview":"预期收益","textChars":4,"textLines":1,"bbox":[224,403,150,31]}
+{"kind":"textbox","id":"sh/6tof2pcj","slide":14,"name":"文本框 220","text":"改善定向落在胆囊与胰腺两个 Dice 洼地，主干 Block 与预测头保持原样。","textPreview":"改善定向落在胆囊与胰腺两个 Dice 洼地，主干 Block 与预测头保持原样。","textChars":40,"textLines":1,"bbox":[374,403,756,32]}
+{"kind":"shape","id":"sh/twfyd4ba","slide":14,"name":"圆角矩形 221","bbox":[150,508,549,118]}
+{"kind":"textbox","id":"sh/8v6x4zup","slide":14,"name":"文本框 222","text":"下一步","textPreview":"下一步","textChars":3,"textLines":1,"bbox":[170,524,509,15]}
+{"kind":"textbox","id":"sh/j6dg7ut8","slide":14,"name":"文本框 223","text":"按支路做消融：只开上支路 / 只开下支路 / 全开，确认收益来源， 并进一步观察 S 与 CP 各自的贡献。","textPreview":"按支路做消融：只开上支路 / 只开下支路 / 全开，确认收益来源， 并进一步观察 S 与 CP 各自的贡献。","textChars":54,"textLines":1,"bbox":[170,547,509,59]}
+{"kind":"shape","id":"sh/y54fypcn","slide":14,"name":"圆角矩形 224","bbox":[723,508,407,118]}
+{"kind":"textbox","id":"sh/lsfy94by","slide":14,"name":"文本框 225","text":"一句话","textPreview":"一句话","textChars":3,"textLines":1,"bbox":[743,524,367,15]}
+{"kind":"textbox","id":"sh/krmx0zud","slide":14,"name":"文本框 226","text":"不改主干，只给 Query 一句「从哪开始找」的先验。","textPreview":"不改主干，只给 Query 一句「从哪开始找」的先验。","textChars":27,"textLines":1,"bbox":[743,547,367,30]}
+{"kind":"textbox","id":"sh/32hgjetc","slide":14,"name":"文本框 227","text":"ASEE · 解剖语义增强编码","textPreview":"ASEE · 解剖语义增强编码","textChars":15,"textLines":1,"bbox":[40,665,146,16]}
+{"kind":"textbox","id":"sh/i18fa9cr","slide":14,"name":"文本框 228","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1188,664,19,18]}
+{"kind":"textbox","id":"sh/07id4ba9","slide":14,"name":"文本框 229","text":" / 14","textPreview":"/ 14","textChars":5,"textLines":1,"bbox":[1207,664,33,18]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":""}

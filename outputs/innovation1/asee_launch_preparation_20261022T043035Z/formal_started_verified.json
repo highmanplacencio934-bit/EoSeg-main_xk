@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-10-22T04:47:28.957535+00:00",
+  "state": "running",
+  "training_pid": 3981715,
+  "supervisor_pid": 3981714,
+  "gpu_process_memory_mib": 19434,
+  "environment": {
+    "HF_HUB_OFFLINE": "1",
+    "TORCH_HOME": "/Disk/HDD/Sk/.cache/torch",
+    "TIMM_USE_OLD_CACHE": "1",
+    "WANDB_MODE": "offline"
+  },
+  "has_training_batch_log": true,
+  "parsed_config_verified": true,
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z",
+  "manifest": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/run_manifest.json"
+}

@@ -1,0 +1,12 @@
+[
+  "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+  "-u",
+  "-m",
+  "scripts.build_synapse_asee_prior",
+  "--label-map-json",
+  "priors/synapse_label_map.verified.json",
+  "--encoder-path",
+  "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/pretrained/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b",
+  "--output",
+  "priors/synapse_asee_v1.pt"
+]

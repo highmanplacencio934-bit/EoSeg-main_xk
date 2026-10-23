@@ -1,0 +1,9 @@
+{
+  "state": "completed",
+  "supervisor_pid": 3981714,
+  "started_at_utc": "2026-10-22T04:45:51.966172+00:00",
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z",
+  "training_pid": 3981715,
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-22T19:48:36.733894+00:00"
+}

@@ -1,0 +1,83 @@
+test_bad_prior_mapping_shape_split_and_nonfinite_rejected (test_asee_innovation.ASEETests.test_bad_prior_mapping_shape_split_and_nonfinite_rejected) ... ok
+test_checkpoint_provenance_roundtrip_and_wrong_prior_rejected (test_asee_innovation.ASEETests.test_checkpoint_provenance_roundtrip_and_wrong_prior_rejected) ... ok
+test_common_optimizer_assigns_asee_to_original_head_schedule (test_asee_innovation.ASEETests.test_common_optimizer_assigns_asee_to_original_head_schedule) ... /Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/utilities/parsing.py:213: Attribute 'network' is an instance of `nn.Module` and is already saved during checkpointing. It is recommended to ignore them using `self.save_hyperparameters(ignore=['network'])`.
+ok
+test_cooccurrence_matches_reference_and_uses_only_requested_slices (test_asee_innovation.ASEETests.test_cooccurrence_matches_reference_and_uses_only_requested_slices) ... ok
+test_disabled_asee_is_exact_baseline_in_eval_and_train (test_asee_innovation.ASEETests.test_disabled_asee_is_exact_baseline_in_eval_and_train) ... ok
+test_freeze_and_ablation_paths (test_asee_innovation.ASEETests.test_freeze_and_ablation_paths) ... ok
+test_innovation_configs_preserve_all_unstudied_settings (test_asee_innovation.ASEETests.test_innovation_configs_preserve_all_unstudied_settings) ... ok
+test_plan_formula_attention_and_gradients (test_asee_innovation.ASEETests.test_plan_formula_attention_and_gradients) ... ok
+test_prefix_preserved_and_injection_occurs_once_before_tail (test_asee_innovation.ASEETests.test_prefix_preserved_and_injection_occurs_once_before_tail) ... ok
+test_reference_variant_matches_supplied_reference (test_asee_innovation.ASEETests.test_reference_variant_matches_supplied_reference) ... ok
+test_unverified_mapping_and_changed_manifest_fail_before_encoding (test_asee_innovation.ASEETests.test_unverified_mapping_and_changed_manifest_fail_before_encoding) ... ok
+test_archival_failure_does_not_abort_fit (test_baseline_startup.ArchivalTests.test_archival_failure_does_not_abort_fit) ... ok
+test_disabled_logger (test_baseline_startup.ArchivalTests.test_disabled_logger) ... ok
+test_missing_ignore_and_reference_exclusion (test_baseline_startup.ArchivalTests.test_missing_ignore_and_reference_exclusion) ... ok
+test_custom_fit_with_no_logger (test_baseline_startup.CLIRegressionTests.test_custom_fit_with_no_logger) ... ok
+test_dino_import_does_not_import_rvsa (test_baseline_startup.CLIRegressionTests.test_dino_import_does_not_import_rvsa) ... ok
+test_independent_test_compiles_only_forward_and_restores_it (test_baseline_startup.CLIRegressionTests.test_independent_test_compiles_only_forward_and_restores_it) ... ok
+test_independent_test_default_stays_eager (test_baseline_startup.CLIRegressionTests.test_independent_test_default_stays_eager) ... ok
+test_independent_test_rejects_conflicting_compile_flags (test_baseline_startup.CLIRegressionTests.test_independent_test_rejects_conflicting_compile_flags) ... ok
+test_real_cli_checkpoint_schema_roundtrip (test_baseline_startup.CLIRegressionTests.test_real_cli_checkpoint_schema_roundtrip) ... /Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/cli.py:553: LightningCLI's args parameter is intended to run from within Python like if it were from the command line. To prevent mistakes it is not recommended to provide both args and command line arguments, got: sys.argv[1:]=['discover', '-s', 'tests', '-v'], args=['--config', '/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/configs/synapse/vit_query_mul_scale_fusion.yaml', '--trainer.accelerator=cpu', '--trainer.precision=32-true', '--trainer.logger=false', '--trainer.enable_model_summary=false'].
+Seed set to 0
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/cli.py:596: 
+    By default only one JsonargparseDeprecationWarning per type is shown. To see all warnings set environment
+    variable JSONARGPARSE_DEPRECATION_WARNINGS=all and to disable the warnings set
+    JSONARGPARSE_DEPRECATION_WARNINGS=off.
+
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/cli.py:596: 
+    ``ArgumentParser.add_instantiator`` was deprecated in v4.49.0 and will be removed in v5.0.0. Use the global
+    function ``jsonargparse.add_instantiator`` instead.
+
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/cli.py:612: 
+    ``instantiate_classes`` was deprecated in v4.49.0 and will be removed in v5.0.0. Instead use ``instantiate``.
+
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/cli.py:590: 
+    skip_none parameter was deprecated in v4.49.0 and will be removed in v5.0.0. Instead use skip_unset.
+
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/cli.py:553: LightningCLI's args parameter is intended to run from within Python like if it were from the command line. To prevent mistakes it is not recommended to provide both args and command line arguments, got: sys.argv[1:]=['discover', '-s', 'tests', '-v'], args=['test', '--config', '/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/configs/synapse/vit_query_mul_scale_fusion.yaml', '--trainer.accelerator=cpu', '--trainer.precision=32-true', '--trainer.logger=false', '--trainer.enable_model_summary=false', '--ckpt_path', '/tmp/tmpd4sg70d6/model.ckpt', '--compile_test'].
+Seed set to 0
+ok
+test_active_test_files_still_required (test_synapse_splits.SynapseSplitTests.test_active_test_files_still_required) ... ok
+test_active_train_files_still_required (test_synapse_splits.SynapseSplitTests.test_active_train_files_still_required) ... ok
+test_case_leakage_rejected_before_file_loading (test_synapse_splits.SynapseSplitTests.test_case_leakage_rejected_before_file_loading) ... ok
+test_datamodule_fit_then_test_rechecks_files (test_synapse_splits.SynapseSplitTests.test_datamodule_fit_then_test_rechecks_files) ... INFO:root:Synapse fixed split (fit): {'train_slices': 1, 'train_cases': ['case0001'], 'test_cases': ['case0002'], 'case_overlap': []}
+ok
+test_datamodule_fit_without_test_directory (test_synapse_splits.SynapseSplitTests.test_datamodule_fit_without_test_directory) ... INFO:root:Synapse fixed split (fit): {'train_slices': 1, 'train_cases': ['case0001'], 'test_cases': ['case0002'], 'case_overlap': []}
+ok
+test_datamodule_test_without_train_directory (test_synapse_splits.SynapseSplitTests.test_datamodule_test_without_train_directory) ... INFO:root:Synapse fixed split (test): {'train_slices': 1, 'train_cases': ['case0001'], 'test_cases': ['case0002'], 'case_overlap': []}
+ok
+test_duplicate_manifest_rejected (test_synapse_splits.SynapseSplitTests.test_duplicate_manifest_rejected) ... ok
+test_empty_split_rejected (test_synapse_splits.SynapseSplitTests.test_empty_split_rejected) ... ok
+test_invalid_entry_rejected (test_synapse_splits.SynapseSplitTests.test_invalid_entry_rejected) ... ok
+test_missing_file_rejected (test_synapse_splits.SynapseSplitTests.test_missing_file_rejected) ... ok
+test_overlap_still_checked_without_inactive_files (test_synapse_splits.SynapseSplitTests.test_overlap_still_checked_without_inactive_files) ... ok
+test_paths_are_project_relative (test_synapse_splits.SynapseSplitTests.test_paths_are_project_relative) ... ok
+test_test_files_without_train_directory (test_synapse_splits.SynapseSplitTests.test_test_files_without_train_directory) ... ok
+test_train_files_without_test_directory (test_synapse_splits.SynapseSplitTests.test_train_files_without_test_directory) ... ok
+test_valid_fixed_split (test_synapse_splits.SynapseSplitTests.test_valid_fixed_split) ... ok
+test_failure_restores_modes_and_rng (test_synapse_test_selection.LightningSelectionTests.test_failure_restores_modes_and_rng) ... ok
+test_small_fit_saves_only_best_and_last (test_synapse_test_selection.LightningSelectionTests.test_small_fit_saves_only_best_and_last) ... GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+Loading `train_dataloader` to estimate number of stepping batches.
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/trainer/connectors/data_connector.py:434: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=15` in the `DataLoader` to improve performance.
+INFO:root:Synapse test-selected checkpoints and CSV: /tmp/tmp9jtmdkll/synapse_test_selection/20261021T213746Z_1e82b0b3
+INFO:root:[TEST SELECTION] epoch=3 Dice=0.800000 HD95=2.000000 best_epoch=3 best=0.800000
+INFO:root:[TEST SELECTION] epoch=4 Dice=0.600000 HD95=2.000000 best_epoch=3 best=0.800000
+`Trainer.fit` stopped: `max_epochs=4` reached.
+ok
+test_csv_header_written_once (test_synapse_test_selection.SelectionPolicyTests.test_csv_header_written_once) ... ok
+test_equal_case_weighted_organ_means (test_synapse_test_selection.SelectionPolicyTests.test_equal_case_weighted_organ_means) ... ok
+test_exact_final_fifty_epochs (test_synapse_test_selection.SelectionPolicyTests.test_exact_final_fifty_epochs) ... ok
+test_incomplete_duplicate_and_nonfinite_cases_rejected (test_synapse_test_selection.SelectionPolicyTests.test_incomplete_duplicate_and_nonfinite_cases_rejected) ... ok
+test_invalid_window (test_synapse_test_selection.SelectionPolicyTests.test_invalid_window) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 17.638s
+
+OK

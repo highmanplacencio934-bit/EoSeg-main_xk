@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-22T04:32:16.160813+00:00",
+  "hostname": "5090",
+  "python": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+  "torch": "2.13.0+cu132",
+  "cuda": "13.2",
+  "cuda_available": true,
+  "gpu_query": "name, driver_version, memory.total [MiB], memory.free [MiB]\nNVIDIA GeForce RTX 5090 D, 580.178.04, 32607 MiB, 32089 MiB\n",
+  "gpu_processes": "pid, process_name, used_gpu_memory [MiB]\n",
+  "disk_free_bytes": 1188909637632,
+  "baseline_status": {
+    "state": "completed",
+    "supervisor_pid": 3477677,
+    "training_pid": 3477678,
+    "started_at_utc": "2026-10-21T13:26:35.076977+00:00",
+    "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-22T03:44:09.035762+00:00"
+  }
+}

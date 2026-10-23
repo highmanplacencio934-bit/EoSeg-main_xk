@@ -1,0 +1,78 @@
+{
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "class_names": [
+    "Aorta",
+    "Gallbladder",
+    "Left Kidney",
+    "Right Kidney",
+    "Liver",
+    "Pancreas",
+    "Spleen",
+    "Stomach"
+  ],
+  "label_mapping_sha256": "1a2e2d4675e44ce02f8985d1fd00b99c65cfcee32a5001f065a8053943448345",
+  "text_encoder": {
+    "requested_model": "emilyalsentzer/Bio_ClinicalBERT",
+    "identity_verification": "Local files hashed; verify checkpoint origin before use",
+    "path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/pretrained/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b",
+    "pooling": "last_hidden_state_CLS",
+    "local_files_only": true,
+    "max_length": 512,
+    "file_sha256": {
+      "LICENSE": "9e8f42111a19340d74194466063143fbc4294b50dd26ad5c60a06dcaeafa99d2",
+      "README.md": "bf666c7d32897296d028b655fdc0a3f16d7309cc69af11e93d3473218c2b00f2",
+      "config.json": "4a470c65801cab55fc1cc5854aa2bfebc18428ac1989777e9acefc5a9f0c1444",
+      "pytorch_model.bin": "a18c4c260fb5c0978b86658615106d5617050b5f14dac6ceb5e0d8beb2f9f719",
+      "source_manifest.json": "b91689857d10a2190fc7fadad1a0d1ee8a24f7cd356aff6ba7b7b919a009192f",
+      "vocab.txt": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02"
+    }
+  },
+  "text_shape": [
+    8,
+    768
+  ],
+  "conditional_shape": [
+    8,
+    8
+  ],
+  "class_counts": [
+    1215,
+    228,
+    543,
+    547,
+    911,
+    430,
+    532,
+    594
+  ],
+  "num_samples": 2211,
+  "train_cases": [
+    "case0005",
+    "case0006",
+    "case0007",
+    "case0009",
+    "case0010",
+    "case0021",
+    "case0023",
+    "case0024",
+    "case0026",
+    "case0027",
+    "case0028",
+    "case0030",
+    "case0031",
+    "case0033",
+    "case0034",
+    "case0037",
+    "case0039",
+    "case0040"
+  ]
+}

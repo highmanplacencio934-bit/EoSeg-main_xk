@@ -1,0 +1,239 @@
+{
+  "_id": "621ffdc136468d709f17ab0d",
+  "id": "emilyalsentzer/Bio_ClinicalBERT",
+  "private": false,
+  "pipeline_tag": "fill-mask",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "bert",
+    "fill-mask",
+    "en",
+    "arxiv:1904.03323",
+    "arxiv:1901.08746",
+    "license:mit",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "downloads": 2251550,
+  "likes": 449,
+  "modelId": "emilyalsentzer/Bio_ClinicalBERT",
+  "author": "emilyalsentzer",
+  "sha": "d5892b39a4adaed74b92212a44081509db72f87b",
+  "lastModified": "2024-12-03T20:22:45.000Z",
+  "gated": false,
+  "disabled": false,
+  "mask_token": "[MASK]",
+  "widgetData": [
+    {
+      "text": "Paris is the [MASK] of France."
+    },
+    {
+      "text": "The goal of life is [MASK]."
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "model_type": "bert"
+  },
+  "cardData": {
+    "language": "en",
+    "tags": [
+      "fill-mask"
+    ],
+    "license": "mit"
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModel"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "ae8c63daedbd4206d7d40126955d4e6ab1c80f8f",
+      "size": 391
+    },
+    {
+      "rfilename": "LICENSE",
+      "blobId": "3f6e21d43b8fef0a1292b9af670cbaaa737ab5c6",
+      "size": 1071
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "776f9f9a00635e9640f3fdb3ae2ac02514badf9d",
+      "size": 2681
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "7803f5e6d2057cb1927d283bde1def0ea3862d48",
+      "size": 385
+    },
+    {
+      "rfilename": "flax_model.msgpack",
+      "blobId": "f9306d00de42766b0f0d944c92eac8fe7a492540",
+      "size": 433248237,
+      "lfs": {
+        "sha256": "23c147c8e9394cd9d9d1849e0b09bc1f75da9a7b4c1a69612e5361a3eef806b4",
+        "size": 433248237,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "graph.pbtxt",
+      "blobId": "1e61d49fded03c358dde6e236826b50f95e79400",
+      "size": 9609436
+    },
+    {
+      "rfilename": "model.ckpt-150000.data-00000-of-00001",
+      "blobId": "da687d29fd0fc3187a80619face7db698c8988f0",
+      "size": 1307195216,
+      "lfs": {
+        "sha256": "4eaf6d2ad94f501933b1799f207fe747e9c27d8b0e5e1a67144bda6dee5c04fb",
+        "size": 1307195216,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.ckpt-150000.index",
+      "blobId": "cd707e177582e4d7a24a1345542f7c9143d0a068",
+      "size": 23350
+    },
+    {
+      "rfilename": "model.ckpt-150000.meta",
+      "blobId": "e48a3ca541916b6886d109aede4e0ed692fda14e",
+      "size": 4073020
+    },
+    {
+      "rfilename": "pytorch_model.bin",
+      "blobId": "84fb02bb328be421353c9f6492f8b02060b25595",
+      "size": 435778770,
+      "lfs": {
+        "sha256": "a18c4c260fb5c0978b86658615106d5617050b5f14dac6ceb5e0d8beb2f9f719",
+        "size": 435778770,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "tf_model.h5",
+      "blobId": "ee77a97eb80c868f382715b9701482b52924f501",
+      "size": 526681584,
+      "lfs": {
+        "sha256": "28a06cf7d31bf659ed8eddf6f77394306a1e0a075c3ee827debaa1004b6579ec",
+        "size": 526681584,
+        "pointerSize": 134
+      }
+    },
+    {
+      "rfilename": "vocab.txt",
+      "blobId": "2ea941cc79a6f3d7985ca6991ef4f67dad62af04",
+      "size": 213450
+    }
+  ],
+  "spaces": [
+    "embedl/hfviewer",
+    "AnimaLab/bias-test-gpt-pairs",
+    "emilylearning/spurious_correlation_evaluation",
+    "emanforhelp/model-pulse",
+    "danielhajialigol/DRGCoder",
+    "ICML2022/selection_bias_induced_spurious_correlations",
+    "Tej3/ECG_Classification",
+    "Meshari21/AI_Project",
+    "invincible-jha/MentalHealthVocalBiomarkers",
+    "archis99/clinical-trial-prediction",
+    "shuhengc/MED-COPILOT",
+    "anonymousauthorsanonymous/spurious",
+    "AndrewMetaBlock/emilyalsentzer-Bio_ClinicalBERT",
+    "Singularity666/RadiXGPT_",
+    "aminghias/text_analytics_project",
+    "anon4757/BiasTestGPT",
+    "waghib/RAG-for-Diagnostic-Reasoning-for-Clinical-Notes",
+    "wafaaGamal/medical-specialty-ai-v2",
+    "sasidhara123/biomed-scholar-api",
+    "sasidhara123/maverick-ai-bot",
+    "Osafobz/clinical-triage-classifier",
+    "carisackc/clinicalnote",
+    "jeffboudier/emilyalsentzer-Bio_ClinicalBERT",
+    "mzehnder/better-space",
+    "zhangyichao/emilyalsentzer-Bio_ClinicalBERT",
+    "aim9061/sentiment-analysis",
+    "Yossefahmed68/emilyalsentzer-Bio_ClinicalBERT",
+    "gabeacardenas/emilyalsentzer-Bio_ClinicalBERT2",
+    "gabeacardenas/emilyalsentzer-Bio_ClinicalBERT3",
+    "gabeacardenas/emilyalsentzer-Bio_ClinicalBERT",
+    "Singularity666/RadiXGPT_v2",
+    "sanmoy27/testapp",
+    "sanmoy27/test_app",
+    "rjiang12/bias-test-gpt",
+    "rjiang12/bias-test-gpt-breadcrumbs",
+    "rjiang12/bias-test-gpt-breadcrumbsV2",
+    "antjim101/emilyalsentzer-Bio_ClinicalBERT",
+    "mschetel/emilyalsentzer-Bio_ClinicalBERT",
+    "Anon3365/BiasTestGPT",
+    "JaganathC/emilyalsentzer-Bio_ClinicalBERT",
+    "RadiantLabs/emilyalsentzer-Bio_ClinicalBERT",
+    "noequal/clinical_classifier",
+    "FPRT/SurgerySort",
+    "arjunascagnetto/gpt2test01",
+    "reachoutmhc/gradio_emilyalsentzer-Bio_ClinicalBERT",
+    "reachoutmhc/emilyalsentzer-Bio_ClinicalBERT",
+    "elliealbertson/identifying_pregnancy_clinical_notes",
+    "honourablewise1/emilyalsentzer-Bio_ClinicalBERT",
+    "aremtech/emilyalsentzer-Bio_ClinicalBERT",
+    "mschumar/emilyalsentzer-Bio_ClinicalBERT",
+    "prasannab2001/llm-droo",
+    "PhoenixBomb/TestChatwiththeDoc",
+    "Nbanks4/emilyalsentzer-Bio_ClinicalBERT",
+    "danishmustafa86/bloodguard",
+    "vbts/emilyalsentzer-Bio_ClinicalBERT",
+    "brandonvalenciaco/emilyalsentzer-Bio_ClinicalBERT",
+    "Haitham196/emilyalsentzer-Bio_ClinicalBERT",
+    "srinivasbt/hf_medical_model1",
+    "peachfawn/trial_matching_system",
+    "srinivasbt/hf_medical_model2",
+    "srinivasbt/hf_medical_model3",
+    "BINAII/Medical_Assistant",
+    "BINAII/Mini_Medical_Assistant",
+    "mohanjebaraj/AutoRCM",
+    "kamakshiiiiii/chat",
+    "S0umya/canceropinion.ai",
+    "sabarinath-jsn/icd-coding-app",
+    "Syed-Burhan/RAG",
+    "hackergeek98/emilyalsentzer-Bio_ClinicalBERT",
+    "saveendinuwara/IntergraBNER",
+    "karthikvasa30/gradio-bioclinicalbert",
+    "Mathan2004/clip",
+    "asthra24/multimodalsymptomanalysis",
+    "keerthii05/Treatment_Suggestor",
+    "MohammadArif/Medical_chatBot",
+    "khalednabawi11/Medical-Chatbot-Apollo",
+    "khalednabawi11/Med-Chatbot-API",
+    "Tingxuan1/PeskaVLP",
+    "isana25/DoctorTwin",
+    "bitphonix/MediQuery-AI",
+    "grasant/fhirflame",
+    "theaniketgiri/synthex",
+    "gokul2cid/medicode",
+    "zhangju2023/aignosis",
+    "tigrica007/template_model_app",
+    "Phoenixammu2105/medical-coder-ai",
+    "Mustafa-tech1998/gardiovsionAI",
+    "imogie/Pediatric_Chatbot",
+    "prism-initiative/deater-medical-rag",
+    "Preetham22/medi-llm",
+    "aignosis/aignosis",
+    "Fredaaaaaa/severity",
+    "duuccan23/medical_qa",
+    "atulyamm/ner_model",
+    "priyanshukr12/healthbert-classifier",
+    "ArtemisAI/clinical-trial-screening",
+    "tariuntari/ai-gp-doctor",
+    "Nourhenem/medical-agent",
+    "Nourhenem/pipeline2",
+    "NerVas/AI4HC"
+  ],
+  "createdAt": "2022-03-02T23:29:05.000Z",
+  "usedStorage": 4132887444
+}

@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan_smoke/20261022T043730Z/synapse_test_selection/20261022T043746Z_dd7d8d66/best_test.ckpt",
+  "checkpoint_epoch_zero_based": 0,
+  "tensor_keys_restored_exactly": 417,
+  "metadata_matches": true,
+  "prior_sha256": "eceb52e294151028be69433d628182a317ef707dd8e5da927b69149eb89232ff",
+  "asee_parameters": 7360768,
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "train_steps": [
+    {
+      "global_step_before_update": 0,
+      "finite_unscaled_gradients": false,
+      "nonfinite_names": [
+        "network.encoder.backbone.blocks.22.mlp.fc2.weight"
+      ],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 65536.0,
+      "loss": 11.243197441101074,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 0,
+      "actual_optimizer_updates": 0
+    },
+    {
+      "global_step_before_update": 1,
+      "finite_unscaled_gradients": true,
+      "nonfinite_names": [],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 32768.0,
+      "loss": 11.276498794555664,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 401,
+      "actual_optimizer_updates": 1
+    },
+    {
+      "global_step_before_update": 2,
+      "finite_unscaled_gradients": true,
+      "nonfinite_names": [],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 32768.0,
+      "loss": 11.566375732421875,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 401,
+      "actual_optimizer_updates": 2
+    },
+    {
+      "global_step_before_update": 3,
+      "finite_unscaled_gradients": true,
+      "nonfinite_names": [],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 32768.0,
+      "loss": 11.443977355957031,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 401,
+      "actual_optimizer_updates": 3
+    },
+    {
+      "global_step_before_update": 4,
+      "finite_unscaled_gradients": true,
+      "nonfinite_names": [],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 32768.0,
+      "loss": 10.9482421875,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 401,
+      "actual_optimizer_updates": 4
+    },
+    {
+      "global_step_before_update": 5,
+      "finite_unscaled_gradients": true,
+      "nonfinite_names": [],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 32768.0,
+      "loss": 11.209831237792969,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 401,
+      "actual_optimizer_updates": 5
+    },
+    {
+      "global_step_before_update": 6,
+      "finite_unscaled_gradients": true,
+      "nonfinite_names": [],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 32768.0,
+      "loss": 11.355438232421875,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 401,
+      "actual_optimizer_updates": 6
+    },
+    {
+      "global_step_before_update": 7,
+      "finite_unscaled_gradients": true,
+      "nonfinite_names": [],
+      "gradient_tensors": 401,
+      "asee_gradient_tensors": 28,
+      "scaler_before_update": 32768.0,
+      "loss": 10.838813781738281,
+      "scaler": 32768.0,
+      "optimizer_state_entries": 401,
+      "actual_optimizer_updates": 7
+    }
+  ],
+  "test_cases": 12,
+  "peak_allocated_bytes": 18578492928,
+  "peak_reserved_bytes": 19608371200,
+  "dynamo_counters": {
+    "frames": {
+      "total": 69,
+      "ok": 62
+    },
+    "unimplemented": {
+      "Attempt to trace generator\n  Explanation: Generators cannot be compiled directly with `torch.compile`.\n  Hint: Call a generator from inside of a non-generator Python function and compile that function instead.\n  Hint: This graph break is fundamental - it is unlikely that Dynamo will ever be able to trace through your code. Consider finding a workaround.\n\n  Developer debug context: \n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0003.html": 4,
+      "Skip inlining `torch.compiler.disable()`d function\n  Explanation: Skip inlining function <function MaskClassificationLoss.forward at 0x7aea0402d120> since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function MaskClassificationLoss.forward at 0x7aea0402d120>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0099.html": 2,
+      "Skip inlining `torch.compiler.disable()`d function\n  Explanation: Skip inlining function <function MaskClassificationLoss.forward at 0x7aea0402d120> since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function MaskClassificationLoss.forward at 0x7aea0402d120>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0099.html\n\n*** While handling this graph break, another graph break occurred: ***\n\ngraph break in loop\n  Explanation: torch.compile detected a graph break in a for/while loop. Skipping the frame and falling back to eager, as graph breaks in loops are not supported.\n  Hint: This graph break may have been caused by an earlier graph break. Resolving the earlier graph break may resolve this one.\n\n  Developer debug context: frame skipped: torch_dynamo_resume_in_training_step_at_182 (/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/training/lightning_module.py line 182)\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb7000.html": 1,
+      "Skip calling `torch.compiler.disable()`d function\n  Explanation: Skip calling function `<function LightningModule.log at 0x7aea0402c0e0>` since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function LightningModule.log at 0x7aea0402c0e0>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0098.html": 1,
+      "Skip calling `torch.compiler.disable()`d function\n  Explanation: Skip calling function `<function LightningModule.log at 0x7aea0402c0e0>` since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function LightningModule.log at 0x7aea0402c0e0>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0098.html\n\n*** While handling this graph break, another graph break occurred: ***\n\ngraph break in loop\n  Explanation: torch.compile detected a graph break in a for/while loop. Skipping the frame and falling back to eager, as graph breaks in loops are not supported.\n  Hint: This graph break may have been caused by an earlier graph break. Resolving the earlier graph break may resolve this one.\n\n  Developer debug context: frame skipped: loss_total (/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/training/mask_classification_loss.py line 99)\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb7000.html": 1,
+      "Skip inlining `torch.compiler.disable()`d function\n  Explanation: Skip inlining function <function MaskClassificationLoss.forward at 0x7aea0402d120> since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function MaskClassificationLoss.forward at 0x7aea0402d120>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0099.html\n\n*** While handling this graph break, another graph break occurred: ***\n\ngraph break in loop\n  Explanation: torch.compile detected a graph break in a for/while loop. Skipping the frame and falling back to eager, as graph breaks in loops are not supported.\n  Hint: This graph break may have been caused by an earlier graph break. Resolving the earlier graph break may resolve this one.\n\n  Developer debug context: frame skipped: training_step (/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/training/lightning_module.py line 179)\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb7000.html": 1
+    },
+    "graph_break": {
+      "Failed to trace builtin operator\n  Explanation: Dynamo does not know how to trace builtin operator `print` with argument types ['str'] (has_kwargs False)\n  Hint: Avoid calling builtin `print` with argument types ['str']. Consider using an equivalent alternative function/method to `print`.\n  Hint: If you are attempting to call a logging function (e.g. `print`), you can try adding it to `torch._dynamo.config.reorderable_logging_functions`.\n  Hint: Please report an issue to PyTorch.\n\n  Developer debug context: builtin print [<class 'torch._dynamo.variables.misc.StringFormatVariable'>] False\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0059.html": 1,
+      "Failed to trace builtin operator\n  Explanation: Dynamo does not know how to trace builtin operator `print` with argument types ['str'] (has_kwargs False)\n  Hint: Avoid calling builtin `print` with argument types ['str']. Consider using an equivalent alternative function/method to `print`.\n  Hint: If you are attempting to call a logging function (e.g. `print`), you can try adding it to `torch._dynamo.config.reorderable_logging_functions`.\n  Hint: Please report an issue to PyTorch.\n\n  Developer debug context: builtin print [<class 'torch._dynamo.variables.constant.ConstantVariable'>] False\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0059.html": 1
+    },
+    "stats": {
+      "calls_captured": 1422,
+      "unique_graphs": 3
+    },
+    "aot_autograd": {
+      "total": 3,
+      "autograd_cache_hit": 2,
+      "ok": 3,
+      "autograd_cache_miss": 1,
+      "autograd_cache_saved": 1
+    },
+    "inductor": {
+      "triton_bundler_load_static_autotuner": 217,
+      "async_compile_cache_miss": 781,
+      "async_compile_cache_hit": 499,
+      "extern_calls": 827,
+      "fxgraph_cache_hit": 3,
+      "pattern_matcher_count": 466,
+      "pattern_matcher_nodes": 544,
+      "fxgraph_cache_miss": 1,
+      "triton_bundler_save_kernel": 840,
+      "triton_bundler_save_static_autotuner": 1,
+      "benchmarking.InductorBenchmarker.benchmark": 76,
+      "benchmarking.InductorBenchmarker.benchmark_gpu": 76
+    },
+    "resumes": {
+      "torch_dynamo_resume_in_training_step_at_182": 1,
+      "torch_dynamo_resume_in_print_at_382": 1
+    },
+    "aten_mm_info": {
+      "aten.addmm_581_3072_1024": 21,
+      "aten.addmm_581_1024_1024": 21,
+      "aten.addmm_581_4096_1024": 21,
+      "aten.addmm_581_1024_4096": 21,
+      "aten.addmm_8_1024_768": 1,
+      "aten.addmm_8_256_8": 1,
+      "aten.addmm_8_1024_256": 1,
+      "aten.addmm_576_1024_1024": 4,
+      "aten.addmm_8_1024_1024": 1,
+      "aten.mm_576_8_1024": 1,
+      "aten.mm_576_1024_8": 1,
+      "aten.addmm_16_1024_1024": 7,
+      "aten.addmm_597_3072_1024": 3,
+      "aten.addmm_597_1024_1024": 3,
+      "aten.addmm_597_4096_1024": 3,
+      "aten.addmm_597_1024_4096": 3,
+      "aten.addmm_16_512_1024": 1,
+      "aten.addmm_16_3_512": 1,
+      "aten.mm_16_9216_1024": 3,
+      "aten.addmm_16_10_1024": 3
+    }
+  }
+}

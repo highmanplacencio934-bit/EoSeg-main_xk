@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-10-21T21:38:07.030270+00:00",
+  "cpu_only": true,
+  "test_exit": 0,
+  "config_parse_exit": {
+    "asee_plan": 0,
+    "asee_reference": 0,
+    "asee_plan_frozen_text": 0
+  },
+  "final_test_exit": 0,
+  "final_checked_at_utc": "2026-10-21T21:43:34.986174+00:00",
+  "asee_parameter_counts": {
+    "plan": 7360768,
+    "reference_gated": 7360770
+  },
+  "real_raw_slices_checked": 1,
+  "protected_source_count": 27,
+  "protected_source_drift": [],
+  "total_tests": 44
+}

@@ -1,0 +1,38 @@
+{
+  "repository": "emilyalsentzer/Bio_ClinicalBERT",
+  "revision": "d5892b39a4adaed74b92212a44081509db72f87b",
+  "downloaded_at_utc": "2026-10-22T04:30:36.778791+00:00",
+  "files": {
+    "config.json": {
+      "bytes": 385,
+      "sha256": "4a470c65801cab55fc1cc5854aa2bfebc18428ac1989777e9acefc5a9f0c1444",
+      "official_git_blob": "7803f5e6d2057cb1927d283bde1def0ea3862d48",
+      "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/d5892b39a4adaed74b92212a44081509db72f87b/config.json?download=true"
+    },
+    "vocab.txt": {
+      "bytes": 213450,
+      "sha256": "eeaa9875b23b04b4c54ef759d03db9d1ba1554838f8fb26c5d96fa551df93d02",
+      "official_git_blob": "2ea941cc79a6f3d7985ca6991ef4f67dad62af04",
+      "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/d5892b39a4adaed74b92212a44081509db72f87b/vocab.txt?download=true"
+    },
+    "pytorch_model.bin": {
+      "bytes": 435778770,
+      "sha256": "a18c4c260fb5c0978b86658615106d5617050b5f14dac6ceb5e0d8beb2f9f719",
+      "official_git_blob": "84fb02bb328be421353c9f6492f8b02060b25595",
+      "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/d5892b39a4adaed74b92212a44081509db72f87b/pytorch_model.bin?download=true"
+    },
+    "LICENSE": {
+      "bytes": 1071,
+      "sha256": "9e8f42111a19340d74194466063143fbc4294b50dd26ad5c60a06dcaeafa99d2",
+      "official_git_blob": "3f6e21d43b8fef0a1292b9af670cbaaa737ab5c6",
+      "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/d5892b39a4adaed74b92212a44081509db72f87b/LICENSE?download=true"
+    },
+    "README.md": {
+      "bytes": 2681,
+      "sha256": "bf666c7d32897296d028b655fdc0a3f16d7309cc69af11e93d3473218c2b00f2",
+      "official_git_blob": "776f9f9a00635e9640f3fdb3ae2ac02514badf9d",
+      "url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/resolve/d5892b39a4adaed74b92212a44081509db72f87b/README.md?download=true"
+    }
+  },
+  "download_route": "Official Hugging Face HTTPS on Windows; SSHFS project destination; server extraction stays offline"
+}

@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 31410.32it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/pretrained/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+{"prior": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/priors/synapse_asee_v1.pt", "sha256": "eceb52e294151028be69433d628182a317ef707dd8e5da927b69149eb89232ff", "samples": 2211}

@@ -1,0 +1,21 @@
+{
+  "modified": [
+    "AGENTS.md",
+    "docs/innovation1_asee.md",
+    ".codex/innovation1_preparation.md",
+    ".codex/asee_code_review.md"
+  ],
+  "added": [
+    ".codex/innovation1_training_run.md",
+    "priors/synapse_asee_v1.pt",
+    "pretrained/Bio_ClinicalBERT/d5892b39a4adaed74b92212a44081509db72f87b/",
+    "outputs/innovation1/asee_launch_preparation_20261022T043035Z",
+    "outputs/innovation1/asee_plan_smoke/20261022T043352Z/",
+    "outputs/innovation1/asee_plan_smoke/20261022T043730Z/",
+    "outputs/innovation1/asee_plan/20261022T044551Z"
+  ],
+  "deleted": [],
+  "production_source_changed": false,
+  "baseline_config_changed": false,
+  "default_dice_changed": false
+}

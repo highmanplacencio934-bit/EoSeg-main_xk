@@ -1,0 +1,10 @@
+{
+  "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan_smoke/20261022T043730Z/synapse_test_selection/20261022T043746Z_dd7d8d66/last.ckpt",
+  "strict_load": true,
+  "all_tensor_values_exact": true,
+  "tensor_key_count": 417,
+  "extra_state_equal": true,
+  "global_step": 8,
+  "missing_keys": [],
+  "unexpected_keys": []
+}

@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "manifest": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/run_manifest.json",
+  "baseline_manifest": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/run_manifest.json",
+  "changes": [
+    {
+      "path": "model.init_args.network.class_path",
+      "baseline": "models.eoseg.EoSegMultiQSegFusion",
+      "innovation": "models.eoseg_asee.EoSegMultiQSegFusionASEE"
+    },
+    {
+      "path": "model.init_args.network.init_args.enhance_patch",
+      "baseline": "MISSING",
+      "innovation": true
+    },
+    {
+      "path": "model.init_args.network.init_args.enhance_query",
+      "baseline": "MISSING",
+      "innovation": true
+    },
+    {
+      "path": "model.init_args.network.init_args.freeze_text_projection",
+      "baseline": "MISSING",
+      "innovation": false
+    },
+    {
+      "path": "model.init_args.network.init_args.patch_update",
+      "baseline": "MISSING",
+      "innovation": "plan"
+    },
+    {
+      "path": "model.init_args.network.init_args.prior_path",
+      "baseline": "MISSING",
+      "innovation": "priors/synapse_asee_v1.pt"
+    },
+    {
+      "path": "model.init_args.network.init_args.queries_per_class",
+      "baseline": "MISSING",
+      "innovation": 2
+    },
+    {
+      "path": "model.init_args.network.init_args.use_probability",
+      "baseline": "MISSING",
+      "innovation": true
+    },
+    {
+      "path": "model.init_args.network.init_args.use_text",
+      "baseline": "MISSING",
+      "innovation": true
+    },
+    {
+      "path": "trainer.callbacks.0.init_args.output_dir",
+      "baseline": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z",
+      "innovation": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z"
+    },
+    {
+      "path": "trainer.default_root_dir",
+      "baseline": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z",
+      "innovation": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z"
+    },
+    {
+      "path": "trainer.logger.init_args.name",
+      "baseline": "synapse_384_learnable_fusion_query_2e_test",
+      "innovation": "vit_query_mul_scale_fusion_asee_plan"
+    },
+    {
+      "path": "trainer.logger.init_args.save_dir",
+      "baseline": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z",
+      "innovation": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z"
+    }
+  ],
+  "unexpected_config_changes": [],
+  "protected_source_drift": [],
+  "protected_files": 26,
+  "estimated_steps": 30360,
+  "device": "cuda:0",
+  "prior_sha256": "eceb52e294151028be69433d628182a317ef707dd8e5da927b69149eb89232ff"
+}
