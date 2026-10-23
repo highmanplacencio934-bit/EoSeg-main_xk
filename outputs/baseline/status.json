@@ -1,0 +1,9 @@
+{
+  "state": "completed",
+  "supervisor_pid": 3477677,
+  "training_pid": 3477678,
+  "started_at_utc": "2026-10-21T13:26:35.076977+00:00",
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z",
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-22T03:44:09.035762+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-10-21T21:43:34.987476+00:00",
+  "status": {
+    "state": "running",
+    "supervisor_pid": 3477677,
+    "training_pid": 3477678,
+    "started_at_utc": "2026-10-21T13:26:35.076977+00:00",
+    "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z"
+  },
+  "actual_process_alive": true,
+  "test_epochs": 22,
+  "last_test_epoch": 192,
+  "case_rows": 264,
+  "best_row": {
+    "epoch": "177",
+    "global_step": "24426",
+    "num_cases": "12",
+    "dice_class_1": "0.8461225143731291",
+    "dice_class_2": "0.721060254883318",
+    "dice_class_3": "0.8653859995178245",
+    "dice_class_4": "0.8643618089267927",
+    "dice_class_5": "0.953443909714179",
+    "dice_class_6": "0.7284509965762247",
+    "dice_class_7": "0.9216519710282606",
+    "dice_class_8": "0.8769998331028197",
+    "mean_dice": "0.8471846610153185",
+    "hd95_class_1": "79.88159510315303",
+    "hd95_class_2": "17.698269308635485",
+    "hd95_class_3": "57.841131614523846",
+    "hd95_class_4": "21.70002489111155",
+    "hd95_class_5": "75.16797000559441",
+    "hd95_class_6": "51.598563204040055",
+    "hd95_class_7": "70.2943282844697",
+    "hd95_class_8": "4.934652121535302",
+    "mean_hd95": "47.38956681663292",
+    "is_best": "1",
+    "best_epoch": "177",
+    "best_mean_dice": "0.8471846610153185"
+  },
+  "selection_summary": {
+    "selection_policy": "test set used for checkpoint selection; no gradient updates",
+    "epoch_numbering": "one-based",
+    "max_epochs": 220,
+    "first_evaluation_epoch": 171,
+    "last_evaluated_epoch": 192,
+    "expected_test_cases": 12,
+    "best_epoch": 177,
+    "best_mean_dice": 0.8471846610153185,
+    "best_checkpoint": "best_test.ckpt",
+    "last_checkpoint": "last.ckpt"
+  },
+  "protected_source_drift": []
+}

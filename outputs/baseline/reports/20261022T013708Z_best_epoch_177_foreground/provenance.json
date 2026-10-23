@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "20261022T013708Z",
+  "best_epoch": 177,
+  "last_evaluated_epoch": 210,
+  "training_status": {
+    "state": "running",
+    "supervisor_pid": 3477677,
+    "training_pid": 3477678,
+    "started_at_utc": "2026-10-21T13:26:35.076977+00:00",
+    "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z"
+  },
+  "training_pid_exists": true,
+  "source_run": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a",
+  "source_epoch_csv_sha256": "7f3ef6446664fe409a215238439b97721dd5a296617cd799a30ec2a6ddd2f281",
+  "source_case_csv_sha256": "e83392a81e0c664d8c7ae6c6b960453f2c79727f3114ba9d6cced884a7ae9837",
+  "selected_case_count": 12,
+  "case_to_epoch_means_verified": true,
+  "includes_background": false,
+  "organ_mapping_verified": false
+}
