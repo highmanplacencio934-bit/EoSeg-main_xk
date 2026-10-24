@@ -1,0 +1,1 @@
+outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z

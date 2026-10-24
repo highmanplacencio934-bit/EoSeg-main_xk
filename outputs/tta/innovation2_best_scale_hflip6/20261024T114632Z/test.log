@@ -1,0 +1,41 @@
+Seed set to 0
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+INFO:root:Synapse fixed split (TrainerFn.TESTING): {'train_slices': 2211, 'train_cases': ['case0005', 'case0006', 'case0007', 'case0009', 'case0010', 'case0021', 'case0023', 'case0024', 'case0026', 'case0027', 'case0028', 'case0030', 'case0031', 'case0033', 'case0034', 'case0037', 'case0039', 'case0040'], 'test_cases': ['case0008', 'case0022', 'case0038', 'case0036', 'case0032', 'case0002', 'case0029', 'case0003', 'case0001', 'case0004', 'case0025', 'case0035'], 'case_overlap': []}
+Restoring states from the checkpoint path at /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Loaded model weights from the checkpoint at /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│     test/dice_class_1     │    0.9144031405448914     │
+│     test/dice_class_2     │    0.7578275799751282     │
+│     test/dice_class_3     │    0.8645975589752197     │
+│     test/dice_class_4     │    0.8721480369567871     │
+│     test/dice_class_5     │    0.9615949988365173     │
+│     test/dice_class_6     │    0.7463132739067078     │
+│     test/dice_class_7     │    0.9381594657897949     │
+│     test/dice_class_8     │    0.8917989730834961     │
+│   test/hd95_mm_class_1    │     4.186984539031982     │
+│   test/hd95_mm_class_2    │    16.289697647094727     │
+│   test/hd95_mm_class_3    │     43.24113845825195     │
+│   test/hd95_mm_class_4    │     32.61107635498047     │
+│   test/hd95_mm_class_5    │     27.24357795715332     │
+│   test/hd95_mm_class_6    │     7.537393093109131     │
+│   test/hd95_mm_class_7    │    10.878798484802246     │
+│   test/hd95_mm_class_8    │    10.532416343688965     │
+│  test/hd95_voxel_class_1  │    2.3039631843566895     │
+│  test/hd95_voxel_class_2  │    16.823793411254883     │
+│  test/hd95_voxel_class_3  │     46.70155334472656     │
+│  test/hd95_voxel_class_4  │     33.05358123779297     │
+│  test/hd95_voxel_class_5  │    25.637109756469727     │
+│  test/hd95_voxel_class_6  │     5.025457382202148     │
+│  test/hd95_voxel_class_7  │    7.1187920570373535     │
+│  test/hd95_voxel_class_8  │     4.980832099914551     │
+│      test/mean_dice       │    0.8683553338050842     │
+│     test/mean_hd95_mm     │    19.065135955810547     │
+│   test/mean_hd95_voxel    │     17.70563316345215     │
+└───────────────────────────┴───────────────────────────┘

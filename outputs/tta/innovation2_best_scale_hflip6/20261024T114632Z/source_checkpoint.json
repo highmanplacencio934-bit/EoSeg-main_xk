@@ -1,0 +1,19 @@
+{
+  "source_training": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z",
+  "source_training_state": "stopped_by_user",
+  "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+  "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d",
+  "checkpoint_epoch": 187,
+  "views": 6,
+  "expected_cases": 12,
+  "single_view_reference": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48",
+  "authorization": "User explicitly requested starting new six-view scale/horizontal TTA; same innovation2 best187; only independent test, no retraining",
+  "two_view_reference": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_views2/20261024T084750Z",
+  "tta_scheme": "scale_hflip",
+  "scales": [
+    1.0,
+    0.875,
+    1.125
+  ],
+  "four_view_reference": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z"
+}

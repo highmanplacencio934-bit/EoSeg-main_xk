@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "stage": "independent_test",
+  "created_at_utc": "2026-10-24T11:46:49.582459+00:00",
+  "hostname": "5090",
+  "python": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+  "python_version": "3.11.15",
+  "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse",
+  "argv": [
+    "scripts/evaluate_synapse_multiscale_tta.py",
+    "test",
+    "--config",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_multiscale_tta.yaml",
+    "--ckpt_path",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+    "--compile_test",
+    "--tta_views=6",
+    "--trainer.accelerator=gpu",
+    "--trainer.devices=1",
+    "--trainer.logger=false",
+    "--trainer.enable_progress_bar=false",
+    "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z",
+    "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z\"}}]"
+  ],
+  "project_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse",
+  "versions": {
+    "torch": "2.13.0+cu132",
+    "torchvision": "0.28.0+cu132",
+    "lightning": "2.6.6",
+    "torchmetrics": "1.9.0",
+    "timm": "1.0.29",
+    "jsonargparse": "4.52.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "medpy": "0.5.2",
+    "h5py": "3.16.0",
+    "wandb": "0.30.0"
+  },
+  "torch_cuda": "13.2",
+  "device": "cuda:0",
+  "gpu": {
+    "name": "NVIDIA GeForce RTX 5090 D",
+    "total_memory_bytes": 33659879424,
+    "capability": [
+      12,
+      0
+    ]
+  },
+  "matmul_precision": "medium",
+  "precision": "16-mixed",
+  "resolved_cli_config": {
+    "seed_everything": 0,
+    "trainer": {
+      "accelerator": "gpu",
+      "strategy": "auto",
+      "devices": "1",
+      "num_nodes": 1,
+      "precision": "16-mixed",
+      "logger": false,
+      "callbacks": [
+        {
+          "class_path": "training.synapse_multiscale_tta.SynapseMultiScaleTTASelection",
+          "init_args": {
+            "last_n_epochs": 50,
+            "expected_test_cases": 12,
+            "output_dir": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z",
+            "label_map": "priors/synapse_label_map.verified.json"
+          }
+        }
+      ],
+      "fast_dev_run": false,
+      "max_epochs": 220,
+      "min_epochs": null,
+      "max_steps": -1,
+      "min_steps": null,
+      "max_time": null,
+      "limit_train_batches": null,
+      "limit_val_batches": 0.0,
+      "limit_test_batches": null,
+      "limit_predict_batches": null,
+      "overfit_batches": 0.0,
+      "val_check_interval": null,
+      "check_val_every_n_epoch": 1000000,
+      "num_sanity_val_steps": null,
+      "log_every_n_steps": null,
+      "enable_checkpointing": false,
+      "enable_progress_bar": false,
+      "enable_model_summary": false,
+      "accumulate_grad_batches": 1,
+      "gradient_clip_val": null,
+      "gradient_clip_algorithm": null,
+      "deterministic": null,
+      "benchmark": null,
+      "inference_mode": true,
+      "use_distributed_sampler": true,
+      "profiler": null,
+      "detect_anomaly": false,
+      "barebones": false,
+      "plugins": null,
+      "sync_batchnorm": false,
+      "reload_dataloaders_every_n_epochs": 0,
+      "default_root_dir": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z",
+      "enable_autolog_hparams": true,
+      "model_registry": null
+    },
+    "model": {
+      "class_path": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "init_args": {
+        "network": {
+          "class_path": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+          "init_args": {
+            "encoder": {
+              "class_path": "models.vit.ViT",
+              "init_args": {
+                "patch_size": 16,
+                "backbone_name": "vit_large_patch14_reg4_dinov2"
+              }
+            },
+            "prior_path": "priors/synapse_asee_v1.pt",
+            "num_q": 16,
+            "queries_per_class": 2,
+            "patch_update": "plan",
+            "freeze_text_projection": false,
+            "enhance_patch": true,
+            "enhance_query": true,
+            "use_text": true,
+            "use_probability": true,
+            "selector_mode": "visual_prior",
+            "selector_on_patch": true,
+            "selector_on_query": false,
+            "selector_hidden_dim": 256,
+            "selector_init_probability": 0.95,
+            "detach_prior_for_selector": false,
+            "patch_gate_effect": "both"
+          }
+        },
+        "img_size": [
+          384,
+          384
+        ],
+        "num_classes": 9,
+        "attn_mask_annealing_enabled": false,
+        "attn_mask_annealing_start_steps": null,
+        "attn_mask_annealing_end_steps": null,
+        "ignore_idx": 255,
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": null,
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "ckpt_path": null,
+        "delta_weights": false,
+        "load_ckpt_class_head": true,
+        "presence_loss_weight": 0.0,
+        "presence_pos_weight": 1.0,
+        "spacing_manifest": "priors/synapse_spacing.verified.json"
+      }
+    },
+    "data": {
+      "class_path": "datasets.synapse_semantic.SynapseSemantic",
+      "init_args": {
+        "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+        "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+        "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+        "img_size": [
+          384,
+          384
+        ],
+        "num_classes": 9,
+        "batch_size": 16,
+        "num_workers": 8,
+        "color_jitter_enabled": true,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "check_empty_targets": true,
+        "ignore_idx": 255,
+        "drop_background": false,
+        "make_rgb": true,
+        "train_split": "train",
+        "test_split": "test_vol"
+      }
+    },
+    "compile_disabled": false,
+    "compile_test": true,
+    "tta_views": 6,
+    "optimizer": null,
+    "lr_scheduler": null,
+    "ckpt_path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+    "verbose": true,
+    "weights_only": null
+  },
+  "source_sha256": {
+    "configs/synapse/ccps_ablations/a0_off.yaml": "b0670bd11ccfbd531194654d918a3f68dd1950aabc9729a306a886bb4241248b",
+    "configs/synapse/ccps_ablations/a10_context_only.yaml": "af7e27e601113c158ac205d1137871d71d2d6e72406851607d068ef78b079046",
+    "configs/synapse/ccps_ablations/a11_residual_only.yaml": "32a02147459f81ee35f6f92288ba8e31ef21a02343230cd07e27ec17d7a54b39",
+    "configs/synapse/ccps_ablations/a1_global_patch.yaml": "4f1ea14cfcbf18a4b31aab20622ab8e90239091aa9d0338f6b5934d13bdc8280",
+    "configs/synapse/ccps_ablations/a2_visual_patch.yaml": "2e3e80c9a0c99952d60c664b629018d82c635a4338998b51662f0042ce474e5a",
+    "configs/synapse/ccps_ablations/a3_visual_prior_patch.yaml": "4456dcd014762b6a0de69d98a475e429ab9fb0bf8a83b41713d5e99feea8920c",
+    "configs/synapse/ccps_ablations/a4_visual_prior_query.yaml": "6f395039de90bcee20fbbc3c3260a328e10876cbf1a9c0632cb0d1decc91c151",
+    "configs/synapse/ccps_ablations/a5_visual_prior_both.yaml": "683468b88f97c71e7e15989b6dbaeb2ef82b549ebf3cc17a00d4c53ff47cb8de",
+    "configs/synapse/ccps_ablations/a6_visual_prior_patch_presence.yaml": "76dd87782b777986e66df196d1bcb4334e4a4ff5413a44359b5dc1fc568a7082",
+    "configs/synapse/ccps_ablations/a7_visual_prior_both_presence.yaml": "318c4305a8f4c14d0b4f3d26034207b63cd0f7edcaeba27c6eb4cf27e7d60065",
+    "configs/synapse/ccps_ablations/a8_visual_prior_text_only.yaml": "c162f832526d920ed24013bfd1cc531f9cdf8f369245236192ba65f6f173dbe0",
+    "configs/synapse/ccps_ablations/a9_visual_prior_prob_only.yaml": "1527fff67664e520c8f0e044b401f1cbf63a5d43f090cf9bcfa987a5af6a8de5",
+    "configs/synapse/vit_deconv_384.yaml": "33034b30bf8209aeba3c3f7ac02a94055af2d7e9565a9ddf5bda3da9410ba724",
+    "configs/synapse/vit_query_mask.yaml": "1808246440cfadc3bc730a69bab2da80b7c5dd50c9d9b15444f828ee366b2a9b",
+    "configs/synapse/vit_query_mul_scale_fusion.yaml": "2a85f0969b4f525134054308c32dfa063903216442cda24b65bea760113e9d01",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_ccps.yaml": "3a72cf21f314872a25e15f0e0d595baf1bff8e9622754fab2526f86ff3f64683",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_multiscale_tta.yaml": "bc7c47d87b0cc7c8423d7a6a409bf138db791cb1948852e3721f44114a4b7e66",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_tta.yaml": "7023ffc246068523c187e0ab2522ab1a8dc38e178363cd9eba087460e80fd426",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml": "40a518616fde10e5e32b12c1f124d2689934bc11fd03bd0fce14bad00fe471ca",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_plan_frozen_text.yaml": "58f7ee6f60dd3874fcf26518e7b4c35d2c3ffeffa0f018c93fe929bc21269930",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_plan_hd95_mm.yaml": "ca5b7e181bf75e3c7247ef4cf2014b21ae972172207fdc34d4900d354fb85350",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_reference.yaml": "2bbd4cfb074e74570e8a77888c9f1077d8c099f548732c3a844bdc5c32d72f4d",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_teacher_hd95.yaml": "c907681e4da3484fd3083e5f8c532fdd23d294be722f0563065ccf543077d53a",
+    "configs/synapse/vit_query_mul_scale_fusion_hd95_mm.yaml": "a028a3843d444171ca37fa784d0df8ac3695dbdf697fe91fa08821e5d66b7bd1",
+    "configs/synapse/vit_query_mul_scale_fusion_mul_layer.yaml": "7b75b818ddd9ec6a4b4acac060e778f1b3f585fedf54cb1e7221ec0768232b50",
+    "configs/synapse/vit_query_mul_scale_fusion_vit.yaml": "4be370fa8cbfa4437c5534918da6ead8b29f3da535bd4046b01605b765ef6c07",
+    "datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "datasets/acdc_dataset.py": "3e929a0617f821ca9a2f6d91f42b2c427b8997cdb9479677f67cb37a651074b0",
+    "datasets/acdc_semantic.py": "0b53f2564350f1287f005be4189894c8e377e17b31e2043fa8cc3b24a5fc4e9d",
+    "datasets/isic_binary_semantic.py": "459954120282fdb67b2d5b73b8cedf77363847b0e651af31a92c91ae3f4d583d",
+    "datasets/lightning_data_module.py": "fea768cb9eb5d17d19a8a6953ad4886b3e9ced57731d001895d941ca115d39f8",
+    "datasets/medical_binary_semantic.py": "72eb18e5b10f2c141fa7b4a8b5844a552d9d39ec009c844057f61e5681a1c43c",
+    "datasets/synapse_npz_dataset.py": "f82f3242de9239ce29552c9a16d39704be8d162ecb5785b0bbf87d406984e6e0",
+    "datasets/synapse_semantic.py": "910240caf372f7ae8b4381ed617ed915695643692526c5aad92311823242a3dc",
+    "datasets/synapse_splits.py": "5edd56e4545018bdb97b162d27b50cbed64ef241ba8f811c89dba9d1aad2e501",
+    "datasets/synapse_transforms.py": "3b5643beb17d15f1370a652de9cc1070f0803481034767db10a3f3f604aa78f7",
+    "main.py": "d15a67abafa836659e0d17ebb5aa2b5cea17a6963cefb5898a000e96ec08e070",
+    "models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/asee.py": "eb982959557b880ae148a04bafe019d9e1a374578c8646cb1f1098444e0fc126",
+    "models/asee_ccps.py": "2cac95bd1432ee61ad392761c5cf7225c9d02d0a4988b3dc35010e3ba96bbfa2",
+    "models/ccps_selector.py": "67b49a96b801c8442d437d529026e8e8e46e9695c3823ac285bf5aaebe30566c",
+    "models/eoseg.py": "11a025c4cb0661f85f4fa28d75c1fee2f6263a1957aa695eeba0c44dece4e19b",
+    "models/eoseg_asee.py": "05e1c20e567fb2c329b1059652fc997f0a5e3dab66c16ac4d57ed6e533b9fa5b",
+    "models/eoseg_asee_ccps.py": "2436e91ec76f597f8e1f67b79b2a589e6511da62c1de805ceac45dc1e2e02b9e",
+    "models/vit.py": "f6bd8b1c3362fc5e4207bde02aed156b60eca43518e0e9854a4e9dbd2ac6f3e1",
+    "models/vit_rvsa_mtp.py": "85891916d2849d5cb65d4dbcc73c41e61b6547dad7d7e9291ab82a066dd8e049",
+    "requirements.txt": "65f19a23fa8980ad5414da36cd123e64d9a9f3f4e6f04d227d618f6bcd61fe02",
+    "scripts/audit_ccps_smoke.py": "53afef4ef72affdaf4cbb94c95887eb9416f492b009107c4b7e6604daf76359c",
+    "scripts/audit_synapse_baseline.py": "79bd3197a8f6f4dfd12fe8320f403dab2354dd04a683400aea29280a443c710e",
+    "scripts/build_synapse_asee_prior.py": "20f6e1fd8a7ea89c48e9e966e0722d392eb794de20bd5390e9f799985323ae30",
+    "scripts/build_synapse_spacing.py": "4dbe920c60fb558eb637c9ac88c021ee8a25124c3747aa4c3b1c57b82ab8ea7a",
+    "scripts/evaluate_synapse_multiscale_tta.py": "0853684a751216eb5ac422d0be8992defcc380a240bbc5ad3d5e9a550090f824",
+    "scripts/evaluate_synapse_tta.py": "13f341c8567297df23d2cc8ea971c31ddd78c03d3b6a0d06d639027b8111efd6",
+    "scripts/generate_ccps_ablations.py": "7efc65ea6ec065de0e0139b1034b1dabde8bccb2aba5a164cddaf236f2a2d267",
+    "scripts/launch_innovation2_ccps.py": "eb73b0fdce809a69ffd136688e9af0c4bae8c2289c211e407ada9a65f82a724b",
+    "scripts/run_synapse_tta_comparison.py": "f225d3c232cbe04c35d1edf2b8098be3e70ca00d66789e71813a7c0ea1ee5570",
+    "scripts/visualize_acdc_results.py": "c14153529a5c1e3a43b9e4408de47f7bba331bb33f136d9103071b3c03d1d6f7",
+    "scripts/visualize_binary_medical_results.py": "19a2c6506c9ed4c15e5f5af342813bd1691ce9b157a79c487644b84407c40991",
+    "scripts/visualize_binary_medical_results_flexible.py": "1425856439349ba63eebcee761441fe29663bc818367dd2cf9b41ce876b1f045",
+    "scripts/visualize_synapse_results.py": "6b3e82e723a1b20f1aeaed862c03d10b185410477404695b68742d0589702dc5",
+    "sitecustomize.py": "d34911d3004555f1eb8612bb1b6092c9dd1a866ddf970eb082722daa329cb3a8",
+    "training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "training/acdc_baseline_semantic.py": "bb6638d01d8eed4c95049912cdddea39fa9519b97a1056e511fb5852339f3972",
+    "training/acdc_mask_classification_semantic.py": "2545629edab7f65c9d4a4acd5cd3adaf945740fe168e6d0eb60a8980952c45cb",
+    "training/acdc_test_logger.py": "2baba879cb37294fe99c1e7ca7f4047f186de862f5f73a4ce81f06e5c8289e58",
+    "training/acdc_val_logger.py": "00920b0b72a749a7b199cd3415272eb8e40a1cfe2260829bc4b232d3bb9ac42d",
+    "training/lightning_module.py": "94c7d9e4631b667246d58add04153f570b679bcd94a2480ada00f512a23d62aa",
+    "training/mask_classification_ccps.py": "0d864ae1f2718c9510909f954ae93ca808df131c94c1d6ba5fb61c0b065c73a3",
+    "training/mask_classification_instance.py": "955ceb88151e10c874548cfdb76cdd136132fd68d7190a1d3ea5ee659f7194c9",
+    "training/mask_classification_loss.py": "9c759093a76e97a203c269ad3ee32985defcb83ce382c9eaf340c443c2219e6f",
+    "training/mask_classification_panoptic.py": "6282b2bc56a3870fad0db7395ea364e32485169b55cc8fc69366edd3e75f42ea",
+    "training/mask_classification_semantic.py": "117a23bad32ca0997e7d847cea098c99615e35e3e0aed0db37f80ad70d86d9cc",
+    "training/medical_binary_segmentation.py": "48bef8214df554dfc55eed5c589175e3325dc30486d1e2e2b4c20674ab9a486b",
+    "training/medical_val_logger.py": "e4f8c5bc64478657ad3eb3b7c49df4e52ea8de898b0c5e05465c2e1bea556cf1",
+    "training/pixel_classification_semantic.py": "1bf3a7d0b4595e29ff5c9f4e6334c0ad9a5b7dab62a75b92b7225ea1f68aaaf8",
+    "training/query_binary_mask_classification.py": "467c2acc1d8607721f9868a2faf3c9113168011e4dc78aac9909ce8268182a0e",
+    "training/run_artifacts.py": "b735924fd41bdfadd4a04acbb0eb993dc23b457062c84338ed499a8218bccc1d",
+    "training/synapse_multiscale_tta.py": "7543cd2cbedf26a5788170f33d828577fb4f172478edca11e2b5f31a4bb7db8e",
+    "training/synapse_physical_geometry.py": "d448a58e62efb03a8f8ae964f8ad3b87836f77aad0f78de987bbd098b856d48c",
+    "training/synapse_physical_selection.py": "7dc299c912413f943d42aff88c0e239fa3da30123fa916ce645f4d654dc53024",
+    "training/synapse_physical_semantic.py": "8abdc0302bb61e803673524a3f86e09b209ca8ef5716ddc630b2fc26ffce0a4a",
+    "training/synapse_selection.py": "ad5d725a6f7000bcd64975f65bae389a6d4fefdc2d5de20c1d74fba659657757",
+    "training/synapse_teacher_selection.py": "297a53a2398b31aa031c791d7b27ab9d00f9c4474f109a831db86ba9312abe3c",
+    "training/synapse_teacher_semantic.py": "f454d73e0ccdd187361af5462aa32815f6d2bdcf1a0e7e13b50bc42009bbaf00",
+    "training/synapse_test_selection.py": "9733c4c667c17e1657fd1501f792108d86bf98e6a147146d2530dd1dd3b0d4d0",
+    "training/synapse_tta.py": "89364d440b7ad17f6f6398c6dc16d7d444cc570d0a5787eb6efe8bce56ebaeb0",
+    "training/two_stage_warmup_poly_schedule.py": "902f266e1048e5bc460742c3ee0d0a55e18a662f2e4b3be0cd702dd8ff9f9794"
+  },
+  "manifest_sha256": {
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/project_TransUNet/TransUNet/lists/lists_Synapse/train.txt": "2a3afc3b126f560d023c09e9a943e31c9ab95cea544afa69bf6b39f80ade59f5",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/project_TransUNet/TransUNet/lists/lists_Synapse/test_vol.txt": "7a1cdb883ad2f76f79cb922cee782eb8618ee7a72e75b640bbcee1367d66c2a6"
+  },
+  "data_paths": {
+    "train_base_dir": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/project_TransUNet/data/Synapse/train_npz",
+    "test_base_dir": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/project_TransUNet/data/Synapse/test_vol_h5",
+    "list_dir": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/project_TransUNet/TransUNet/lists/lists_Synapse"
+  },
+  "callbacks": [
+    "training.synapse_multiscale_tta.SynapseMultiScaleTTASelection"
+  ],
+  "checkpoint_source": {
+    "ckpt_path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+    "checkpoint_epoch": 187,
+    "checkpoint_global_step": 25806,
+    "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d"
+  },
+  "tta_contract": {
+    "tta_scheme": "scale_hflip",
+    "tta_views": 6,
+    "fixed_canvas_hw": [
+      384,
+      384
+    ],
+    "scales": [
+      1.0,
+      0.875,
+      1.125
+    ],
+    "view_transforms": [
+      {
+        "scale": 1.0,
+        "resized_hw": [
+          384,
+          384
+        ],
+        "horizontal_flip": false,
+        "rotation_degrees": 0
+      },
+      {
+        "scale": 1.0,
+        "resized_hw": [
+          384,
+          384
+        ],
+        "horizontal_flip": true,
+        "rotation_degrees": 0
+      },
+      {
+        "scale": 0.875,
+        "resized_hw": [
+          336,
+          336
+        ],
+        "horizontal_flip": false,
+        "rotation_degrees": 0
+      },
+      {
+        "scale": 0.875,
+        "resized_hw": [
+          336,
+          336
+        ],
+        "horizontal_flip": true,
+        "rotation_degrees": 0
+      },
+      {
+        "scale": 1.125,
+        "resized_hw": [
+          432,
+          432
+        ],
+        "horizontal_flip": false,
+        "rotation_degrees": 0
+      },
+      {
+        "scale": 1.125,
+        "resized_hw": [
+          432,
+          432
+        ],
+        "horizontal_flip": true,
+        "rotation_degrees": 0
+      }
+    ],
+    "scale_transform": "bilinear resize; centered zero pad or center crop to fixed canvas",
+    "inverse": "undo horizontal flip, discard padding or restore crop canvas, bilinear to original model grid",
+    "fusion": "FP32 scores divided by valid coverage; each visible view has equal weight; argmax last",
+    "resize": "original cubic input to model canvas; existing bilinear pixel score upsample; nearest hard labels back",
+    "class_channels": "original verified label IDs; no left/right channel swap",
+    "ccps": "recomputed per view; no GT in prediction or fusion",
+    "hd95": "verified ZYX spacing mm plus voxel; unchanged legacy empty-mask policy"
+  },
+  "readiness_snapshot_sha256": "ebe3bb72011e333a0791568e52bcdfcf1564de5fe5a114274e9098edc5de4228",
+  "artifact_sha256": {
+    "spacing_manifest.json": "562a17b2d583b969dde41cf44b05a11e5c15d53b0fda0887ad9caaf98f9c17e5",
+    "label_map.json": "1a2e2d4675e44ce02f8985d1fd00b99c65cfcee32a5001f065a8053943448345",
+    "checkpoint_source.json": "3a673c31f05743bd081f6a4191980985f84010f36918c01a5321384cb13ba6b4",
+    "tta_contract.json": "42246bff51ebe38f3bcc9f974e9fd1ad0adad642e629f56e025a64f152a17fcf",
+    "multiscale_readiness_snapshot.json": "d36e0c44f3acccd01ac3cf008242d72becb45d72dec8393d6255a66e7b0d3f78"
+  },
+  "environment": {
+    "HF_HUB_OFFLINE": "1",
+    "TORCH_HOME": "/Disk/HDD/Sk/.cache/torch",
+    "TIMM_USE_OLD_CACHE": "1",
+    "CUDA_VISIBLE_DEVICES": null
+  },
+  "selection_policy": "fixed source checkpoint; TTA inference comparison only",
+  "multiscale_readiness_snapshot_sha256": "d36e0c44f3acccd01ac3cf008242d72becb45d72dec8393d6255a66e7b0d3f78"
+}

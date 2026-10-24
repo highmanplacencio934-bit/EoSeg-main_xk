@@ -1,0 +1,18 @@
+{
+  "state": "completed",
+  "started_at_utc": "2026-10-24T11:13:01.768202+00:00",
+  "supervisor_pid": 3673200,
+  "tta_views": 4,
+  "tta_scheme": "scale_hflip",
+  "scales": [
+    1.0,
+    0.875
+  ],
+  "checkpoint_epoch": 187,
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z",
+  "testing_pid": 3673239,
+  "test_exit_code": 0,
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-24T11:37:14.319616+00:00",
+  "result_folder": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z/independent_test/20261024T111315Z_f9bac2c5"
+}
