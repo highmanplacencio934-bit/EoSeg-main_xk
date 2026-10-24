@@ -1,0 +1,23 @@
+2026-10-23 20:18:03,726 INFO    MainThread:2089767 [wandb_setup.py:_flush():81] Current SDK version is 0.30.0
+2026-10-23 20:18:03,726 INFO    MainThread:2089767 [wandb_setup.py:_flush():81] Configure stats pid to 2089767
+2026-10-23 20:18:03,726 INFO    MainThread:2089767 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-10-23 20:18:03,727 INFO    MainThread:2089767 [wandb_init.py:setup_run_log_directory():739] Logging user logs to outputs/innovation2/wandb/offline-run-20261023_201803-2lb1dpu3/logs/debug.log
+2026-10-23 20:18:03,727 INFO    MainThread:2089767 [wandb_init.py:setup_run_log_directory():740] Logging internal logs to outputs/innovation2/wandb/offline-run-20261023_201803-2lb1dpu3/logs/debug-internal.log
+2026-10-23 20:18:03,727 INFO    MainThread:2089767 [wandb_init.py:init():783] calling init triggers
+2026-10-23 20:18:03,727 INFO    MainThread:2089767 [wandb_init.py:init():788] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-10-23 20:18:03,727 INFO    MainThread:2089767 [wandb_init.py:init():831] starting backend
+2026-10-23 20:18:03,931 INFO    MainThread:2089767 [wandb_init.py:init():846] sending inform_init request
+2026-10-23 20:18:03,943 INFO    MainThread:2089767 [wandb_init.py:init():851] backend started and connected
+2026-10-23 20:18:03,944 INFO    MainThread:2089767 [wandb_init.py:init():921] updated telemetry
+2026-10-23 20:18:03,945 INFO    MainThread:2089767 [wandb_init.py:init():944] communicating run to backend with 90.0 second timeout
+2026-10-23 20:18:03,947 INFO    MainThread:2089767 [wandb_init.py:init():981] starting run threads in backend
+2026-10-23 20:18:04,023 INFO    MainThread:2089767 [wandb_run.py:_console_start():2531] atexit reg
+2026-10-23 20:18:04,023 INFO    MainThread:2089767 [wandb_run.py:_redirect():2381] redirect: wrap_raw
+2026-10-23 20:18:04,023 INFO    MainThread:2089767 [wandb_run.py:_redirect():2450] Wrapping output streams.
+2026-10-23 20:18:04,023 INFO    MainThread:2089767 [wandb_run.py:_redirect():2473] Redirects installed.
+2026-10-23 20:18:04,024 INFO    MainThread:2089767 [wandb_init.py:init():1019] run started, returning control to user process
+2026-10-23 20:18:04,113 INFO    MainThread:2089767 [wandb_run.py:_config_callback():1283] config_cb None None {'_wandb': {'code_path': 'source-eomt-main.py'}}
+2026-10-23 20:18:06,590 INFO    MainThread:2089767 [wandb_run.py:_config_callback():1283] config_cb None None {'network': {'class_path': 'models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS', 'init_args': {'encoder': {'class_path': 'models.vit.ViT', 'init_args': {'patch_size': 16, 'backbone_name': 'vit_large_patch14_reg4_dinov2'}}, 'prior_path': 'priors/synapse_asee_v1.pt', 'num_q': 16, 'queries_per_class': 2, 'patch_update': 'plan', 'freeze_text_projection': False, 'enhance_patch': True, 'enhance_query': True, 'use_text': True, 'use_probability': True, 'selector_mode': 'visual_prior', 'selector_on_patch': True, 'selector_on_query': False, 'selector_hidden_dim': 256, 'selector_init_probability': 0.95, 'detach_prior_for_selector': False, 'patch_gate_effect': 'both'}}, 'img_size': [384, 384], 'num_classes': 9, 'attn_mask_annealing_enabled': False, 'attn_mask_annealing_start_steps': None, 'attn_mask_annealing_end_steps': None, 'ignore_idx': 255, 'lr': 0.0002, 'llrd': 0.8, 'llrd_l2_enabled': True, 'lr_mult': 1.0, 'weight_decay': 0.05, 'num_points': 12544, 'oversample_ratio': 3.0, 'importance_sample_ratio': 0.75, 'poly_power': 0.9, 'warmup_steps': None, 'no_object_coefficient': 0.1, 'mask_coefficient': 5.0, 'dice_coefficient': 5.0, 'class_coefficient': 2.0, 'mask_thresh': 0.8, 'overlap_thresh': 0.8, 'ckpt_path': None, 'delta_weights': False, 'load_ckpt_class_head': True, 'presence_loss_weight': 0.0, 'presence_pos_weight': 1.0, 'spacing_manifest': 'priors/synapse_spacing.verified.json', '_instantiator': 'lightning.pytorch.cli.instantiate_module', 'train_base_dir': 'project_TransUNet/data/Synapse/train_npz', 'test_base_dir': 'project_TransUNet/data/Synapse/test_vol_h5', 'list_dir': 'project_TransUNet/TransUNet/lists/lists_Synapse', 'batch_size': 16, 'num_workers': 8, 'color_jitter_enabled': True, 'scale_range': [0.5, 2.0], 'check_empty_targets': True, 'drop_background': False, 'make_rgb': True, 'train_split': 'train', 'test_split': 'test_vol'}
+2026-10-24 16:21:05,070 INFO    wandb-AsyncioManager-main:2089767 [service_client.py:_forward_responses():122] Reached EOF.
+2026-10-24 16:21:05,070 INFO    wandb-AsyncioManager-main:2089767 [mailbox.py:close():154] Closing mailbox, abandoning 0 handles.

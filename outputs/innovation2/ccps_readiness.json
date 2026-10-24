@@ -1,0 +1,272 @@
+{
+  "state": "passed",
+  "verified_at_utc": "2026-10-23T10:30:09.556977+00:00",
+  "cpu_tests": 101,
+  "ccps_tests": 25,
+  "gpu_smoke": {
+    "passed": true,
+    "batches": 2,
+    "backward_checks": 2,
+    "global_step": 2,
+    "selector_changed": true,
+    "selector_finite_nonzero_gradients": true,
+    "batch_shape": [
+      16,
+      3,
+      384,
+      384
+    ],
+    "precision": "16-mixed",
+    "default_compile": true,
+    "peak_allocated_gib": 14.911542892456055,
+    "selector_weights_min": 0.9495010375976562,
+    "selector_weights_max": 0.9499607682228088,
+    "physical_preflight": [
+      {
+        "case": "case0008",
+        "spacing_zyx_mm": [
+          3.0,
+          0.728515625,
+          0.728515625
+        ],
+        "shape_zyx": [
+          148,
+          512,
+          512
+        ],
+        "label_sha256": "b5e32e6fc3fa98febb85d918b5c50df8eca6e4c4e5a75cff7fa55a5afe507062"
+      },
+      {
+        "case": "case0022",
+        "spacing_zyx_mm": [
+          5.0,
+          0.7675780057907104,
+          0.7675780057907104
+        ],
+        "shape_zyx": [
+          89,
+          512,
+          512
+        ],
+        "label_sha256": "0df2ddc79fa1f951dc1e509ed12b935297579b06cb455b2a5b5edc0e1bac737b"
+      },
+      {
+        "case": "case0038",
+        "spacing_zyx_mm": [
+          5.0,
+          0.9765620231628418,
+          0.9765620231628418
+        ],
+        "shape_zyx": [
+          100,
+          512,
+          512
+        ],
+        "label_sha256": "9947f80d68d603f43b442326ed4b5efb655e1b132413a69072dd7a8e8d8dded2"
+      },
+      {
+        "case": "case0036",
+        "spacing_zyx_mm": [
+          3.0,
+          0.74609375,
+          0.74609375
+        ],
+        "shape_zyx": [
+          184,
+          512,
+          512
+        ],
+        "label_sha256": "c83b4f6817aec74bc417d01a60c51a9c96ec87abde44fc2afe28bb57bf48f9e6"
+      },
+      {
+        "case": "case0032",
+        "spacing_zyx_mm": [
+          3.0,
+          0.740234375,
+          0.740234375
+        ],
+        "shape_zyx": [
+          144,
+          512,
+          512
+        ],
+        "label_sha256": "5123ab998290655de128fb38a57df59cb1c395e4bb7728a23f0e9fc018edeed5"
+      },
+      {
+        "case": "case0002",
+        "spacing_zyx_mm": [
+          3.0,
+          0.720703125,
+          0.720703125
+        ],
+        "shape_zyx": [
+          139,
+          512,
+          512
+        ],
+        "label_sha256": "d2c84178311fd172713058ba1a3517301dde06e1cd1015ce259c7b85a34766d8"
+      },
+      {
+        "case": "case0029",
+        "spacing_zyx_mm": [
+          3.0,
+          0.875,
+          0.875
+        ],
+        "shape_zyx": [
+          100,
+          512,
+          512
+        ],
+        "label_sha256": "50e1bb33b14ae3c162f746207126d425de6ccaa10e326f2ab59ef06acad0217f"
+      },
+      {
+        "case": "case0003",
+        "spacing_zyx_mm": [
+          3.0,
+          0.8984375,
+          0.8984375
+        ],
+        "shape_zyx": [
+          198,
+          512,
+          512
+        ],
+        "label_sha256": "642c8ce417b097c3e4e55f5943804e7cbf79104e5af61a08b57df873f9c9bb91"
+      },
+      {
+        "case": "case0001",
+        "spacing_zyx_mm": [
+          3.0,
+          0.66796875,
+          0.66796875
+        ],
+        "shape_zyx": [
+          147,
+          512,
+          512
+        ],
+        "label_sha256": "a32ae35b63e4a1e9db9826dd7cec817835f76a202954ccff68794a3053618277"
+      },
+      {
+        "case": "case0004",
+        "spacing_zyx_mm": [
+          3.0,
+          0.59375,
+          0.59375
+        ],
+        "shape_zyx": [
+          140,
+          512,
+          512
+        ],
+        "label_sha256": "fedfa583157c4de1b8a6fb69bbae5476bf6e546a21bc477d2b5b7320e2d13dc1"
+      },
+      {
+        "case": "case0025",
+        "spacing_zyx_mm": [
+          5.0,
+          0.83203125,
+          0.83203125
+        ],
+        "shape_zyx": [
+          85,
+          512,
+          512
+        ],
+        "label_sha256": "d607d514903a45f4a7c46d9bc04e4e40fd86ecddb0381e9c28ffee334cdbea63"
+      },
+      {
+        "case": "case0035",
+        "spacing_zyx_mm": [
+          5.0,
+          0.9199219942092896,
+          0.9199219942092896
+        ],
+        "shape_zyx": [
+          94,
+          512,
+          512
+        ],
+        "label_sha256": "1d41c0e751f1acc406c3ec80349722392dce2c86cf8e492989ac5ec7d4677fcf"
+      }
+    ]
+  },
+  "checkpoint_cli_restoration": true,
+  "gpu_selector_fp32": true,
+  "protected_baseline_files_unchanged": true,
+  "formal_training_started": false,
+  "sha256": {
+    "configs/synapse/ccps_ablations/a0_off.yaml": "b0670bd11ccfbd531194654d918a3f68dd1950aabc9729a306a886bb4241248b",
+    "configs/synapse/ccps_ablations/a10_context_only.yaml": "af7e27e601113c158ac205d1137871d71d2d6e72406851607d068ef78b079046",
+    "configs/synapse/ccps_ablations/a11_residual_only.yaml": "32a02147459f81ee35f6f92288ba8e31ef21a02343230cd07e27ec17d7a54b39",
+    "configs/synapse/ccps_ablations/a1_global_patch.yaml": "4f1ea14cfcbf18a4b31aab20622ab8e90239091aa9d0338f6b5934d13bdc8280",
+    "configs/synapse/ccps_ablations/a2_visual_patch.yaml": "2e3e80c9a0c99952d60c664b629018d82c635a4338998b51662f0042ce474e5a",
+    "configs/synapse/ccps_ablations/a3_visual_prior_patch.yaml": "4456dcd014762b6a0de69d98a475e429ab9fb0bf8a83b41713d5e99feea8920c",
+    "configs/synapse/ccps_ablations/a4_visual_prior_query.yaml": "6f395039de90bcee20fbbc3c3260a328e10876cbf1a9c0632cb0d1decc91c151",
+    "configs/synapse/ccps_ablations/a5_visual_prior_both.yaml": "683468b88f97c71e7e15989b6dbaeb2ef82b549ebf3cc17a00d4c53ff47cb8de",
+    "configs/synapse/ccps_ablations/a6_visual_prior_patch_presence.yaml": "76dd87782b777986e66df196d1bcb4334e4a4ff5413a44359b5dc1fc568a7082",
+    "configs/synapse/ccps_ablations/a7_visual_prior_both_presence.yaml": "318c4305a8f4c14d0b4f3d26034207b63cd0f7edcaeba27c6eb4cf27e7d60065",
+    "configs/synapse/ccps_ablations/a8_visual_prior_text_only.yaml": "c162f832526d920ed24013bfd1cc531f9cdf8f369245236192ba65f6f173dbe0",
+    "configs/synapse/ccps_ablations/a9_visual_prior_prob_only.yaml": "1527fff67664e520c8f0e044b401f1cbf63a5d43f090cf9bcfa987a5af6a8de5",
+    "configs/synapse/vit_query_mul_scale_fusion.yaml": "2a85f0969b4f525134054308c32dfa063903216442cda24b65bea760113e9d01",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_ccps.yaml": "3a72cf21f314872a25e15f0e0d595baf1bff8e9622754fab2526f86ff3f64683",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml": "40a518616fde10e5e32b12c1f124d2689934bc11fd03bd0fce14bad00fe471ca",
+    "datasets/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "datasets/acdc_dataset.py": "3e929a0617f821ca9a2f6d91f42b2c427b8997cdb9479677f67cb37a651074b0",
+    "datasets/acdc_semantic.py": "0b53f2564350f1287f005be4189894c8e377e17b31e2043fa8cc3b24a5fc4e9d",
+    "datasets/isic_binary_semantic.py": "459954120282fdb67b2d5b73b8cedf77363847b0e651af31a92c91ae3f4d583d",
+    "datasets/lightning_data_module.py": "fea768cb9eb5d17d19a8a6953ad4886b3e9ced57731d001895d941ca115d39f8",
+    "datasets/medical_binary_semantic.py": "72eb18e5b10f2c141fa7b4a8b5844a552d9d39ec009c844057f61e5681a1c43c",
+    "datasets/synapse_npz_dataset.py": "f82f3242de9239ce29552c9a16d39704be8d162ecb5785b0bbf87d406984e6e0",
+    "datasets/synapse_semantic.py": "910240caf372f7ae8b4381ed617ed915695643692526c5aad92311823242a3dc",
+    "datasets/synapse_splits.py": "5edd56e4545018bdb97b162d27b50cbed64ef241ba8f811c89dba9d1aad2e501",
+    "datasets/synapse_transforms.py": "3b5643beb17d15f1370a652de9cc1070f0803481034767db10a3f3f604aa78f7",
+    "main.py": "d15a67abafa836659e0d17ebb5aa2b5cea17a6963cefb5898a000e96ec08e070",
+    "models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "models/asee.py": "eb982959557b880ae148a04bafe019d9e1a374578c8646cb1f1098444e0fc126",
+    "models/asee_ccps.py": "2cac95bd1432ee61ad392761c5cf7225c9d02d0a4988b3dc35010e3ba96bbfa2",
+    "models/ccps_selector.py": "67b49a96b801c8442d437d529026e8e8e46e9695c3823ac285bf5aaebe30566c",
+    "models/eoseg.py": "11a025c4cb0661f85f4fa28d75c1fee2f6263a1957aa695eeba0c44dece4e19b",
+    "models/eoseg_asee.py": "05e1c20e567fb2c329b1059652fc997f0a5e3dab66c16ac4d57ed6e533b9fa5b",
+    "models/eoseg_asee_ccps.py": "2436e91ec76f597f8e1f67b79b2a589e6511da62c1de805ceac45dc1e2e02b9e",
+    "models/vit.py": "f6bd8b1c3362fc5e4207bde02aed156b60eca43518e0e9854a4e9dbd2ac6f3e1",
+    "models/vit_rvsa_mtp.py": "85891916d2849d5cb65d4dbcc73c41e61b6547dad7d7e9291ab82a066dd8e049",
+    "priors/synapse_asee_v1.pt": "eceb52e294151028be69433d628182a317ef707dd8e5da927b69149eb89232ff",
+    "priors/synapse_label_map.verified.json": "1a2e2d4675e44ce02f8985d1fd00b99c65cfcee32a5001f065a8053943448345",
+    "priors/synapse_spacing.verified.json": "562a17b2d583b969dde41cf44b05a11e5c15d53b0fda0887ad9caaf98f9c17e5",
+    "project_TransUNet/TransUNet/lists/lists_Synapse/test_vol.txt": "7a1cdb883ad2f76f79cb922cee782eb8618ee7a72e75b640bbcee1367d66c2a6",
+    "project_TransUNet/TransUNet/lists/lists_Synapse/train.txt": "2a3afc3b126f560d023c09e9a943e31c9ab95cea544afa69bf6b39f80ade59f5",
+    "scripts/audit_ccps_smoke.py": "53afef4ef72affdaf4cbb94c95887eb9416f492b009107c4b7e6604daf76359c",
+    "scripts/generate_ccps_ablations.py": "7efc65ea6ec065de0e0139b1034b1dabde8bccb2aba5a164cddaf236f2a2d267",
+    "scripts/launch_innovation2_ccps.py": "eb73b0fdce809a69ffd136688e9af0c4bae8c2289c211e407ada9a65f82a724b",
+    "sitecustomize.py": "d34911d3004555f1eb8612bb1b6092c9dd1a866ddf970eb082722daa329cb3a8",
+    "tests/test_ccps.py": "6d10f2e6a24d863746d6acb39cd2d98677ce252a25028c845c56bb38571215ab",
+    "training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "training/acdc_baseline_semantic.py": "bb6638d01d8eed4c95049912cdddea39fa9519b97a1056e511fb5852339f3972",
+    "training/acdc_mask_classification_semantic.py": "2545629edab7f65c9d4a4acd5cd3adaf945740fe168e6d0eb60a8980952c45cb",
+    "training/acdc_test_logger.py": "2baba879cb37294fe99c1e7ca7f4047f186de862f5f73a4ce81f06e5c8289e58",
+    "training/acdc_val_logger.py": "00920b0b72a749a7b199cd3415272eb8e40a1cfe2260829bc4b232d3bb9ac42d",
+    "training/lightning_module.py": "94c7d9e4631b667246d58add04153f570b679bcd94a2480ada00f512a23d62aa",
+    "training/mask_classification_ccps.py": "0d864ae1f2718c9510909f954ae93ca808df131c94c1d6ba5fb61c0b065c73a3",
+    "training/mask_classification_instance.py": "955ceb88151e10c874548cfdb76cdd136132fd68d7190a1d3ea5ee659f7194c9",
+    "training/mask_classification_loss.py": "9c759093a76e97a203c269ad3ee32985defcb83ce382c9eaf340c443c2219e6f",
+    "training/mask_classification_panoptic.py": "6282b2bc56a3870fad0db7395ea364e32485169b55cc8fc69366edd3e75f42ea",
+    "training/mask_classification_semantic.py": "117a23bad32ca0997e7d847cea098c99615e35e3e0aed0db37f80ad70d86d9cc",
+    "training/medical_binary_segmentation.py": "48bef8214df554dfc55eed5c589175e3325dc30486d1e2e2b4c20674ab9a486b",
+    "training/medical_val_logger.py": "e4f8c5bc64478657ad3eb3b7c49df4e52ea8de898b0c5e05465c2e1bea556cf1",
+    "training/pixel_classification_semantic.py": "1bf3a7d0b4595e29ff5c9f4e6334c0ad9a5b7dab62a75b92b7225ea1f68aaaf8",
+    "training/query_binary_mask_classification.py": "467c2acc1d8607721f9868a2faf3c9113168011e4dc78aac9909ce8268182a0e",
+    "training/run_artifacts.py": "b735924fd41bdfadd4a04acbb0eb993dc23b457062c84338ed499a8218bccc1d",
+    "training/synapse_physical_geometry.py": "d448a58e62efb03a8f8ae964f8ad3b87836f77aad0f78de987bbd098b856d48c",
+    "training/synapse_physical_selection.py": "7dc299c912413f943d42aff88c0e239fa3da30123fa916ce645f4d654dc53024",
+    "training/synapse_physical_semantic.py": "8abdc0302bb61e803673524a3f86e09b209ca8ef5716ddc630b2fc26ffce0a4a",
+    "training/synapse_selection.py": "ad5d725a6f7000bcd64975f65bae389a6d4fefdc2d5de20c1d74fba659657757",
+    "training/synapse_teacher_selection.py": "297a53a2398b31aa031c791d7b27ab9d00f9c4474f109a831db86ba9312abe3c",
+    "training/synapse_teacher_semantic.py": "f454d73e0ccdd187361af5462aa32815f6d2bdcf1a0e7e13b50bc42009bbaf00",
+    "training/synapse_test_selection.py": "9733c4c667c17e1657fd1501f792108d86bf98e6a147146d2530dd1dd3b0d4d0",
+    "training/two_stage_warmup_poly_schedule.py": "902f266e1048e5bc460742c3ee0d0a55e18a662f2e4b3be0cd702dd8ff9f9794"
+  },
+  "evidence_root": "outputs/audit/ccps_integration_20261023T101700Z",
+  "config": "configs/synapse/vit_query_mul_scale_fusion_asee_ccps.yaml"
+}
