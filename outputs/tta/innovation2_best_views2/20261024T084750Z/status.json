@@ -1,0 +1,13 @@
+{
+  "state": "completed",
+  "started_at_utc": "2026-10-24T08:47:50.433184+00:00",
+  "supervisor_pid": 3512379,
+  "tta_views": 2,
+  "checkpoint_epoch": 187,
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_views2/20261024T084750Z",
+  "testing_pid": 3512421,
+  "test_exit_code": 0,
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-24T09:11:19.222520+00:00",
+  "result_folder": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_views2/20261024T084750Z/independent_test/20261024T084804Z_c9b10bc0"
+}

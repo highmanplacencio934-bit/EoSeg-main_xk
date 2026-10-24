@@ -1,0 +1,12 @@
+{
+  "added": [
+    "outputs/tta/innovation2_best_views4/20261024T091548Z/",
+    "outputs/tta/innovation2_best_views4/latest_path.txt"
+  ],
+  "modified": [
+    ".codex/synapse_tta_comparison.md"
+  ],
+  "deleted": [],
+  "source_code_or_training_parameters_changed": false,
+  "source_checkpoint_preserved": true
+}
