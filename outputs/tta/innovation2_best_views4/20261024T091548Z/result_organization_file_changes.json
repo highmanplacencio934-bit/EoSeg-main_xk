@@ -1,0 +1,13 @@
+{
+  "added": [
+    "outputs/tta/innovation2_best_views4/20261024T091548Z/comparison_1_2_4.md",
+    "outputs/tta/innovation2_best_views4/20261024T091548Z/organ_comparison_1_2_4.csv",
+    "outputs/tta/innovation2_best_views4/20261024T091548Z/result_organization_file_changes.json"
+  ],
+  "modified": [
+    ".codex/synapse_tta_comparison.md"
+  ],
+  "deleted": [],
+  "evaluation_rerun": false,
+  "source_code_or_model_changed": false
+}
