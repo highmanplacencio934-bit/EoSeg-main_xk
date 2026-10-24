@@ -1,0 +1,9 @@
+{
+  "state": "failed",
+  "supervisor_pid": 2089726,
+  "started_at_utc": "2026-10-23T12:17:54.450872+00:00",
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z",
+  "training_pid": 2089767,
+  "exit_code": 1,
+  "finished_at_utc": "2026-10-24T08:21:08.132381+00:00"
+}

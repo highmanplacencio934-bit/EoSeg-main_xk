@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+    "-u",
+    "main.py",
+    "fit",
+    "--config",
+    "configs/synapse/vit_query_mul_scale_fusion_asee_ccps.yaml",
+    "--trainer.accelerator=gpu",
+    "--trainer.devices=1",
+    "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z",
+    "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z\"}}]"
+  ],
+  "environment": {
+    "HF_HUB_OFFLINE": "1",
+    "TORCH_HOME": "/Disk/HDD/Sk/.cache/torch",
+    "TIMM_USE_OLD_CACHE": "1",
+    "WANDB_MODE": "offline"
+  },
+  "preflight": {
+    "hostname": "5090",
+    "python": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+    "torch": "2.13.0+cu132",
+    "cuda_runtime": "13.2",
+    "nvidia_smi": "NVIDIA GeForce RTX 5090 D, 32089, 580.178.04",
+    "disk_free_bytes": 1175279841280,
+    "readiness_sha256": "da12a8baf7414608ebe552757b7ac2daef9b37a42c2f631944c2a01222db91a7"
+  },
+  "started_at_utc": "2026-10-23T12:17:55.515500+00:00",
+  "initialization": "original offline timm pretrain; no innovation1 checkpoint",
+  "hd95_unit": "mm; named reports retain voxel",
+  "selection": "mean Dice, original legacy empty rule"
+}

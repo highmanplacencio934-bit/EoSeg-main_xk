@@ -1,0 +1,101 @@
+{
+  "state": "stopped_by_user",
+  "stopped_at_utc": "2026-10-24T08:22:13.908577+00:00",
+  "training_pid": 2089767,
+  "training_process_exited": true,
+  "gpu_released": true,
+  "planned_epochs": 220,
+  "last_saved_train_epoch": 214,
+  "last_complete_test_epoch": 213,
+  "completed_evaluation_epochs": 43,
+  "completed_case_evaluations": 516,
+  "best_epoch": 187,
+  "best_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+  "mean_dice_percent": 86.24297902218244,
+  "mean_hd95_mm": 29.74475817771973,
+  "mean_hd95_voxel": 29.113595048587335,
+  "original_process_exit_status": {
+    "state": "failed",
+    "supervisor_pid": 2089726,
+    "started_at_utc": "2026-10-23T12:17:54.450872+00:00",
+    "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z",
+    "training_pid": 2089767,
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-24T08:21:08.132381+00:00"
+  },
+  "tta": "not run; waiting automation deleted at user stop",
+  "organs": [
+    {
+      "label_id": 1,
+      "organ_zh": "主动脉",
+      "organ": "Aorta",
+      "dice_percent": 90.31403640412928,
+      "hd95_mm": 38.43197341698049,
+      "hd95_voxel": 38.041944212100816,
+      "legacy_empty_cases": 0
+    },
+    {
+      "label_id": 2,
+      "organ_zh": "胆囊",
+      "organ": "Gallbladder",
+      "dice_percent": 74.65148030726705,
+      "hd95_mm": 17.30636277939848,
+      "hd95_voxel": 17.065418295480168,
+      "legacy_empty_cases": 1
+    },
+    {
+      "label_id": 3,
+      "organ_zh": "左肾",
+      "organ": "Left Kidney",
+      "dice_percent": 87.82899593625412,
+      "hd95_mm": 58.24933037338233,
+      "hd95_voxel": 62.16364203444613,
+      "legacy_empty_cases": 0
+    },
+    {
+      "label_id": 4,
+      "organ_zh": "右肾",
+      "organ": "Right Kidney",
+      "dice_percent": 87.24180984826818,
+      "hd95_mm": 11.47847458408591,
+      "hd95_voxel": 8.735832567128506,
+      "legacy_empty_cases": 0
+    },
+    {
+      "label_id": 5,
+      "organ_zh": "肝脏",
+      "organ": "Liver",
+      "dice_percent": 94.51140917073401,
+      "hd95_mm": 76.09297339895522,
+      "hd95_voxel": 81.87148949528354,
+      "legacy_empty_cases": 0
+    },
+    {
+      "label_id": 6,
+      "organ_zh": "胰腺",
+      "organ": "Pancreas",
+      "dice_percent": 73.73222582878824,
+      "hd95_mm": 7.558413816511611,
+      "hd95_voxel": 4.855905505606489,
+      "legacy_empty_cases": 0
+    },
+    {
+      "label_id": 7,
+      "organ_zh": "脾脏",
+      "organ": "Spleen",
+      "dice_percent": 93.539984530612,
+      "hd95_mm": 16.804600931046885,
+      "hd95_voxel": 14.009801799108033,
+      "legacy_empty_cases": 0
+    },
+    {
+      "label_id": 8,
+      "organ_zh": "胃",
+      "organ": "Stomach",
+      "dice_percent": 88.12389015140674,
+      "hd95_mm": 12.035936121396931,
+      "hd95_voxel": 6.1647264795449885,
+      "legacy_empty_cases": 0
+    }
+  ]
+}

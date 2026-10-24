@@ -1,0 +1,21 @@
+{
+  "added": [
+    "outputs/innovation2/ccps_plan/20261023T121754Z/user_stop_request.json",
+    "outputs/innovation2/ccps_plan/20261023T121754Z/status.after_process_exit.json",
+    "outputs/innovation2/ccps_plan/20261023T121754Z/user_stop_summary.json",
+    "outputs/innovation2/ccps_plan/20261023T121754Z/best_checkpoint_organs.csv",
+    "outputs/innovation2/ccps_plan/20261023T121754Z/results_summary.md",
+    "outputs/innovation2/ccps_plan/20261023T121754Z/user_stop_file_changes.json",
+    ".codex/innovation2_ccps_results.md"
+  ],
+  "modified": [
+    "outputs/innovation2/ccps_plan/20261023T121754Z/status.json",
+    ".codex/innovation2_ccps_runbook.md",
+    ".codex/synapse_tta_comparison.md"
+  ],
+  "deleted": [],
+  "deleted_automation": "tta",
+  "source_or_training_parameter_changes": false,
+  "checkpoint_weights_preserved": true,
+  "test_metrics_csv_preserved": true
+}

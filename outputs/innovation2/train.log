@@ -1,0 +1,126 @@
+Seed set to 0
+Using 16bit Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+wandb: WARNING The anonymous setting has no effect and will be removed in a future version.
+wandb: WARNING `resume` will be ignored since W&B syncing is set to `offline`. Starting a new run with run id 2lb1dpu3.
+wandb: Tracking run with wandb version 0.30.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in outputs/innovation2/wandb/offline-run-20261023_201803-2lb1dpu3
+wandb: View this run in the terminal with `wandb leet`
+INFO:root:Synapse fixed split (TrainerFn.FITTING): {'train_slices': 2211, 'train_cases': ['case0005', 'case0006', 'case0007', 'case0009', 'case0010', 'case0021', 'case0023', 'case0024', 'case0026', 'case0027', 'case0028', 'case0030', 'case0031', 'case0033', 'case0034', 'case0037', 'case0039', 'case0040'], 'test_cases': ['case0008', 'case0022', 'case0038', 'case0036', 'case0032', 'case0002', 'case0029', 'case0003', 'case0001', 'case0004', 'case0025', 'case0035'], 'case_overlap': []}
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Loading `train_dataloader` to estimate number of stepping batches.
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+INFO:root:Synapse test-selected checkpoints and CSV: /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/utilities/model_summary/model_summary.py:242: Precision 16-mixed is not supported by the model summary.  Estimated model size in MB will not be accurate. Using 32 bits instead.
+
+   | Name                          | Type                           | Params | Mode  | FLOPs
+--------------------------------------------------------------------------------------------------
+0  | network                       | EoSegMultiQSegFusionASEECCPS   | 317 M  | train | 0    
+1  | network.encoder               | ViT                            | 303 M  | train | 0    
+2  | network.encoder.backbone      | VisionTransformer              | 303 M  | train | 0    
+3  | network.feature_upscale       | Sequential                     | 2.9 M  | train | 0    
+4  | network.feature_upscale.0     | ConvTranspose2d                | 2.1 M  | train | 0    
+5  | network.feature_upscale.1     | BatchNorm2d                    | 1.0 K  | train | 0    
+6  | network.feature_upscale.2     | GELU                           | 0      | train | 0    
+7  | network.feature_upscale.3     | Conv2d                         | 5.1 K  | train | 0    
+8  | network.feature_upscale.4     | BatchNorm2d                    | 1.0 K  | train | 0    
+9  | network.feature_upscale.5     | GELU                           | 0      | train | 0    
+10 | network.feature_upscale.6     | ConvTranspose2d                | 524 K  | train | 0    
+11 | network.feature_upscale.7     | BatchNorm2d                    | 512    | train | 0    
+12 | network.feature_upscale.8     | GELU                           | 0      | train | 0    
+13 | network.feature_upscale.9     | Conv2d                         | 2.6 K  | train | 0    
+14 | network.feature_upscale.10    | BatchNorm2d                    | 512    | train | 0    
+15 | network.feature_upscale.11    | GELU                           | 0      | train | 0    
+16 | network.feature_upscale.12    | Conv2d                         | 263 K  | train | 0    
+17 | network.mask_head             | Sequential                     | 2.1 M  | train | 0    
+18 | network.mask_head.0           | Linear                         | 1.0 M  | train | 0    
+19 | network.mask_head.1           | GELU                           | 0      | train | 0    
+20 | network.mask_head.2           | Linear                         | 1.0 M  | train | 0    
+21 | network.class_head            | Linear                         | 10.2 K | train | 0    
+22 | network.layer_gate            | Sequential                     | 526 K  | train | 0    
+23 | network.layer_gate.0          | Linear                         | 524 K  | train | 0    
+24 | network.layer_gate.1          | GELU                           | 0      | train | 0    
+25 | network.layer_gate.2          | Linear                         | 1.5 K  | train | 0    
+26 | network.asee                  | AnatomicalSemanticEncodingCCPS | 8.2 M  | train | 0    
+27 | network.asee.text_proj        | Sequential                     | 1.8 M  | train | 0    
+28 | network.asee.prob_proj        | Sequential                     | 267 K  | train | 0    
+29 | network.asee.ffn_patch_in     | Sequential                     | 2.1 M  | train | 0    
+30 | network.asee.norm_patch_in    | LayerNorm                      | 2.0 K  | train | 0    
+31 | network.asee.ffn_patch_out    | Sequential                     | 2.1 M  | train | 0    
+32 | network.asee.norm_patch_out   | LayerNorm                      | 2.0 K  | train | 0    
+33 | network.asee.query_prior_proj | Sequential                     | 1.1 M  | train | 0    
+34 | network.asee.selector         | ClassConditionalPriorSelector  | 793 K  | train | 0    
+35 | criterion                     | MaskClassificationLoss         | 0      | train | 0    
+36 | criterion.matcher             | Mask2FormerHungarianMatcher    | 0      | train | 0    
+37 | metrics                       | ModuleList                     | 0      | train | 0    
+38 | metrics.0                     | MulticlassJaccardIndex         | 0      | train | 0    
+--------------------------------------------------------------------------------------------------
+317 M     Trainable params
+0         Non-trainable params
+317 M     Total params
+1,269.783 Total estimated model params size (MB)
+607       Modules in train mode
+0         Modules in eval mode
+0         Total Flops
+[TRAIN] imgs dtype=torch.float32, min=0.0000, max=1.0000
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/utilities/data.py:79: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 16. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+W1023 20:18:48.765000 2089767 site-packages/torch/_dynamo/convert_frame.py:1994] [0/8] torch._dynamo hit config.recompile_limit (8)
+W1023 20:18:48.765000 2089767 site-packages/torch/_dynamo/convert_frame.py:1994] [0/8]    function: 'training_step' (/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/training/mask_classification_ccps.py:89)
+W1023 20:18:48.765000 2089767 site-packages/torch/_dynamo/convert_frame.py:1994] [0/8]    last reason: 0/7: tensor 'batch[1][0]['masks']' size mismatch at index 0. expected 1, actual 3
+W1023 20:18:48.765000 2089767 site-packages/torch/_dynamo/convert_frame.py:1994] [0/8] To log all recompilation reasons, use TORCH_LOGS="recompiles".
+W1023 20:18:48.765000 2089767 site-packages/torch/_dynamo/convert_frame.py:1994] [0/8] To diagnose recompilation issues, see https://docs.pytorch.org/docs/main/user_guide/torch_compiler/compile/programming_model.recompilation.html
+INFO:root:Synapse fixed split (test): {'train_slices': 2211, 'train_cases': ['case0005', 'case0006', 'case0007', 'case0009', 'case0010', 'case0021', 'case0023', 'case0024', 'case0026', 'case0027', 'case0028', 'case0030', 'case0031', 'case0033', 'case0034', 'case0037', 'case0039', 'case0040'], 'test_cases': ['case0008', 'case0022', 'case0038', 'case0036', 'case0032', 'case0002', 'case0029', 'case0003', 'case0001', 'case0004', 'case0025', 'case0035'], 'case_overlap': []}
+INFO:root:[TEST SELECTION] epoch=171 Dice=0.855825 HD95=31.072210 best_epoch=171 best=0.855825
+INFO:root:[TEST SELECTION] epoch=172 Dice=0.854724 HD95=32.108695 best_epoch=171 best=0.855825
+INFO:root:[TEST SELECTION] epoch=173 Dice=0.854080 HD95=33.948242 best_epoch=171 best=0.855825
+INFO:root:[TEST SELECTION] epoch=174 Dice=0.857930 HD95=28.707299 best_epoch=174 best=0.857930
+INFO:root:[TEST SELECTION] epoch=175 Dice=0.860221 HD95=27.913746 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=176 Dice=0.858634 HD95=27.429874 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=177 Dice=0.860142 HD95=29.707053 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=178 Dice=0.859819 HD95=23.801715 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=179 Dice=0.859447 HD95=32.688147 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=180 Dice=0.856985 HD95=32.725819 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=181 Dice=0.857491 HD95=27.091603 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=182 Dice=0.860128 HD95=26.671529 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=183 Dice=0.855498 HD95=30.867867 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=184 Dice=0.859692 HD95=28.232952 best_epoch=175 best=0.860221
+INFO:root:[TEST SELECTION] epoch=185 Dice=0.861120 HD95=30.674580 best_epoch=185 best=0.861120
+INFO:root:[TEST SELECTION] epoch=186 Dice=0.856517 HD95=34.079642 best_epoch=185 best=0.861120
+INFO:root:[TEST SELECTION] epoch=187 Dice=0.862430 HD95=29.744758 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=188 Dice=0.857232 HD95=32.585516 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=189 Dice=0.857854 HD95=29.293931 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=190 Dice=0.861123 HD95=26.186230 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=191 Dice=0.859621 HD95=27.332784 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=192 Dice=0.856712 HD95=29.515860 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=193 Dice=0.860939 HD95=29.489716 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=194 Dice=0.860522 HD95=29.867706 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=195 Dice=0.857084 HD95=28.265134 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=196 Dice=0.859584 HD95=30.415053 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=197 Dice=0.857394 HD95=31.628907 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=198 Dice=0.856511 HD95=28.997118 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=199 Dice=0.854038 HD95=34.065972 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=200 Dice=0.857381 HD95=27.515356 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=201 Dice=0.856189 HD95=33.908854 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=202 Dice=0.858267 HD95=31.629310 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=203 Dice=0.855971 HD95=33.569424 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=204 Dice=0.857735 HD95=31.663952 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=205 Dice=0.855826 HD95=31.110480 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=206 Dice=0.856443 HD95=31.343844 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=207 Dice=0.859239 HD95=29.724117 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=208 Dice=0.856663 HD95=30.289910 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=209 Dice=0.858127 HD95=31.681410 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=210 Dice=0.856010 HD95=32.494599 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=211 Dice=0.858962 HD95=31.111372 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=212 Dice=0.856033 HD95=33.568980 best_epoch=187 best=0.862430
+INFO:root:[TEST SELECTION] epoch=213 Dice=0.856812 HD95=32.989332 best_epoch=187 best=0.862430
+
+Detected KeyboardInterrupt, attempting graceful shutdown ...
+Epoch 213/219 ━━━━━━━━━━━━━━━ 138/138 0:00:35 •       4.23it/s v_num: dpu3      
+                                      0:00:00                  losses/train_los…
+                                                               0.325            
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync outputs/innovation2/wandb/offline-run-20261023_201803-2lb1dpu3[0m
