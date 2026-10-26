@@ -1,0 +1,72 @@
+trainer:
+  default_root_dir: outputs/innovation2/a11_residual_only
+  max_epochs: 220
+  limit_val_batches: 0
+  check_val_every_n_epoch: 1000000
+  precision: 16-mixed
+  enable_checkpointing: false
+  callbacks:
+  - class_path: training.synapse_physical_selection.SynapsePhysicalHD95Selection
+    init_args:
+      last_n_epochs: 50
+      expected_test_cases: 12
+      output_dir: outputs/innovation2/a11_residual_only
+  logger:
+    class_path: lightning.pytorch.loggers.wandb.WandbLogger
+    init_args:
+      save_dir: outputs/innovation2
+      resume: allow
+      project: eomt
+      name: ccps_a11_residual_only
+model:
+  class_path: training.mask_classification_ccps.MaskClassificationSemanticCCPS
+  init_args:
+    num_classes: 9
+    img_size:
+    - 384
+    - 384
+    attn_mask_annealing_enabled: false
+    ignore_idx: 255
+    lr: 2e-4
+    spacing_manifest: priors/synapse_spacing.verified.json
+    presence_loss_weight: 0.0
+    presence_pos_weight: 1.0
+    network:
+      class_path: models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS
+      init_args:
+        num_classes: 9
+        num_q: 16
+        prior_path: priors/synapse_asee_v1.pt
+        queries_per_class: 2
+        patch_update: plan
+        freeze_text_projection: false
+        enhance_patch: true
+        enhance_query: true
+        use_text: true
+        use_probability: true
+        patch_gate_effect: residual_only
+        selector_mode: visual_prior
+        selector_on_patch: true
+        selector_on_query: false
+        selector_hidden_dim: 256
+        selector_init_probability: 0.95
+        detach_prior_for_selector: false
+        encoder:
+          class_path: models.vit.ViT
+data:
+  class_path: datasets.synapse_semantic.SynapseSemantic
+  init_args:
+    train_base_dir: project_TransUNet/data/Synapse/train_npz
+    test_base_dir: project_TransUNet/data/Synapse/test_vol_h5
+    list_dir: project_TransUNet/TransUNet/lists/lists_Synapse
+    train_split: train
+    test_split: test_vol
+    img_size:
+    - 384
+    - 384
+    num_classes: 9
+    batch_size: 16
+    num_workers: 8
+    ignore_idx: 255
+    drop_background: false
+    make_rgb: true
