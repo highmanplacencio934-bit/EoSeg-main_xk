@@ -1,0 +1,32 @@
+{
+  "added": [
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/checkpoint_source.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/label_map.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/metric_units.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/multiscale_readiness_snapshot.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/readiness_snapshot.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/run_manifest.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/spacing_manifest.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/tta_contract.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/launch.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/launch_receipt.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/launch_verified.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/requested_contract.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/run_test.py",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/source_checkpoint.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/status.json",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/supervisor.log",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/test.log",
+    "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/file_changes.json",
+    "outputs/tta/innovation2_best_scale_hflip8/latest_path.txt"
+  ],
+  "modified": [
+    ".codex/synapse_multiscale_tta_plan.md",
+    ".codex/synapse_tta_comparison.md"
+  ],
+  "deleted": [],
+  "production_source_changes": [],
+  "training_parameter_changes": [],
+  "evaluation_change": "scale_hflip views 6 to 8; add scale0.75 paired original/horizontal, same checkpoint and scoring",
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z"
+}

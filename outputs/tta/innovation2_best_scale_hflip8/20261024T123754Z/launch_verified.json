@@ -1,0 +1,26 @@
+{
+  "verified_at_utc": "2026-10-24T12:38:51.687206+00:00",
+  "status": {
+    "state": "running",
+    "started_at_utc": "2026-10-24T12:37:55.020387+00:00",
+    "supervisor_pid": 3765892,
+    "tta_views": 8,
+    "tta_scheme": "scale_hflip",
+    "scales": [
+      1.0,
+      0.875,
+      1.125,
+      0.75
+    ],
+    "checkpoint_epoch": 187,
+    "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z",
+    "testing_pid": 3765925
+  },
+  "manifest_path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/run_manifest.json",
+  "manifest_sha256": "b177bddb429bc065c36584672be8320dd104564e915f2f4bedddb85bfa7073f7",
+  "source_hashes_verified": 87,
+  "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d",
+  "weights_loaded": true,
+  "precision": "16-mixed",
+  "device": "cuda:0"
+}

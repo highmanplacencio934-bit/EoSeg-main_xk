@@ -1,0 +1,13 @@
+{
+  "supervisor_pid": 3765892,
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z",
+  "tta_scheme": "scale_hflip",
+  "views": 8,
+  "scales": [
+    1.0,
+    0.875,
+    1.125,
+    0.75
+  ],
+  "launched_at_utc": "2026-10-24T12:37:54.997681+00:00"
+}
