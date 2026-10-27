@@ -1,0 +1,20 @@
+{
+  "reference_manifest": "outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/run_manifest.json",
+  "default_options_identical": true,
+  "all_401_parameter_group_settings_identical": true,
+  "compared_parameter_groups": 401,
+  "removed_groups": [],
+  "new_groups": [],
+  "disabled_probability_branch_groups_retained_by_original_optimizer": [
+    "network.asee.prob_proj.3.bias",
+    "network.asee.prob_proj.3.weight",
+    "network.asee.prob_proj.2.bias",
+    "network.asee.prob_proj.2.weight",
+    "network.asee.prob_proj.0.bias",
+    "network.asee.prob_proj.0.weight"
+  ],
+  "base_model_lr": 0.0002,
+  "max_explicit_group_initial_lr": 0.0002,
+  "raw_adamw_defaults_lr": 0.001,
+  "note": "Raw AdamW defaults lr=0.001 is inherited unchanged from original code. Explicit per-parameter lr/initial_lr uses model lr=2e-4 and original LLRD; every group matches original ASEE. Disabled probability projection is non-trainable; original optimizer still lists its groups."
+}

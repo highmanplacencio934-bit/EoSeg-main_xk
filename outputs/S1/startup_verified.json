@@ -1,0 +1,77 @@
+{
+  "verified_at_utc": "2026-10-25T23:16:15.919512+00:00",
+  "run_dir": "outputs/ablations/journal_20261025/S1/20261025T230957Z",
+  "status": "training_confirmed",
+  "model": "EoSeg+ASEE text-only",
+  "seed": 0,
+  "max_epochs": 220,
+  "estimated_steps": 30360,
+  "device": "cuda:0",
+  "precision": "16-mixed",
+  "compile_disabled": false,
+  "data_class": "datasets.synapse_semantic.SynapseSemantic",
+  "scale_range": [
+    0.5,
+    2.0
+  ],
+  "new_rotation_enabled": false,
+  "batch_size": 16,
+  "num_workers": 8,
+  "img_size": [
+    384,
+    384
+  ],
+  "patch_size": 16,
+  "use_text": true,
+  "use_probability": false,
+  "enhance_patch": true,
+  "enhance_query": true,
+  "ckpt_path": null,
+  "last_saved_epoch": 8,
+  "global_step": 1104,
+  "manifest_sha256": "32f94c2799f41ee836c43dd24fc5957808a1f6e4448944bd7ec7c7a67dba8c3c",
+  "loss_weights": {
+    "mask_coefficient": 5.0,
+    "dice_coefficient": 5.0,
+    "class_coefficient": 2.0,
+    "no_object_coefficient": 0.1
+  },
+  "optimizer_defaults": [
+    {
+      "lr": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.05,
+      "amsgrad": false,
+      "maximize": false,
+      "foreach": null,
+      "capturable": false,
+      "differentiable": false,
+      "fused": null,
+      "decoupled_weight_decay": true
+    }
+  ],
+  "optimizer_equivalence": {
+    "reference_manifest": "outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/run_manifest.json",
+    "default_options_identical": true,
+    "all_401_parameter_group_settings_identical": true,
+    "compared_parameter_groups": 401,
+    "removed_groups": [],
+    "new_groups": [],
+    "disabled_probability_branch_groups_retained_by_original_optimizer": [
+      "network.asee.prob_proj.3.bias",
+      "network.asee.prob_proj.3.weight",
+      "network.asee.prob_proj.2.bias",
+      "network.asee.prob_proj.2.weight",
+      "network.asee.prob_proj.0.bias",
+      "network.asee.prob_proj.0.weight"
+    ],
+    "base_model_lr": 0.0002,
+    "max_explicit_group_initial_lr": 0.0002,
+    "raw_adamw_defaults_lr": 0.001,
+    "note": "Raw AdamW defaults lr=0.001 is inherited unchanged from original code. Explicit per-parameter lr/initial_lr uses model lr=2e-4 and original LLRD; every group matches original ASEE. Disabled probability projection is non-trainable; original optimizer still lists its groups."
+  }
+}

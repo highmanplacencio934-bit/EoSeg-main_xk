@@ -1,0 +1,23 @@
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_setup.py:_flush():81] Current SDK version is 0.30.0
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_setup.py:_flush():81] Configure stats pid to 1897309
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_init.py:setup_run_log_directory():739] Logging user logs to /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/wandb/wandb/offline-run-20261026_071007-e93exvhx/logs/debug.log
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_init.py:setup_run_log_directory():740] Logging internal logs to /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/wandb/wandb/offline-run-20261026_071007-e93exvhx/logs/debug-internal.log
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_init.py:init():783] calling init triggers
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_init.py:init():788] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-10-26 07:10:07,544 INFO    MainThread:1897309 [wandb_init.py:init():831] starting backend
+2026-10-26 07:10:07,748 INFO    MainThread:1897309 [wandb_init.py:init():846] sending inform_init request
+2026-10-26 07:10:07,761 INFO    MainThread:1897309 [wandb_init.py:init():851] backend started and connected
+2026-10-26 07:10:07,762 INFO    MainThread:1897309 [wandb_init.py:init():921] updated telemetry
+2026-10-26 07:10:07,764 INFO    MainThread:1897309 [wandb_init.py:init():944] communicating run to backend with 90.0 second timeout
+2026-10-26 07:10:07,765 INFO    MainThread:1897309 [wandb_init.py:init():981] starting run threads in backend
+2026-10-26 07:10:07,831 INFO    MainThread:1897309 [wandb_run.py:_console_start():2531] atexit reg
+2026-10-26 07:10:07,831 INFO    MainThread:1897309 [wandb_run.py:_redirect():2381] redirect: wrap_raw
+2026-10-26 07:10:07,831 INFO    MainThread:1897309 [wandb_run.py:_redirect():2450] Wrapping output streams.
+2026-10-26 07:10:07,831 INFO    MainThread:1897309 [wandb_run.py:_redirect():2473] Redirects installed.
+2026-10-26 07:10:07,832 INFO    MainThread:1897309 [wandb_init.py:init():1019] run started, returning control to user process
+2026-10-26 07:10:07,950 INFO    MainThread:1897309 [wandb_run.py:_config_callback():1283] config_cb None None {'_wandb': {'code_path': 'source-eomt-scripts_run_synapse_roi.py'}}
+2026-10-26 07:10:10,533 INFO    MainThread:1897309 [wandb_run.py:_config_callback():1283] config_cb None None {'network': {'class_path': 'models.eoseg_asee.EoSegMultiQSegFusionASEE', 'init_args': {'encoder': {'class_path': 'models.vit.ViT', 'init_args': {'patch_size': 16, 'backbone_name': 'vit_large_patch14_reg4_dinov2'}}, 'prior_path': 'priors/synapse_asee_v1.pt', 'num_q': 16, 'queries_per_class': 2, 'patch_update': 'plan', 'freeze_text_projection': False, 'enhance_patch': True, 'enhance_query': True, 'use_text': True, 'use_probability': False}}, 'img_size': [384, 384], 'num_classes': 9, 'attn_mask_annealing_enabled': False, 'attn_mask_annealing_start_steps': None, 'attn_mask_annealing_end_steps': None, 'ignore_idx': 255, 'lr': 0.0002, 'llrd': 0.8, 'llrd_l2_enabled': True, 'lr_mult': 1.0, 'weight_decay': 0.05, 'num_points': 12544, 'oversample_ratio': 3.0, 'importance_sample_ratio': 0.75, 'poly_power': 0.9, 'warmup_steps': [500, 1000], 'no_object_coefficient': 0.1, 'mask_coefficient': 5.0, 'dice_coefficient': 5.0, 'class_coefficient': 2.0, 'mask_thresh': 0.8, 'overlap_thresh': 0.8, 'ckpt_path': None, 'delta_weights': False, 'load_ckpt_class_head': True, 'spacing_manifest': 'priors/synapse_spacing.verified.json', '_instantiator': 'lightning.pytorch.cli.instantiate_module', 'train_base_dir': 'project_TransUNet/data/Synapse/train_npz', 'test_base_dir': 'project_TransUNet/data/Synapse/test_vol_h5', 'list_dir': 'project_TransUNet/TransUNet/lists/lists_Synapse', 'batch_size': 16, 'num_workers': 8, 'color_jitter_enabled': True, 'scale_range': [0.5, 2.0], 'check_empty_targets': True, 'drop_background': False, 'make_rgb': True, 'train_split': 'train', 'test_split': 'test_vol'}
+2026-10-26 11:37:24,230 INFO    wandb-AsyncioManager-main:1897309 [service_client.py:_forward_responses():122] Reached EOF.
+2026-10-26 11:37:24,230 INFO    wandb-AsyncioManager-main:1897309 [mailbox.py:close():154] Closing mailbox, abandoning 0 handles.

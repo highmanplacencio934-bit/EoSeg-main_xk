@@ -1,0 +1,29 @@
+{
+  "state": "completed",
+  "stage": "finished",
+  "experiment": "S1",
+  "training_started_at_utc": "2026-10-25T23:09:59.328510+00:00",
+  "child_pid": 1897309,
+  "child_identity": {
+    "pid": 1897309,
+    "state": "R",
+    "start_ticks": 67544586,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python -u scripts/run_synapse_roi.py fit --config configs/synapse/ablations_journal/s1_asee_text_only.yaml --seed_everything=0 --tta_views=1 --trainer.accelerator=gpu --trainer.devices=1 --trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training --trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training\"}}] --trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/wandb --trainer.logger.init_args.name=journal_s1_seed0_20261025T230957Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "supervisor_identity": {
+    "pid": 1897260,
+    "state": "R",
+    "start_ticks": 67544442,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_component.py --supervise /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "training_exit_code": 0,
+  "training_completed": true,
+  "reason": "Other GPU processes active; weights retained; resume-test only",
+  "finished_at_utc": "2026-10-26T09:39:47.123787+00:00",
+  "test_exit_code": 0,
+  "eight_view_test_run": "outputs/ablations/journal_20261025/S1/20261025T230957Z/eight_view_tests/20261026T091846Z",
+  "summary": "outputs/ablations/journal_20261025/S1/20261025T230957Z/eight_view_tests/20261026T091846Z/summary.json",
+  "postprocessing_recovery": true
+}

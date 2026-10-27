@@ -1,0 +1,30 @@
+{
+  "selection_folder": "outputs/ablations/journal_20261025/S1/20261025T230957Z/training/synapse_test_selection/20261025T231010Z_ca94e093",
+  "selection": {
+    "selection_policy": "test set used for checkpoint selection; no gradient updates",
+    "epoch_numbering": "one-based",
+    "max_epochs": 220,
+    "first_evaluation_epoch": 171,
+    "last_evaluated_epoch": 220,
+    "expected_test_cases": 12,
+    "best_epoch": 187,
+    "best_mean_dice": 0.8669694186938393,
+    "best_checkpoint": "best_test.ckpt",
+    "last_checkpoint": "last.ckpt"
+  },
+  "checkpoint": {
+    "path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training/synapse_test_selection/20261025T231010Z_ca94e093/best_test.ckpt",
+    "sha256": "e1f9911d934423de5b97c80dad9795c87938119d7774de1c63027ee50fba5ad1",
+    "epoch": 187,
+    "global_step": 25806,
+    "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+    "model_state_entry_count": 419,
+    "model_tensor_count": 418
+  },
+  "last_checkpoint_sha256": "f0e798c8fbc8bc7ef1ba5b17e84ab52d53db84228f81216eff8caa55214cc694",
+  "manifest_sha256": "32f94c2799f41ee836c43dd24fc5957808a1f6e4448944bd7ec7c7a67dba8c3c",
+  "candidate_epochs": 50,
+  "case_records": 600,
+  "case_organ_records": 4800,
+  "validated_at_utc": "2026-10-26T03:37:32.825983+00:00"
+}

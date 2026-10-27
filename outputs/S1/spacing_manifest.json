@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "units": "mm",
+  "array_axis_order": "zyx",
+  "verified": true,
+  "orthogonal_grid": true,
+  "created_at_utc": "2026-10-23T02:53:35.906082+00:00",
+  "label_map_sha256": "1a2e2d4675e44ce02f8985d1fd00b99c65cfcee32a5001f065a8053943448345",
+  "cases": {
+    "case0008": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.728515625,
+        0.728515625
+      ],
+      "shape_zyx": [
+        148,
+        512,
+        512
+      ],
+      "label_sha256": "b5e32e6fc3fa98febb85d918b5c50df8eca6e4c4e5a75cff7fa55a5afe507062",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0008.nii.gz",
+      "source_label_sha256": "67d37f901bf88d73dac38fb2d388d3edba18b910b58ae5fbba51a19045dc1032",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.728515625,
+            0.728515625
+          ]
+        }
+      ]
+    },
+    "case0022": {
+      "spacing_zyx_mm": [
+        5.0,
+        0.7675780057907104,
+        0.7675780057907104
+      ],
+      "shape_zyx": [
+        89,
+        512,
+        512
+      ],
+      "label_sha256": "0df2ddc79fa1f951dc1e509ed12b935297579b06cb455b2a5b5edc0e1bac737b",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0022.nii.gz",
+      "source_label_sha256": "f52a1a5be6c21f67ef355e13ddf0847f33d8cf86025c1c5b0a0469dd30e3c879",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            5.0,
+            0.7675780057907104,
+            0.7675780057907104
+          ]
+        }
+      ]
+    },
+    "case0038": {
+      "spacing_zyx_mm": [
+        5.0,
+        0.9765620231628418,
+        0.9765620231628418
+      ],
+      "shape_zyx": [
+        100,
+        512,
+        512
+      ],
+      "label_sha256": "9947f80d68d603f43b442326ed4b5efb655e1b132413a69072dd7a8e8d8dded2",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0038.nii.gz",
+      "source_label_sha256": "1bda7998554fe345fb2a9b58743cc5d85e725e8bca036705523bac0604b64e87",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            5.0,
+            0.9765620231628418,
+            0.9765620231628418
+          ]
+        }
+      ]
+    },
+    "case0036": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.74609375,
+        0.74609375
+      ],
+      "shape_zyx": [
+        184,
+        512,
+        512
+      ],
+      "label_sha256": "c83b4f6817aec74bc417d01a60c51a9c96ec87abde44fc2afe28bb57bf48f9e6",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0036.nii.gz",
+      "source_label_sha256": "1f1ac7a2a2eba2a532031c0c5d45480fbf0c657f484943436610c56e6255953e",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.74609375,
+            0.74609375
+          ]
+        }
+      ]
+    },
+    "case0032": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.740234375,
+        0.740234375
+      ],
+      "shape_zyx": [
+        144,
+        512,
+        512
+      ],
+      "label_sha256": "5123ab998290655de128fb38a57df59cb1c395e4bb7728a23f0e9fc018edeed5",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0032.nii.gz",
+      "source_label_sha256": "3af557db297111767f2b0ee3b30e05aacdd54ed7e6a77e8fd80547f35683cfb0",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.740234375,
+            0.740234375
+          ]
+        }
+      ]
+    },
+    "case0002": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.720703125,
+        0.720703125
+      ],
+      "shape_zyx": [
+        139,
+        512,
+        512
+      ],
+      "label_sha256": "d2c84178311fd172713058ba1a3517301dde06e1cd1015ce259c7b85a34766d8",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0002.nii.gz",
+      "source_label_sha256": "e609866e02f9917ffed55adc8a615d97494770ddb008bdf2473d1e49870909dd",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.720703125,
+            0.720703125
+          ]
+        }
+      ]
+    },
+    "case0029": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.875,
+        0.875
+      ],
+      "shape_zyx": [
+        100,
+        512,
+        512
+      ],
+      "label_sha256": "50e1bb33b14ae3c162f746207126d425de6ccaa10e326f2ab59ef06acad0217f",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0029.nii.gz",
+      "source_label_sha256": "af33fac39bcac34f5a94abdc182d3adb161f5cfb752bd0478916939afb911714",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.875,
+            0.875
+          ]
+        }
+      ]
+    },
+    "case0003": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.8984375,
+        0.8984375
+      ],
+      "shape_zyx": [
+        198,
+        512,
+        512
+      ],
+      "label_sha256": "642c8ce417b097c3e4e55f5943804e7cbf79104e5af61a08b57df873f9c9bb91",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0003.nii.gz",
+      "source_label_sha256": "a3b7d0f4890f87ed9f6473faaeb80659102d2bc706895a426e7f97d1755e9300",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.8984375,
+            0.8984375
+          ]
+        }
+      ]
+    },
+    "case0001": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.66796875,
+        0.66796875
+      ],
+      "shape_zyx": [
+        147,
+        512,
+        512
+      ],
+      "label_sha256": "a32ae35b63e4a1e9db9826dd7cec817835f76a202954ccff68794a3053618277",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0001.nii.gz",
+      "source_label_sha256": "03eb6de66768d47e93d26617f1151c1e119cb154c8119ea170811db57b135e25",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.66796875,
+            0.66796875
+          ]
+        }
+      ]
+    },
+    "case0004": {
+      "spacing_zyx_mm": [
+        3.0,
+        0.59375,
+        0.59375
+      ],
+      "shape_zyx": [
+        140,
+        512,
+        512
+      ],
+      "label_sha256": "fedfa583157c4de1b8a6fb69bbae5476bf6e546a21bc477d2b5b7320e2d13dc1",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0004.nii.gz",
+      "source_label_sha256": "8b7d4d6408c27b01ebf43605829792cec803a81f3af6944e7d6a5579a0cd975d",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            3.0,
+            0.59375,
+            0.59375
+          ]
+        }
+      ]
+    },
+    "case0025": {
+      "spacing_zyx_mm": [
+        5.0,
+        0.83203125,
+        0.83203125
+      ],
+      "shape_zyx": [
+        85,
+        512,
+        512
+      ],
+      "label_sha256": "d607d514903a45f4a7c46d9bc04e4e40fd86ecddb0381e9c28ffee334cdbea63",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0025.nii.gz",
+      "source_label_sha256": "79bc7e8e99877a77ace725edf7f3b38c476207bcaeca448d6ec4de61ab3dc22e",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            5.0,
+            0.83203125,
+            0.83203125
+          ]
+        }
+      ]
+    },
+    "case0035": {
+      "spacing_zyx_mm": [
+        5.0,
+        0.9199219942092896,
+        0.9199219942092896
+      ],
+      "shape_zyx": [
+        94,
+        512,
+        512
+      ],
+      "label_sha256": "1d41c0e751f1acc406c3ec80349722392dce2c86cf8e492989ac5ec7d4677fcf",
+      "source": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/Synapse_RawData/RawData/Training/label/label0035.nii.gz",
+      "source_label_sha256": "273bfa321865fef71b3ee1f2f16b7f2eb5f3662440390c0ce0c5cd68ee3eda49",
+      "source_spatial_units": "NIfTI-1 xyzt_units explicitly mm",
+      "mapping": "Full H5-label equality after foreground remapping, axis permutation and flips; no resampling",
+      "source_label_format": "btcv13",
+      "matching_transforms": [
+        {
+          "output_to_source_axes": [
+            0,
+            2,
+            1
+          ],
+          "output_axis_flips": [
+            false,
+            false,
+            true
+          ],
+          "spacing_zyx_mm": [
+            5.0,
+            0.9199219942092896,
+            0.9199219942092896
+          ]
+        }
+      ]
+    }
+  }
+}

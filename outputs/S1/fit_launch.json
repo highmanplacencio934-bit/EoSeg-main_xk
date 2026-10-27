@@ -1,0 +1,117 @@
+{
+  "command": [
+    "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+    "-u",
+    "scripts/run_synapse_roi.py",
+    "fit",
+    "--config",
+    "configs/synapse/ablations_journal/s1_asee_text_only.yaml",
+    "--seed_everything=0",
+    "--tta_views=1",
+    "--trainer.accelerator=gpu",
+    "--trainer.devices=1",
+    "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training",
+    "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training\"}}]",
+    "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/wandb",
+    "--trainer.logger.init_args.name=journal_s1_seed0_20261025T230957Z"
+  ],
+  "preflight": {
+    "configuration": "configs/synapse/ablations_journal/s1_asee_text_only.yaml",
+    "configuration_sha256": "6b0731acb6f39b00389059dadf145793f46402f0399c455eed72adc8598b7c0f",
+    "component_record": {
+      "id": "S1",
+      "configuration": "configs/synapse/ablations_journal/s1_asee_text_only.yaml",
+      "sha256": "6b0731acb6f39b00389059dadf145793f46402f0399c455eed72adc8598b7c0f",
+      "source_configuration": "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml",
+      "source_sha256": "40a518616fde10e5e32b12c1f124d2689934bc11fd03bd0fce14bad00fe471ca",
+      "requested_component_flags": {
+        "use_text": true,
+        "use_probability": false
+      },
+      "scientific_network_differences": [
+        {
+          "path": "init_args.use_probability",
+          "before": true,
+          "after": false
+        }
+      ],
+      "infrastructure_differences": {
+        "wrapper": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+        "output_root": "outputs/ablations/journal_20261025/S1/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_s1_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/s1_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": [
+          500,
+          1000
+        ],
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    "preparation_sha256": "b35dcd2bb25bdef471653f03db6e1c1d0c72824561f9a4ad8e9033ea26360e75",
+    "readiness_sha256": "bf7b505ac972766c924adca3e2a8f51087122d0cbb4c51923cdee3d6b5ac104a",
+    "prior_sha256": "eceb52e294151028be69433d628182a317ef707dd8e5da927b69149eb89232ff",
+    "launcher_sha256": "8aff38f85b5edcb76729297060fd962759160d229c5bda3777a0b5d86051be79",
+    "shared_launcher_sha256": "769b2031ddc3e31b4c5f9e76d6bd3644b49ecf5f033d029d86e677b5da2e3ecc",
+    "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+    "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+    "seed": 0,
+    "max_epochs": 220,
+    "initialization": "original offline timm pretrained flow; no trained segmentation checkpoint",
+    "disk_free_bytes": 1152905486336,
+    "environment": {
+      "HF_HUB_OFFLINE": "1",
+      "TORCH_HOME": "/Disk/HDD/Sk/.cache/torch",
+      "TIMM_USE_OLD_CACHE": "1",
+      "WANDB_MODE": "offline"
+    },
+    "hardware": {
+      "python": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GeForce RTX 5090 D",
+      "total_memory_bytes": 33659879424
+    },
+    "hostname": "5090"
+  },
+  "started_at_utc": "2026-10-25T23:09:59.328528+00:00"
+}
