@@ -1,0 +1,8 @@
+{
+  "run_name": "baseline-2",
+  "roi_enabled": true,
+  "fresh_training": true,
+  "run_dir": "outputs/baseline-2/20261026T130228Z",
+  "supervisor_pid": 2856401,
+  "requested_at_utc": "2026-10-26T13:02:28.019436+00:00"
+}

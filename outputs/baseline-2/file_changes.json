@@ -1,0 +1,21 @@
+{
+  "added": [
+    "configs/synapse/baseline_2_roi.yaml",
+    ".codex/baseline_2_roi_training_run.md",
+    "outputs/audit/baseline_2_roi_preflight/20261026T125656Z/",
+    "outputs/baseline-2/20261026T130228Z/",
+    "outputs/baseline-2/latest_path.txt",
+    "outputs/baseline-2/launch_receipt.json"
+  ],
+  "modified": [
+    "AGENTS.md",
+    ".codex/baseline_2_training_run.md"
+  ],
+  "deleted": [],
+  "original_model_loss_optimizer_data_augmentation_or_yaml_modified": false,
+  "declared_evaluation_changes": [
+    "ROI metrics bound at fit start",
+    "physical HD95 mm plus voxel via existing wrapper"
+  ],
+  "scientific_training_parameter_changes": []
+}

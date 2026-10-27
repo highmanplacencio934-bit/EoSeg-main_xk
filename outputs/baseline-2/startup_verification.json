@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-10-26T13:03:58.395262+00:00",
+  "roi_enabled_log_verified": true,
+  "scientific_training_config_identical": true,
+  "optimizer_groups_identical": true,
+  "optimizer_defaults_identical": true,
+  "optimizer_group_count": [
+    373
+  ],
+  "estimated_steps": 30360,
+  "versions_identical": true,
+  "data_lists_identical": true,
+  "device": "cuda:0",
+  "pure_baseline_network": "models.eoseg.EoSegMultiQSegFusion",
+  "asee_ccps_enabled": false
+}
