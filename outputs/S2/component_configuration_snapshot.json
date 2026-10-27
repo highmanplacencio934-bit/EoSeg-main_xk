@@ -1,0 +1,514 @@
+{
+  "created_at_utc": "2026-10-25T22:36:59.663146+00:00",
+  "scope": "configuration preparation only; no experiments run or marked completed",
+  "configurations": [
+    {
+      "id": "S1",
+      "configuration": "configs/synapse/ablations_journal/s1_asee_text_only.yaml",
+      "sha256": "6b0731acb6f39b00389059dadf145793f46402f0399c455eed72adc8598b7c0f",
+      "source_configuration": "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml",
+      "source_sha256": "40a518616fde10e5e32b12c1f124d2689934bc11fd03bd0fce14bad00fe471ca",
+      "requested_component_flags": {
+        "use_text": true,
+        "use_probability": false
+      },
+      "scientific_network_differences": [
+        {
+          "path": "init_args.use_probability",
+          "before": true,
+          "after": false
+        }
+      ],
+      "infrastructure_differences": {
+        "wrapper": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+        "output_root": "outputs/ablations/journal_20261025/S1/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_s1_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/s1_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": [
+          500,
+          1000
+        ],
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    {
+      "id": "S2",
+      "configuration": "configs/synapse/ablations_journal/s2_asee_probability_only.yaml",
+      "sha256": "cb5abbf04ea8ded585fa7daaa001b49359f0c400d541e7d1ee3cb966715c9be2",
+      "source_configuration": "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml",
+      "source_sha256": "40a518616fde10e5e32b12c1f124d2689934bc11fd03bd0fce14bad00fe471ca",
+      "requested_component_flags": {
+        "use_text": false,
+        "use_probability": true
+      },
+      "scientific_network_differences": [
+        {
+          "path": "init_args.use_text",
+          "before": true,
+          "after": false
+        }
+      ],
+      "infrastructure_differences": {
+        "wrapper": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+        "output_root": "outputs/ablations/journal_20261025/S2/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_s2_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/s2_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": [
+          500,
+          1000
+        ],
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    {
+      "id": "S3",
+      "configuration": "configs/synapse/ablations_journal/s3_asee_patch_only.yaml",
+      "sha256": "3cb0cfb3b801dc8543cc01bdd2c428086ec4628ae95a09b2306b32df07cecfcf",
+      "source_configuration": "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml",
+      "source_sha256": "40a518616fde10e5e32b12c1f124d2689934bc11fd03bd0fce14bad00fe471ca",
+      "requested_component_flags": {
+        "enhance_patch": true,
+        "enhance_query": false
+      },
+      "scientific_network_differences": [
+        {
+          "path": "init_args.enhance_query",
+          "before": true,
+          "after": false
+        }
+      ],
+      "infrastructure_differences": {
+        "wrapper": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+        "output_root": "outputs/ablations/journal_20261025/S3/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_s3_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/s3_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": [
+          500,
+          1000
+        ],
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    {
+      "id": "S4",
+      "configuration": "configs/synapse/ablations_journal/s4_asee_query_only.yaml",
+      "sha256": "af28ef6c647d4742d24815ca77c803d256645b695bdbfd4743d20819fba92b40",
+      "source_configuration": "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml",
+      "source_sha256": "40a518616fde10e5e32b12c1f124d2689934bc11fd03bd0fce14bad00fe471ca",
+      "requested_component_flags": {
+        "enhance_patch": false,
+        "enhance_query": true
+      },
+      "scientific_network_differences": [
+        {
+          "path": "init_args.enhance_patch",
+          "before": true,
+          "after": false
+        }
+      ],
+      "infrastructure_differences": {
+        "wrapper": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+        "output_root": "outputs/ablations/journal_20261025/S4/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_s4_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/s4_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": [
+          500,
+          1000
+        ],
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    {
+      "id": "A1",
+      "configuration": "configs/synapse/ablations_journal/a1_global.yaml",
+      "sha256": "31c2530b6064b38b76d58d2f9041eb4fb9fc33e3b9468583778ccc783931d43e",
+      "source_configuration": "configs/synapse/ccps_ablations/a1_global_patch.yaml",
+      "source_sha256": "4f1ea14cfcbf18a4b31aab20622ab8e90239091aa9d0338f6b5934d13bdc8280",
+      "requested_component_flags": {},
+      "scientific_network_differences": [],
+      "infrastructure_differences": {
+        "wrapper": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+        "output_root": "outputs/ablations/journal_20261025/A1/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_a1_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/a1_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": null,
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    {
+      "id": "A2",
+      "configuration": "configs/synapse/ablations_journal/a2_visual.yaml",
+      "sha256": "349e1450c3c0d3b8477d732aaa7b713c2d8e228bc061d51e9cb81608a94236aa",
+      "source_configuration": "configs/synapse/ccps_ablations/a2_visual_patch.yaml",
+      "source_sha256": "2e3e80c9a0c99952d60c664b629018d82c635a4338998b51662f0042ce474e5a",
+      "requested_component_flags": {},
+      "scientific_network_differences": [],
+      "infrastructure_differences": {
+        "wrapper": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+        "output_root": "outputs/ablations/journal_20261025/A2/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_a2_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/a2_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": null,
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    {
+      "id": "A10",
+      "configuration": "configs/synapse/ablations_journal/a10_context_only.yaml",
+      "sha256": "1a2b8bdbda2da326897495ddf012fc4c0f939df08a37aecfa716797d2eaf4a44",
+      "source_configuration": "configs/synapse/ccps_ablations/a10_context_only.yaml",
+      "source_sha256": "af7e27e601113c158ac205d1137871d71d2d6e72406851607d068ef78b079046",
+      "requested_component_flags": {},
+      "scientific_network_differences": [],
+      "infrastructure_differences": {
+        "wrapper": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+        "output_root": "outputs/ablations/journal_20261025/A10/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_a10_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/a10_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": null,
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    },
+    {
+      "id": "A11",
+      "configuration": "configs/synapse/ablations_journal/a11_residual_only.yaml",
+      "sha256": "559c1076325c98f950b14810c0c7b93a258f671f0fe68c113463e04a97f34d0a",
+      "source_configuration": "configs/synapse/ccps_ablations/a11_residual_only.yaml",
+      "source_sha256": "32a02147459f81ee35f6f92288ba8e31ef21a02343230cd07e27ec17d7a54b39",
+      "requested_component_flags": {},
+      "scientific_network_differences": [],
+      "infrastructure_differences": {
+        "wrapper": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+        "output_root": "outputs/ablations/journal_20261025/A11/training",
+        "callback": "training.synapse_physical_selection.SynapsePhysicalHD95Selection",
+        "logger_name": "journal_a11_seed0",
+        "seed": 0,
+        "fit_views": 1
+      },
+      "data_dictionary_identical": true,
+      "cpu_parse_status": "passed",
+      "experiment_status": "not_started",
+      "print_config_exit_code": 0,
+      "parsed_config_path": "/tmp/a11_journal_component_parsed.yaml",
+      "parsed_scientific_values": {
+        "lr": 0.0002,
+        "llrd": 0.8,
+        "llrd_l2_enabled": true,
+        "lr_mult": 1.0,
+        "weight_decay": 0.05,
+        "num_points": 12544,
+        "oversample_ratio": 3.0,
+        "importance_sample_ratio": 0.75,
+        "poly_power": 0.9,
+        "warmup_steps": null,
+        "no_object_coefficient": 0.1,
+        "mask_coefficient": 5.0,
+        "dice_coefficient": 5.0,
+        "class_coefficient": 2.0,
+        "ignore_idx": 255,
+        "mask_thresh": 0.8,
+        "overlap_thresh": 0.8,
+        "max_epochs": 220,
+        "precision": "16-mixed",
+        "gradient_clip_val": 0.01,
+        "img_size": [
+          384,
+          384
+        ],
+        "patch_size": 16,
+        "batch_size": 16,
+        "num_workers": 8,
+        "scale_range": [
+          0.5,
+          2.0
+        ],
+        "color_jitter_enabled": true,
+        "rotation_present": false
+      }
+    }
+  ],
+  "cpu_parse_verified_at_utc": "2026-10-25T22:38:12.040832+00:00",
+  "all_eight_cpu_parse_passed": true,
+  "asee_physical_wrapper_default_loss_options_match_original": true,
+  "warning": "Original SynapsePhysicalHD95Semantic does not forward certain custom loss options; all eight prepared configurations retain original/default values, and S1-S4 parsed options match original ASEE. Do not add custom loss overrides without separate review."
+}

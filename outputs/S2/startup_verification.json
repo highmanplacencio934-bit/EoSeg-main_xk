@@ -1,0 +1,45 @@
+{
+  "automation_id": "s3-10",
+  "checked_at_utc": "2026-10-26T23:13:17.502285+00:00",
+  "decision": "launched_authorized_missing_S2",
+  "baseline_completed": true,
+  "baseline_frozen_source_mismatches": [],
+  "S2_run": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z",
+  "training_identity": {
+    "pid": 3559687,
+    "start_ticks": "76195001",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse",
+    "cmdline": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python -u scripts/run_synapse_roi.py fit --config configs/synapse/ablations_journal/s2_asee_probability_only.yaml --seed_everything=0 --tta_views=1 --trainer.accelerator=gpu --trainer.devices=1 --trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training --trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training\"}}] --trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/wandb --trainer.logger.init_args.name=journal_s2_seed0_20261026T231139Z "
+  },
+  "manifest": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training/synapse_test_selection/20261026T231154Z_63a12319/run_manifest.json",
+  "manifest_sha256": "9353f66d506d12b43c571fcf9b8ef02361f19a00da0aad1f6bc60cc0c01ea060",
+  "state": "training",
+  "scientific_settings": {
+    "seed": 0,
+    "max_epochs": 220,
+    "precision": "16-mixed",
+    "compile_disabled": false,
+    "flags": {
+      "encoder": {
+        "class_path": "models.vit.ViT",
+        "init_args": {
+          "patch_size": 16,
+          "backbone_name": "vit_large_patch14_reg4_dinov2"
+        }
+      },
+      "prior_path": "priors/synapse_asee_v1.pt",
+      "num_q": 16,
+      "queries_per_class": 2,
+      "patch_update": "plan",
+      "freeze_text_projection": false,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "use_text": false,
+      "use_probability": true
+    }
+  },
+  "gpu_processes": "pid, used_gpu_memory [MiB]\n3197614, 1230 MiB\n3559687, 19304 MiB\n",
+  "S3_started": false,
+  "completed_epoch": 1,
+  "global_step": 138
+}

@@ -1,0 +1,21 @@
+{
+  "state": "training",
+  "stage": "fit",
+  "experiment": "S2",
+  "training_started_at_utc": "2026-10-26T23:11:43.469305+00:00",
+  "child_pid": 3559687,
+  "child_identity": {
+    "pid": 3559687,
+    "state": "R",
+    "start_ticks": 76195001,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python -u scripts/run_synapse_roi.py fit --config configs/synapse/ablations_journal/s2_asee_probability_only.yaml --seed_everything=0 --tta_views=1 --trainer.accelerator=gpu --trainer.devices=1 --trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training --trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training\"}}] --trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/wandb --trainer.logger.init_args.name=journal_s2_seed0_20261026T231139Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "supervisor_identity": {
+    "pid": 3559541,
+    "state": "R",
+    "start_ticks": 76194557,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_s2_s3_scheduled.py --supervise /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  }
+}
