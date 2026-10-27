@@ -1,0 +1,21 @@
+{
+  "hd95_unit": "mm",
+  "mean_dice": 0.8684952835297971,
+  "mean_hd95_mm": 12.968489787225494,
+  "mean_hd95_voxel": 10.106414740074934,
+  "num_cases": 12,
+  "ckpt_path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt",
+  "checkpoint_epoch": 177,
+  "checkpoint_global_step": 24426,
+  "checkpoint_sha256": "321a085a076773c889af671081b7f9586d66b6ddf8b9ce446eaac8c2c9bbe7cf",
+  "tta_views": 8,
+  "test_seconds": 166.15530797606334,
+  "sum_case_seconds": 165.92835521604866,
+  "tta_scheme": "scale_hflip",
+  "scales": [
+    1.0,
+    0.875,
+    1.125,
+    0.75
+  ]
+}

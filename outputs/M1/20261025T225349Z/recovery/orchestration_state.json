@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "phase": "ablation_failed",
+  "active_experiment": {
+    "id": "M1",
+    "run_dir": "outputs/ablations/journal_20261025/M1/20261025T225349Z",
+    "status": "failed"
+  },
+  "stop": {
+    "target_run": "outputs/augmentation_joint/rotation_scale_seed0/20261025T042216Z",
+    "due_denver": "2026-10-25T14:56:00-06:00",
+    "status": "stopped_by_user",
+    "signal_sent_at_utc": "2026-10-25T20:58:01.561414+00:00",
+    "training_finished_at_utc": "2026-10-25T20:58:08.323396+00:00",
+    "last_saved_training_epoch": 205,
+    "last_completed_test_epoch": 204,
+    "best_epoch": 192,
+    "report": "outputs/ablations/journal_20261025/stop_report.json",
+    "automation_deleted": true
+  },
+  "optimization": {
+    "status": "passed",
+    "readiness_path": "outputs/ablations/journal_20261025/optimization/readiness.json",
+    "owner_automation": "synapse-15-30",
+    "started_at_utc": "2026-10-25T21:33:11.527393+00:00",
+    "capture_owner_pid": 1788989,
+    "capture_launch": "outputs/ablations/journal_20261025/optimization/capture_launch.json",
+    "validation_owner": {
+      "pid": 1793772,
+      "start_ticks": 67019190,
+      "command": [
+        "scripts/validate_synapse_roi_acceleration.py",
+        "--cache-dir",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/optimization/prediction_cache",
+        "--output-dir",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/optimization",
+        "--repeats",
+        "2"
+      ],
+      "started_at_utc": "2026-10-25T21:42:25.929692+00:00",
+      "stage": "cpu_full_case_validation",
+      "finished_at_utc": "2026-10-25T22:31:17.883470+00:00"
+    },
+    "cpu_report": "outputs/ablations/journal_20261025/optimization/cpu_validation.json",
+    "finished_at_utc": "2026-10-25T22:31:52.467112+00:00"
+  },
+  "queue_registry": "outputs/ablations/journal_20261025/experiment_registry.json",
+  "output_root": "outputs/ablations/journal_20261025",
+  "last_update_utc": "2026-10-25T22:56:45.714346+00:00",
+  "automation_ids": [
+    "synapse-14-56",
+    "synapse-15-30",
+    "synapse-16-30",
+    "synapse-17-30",
+    "synapse-18-30",
+    "synapse-19-30",
+    "synapse-20-30",
+    "synapse-21-30"
+  ]
+}

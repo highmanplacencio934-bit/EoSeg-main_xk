@@ -1,0 +1,7 @@
+{
+  "outer_launcher_command_had_cache_path_typo": "/Disk/Hk/.cache/torch",
+  "child_enforced_TORCH_HOME": "/Disk/HDD/Sk/.cache/torch",
+  "child_enforced_HF_HUB_OFFLINE": "1",
+  "child_enforced_TIMM_USE_OLD_CACHE": "1",
+  "impact": "Parent only inspected existing checkpoint files. Supervisor and actual GPU test enforced the correct environment. No pretrained source weights or evaluation values changed."
+}

@@ -1,0 +1,96 @@
+{
+  "tta_scheme": "scale_hflip",
+  "tta_views": 8,
+  "fixed_canvas_hw": [
+    384,
+    384
+  ],
+  "scales": [
+    1.0,
+    0.875,
+    1.125,
+    0.75
+  ],
+  "view_transforms": [
+    {
+      "scale": 1.0,
+      "resized_hw": [
+        384,
+        384
+      ],
+      "horizontal_flip": false,
+      "rotation_degrees": 0
+    },
+    {
+      "scale": 1.0,
+      "resized_hw": [
+        384,
+        384
+      ],
+      "horizontal_flip": true,
+      "rotation_degrees": 0
+    },
+    {
+      "scale": 0.875,
+      "resized_hw": [
+        336,
+        336
+      ],
+      "horizontal_flip": false,
+      "rotation_degrees": 0
+    },
+    {
+      "scale": 0.875,
+      "resized_hw": [
+        336,
+        336
+      ],
+      "horizontal_flip": true,
+      "rotation_degrees": 0
+    },
+    {
+      "scale": 1.125,
+      "resized_hw": [
+        432,
+        432
+      ],
+      "horizontal_flip": false,
+      "rotation_degrees": 0
+    },
+    {
+      "scale": 1.125,
+      "resized_hw": [
+        432,
+        432
+      ],
+      "horizontal_flip": true,
+      "rotation_degrees": 0
+    },
+    {
+      "scale": 0.75,
+      "resized_hw": [
+        288,
+        288
+      ],
+      "horizontal_flip": false,
+      "rotation_degrees": 0
+    },
+    {
+      "scale": 0.75,
+      "resized_hw": [
+        288,
+        288
+      ],
+      "horizontal_flip": true,
+      "rotation_degrees": 0
+    }
+  ],
+  "scale_transform": "bilinear resize; centered zero pad or center crop to fixed canvas",
+  "inverse": "undo horizontal flip, discard padding or restore crop canvas, bilinear to original model grid",
+  "fusion": "FP32 scores divided by valid coverage; each visible view has equal weight; argmax last",
+  "resize": "original cubic input to model canvas; existing bilinear pixel score upsample; nearest hard labels back",
+  "class_channels": "original verified label IDs; no left/right channel swap",
+  "ccps": "not_present",
+  "hd95": "verified ZYX spacing mm plus voxel; unchanged legacy empty-mask policy",
+  "model_profile": "models.eoseg_asee.EoSegMultiQSegFusionASEE"
+}

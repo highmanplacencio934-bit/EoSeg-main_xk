@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_ablation.py", line 358, in supervise
+    set_plan_status(experiment, "已完成", str((run / "summary.md").relative_to(ROOT)))
+  File "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_ablation.py", line 199, in set_plan_status
+    columns[4], columns[5] = " " + status + " ", " " + evidence + " "
+                ~~~~~~~^^^
+IndexError: list assignment index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_ablation.py", line 442, in <module>
+    raise SystemExit(supervise(args.supervise))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_ablation.py", line 369, in supervise
+    set_plan_status(experiment, "失败待核查", str((run / "status.json").relative_to(ROOT)))
+  File "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_ablation.py", line 199, in set_plan_status
+    columns[4], columns[5] = " " + status + " ", " " + evidence + " "
+                ~~~~~~~^^^
+IndexError: list assignment index out of range

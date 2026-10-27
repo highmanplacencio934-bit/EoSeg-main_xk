@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-25T12:51:05Z",
+  "seed": 0,
+  "augmentation": "original: color, horizontal flip, ScaleJitter(0.5,2.0), original zero pad/random384 crop",
+  "tta": "scale_hflip_8",
+  "queue": [
+    {
+      "id": "M0",
+      "kind": "test_existing_best",
+      "status": "completed",
+      "output_dir": "outputs/ablations/journal_20261025/M0/20261025T224447Z",
+      "checkpoint_sha256": "321a085a076773c889af671081b7f9586d66b6ddf8b9ce446eaac8c2c9bbe7cf",
+      "completed_at_utc": "2026-10-25T22:53:12.812923+00:00",
+      "child_pid": 1867405,
+      "supervisor_pid": 1867279,
+      "summary": "outputs/ablations/journal_20261025/M0/20261025T224447Z/summary.json",
+      "postprocessing_recovery": true
+    },
+    {
+      "id": "M1",
+      "kind": "test_existing_best",
+      "status": "failed",
+      "output_dir": "outputs/ablations/journal_20261025/M1/20261025T225349Z",
+      "checkpoint_sha256": "d316bfe9b0b231b62c76da5e52987c381c66fbb4a03deff446a2adf73f93e2f7",
+      "completed_at_utc": "2026-10-25T22:56:45.713196+00:00",
+      "child_pid": 1877802,
+      "supervisor_pid": 1877692,
+      "summary": "outputs/ablations/journal_20261025/M1/20261025T225349Z/summary.json",
+      "error": "IndexError: list assignment index out of range"
+    },
+    {
+      "id": "S1",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    },
+    {
+      "id": "S2",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    },
+    {
+      "id": "S3",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    },
+    {
+      "id": "S4",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    },
+    {
+      "id": "A1",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    },
+    {
+      "id": "A2",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    },
+    {
+      "id": "A10",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    },
+    {
+      "id": "A11",
+      "kind": "train_then_best_eight_view",
+      "status": "planned",
+      "output_dir": null,
+      "checkpoint_sha256": null,
+      "completed_at_utc": null
+    }
+  ],
+  "auxiliary": {
+    "A0": "compatibility check only",
+    "A3": "historical reference only"
+  }
+}

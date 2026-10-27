@@ -1,0 +1,32 @@
+{
+  "state": "completed",
+  "experiment": "M0",
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M0/20261025T224447Z",
+  "created_at_utc": "2026-10-25T22:44:47.915598+00:00",
+  "stage": "finished_recovered_postprocessing",
+  "child_pid": 1867405,
+  "child_identity": {
+    "pid": 1867405,
+    "state": "R",
+    "start_ticks": 67393898,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python -u scripts/run_synapse_roi.py test --config configs/synapse/ablations_journal/m0_baseline_eight_view.yaml --ckpt_path=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt --tta_views=8 --compile_test --trainer.accelerator=gpu --trainer.devices=1 --trainer.logger=false --trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation\"}}] --trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M0/20261025T224447Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "supervisor_identity": {
+    "pid": 1867279,
+    "state": "R",
+    "start_ticks": 67393445,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_ablation.py --supervise /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M0/20261025T224447Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "actual_started_at_utc": "2026-10-25T22:44:52.440908+00:00",
+  "test_exit_code": 0,
+  "exit_code": 1,
+  "finished_at_utc": "2026-10-25T22:47:55.471684+00:00",
+  "original_supervisor_error": "ModuleNotFoundError: No module named 'training'",
+  "original_supervisor_exit_code": 1,
+  "postprocessing_recovery_exit_code": 0,
+  "postprocessing_recovered_at_utc": "2026-10-25T22:53:12.814144+00:00",
+  "completed_at_utc": "2026-10-25T22:53:12.812923+00:00",
+  "completion_note": "Actual inference succeeded (0); original supervisor postprocess exit1 retained; standalone validation recovery succeeded (0), no re-inference."
+}

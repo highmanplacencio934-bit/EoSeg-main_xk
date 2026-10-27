@@ -1,0 +1,32 @@
+{
+  "state": "completed",
+  "experiment": "M1",
+  "output_root": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M1/20261025T225349Z",
+  "created_at_utc": "2026-10-25T22:53:49.749691+00:00",
+  "stage": "finished_recovered_postprocessing",
+  "child_pid": 1877802,
+  "child_identity": {
+    "pid": 1877802,
+    "state": "R",
+    "start_ticks": 67448084,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python -u scripts/run_synapse_roi.py test --config configs/synapse/ablations_journal/m1_asee_eight_view.yaml --ckpt_path=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt --tta_views=8 --compile_test --trainer.accelerator=gpu --trainer.devices=1 --trainer.logger=false --trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation\"}}] --trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M1/20261025T225349Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "supervisor_identity": {
+    "pid": 1877692,
+    "state": "R",
+    "start_ticks": 67447629,
+    "command": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/scripts/launch_synapse_journal_ablation.py --supervise /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M1/20261025T225349Z ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "actual_started_at_utc": "2026-10-25T22:53:54.301428+00:00",
+  "exit_code": null,
+  "test_exit_code": 0,
+  "original_supervisor_exit_code": null,
+  "original_supervisor_exit_inferred": 1,
+  "parent_launcher_exit_code": 1,
+  "postprocessing_recovery_exit_code": 0,
+  "completed_at_utc": "2026-10-25T22:56:45.713196+00:00",
+  "postprocessing_recovered_at_utc": "2026-10-25T22:59:42.387036+00:00",
+  "completion_note": "Existing complete test outputs revalidated; only status-table update fixed; no re-inference."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "recovered_complete",
+  "test_exit_code": 0,
+  "original_supervisor_exit_code": 1,
+  "recovery_exit_code": 0,
+  "no_reinference": true,
+  "no_metric_changes": true,
+  "raw_csv_sha256": {
+    "outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation/independent_test/20261025T224503Z_da030f9e/kidney_confusion.csv": "575a60ff7de1f33d1a31391e16cb7457f7d9a4780996cc5a52b920c1d873b948",
+    "outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation/independent_test/20261025T224503Z_da030f9e/tta_case_timing.csv": "64cf8efc8c964daf71099b1595f206b7bcd70db7f7729d2c1d26322f0a989867",
+    "outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation/independent_test/20261025T224503Z_da030f9e/physical_epoch_organ_metrics.csv": "aedfeb596672752fe2ad65326a9cced228512a7c0db6fcd4099fd3705af88af8",
+    "outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation/independent_test/20261025T224503Z_da030f9e/physical_case_organ_metrics.csv": "f8b7107d259d3d658b3adabe8c1f89c7b59768b967c885d48e4c17aac9fb0249"
+  },
+  "finished_at_utc": "2026-10-25T22:53:12.814475+00:00"
+}

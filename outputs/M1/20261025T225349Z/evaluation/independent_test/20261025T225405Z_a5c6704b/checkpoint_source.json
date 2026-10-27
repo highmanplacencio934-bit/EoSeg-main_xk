@@ -1,0 +1,6 @@
+{
+  "ckpt_path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+  "checkpoint_epoch": 196,
+  "checkpoint_global_step": 27048,
+  "checkpoint_sha256": "d316bfe9b0b231b62c76da5e52987c381c66fbb4a03deff446a2adf73f93e2f7"
+}

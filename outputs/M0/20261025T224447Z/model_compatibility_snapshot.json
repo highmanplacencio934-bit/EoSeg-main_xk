@@ -1,0 +1,34 @@
+{
+  "M0": {
+    "status": "passed",
+    "config": "configs/synapse/ablations_journal/m0_baseline_eight_view.yaml",
+    "config_sha256": "c5c5c45fd6dbc417303ea25b6f2d9fa7c663995061767e057feeed130358d535",
+    "checkpoint": "outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt",
+    "checkpoint_sha256": "321a085a076773c889af671081b7f9586d66b6ddf8b9ce446eaac8c2c9bbe7cf",
+    "epoch": 177,
+    "global_step": 24426,
+    "state_tensors": 388,
+    "strict_loading": true,
+    "all_tensor_values_equal": true,
+    "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+    "network_class": "models.eoseg.EoSegMultiQSegFusion",
+    "scope": "CPU compatibility only; original FP16/compile GPU test still required"
+  },
+  "M1": {
+    "status": "passed",
+    "config": "configs/synapse/ablations_journal/m1_asee_eight_view.yaml",
+    "config_sha256": "68d893310970307c208c3c8d8004aacf57639f3707982c69ce61a814b5ccb9af",
+    "checkpoint": "outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+    "checkpoint_sha256": "d316bfe9b0b231b62c76da5e52987c381c66fbb4a03deff446a2adf73f93e2f7",
+    "epoch": 196,
+    "global_step": 27048,
+    "state_entries": 419,
+    "state_tensors": 418,
+    "non_tensor_extra_state_entries": 1,
+    "strict_loading": true,
+    "all_tensor_values_equal": true,
+    "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+    "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+    "scope": "CPU compatibility only; original FP16/compile GPU test still required"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "status": "completed",
+  "experiment": "M1",
+  "checkpoint": {
+    "path": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+    "sha256": "d316bfe9b0b231b62c76da5e52987c381c66fbb4a03deff446a2adf73f93e2f7",
+    "epoch": 196,
+    "global_step": 27048,
+    "model_state_entry_count": 419,
+    "model_tensor_count": 418,
+    "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE"
+  },
+  "tta_views": 8,
+  "tta_scheme": "scale_hflip",
+  "scales": [
+    1.0,
+    0.875,
+    1.125,
+    0.75
+  ],
+  "num_cases": 12,
+  "mean_dice": 0.8608602144472216,
+  "mean_dice_percent": 86.08602144472216,
+  "mean_hd95_mm": 11.928217261610605,
+  "mean_hd95_voxel": 9.587378011387722,
+  "organs": [
+    {
+      "epoch": "196",
+      "label_id": "1",
+      "organ": "Aorta",
+      "organ_zh": "主动脉",
+      "num_cases": "12",
+      "dice": "0.9051288754691055",
+      "dice_percent": "90.51288754691055",
+      "hd95_mm": "6.321683555750279",
+      "hd95_voxel": "5.4729516946587005",
+      "legacy_empty_cases": "0"
+    },
+    {
+      "epoch": "196",
+      "label_id": "2",
+      "organ": "Gallbladder",
+      "organ_zh": "胆囊",
+      "num_cases": "12",
+      "dice": "0.7242217130124695",
+      "dice_percent": "72.42217130124695",
+      "hd95_mm": "17.513253264411222",
+      "hd95_voxel": "17.152724995263785",
+      "legacy_empty_cases": "1"
+    },
+    {
+      "epoch": "196",
+      "label_id": "3",
+      "organ": "Left Kidney",
+      "organ_zh": "左肾",
+      "num_cases": "12",
+      "dice": "0.877610988122559",
+      "dice_percent": "87.7610988122559",
+      "hd95_mm": "16.644898464828923",
+      "hd95_voxel": "15.328449217268433",
+      "legacy_empty_cases": "0"
+    },
+    {
+      "epoch": "196",
+      "label_id": "4",
+      "organ": "Right Kidney",
+      "organ_zh": "右肾",
+      "num_cases": "12",
+      "dice": "0.8663842053973497",
+      "dice_percent": "86.63842053973497",
+      "hd95_mm": "10.520505940169585",
+      "hd95_voxel": "8.21494075643253",
+      "legacy_empty_cases": "0"
+    },
+    {
+      "epoch": "196",
+      "label_id": "5",
+      "organ": "Liver",
+      "organ_zh": "肝脏",
+      "num_cases": "12",
+      "dice": "0.962928548283403",
+      "dice_percent": "96.2928548283403",
+      "hd95_mm": "9.161732804915045",
+      "hd95_voxel": "6.090535554427984",
+      "legacy_empty_cases": "0"
+    },
+    {
+      "epoch": "196",
+      "label_id": "6",
+      "organ": "Pancreas",
+      "organ_zh": "胰腺",
+      "num_cases": "12",
+      "dice": "0.7301660457664597",
+      "dice_percent": "73.01660457664597",
+      "hd95_mm": "7.779823141109716",
+      "hd95_voxel": "5.139804910116853",
+      "legacy_empty_cases": "0"
+    },
+    {
+      "epoch": "196",
+      "label_id": "7",
+      "organ": "Spleen",
+      "organ_zh": "脾脏",
+      "num_cases": "12",
+      "dice": "0.9367780847024686",
+      "dice_percent": "93.67780847024686",
+      "hd95_mm": "17.679987351588647",
+      "hd95_voxel": "14.730690921227934",
+      "legacy_empty_cases": "0"
+    },
+    {
+      "epoch": "196",
+      "label_id": "8",
+      "organ": "Stomach",
+      "organ_zh": "胃",
+      "num_cases": "12",
+      "dice": "0.8836632548239577",
+      "dice_percent": "88.36632548239577",
+      "hd95_mm": "9.803853570111423",
+      "hd95_voxel": "4.568926041705546",
+      "legacy_empty_cases": "0"
+    }
+  ],
+  "evaluation_folder": "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b",
+  "manifest_sha256": "e2a438bb754c288f46f60ae77f39ee8c0e3b7ef9e8d03b124045721825393915",
+  "completed_at_utc": "2026-10-25T22:56:45.713196+00:00",
+  "training_performed": false,
+  "metric_policy": "verified ZYX mm and voxel; unchanged legacy empty-mask rule",
+  "test_exit_code": 0,
+  "test_exit_evidence": "Supervisor wrote complete() summary only after child.wait()==0; retained test log and raw outputs.",
+  "original_supervisor_exit_code": null,
+  "original_supervisor_exit_inferred": 1,
+  "parent_launcher_exit_code": 1,
+  "postprocessing_recovery_exit_code": 0,
+  "postprocessing_recovery": {
+    "reason": "New status updater matched M1 mechanism tables outside section11; fixed to exact section11 only. No re-inference, metrics or weights changed.",
+    "source_before_sha256": "b1930f56ad88d847e19992efaa3d2f5e0946f42d51dcb3841b3f3d92c20255fd",
+    "source_after_sha256": "769b2031ddc3e31b4c5f9e76d6bd3644b49ecf5f033d029d86e677b5da2e3ecc",
+    "evidence_dir": "outputs/ablations/journal_20261025/M1/20261025T225349Z/recovery",
+    "raw_csv_sha256": {
+      "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/kidney_confusion.csv": "575a60ff7de1f33d1a31391e16cb7457f7d9a4780996cc5a52b920c1d873b948",
+      "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/tta_case_timing.csv": "e48d67c684fad7ea06dff3bf39db76439b22b34d5b087e7c0a970e3abb9f3de4",
+      "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/physical_epoch_organ_metrics.csv": "19cf12077ad899e87ecfbb1a4df2c307745a75e4a54d5eb94a67ce78eb08aec5",
+      "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/physical_case_organ_metrics.csv": "c65c8f09a743e790d8cbb15c96a68ab8b9ccd6d572e7ddb8809404682a6f1aae"
+    }
+  }
+}

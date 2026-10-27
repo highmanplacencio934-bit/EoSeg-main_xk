@@ -1,0 +1,44 @@
+Seed set to 0
+Using 16bit Automatic Mixed Precision (AMP)
+Trainer already configured with model summary callbacks: [<class 'lightning.pytorch.callbacks.model_summary.ModelSummary'>]. Skipping setting a default `ModelSummary` callback.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+INFO:root:Independent ROI evaluation enabled: {'implementation': 'union_foreground_bbox_halo1_original_medpy', 'cpu_workers': 1, 'tta_views': 8, 'geometry': 'full-case shape and label fingerprint before ROI', 'metric_policy': 'original Dice, HD95_mm, HD95_voxel and legacy empty status'}
+INFO:root:Synapse fixed split (TrainerFn.TESTING): {'train_slices': 2211, 'train_cases': ['case0005', 'case0006', 'case0007', 'case0009', 'case0010', 'case0021', 'case0023', 'case0024', 'case0026', 'case0027', 'case0028', 'case0030', 'case0031', 'case0033', 'case0034', 'case0037', 'case0039', 'case0040'], 'test_cases': ['case0008', 'case0022', 'case0038', 'case0036', 'case0032', 'case0002', 'case0029', 'case0003', 'case0001', 'case0004', 'case0025', 'case0035'], 'case_overlap': []}
+Restoring states from the checkpoint path at /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Loaded model weights from the checkpoint at /Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt
+/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/lib/python3.11/site-packages/lightning/pytorch/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃        Test metric        ┃       DataLoader 0        ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│     test/dice_class_1     │    0.9051288962364197     │
+│     test/dice_class_2     │    0.7242217063903809     │
+│     test/dice_class_3     │     0.877610981464386     │
+│     test/dice_class_4     │    0.8663840889930725     │
+│     test/dice_class_5     │    0.9629285931587219     │
+│     test/dice_class_6     │     0.730165958404541     │
+│     test/dice_class_7     │    0.9367780685424805     │
+│     test/dice_class_8     │    0.8836632370948792     │
+│   test/hd95_mm_class_1    │     6.321683406829834     │
+│   test/hd95_mm_class_2    │    17.513254165649414     │
+│   test/hd95_mm_class_3    │    16.644899368286133     │
+│   test/hd95_mm_class_4    │     10.52050495147705     │
+│   test/hd95_mm_class_5    │     9.16173267364502      │
+│   test/hd95_mm_class_6    │     7.779822826385498     │
+│   test/hd95_mm_class_7    │     17.67998695373535     │
+│   test/hd95_mm_class_8    │     9.803853034973145     │
+│  test/hd95_voxel_class_1  │     5.472951889038086     │
+│  test/hd95_voxel_class_2  │    17.152725219726562     │
+│  test/hd95_voxel_class_3  │    15.328450202941895     │
+│  test/hd95_voxel_class_4  │     8.214940071105957     │
+│  test/hd95_voxel_class_5  │     6.090535640716553     │
+│  test/hd95_voxel_class_6  │     5.139805316925049     │
+│  test/hd95_voxel_class_7  │    14.730690956115723     │
+│  test/hd95_voxel_class_8  │     4.568925857543945     │
+│      test/mean_dice       │    0.8608601689338684     │
+│     test/mean_hd95_mm     │    11.928217887878418     │
+│   test/mean_hd95_voxel    │     9.58737850189209      │
+└───────────────────────────┴───────────────────────────┘
+Testing ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12/12 0:02:29 • 0:00:00 0.11it/s 

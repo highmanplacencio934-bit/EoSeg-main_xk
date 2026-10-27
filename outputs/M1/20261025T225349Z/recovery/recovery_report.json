@@ -1,0 +1,15 @@
+{
+  "status": "recovered_complete",
+  "test_exit_code": 0,
+  "supervisor_exit_directly_observed": false,
+  "supervisor_unhandled_exception_inferred_exit": 1,
+  "parent_launcher_exit_code": 1,
+  "recovery_exit_code": 0,
+  "raw_csv_sha256": {
+    "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/kidney_confusion.csv": "575a60ff7de1f33d1a31391e16cb7457f7d9a4780996cc5a52b920c1d873b948",
+    "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/tta_case_timing.csv": "e48d67c684fad7ea06dff3bf39db76439b22b34d5b087e7c0a970e3abb9f3de4",
+    "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/physical_epoch_organ_metrics.csv": "19cf12077ad899e87ecfbb1a4df2c307745a75e4a54d5eb94a67ce78eb08aec5",
+    "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/physical_case_organ_metrics.csv": "c65c8f09a743e790d8cbb15c96a68ab8b9ccd6d572e7ddb8809404682a6f1aae"
+  },
+  "source_recovery_only": true
+}
