@@ -1,0 +1,32 @@
+{
+  "state": "training_running",
+  "epoch_completed": 7,
+  "global_step": 966,
+  "training_pid": 3107921,
+  "network": "models.eoseg.EoSegMultiQSegFusion",
+  "ASEE": false,
+  "CCPS": false,
+  "seed": 0,
+  "max_epochs": 220,
+  "compiled": true,
+  "optimizer_groups": 373,
+  "initial_388_state_matches_validated_baseline": true,
+  "selected_parameters": [
+    {
+      "parameter": "network.query_embed",
+      "finite": true,
+      "changed_from_initial": true
+    },
+    {
+      "parameter": "network.class_head.weight",
+      "finite": true,
+      "changed_from_initial": true
+    },
+    {
+      "parameter": "network.layer_gate.0.weight",
+      "finite": true,
+      "changed_from_initial": true
+    }
+  ],
+  "verified_utc": "2026-10-28T07:36:57.659160+00:00"
+}

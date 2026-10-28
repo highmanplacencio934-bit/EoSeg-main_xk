@@ -1,0 +1,25 @@
+{
+  "run": "outputs/baseline-repair/G6_1/20261028T072539Z",
+  "network": "models.eoseg.EoSegMultiQSegFusion",
+  "ASEE": false,
+  "CCPS": false,
+  "seed": 0,
+  "max_epochs": 220,
+  "latest_verified_epoch": 7,
+  "latest_verified_step": 966,
+  "training_pid": 3107921,
+  "original_model_training_files_unchanged": 101,
+  "output_naming_only_change": true,
+  "added": [
+    "outputs/baseline-repair/",
+    "outputs/audit/baseline_repair_launch_20261028T072456Z/",
+    "outputs/determinism/g6_baseline_execution_v2/current_output_root.json",
+    "outputs/determinism/g6_baseline_execution_v2/repeat_1.current_location.json"
+  ],
+  "modified": [
+    "scripts/launch_synapse_g6.py",
+    "AGENTS.md",
+    ".codex/synapse_g6_runbook.md"
+  ],
+  "deleted": []
+}
