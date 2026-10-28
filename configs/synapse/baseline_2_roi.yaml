@@ -1,0 +1,61 @@
+# baseline-2: pure EoSeg, seed0, original training variables; use scripts/run_synapse_roi.py fit.
+# ROI only accelerates evaluation; verified HD95 mm and voxel are both recorded; best is selected by unchanged Dice.
+trainer:
+  max_epochs: 220
+  limit_val_batches: 0
+  check_val_every_n_epoch: 1000000
+  precision: 16-mixed
+  enable_checkpointing: false
+  callbacks:
+  - class_path: training.synapse_physical_selection.SynapsePhysicalHD95Selection
+    init_args:
+      last_n_epochs: 50
+      expected_test_cases: 12
+      output_dir: outputs/baseline-2
+      label_map: priors/synapse_label_map.verified.json
+  logger:
+    class_path: lightning.pytorch.loggers.wandb.WandbLogger
+    init_args:
+      resume: allow
+      project: eomt
+      name: baseline-2
+      save_dir: outputs/baseline-2
+  default_root_dir: outputs/baseline-2
+  enable_model_summary: false
+model:
+  class_path: training.synapse_physical_semantic.SynapsePhysicalHD95Semantic
+  init_args:
+    num_classes: 9
+    img_size:
+    - 384
+    - 384
+    attn_mask_annealing_enabled: false
+    ignore_idx: 255
+    lr: 2e-4
+    network:
+      class_path: models.eoseg.EoSegMultiQSegFusion
+      init_args:
+        num_classes: 9
+        num_q: 16
+        encoder:
+          class_path: models.vit.ViT
+    spacing_manifest: priors/synapse_spacing.verified.json
+data:
+  class_path: datasets.synapse_semantic.SynapseSemantic
+  init_args:
+    train_base_dir: project_TransUNet/data/Synapse/train_npz
+    test_base_dir: project_TransUNet/data/Synapse/test_vol_h5
+    list_dir: project_TransUNet/TransUNet/lists/lists_Synapse
+    train_split: train
+    test_split: test_vol
+    img_size:
+    - 384
+    - 384
+    num_classes: 9
+    batch_size: 16
+    num_workers: 8
+    ignore_idx: 255
+    drop_background: false
+    make_rgb: true
+seed_everything: 0
+tta_views: 1
