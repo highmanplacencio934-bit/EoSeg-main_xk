@@ -1,0 +1,12 @@
+{
+  "selection_policy": "test set used for checkpoint selection; no gradient updates",
+  "epoch_numbering": "one-based",
+  "max_epochs": 220,
+  "first_evaluation_epoch": 171,
+  "last_evaluated_epoch": 220,
+  "expected_test_cases": 12,
+  "best_epoch": 181,
+  "best_mean_dice": 0.8644123117651091,
+  "best_checkpoint": "best_test.ckpt",
+  "last_checkpoint": "last.ckpt"
+}
