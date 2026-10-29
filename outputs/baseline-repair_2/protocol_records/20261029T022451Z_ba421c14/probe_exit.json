@@ -1,0 +1,105 @@
+{
+  "batches_seen": 30360,
+  "global_step": 30360,
+  "epoch": 220,
+  "probe_complete": false,
+  "full_training_complete": true,
+  "compiler_counters": {
+    "frames": {
+      "total": 68,
+      "ok": 61
+    },
+    "unimplemented": {
+      "Attempt to trace generator\n  Explanation: Generators cannot be compiled directly with `torch.compile`.\n  Hint: Call a generator from inside of a non-generator Python function and compile that function instead.\n  Hint: This graph break is fundamental - it is unlikely that Dynamo will ever be able to trace through your code. Consider finding a workaround.\n\n  Developer debug context: \n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0003.html": 4,
+      "Skip inlining `torch.compiler.disable()`d function\n  Explanation: Skip inlining function <function MaskClassificationLoss.forward at 0x7fdd9a656340> since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function MaskClassificationLoss.forward at 0x7fdd9a656340>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0099.html": 2,
+      "Skip inlining `torch.compiler.disable()`d function\n  Explanation: Skip inlining function <function MaskClassificationLoss.forward at 0x7fdd9a656340> since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function MaskClassificationLoss.forward at 0x7fdd9a656340>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0099.html\n\n*** While handling this graph break, another graph break occurred: ***\n\ngraph break in loop\n  Explanation: torch.compile detected a graph break in a for/while loop. Skipping the frame and falling back to eager, as graph breaks in loops are not supported.\n  Hint: This graph break may have been caused by an earlier graph break. Resolving the earlier graph break may resolve this one.\n\n  Developer debug context: frame skipped: torch_dynamo_resume_in_training_step_at_182 (/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/training/lightning_module.py line 182)\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb7000.html": 1,
+      "Skip calling `torch.compiler.disable()`d function\n  Explanation: Skip calling function `<function LightningModule.log at 0x7fdd99768220>` since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function LightningModule.log at 0x7fdd99768220>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0098.html": 1,
+      "Skip calling `torch.compiler.disable()`d function\n  Explanation: Skip calling function `<function LightningModule.log at 0x7fdd99768220>` since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function LightningModule.log at 0x7fdd99768220>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0098.html\n\n*** While handling this graph break, another graph break occurred: ***\n\ngraph break in loop\n  Explanation: torch.compile detected a graph break in a for/while loop. Skipping the frame and falling back to eager, as graph breaks in loops are not supported.\n  Hint: This graph break may have been caused by an earlier graph break. Resolving the earlier graph break may resolve this one.\n\n  Developer debug context: frame skipped: loss_total (/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/training/mask_classification_loss.py line 99)\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb7000.html": 1,
+      "Skip inlining `torch.compiler.disable()`d function\n  Explanation: Skip inlining function <function MaskClassificationLoss.forward at 0x7fdd9a656340> since it was wrapped with `torch.compiler.disable` (reason: None)\n  Hint: Remove the `torch.compiler.disable` call\n\n  Developer debug context: <function MaskClassificationLoss.forward at 0x7fdd9a656340>\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0099.html\n\n*** While handling this graph break, another graph break occurred: ***\n\ngraph break in loop\n  Explanation: torch.compile detected a graph break in a for/while loop. Skipping the frame and falling back to eager, as graph breaks in loops are not supported.\n  Hint: This graph break may have been caused by an earlier graph break. Resolving the earlier graph break may resolve this one.\n\n  Developer debug context: frame skipped: training_step (/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/training/lightning_module.py line 179)\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb7000.html": 1
+    },
+    "graph_break": {
+      "Failed to trace builtin operator\n  Explanation: Dynamo does not know how to trace builtin operator `print` with argument types ['str'] (has_kwargs False)\n  Hint: Avoid calling builtin `print` with argument types ['str']. Consider using an equivalent alternative function/method to `print`.\n  Hint: If you are attempting to call a logging function (e.g. `print`), you can try adding it to `torch._dynamo.config.reorderable_logging_functions`.\n  Hint: Please report an issue to PyTorch.\n\n  Developer debug context: builtin print [<class 'torch._dynamo.variables.misc.StringFormatVariable'>] False\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0059.html": 1,
+      "Failed to trace builtin operator\n  Explanation: Dynamo does not know how to trace builtin operator `print` with argument types ['str'] (has_kwargs False)\n  Hint: Avoid calling builtin `print` with argument types ['str']. Consider using an equivalent alternative function/method to `print`.\n  Hint: If you are attempting to call a logging function (e.g. `print`), you can try adding it to `torch._dynamo.config.reorderable_logging_functions`.\n  Hint: Please report an issue to PyTorch.\n\n  Developer debug context: builtin print [<class 'torch._dynamo.variables.constant.ConstantVariable'>] False\n\n For more details about this graph break, please visit: https://meta-pytorch.github.io/compile-graph-break-site/gb/gb0059.html": 1
+    },
+    "stats": {
+      "calls_captured": 1358,
+      "unique_graphs": 3
+    },
+    "aot_autograd": {
+      "total": 3,
+      "autograd_cache_miss": 3,
+      "autograd_cache_saved": 3,
+      "ok": 3
+    },
+    "inductor": {
+      "fxgraph_cache_miss": 4,
+      "async_compile_cache_miss": 446,
+      "extern_calls": 797,
+      "async_compile_cache_hit": 223,
+      "triton_bundler_save_kernel": 2824,
+      "triton_bundler_save_static_autotuner": 4,
+      "pattern_matcher_count": 1532,
+      "pattern_matcher_nodes": 1944,
+      "benchmarking.InductorBenchmarker.benchmark": 238,
+      "benchmarking.InductorBenchmarker.benchmark_gpu": 238
+    },
+    "resumes": {
+      "torch_dynamo_resume_in_training_step_at_182": 1,
+      "torch_dynamo_resume_in_print_at_382": 1
+    },
+    "aten_mm_info": {
+      "aten.addmm_9296_3072_1024": 21,
+      "aten.addmm_9296_1024_1024": 21,
+      "aten.addmm_9296_4096_1024": 21,
+      "aten.addmm_9296_1024_4096": 21,
+      "aten.addmm_9552_3072_1024": 3,
+      "aten.addmm_9552_1024_1024": 3,
+      "aten.addmm_9552_4096_1024": 3,
+      "aten.addmm_9552_1024_4096": 3,
+      "aten.addmm_256_1024_1024": 6,
+      "aten.addmm_256_10_1024": 3,
+      "aten.bmm_16_16_9216_1024": 3,
+      "aten.addmm_256_512_1024": 1,
+      "aten.addmm_256_3_512": 1,
+      "aten.mm_256_512_3": 1,
+      "aten.mm_3_512_256": 1,
+      "aten.mm_256_1024_512": 1,
+      "aten.mm_512_1024_256": 1,
+      "aten.bmm_16_1024_9216_16": 3,
+      "aten.bmm_16_16_1024_9216": 3,
+      "aten.mm_256_1024_10": 3,
+      "aten.mm_10_1024_256": 3,
+      "aten.mm_256_1024_1024": 6,
+      "aten.mm_1024_1024_256": 6,
+      "aten.mm_9552_4096_1024": 3,
+      "aten.mm_1024_4096_9552": 3,
+      "aten.mm_9552_1024_4096": 3,
+      "aten.mm_4096_1024_9552": 3,
+      "aten.mm_9552_1024_1024": 3,
+      "aten.mm_1024_1024_9552": 3,
+      "aten.mm_9552_1024_3072": 3,
+      "aten.mm_3072_1024_9552": 3,
+      "aten.mm_9296_4096_1024": 21,
+      "aten.mm_1024_4096_9296": 21,
+      "aten.mm_9296_1024_4096": 21,
+      "aten.mm_4096_1024_9296": 21,
+      "aten.mm_9296_1024_1024": 21,
+      "aten.mm_1024_1024_9296": 21,
+      "aten.mm_9296_1024_3072": 21,
+      "aten.mm_3072_1024_9296": 21,
+      "aten.addmm_581_3072_1024": 21,
+      "aten.addmm_581_1024_1024": 21,
+      "aten.addmm_581_4096_1024": 21,
+      "aten.addmm_581_1024_4096": 21,
+      "aten.addmm_597_3072_1024": 3,
+      "aten.addmm_597_1024_1024": 3,
+      "aten.addmm_597_4096_1024": 3,
+      "aten.addmm_597_1024_4096": 3,
+      "aten.addmm_16_512_1024": 1,
+      "aten.addmm_16_3_512": 1,
+      "aten.addmm_16_1024_1024": 6,
+      "aten.mm_16_9216_1024": 3,
+      "aten.addmm_16_10_1024": 3
+    }
+  }
+}
