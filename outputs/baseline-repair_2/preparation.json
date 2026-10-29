@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "launcher_sha256": "45001bedb46100a003414a52a2815dcb73392eebee6514e6c3c6e581e98c1b5a",
+  "cpu_launcher_tests": 8,
+  "cpu_protocol_tests": 46,
+  "smoke_exit": 0,
+  "smoke_batches": 2,
+  "smoke_checkpoint_step": 2,
+  "offline_logger_initial_state_matches_validated_baseline": true,
+  "smoke_evidence": "outputs/determinism/ccps_boundary_followup/20261028T030813Z/g6_launcher_smoke_retry",
+  "readiness": "outputs/determinism/ce2d_stableseg_execution_v2/readiness.json",
+  "formal_G6_started": false,
+  "output_root": "outputs/baseline-repair_2",
+  "output_naming_only_change": true,
+  "scientific_code_unchanged": true,
+  "previous_launcher_sha256": "05f5192b7c6d689ed7cd084046c2c4c2cca9d52f9187e72d000ab6773acdc40c",
+  "rename_validation": "outputs/audit/baseline_repair_launch_20261028T072456Z",
+  "original_preparation": "outputs/baseline-repair/preparation.json",
+  "adapter_changes": "BASE only; original g6 preflight/supervise/callback/coverage/compare code reused unchanged"
+}

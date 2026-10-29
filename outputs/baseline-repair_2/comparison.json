@@ -1,0 +1,65 @@
+{
+  "best_epoch_equal": false,
+  "best_state_equal": false,
+  "last_state_equal": false,
+  "mean_dice_difference_pp": 0.15758294986265575,
+  "mean_hd95_mm_difference": 2.6466662233452958,
+  "organs": [
+    {
+      "label_id": 1,
+      "organ": "主动脉",
+      "dice_difference_pp": 0.3189026153650354,
+      "hd95_mm_difference": -1.8765033529583128
+    },
+    {
+      "label_id": 2,
+      "organ": "胆囊",
+      "dice_difference_pp": -0.98703189570577,
+      "hd95_mm_difference": 0.2765234674057666
+    },
+    {
+      "label_id": 3,
+      "organ": "左肾",
+      "dice_difference_pp": 0.961385138290638,
+      "hd95_mm_difference": 24.734512922051316
+    },
+    {
+      "label_id": 4,
+      "organ": "右肾",
+      "dice_difference_pp": 0.40781906679856483,
+      "hd95_mm_difference": 9.093083011895644
+    },
+    {
+      "label_id": 5,
+      "organ": "肝脏",
+      "dice_difference_pp": 0.8501628970111308,
+      "hd95_mm_difference": -30.29936688214429
+    },
+    {
+      "label_id": 6,
+      "organ": "胰腺",
+      "dice_difference_pp": 0.07020518507521167,
+      "hd95_mm_difference": 16.562534361502784
+    },
+    {
+      "label_id": 7,
+      "organ": "脾脏",
+      "dice_difference_pp": -0.37739912114813645,
+      "hd95_mm_difference": 13.56491692381033
+    },
+    {
+      "label_id": 8,
+      "organ": "胃",
+      "dice_difference_pp": 0.016619713214682807,
+      "hd95_mm_difference": -10.88237066480085
+    }
+  ],
+  "initial_state_equal": true,
+  "initial_rng_equal": true,
+  "initial_optimizer_group_count_equal": true,
+  "all_epoch_case_metric_csv_equal": {
+    "test_epoch_metrics.csv": false,
+    "test_case_metrics.csv": false,
+    "physical_case_organ_metrics.csv": false
+  }
+}
