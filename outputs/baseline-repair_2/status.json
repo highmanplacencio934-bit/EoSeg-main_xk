@@ -1,0 +1,6 @@
+{
+  "state": "running",
+  "training_pid": 670034,
+  "repeat": 2,
+  "protocol": "ce2d_stableseg_execution_v2"
+}
