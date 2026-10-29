@@ -1,0 +1,21 @@
+{
+  "run": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z",
+  "repeat": 2,
+  "supervisor_pid": 669328,
+  "created_utc": "2026-10-29T02:23:32.847447+00:00",
+  "preflight": {
+    "runtime": {
+      "python": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "available": true,
+      "gpu": "NVIDIA GeForce RTX 5090 D"
+    },
+    "pretrained_sha256": "36e4deffbaef061a2576705b0c36f93621e2ae20bf6274694821b0b492551b51",
+    "gpu_free_mib": 30598,
+    "hostname": "5090",
+    "launcher_sha256": "45001bedb46100a003414a52a2815dcb73392eebee6514e6c3c6e581e98c1b5a",
+    "readiness_sha256": "d1723158ed6fa3a9ae0b6aa6bb12aa88916e62d4a8c33e4614a99032dffd16a9"
+  },
+  "output_path_adapter": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/preparation/launch_repeat_2.py"
+}
