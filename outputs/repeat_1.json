@@ -1,0 +1,20 @@
+{
+  "run": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z",
+  "supervisor_pid": 1237443,
+  "created_utc": "2026-10-29T07:58:01.359785+00:00",
+  "launcher_sha256": "533f3bf9e332a874e928793ae7958d0aeefa2e01a43d0db8c849cf833f02a4b6",
+  "preflight": {
+    "runtime": {
+      "python": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python",
+      "torch": "2.13.0+cu132",
+      "cuda": "13.2",
+      "gpu": "NVIDIA GeForce RTX 5090 D"
+    },
+    "gpu_free_mib": 32092,
+    "config_sha256": "7141fc9e4f226f9ef674ee917467c9fedd48aa19cc4720630977c3cbe88ce3a9",
+    "prior_sha256": "eceb52e294151028be69433d628182a317ef707dd8e5da927b69149eb89232ff",
+    "pretrained_sha256": "36e4deffbaef061a2576705b0c36f93621e2ae20bf6274694821b0b492551b51",
+    "metric_readiness_sha256": "0d8e9185d5cea7ebee7e0cb1c48b20d81398899e05f5bf73b58e12b78ba1fc59",
+    "launcher_sha256": "533f3bf9e332a874e928793ae7958d0aeefa2e01a43d0db8c849cf833f02a4b6"
+  }
+}

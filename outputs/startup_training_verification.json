@@ -1,0 +1,42 @@
+{
+  "verified_utc": "2026-10-29T08:01:55.204363+00:00",
+  "training_identity": {
+    "pid": 1237718,
+    "start_ticks": "96633796",
+    "state": "R",
+    "cmdline": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python runtime/synapse_metric_mode/run.py fit --config runtime/synapse_metric_mode/configs/asee.yaml --seed_everything=0 --compute_hd95_mm=false --tta_views=1 --trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z --trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z --trainer.logger.init_args.name=asee-repair-repeat1 --trainer.callbacks=[{\"class_path\": \"metric_mode.MetricModeSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z\"}}, {\"class_path\": \"asee_launch.Startup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z\", \"smoke\": false}}] --deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z/protocol_records ",
+    "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+  },
+  "initial_state_equal_to_smoke": true,
+  "rng_equal_to_smoke": true,
+  "optimizer_groups_equal_to_smoke": true,
+  "optimizer_groups": 401,
+  "network": "EoSegMultiQSegFusionASEE",
+  "asee": {
+    "embed_dim": 1024,
+    "num_classes": 9,
+    "num_q": 16,
+    "queries_per_class": 2,
+    "patch_update": "plan",
+    "freeze_text_projection": false,
+    "enhance_patch": true,
+    "enhance_query": true,
+    "use_text": true,
+    "use_probability": true
+  },
+  "ccps": false,
+  "compute_hd95_mm": false,
+  "compute_hd95_voxel": false,
+  "completed_epoch_snapshot": 1,
+  "global_step_snapshot": 138,
+  "smoke_evaluation": {
+    "passed": true,
+    "cases": 12,
+    "case_organs": 96,
+    "global_step": 2,
+    "hd95_calls": 0,
+    "mean_dice": 0.0009266768587050606,
+    "hd95_mm": null
+  },
+  "formal_training_started": true
+}
