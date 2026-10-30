@@ -1,0 +1,14 @@
+{
+  "selection_policy": "test set used for selection; unchanged legacy Dice",
+  "epoch_numbering": "one-based",
+  "max_epochs": 220,
+  "first_evaluation_epoch": 171,
+  "last_evaluated_epoch": 220,
+  "expected_test_cases": 12,
+  "best_epoch": 190,
+  "best_mean_dice": 0.8638178481592238,
+  "best_checkpoint": "best_test.ckpt",
+  "last_checkpoint": "last.ckpt",
+  "hd95_mm_enabled": false,
+  "hd95_voxel_enabled": false
+}
