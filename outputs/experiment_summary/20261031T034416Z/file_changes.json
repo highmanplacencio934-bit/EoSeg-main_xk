@@ -1,0 +1,19 @@
+{
+  "created": [
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/collect.py",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/experiments.json",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/evidence.json",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/training_summary.csv",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/training_organ_metrics.csv",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/independent_test_summary.csv",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/independent_test_organs.csv",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/summary.md",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/unscored_seed_records.csv",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/file_changes.json",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/collect.log",
+    "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiment_summary/20261031T034416Z/validation.json"
+  ],
+  "modified_existing": [],
+  "deleted": [],
+  "production_or_training_changed": false
+}

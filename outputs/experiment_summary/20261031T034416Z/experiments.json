@@ -1,0 +1,2818 @@
+{
+  "checked_utc": "2026-10-31T03:48:01.734912+00:00",
+  "formal_training_count": 16,
+  "status_counts": {
+    "completed": 12,
+    "stopped_by_user": 3,
+    "running": 1
+  },
+  "unscored_training_records": [
+    {
+      "name": "asee_seed1",
+      "method": "asee",
+      "seed": 1,
+      "state": "cancelled_by_user",
+      "started": false,
+      "max_epochs": 220,
+      "completed_epochs": null,
+      "global_step": null,
+      "mean_dice": null,
+      "best_epoch": null,
+      "cuda_repair_enabled": false,
+      "cuda_evidence_scope": "planned original main.py command; not started",
+      "run": "outputs/innovation1/asee_seed_audit/20261023T023553Z/asee_seed1",
+      "reason": "用户停止/取消，未形成完整测试结果"
+    },
+    {
+      "name": "asee_seed2",
+      "method": "asee",
+      "seed": 2,
+      "state": "cancelled_by_user",
+      "started": false,
+      "max_epochs": 220,
+      "completed_epochs": null,
+      "global_step": null,
+      "mean_dice": null,
+      "best_epoch": null,
+      "cuda_repair_enabled": false,
+      "cuda_evidence_scope": "planned original main.py command; not started",
+      "run": "outputs/innovation1/asee_seed_audit/20261023T023553Z/asee_seed2",
+      "reason": "用户停止/取消，未形成完整测试结果"
+    },
+    {
+      "name": "baseline_seed1",
+      "method": "baseline",
+      "seed": 1,
+      "state": "stopped_by_user",
+      "started": true,
+      "max_epochs": 220,
+      "completed_epochs": 26,
+      "global_step": 3588,
+      "mean_dice": null,
+      "best_epoch": null,
+      "cuda_repair_enabled": false,
+      "cuda_evidence_scope": "actual original main.py command",
+      "run": "outputs/innovation1/asee_seed_audit/20261023T023553Z/baseline_seed1",
+      "reason": "用户停止/取消，未形成完整测试结果"
+    },
+    {
+      "name": "baseline_seed2",
+      "method": "baseline",
+      "seed": 2,
+      "state": "cancelled_by_user",
+      "started": false,
+      "max_epochs": 220,
+      "completed_epochs": null,
+      "global_step": null,
+      "mean_dice": null,
+      "best_epoch": null,
+      "cuda_repair_enabled": false,
+      "cuda_evidence_scope": "planned original main.py command; not started",
+      "run": "outputs/innovation1/asee_seed_audit/20261023T023553Z/baseline_seed2",
+      "reason": "用户停止/取消，未形成完整测试结果"
+    }
+  ],
+  "standalone_test_count": 12,
+  "unique_standalone_test_count": 11,
+  "training": [
+    {
+      "id": "E01",
+      "name": "S2仅共现（V2）",
+      "run": "outputs/ablations/asee_probability_only_v2/20261030T185908Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 177,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8616126423516607,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": true,
+      "cuda_protocol": "ce2d_stableseg_execution_v2",
+      "roi_enabled": true,
+      "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": false,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_probability_only_v2/20261030T185908Z/synapse_test_selection/20261030T185935Z_001efa2a/best_test.ckpt",
+      "checkpoint_sha256": "7ed7312d4557802e7c8fc4f98d793e32736361cb4404b3481b23788731e8820f",
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8991313533353829,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7772228161921105,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8860037042949198,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.851143765256412,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9274398783188444,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7395811832383136,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.937387822273879,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8749906159034232,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_probability_only_v2/20261030T185908Z/synapse_test_selection/20261030T185935Z_001efa2a/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E02",
+      "name": "S1仅文本（V2）",
+      "run": "outputs/ablations/asee_text_only_v2/20261030T125953Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 197,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8650536194889473,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": true,
+      "cuda_protocol": "ce2d_stableseg_execution_v2",
+      "roi_enabled": true,
+      "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": true,
+      "use_probability": false,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_text_only_v2/20261030T125953Z/synapse_test_selection/20261030T130018Z_83a1d0b0/best_test.ckpt",
+      "checkpoint_sha256": "a2e463cc4b0d3e80bb955ae9b6207ef747ff7ad6495a1f7f669473024fafb3ed",
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9070883032308729,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7339404402464597,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8884948416498437,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8706945972640208,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.958966804833021,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7397265751429606,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9361978382316681,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8853195553127318,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_text_only_v2/20261030T125953Z/synapse_test_selection/20261030T130018Z_83a1d0b0/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E03",
+      "name": "S1仅文本（原CUDA）",
+      "run": "outputs/ablations/journal_20261025/S1/20261025T230957Z/training",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 187,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8669694186938393,
+      "mean_hd95_mm": 17.270779876296807,
+      "mean_hd95_voxel": 14.998108340207263,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": true,
+      "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": true,
+      "use_probability": false,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training/synapse_test_selection/20261025T231010Z_ca94e093/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9041034415392981,
+          "hd95_mm": 43.8608228342174,
+          "hd95_voxel": 42.904893492647155
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7504434495537237,
+          "hd95_mm": 11.001521675218214,
+          "hd95_voxel": 7.508608780401828
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.9009287291802092,
+          "hd95_mm": 8.619418598281149,
+          "hd95_voxel": 6.413295588005647
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8699340686136581,
+          "hd95_mm": 8.98147477439196,
+          "hd95_voxel": 8.156487378129603
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9626837658641995,
+          "hd95_mm": 7.4872759379391605,
+          "hd95_voxel": 4.413674268166799
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7395375241203487,
+          "hd95_mm": 9.146640592153288,
+          "hd95_voxel": 5.896491478462728
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9416766889724172,
+          "hd95_mm": 11.885557187430228,
+          "hd95_voxel": 8.473281565389552
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8664476817068593,
+          "hd95_mm": 37.18352741074305,
+          "hd95_voxel": 36.21813417045479
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training/synapse_test_selection/20261025T231010Z_ca94e093/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E04",
+      "name": "S2仅共现（原CUDA，早停）",
+      "run": "outputs/ablations/journal_20261025/S2/20261026T231139Z/training",
+      "state": "stopped_by_user",
+      "exit_code": 1,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 211,
+      "global_step": 29118,
+      "best_epoch": 195,
+      "last_evaluated_epoch": 210,
+      "evaluation_window": "171-210",
+      "evaluated_epochs": 40,
+      "case_rows": 480,
+      "mean_dice": 0.8521448172917713,
+      "mean_hd95_mm": 33.45348739013128,
+      "mean_hd95_voxel": 31.93353023912942,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": true,
+      "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": false,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training/synapse_test_selection/20261026T231154Z_63a12319/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8266127222686084,
+          "hd95_mm": 81.2718052694174,
+          "hd95_voxel": 83.71004666634492
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7550184310883908,
+          "hd95_mm": 9.58145056717317,
+          "hd95_voxel": 6.977019729773865
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.9025258166035885,
+          "hd95_mm": 21.128325795557245,
+          "hd95_voxel": 19.725127933458577
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8688742167319107,
+          "hd95_mm": 15.079001828691268,
+          "hd95_voxel": 10.121072778707992
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9196110261159985,
+          "hd95_mm": 88.69945819108767,
+          "hd95_voxel": 93.02629528818113
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.737103755578684,
+          "hd95_mm": 8.940846922879699,
+          "hd95_voxel": 5.567111581927281
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9357737477467718,
+          "hd95_mm": 14.798702428494614,
+          "hd95_voxel": 11.503946469186026
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8716388222002173,
+          "hd95_mm": 28.12830811774916,
+          "hd95_voxel": 24.83762146545558
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training/synapse_test_selection/20261026T231154Z_63a12319/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E05",
+      "name": "ASEE双先验主实验（V2修复）",
+      "run": "outputs/asee-repair/repeat_1/20261029T075801Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 190,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8638178481592238,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": true,
+      "cuda_protocol": "ce2d_stableseg_execution_v2",
+      "roi_enabled": true,
+      "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": true,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z/synapse_test_selection/20261029T075825Z_449bb9df/best_test.ckpt",
+      "checkpoint_sha256": "c61e3c097d3a47fcba98b2d906e832ba149b411d011487f2532169a3aae8a026",
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9066683190754237,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7436886493471232,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.9061607159400723,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8744844176562842,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9584196799667256,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7233326660109517,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9317507401344455,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8660375971427644,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z/synapse_test_selection/20261029T075825Z_449bb9df/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E06",
+      "name": "原始baseline",
+      "run": "outputs/baseline/20261021T132635Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 177,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8471846610153185,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": 47.38956681663292,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": false,
+      "network_class": "models.eoseg.EoSegMultiQSegFusion",
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "use_text": null,
+      "use_probability": null,
+      "enhance_patch": null,
+      "enhance_query": null,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8461225143731291,
+          "hd95_mm": null,
+          "hd95_voxel": 79.88159510315303
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.721060254883318,
+          "hd95_mm": null,
+          "hd95_voxel": 17.698269308635485
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8653859995178245,
+          "hd95_mm": null,
+          "hd95_voxel": 57.841131614523846
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8643618089267927,
+          "hd95_mm": null,
+          "hd95_voxel": 21.70002489111155
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.953443909714179,
+          "hd95_mm": null,
+          "hd95_voxel": 75.16797000559441
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7284509965762247,
+          "hd95_mm": null,
+          "hd95_voxel": 51.598563204040055
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9216519710282606,
+          "hd95_mm": null,
+          "hd95_voxel": 70.2943282844697
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8769998331028197,
+          "hd95_mm": null,
+          "hd95_voxel": 4.934652121535302
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E07",
+      "name": "baseline-2（ROI版）",
+      "run": "outputs/baseline-2/20261026T130228Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 173,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8591375603756959,
+      "mean_hd95_mm": 32.50934728608681,
+      "mean_hd95_voxel": 27.659046811101035,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": true,
+      "network_class": "models.eoseg.EoSegMultiQSegFusion",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": null,
+      "use_probability": null,
+      "enhance_patch": null,
+      "enhance_query": null,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-2/20261026T130228Z/synapse_test_selection/20261026T130239Z_ffcc3345/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8923485835264624,
+          "hd95_mm": 62.397011656746066,
+          "hd95_voxel": 51.984533353097795
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7529177075559561,
+          "hd95_mm": 10.311205867835648,
+          "hd95_voxel": 6.412118472107122
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8902770631215787,
+          "hd95_mm": 18.765431029955383,
+          "hd95_voxel": 14.163613806450597
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8402025319291768,
+          "hd95_mm": 70.08337181332286,
+          "hd95_voxel": 60.08250540042406
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9552955442600283,
+          "hd95_mm": 48.00541870857512,
+          "hd95_voxel": 47.70733817287219
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.742055991316823,
+          "hd95_mm": 7.981379180645029,
+          "hd95_voxel": 5.24489486849195
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9378665059863592,
+          "hd95_mm": 10.947898782026842,
+          "hd95_voxel": 7.196942907918781
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8621365553091827,
+          "hd95_mm": 31.58306124958752,
+          "hd95_voxel": 28.480427507445796
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-2/20261026T130228Z/synapse_test_selection/20261026T130239Z_ffcc3345/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E08",
+      "name": "baseline-lock 第1次",
+      "run": "outputs/baseline-lock/20261030T031914Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 175,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.864647840716719,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": false,
+      "network_class": "models.eoseg.EoSegMultiQSegFusion",
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "use_text": null,
+      "use_probability": null,
+      "enhance_patch": null,
+      "enhance_query": null,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/20261030T031914Z/synapse_test_selection/20261030T031928Z_9fb167de/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9025938946143047,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7364995751973296,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8882945945754256,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8629918709301877,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9588578348215684,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7515490350528019,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.938714703348498,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8776812171936358,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/20261030T031914Z/synapse_test_selection/20261030T031928Z_9fb167de/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E09",
+      "name": "baseline-lock 第2次",
+      "run": "outputs/baseline-lock/repeat_2/20261030T080537Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 181,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8673162796928209,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": false,
+      "network_class": "models.eoseg.EoSegMultiQSegFusion",
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "use_text": null,
+      "use_probability": null,
+      "enhance_patch": null,
+      "enhance_query": null,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/repeat_2/20261030T080537Z/synapse_test_selection/20261030T080551Z_e015b90f/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9051301032781152,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7460124845929119,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.9015668301339997,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8597351656693308,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9536631103901246,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7492393275202973,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.943222521458187,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8799606944996001,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/repeat_2/20261030T080537Z/synapse_test_selection/20261030T080551Z_e015b90f/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E10",
+      "name": "baseline-repair 第1次",
+      "run": "outputs/baseline-repair/G6_1/20261028T072539Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 184,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8628364822664824,
+      "mean_hd95_mm": 17.99772114534208,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": true,
+      "cuda_protocol": "ce2d_stableseg_execution_v2",
+      "roi_enabled": true,
+      "network_class": "models.eoseg.EoSegMultiQSegFusion",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": null,
+      "use_probability": null,
+      "enhance_patch": null,
+      "enhance_query": null,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z/synapse_test_selection/20261028T072656Z_c6ab2a6d/best_test.ckpt",
+      "checkpoint_sha256": "05184eb2c7ce87d63c031fc5ade797fb601cdd749f92df18afbeeceb5f117816",
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9024341541771429,
+          "hd95_mm": 27.37904037458871,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7366967891345357,
+          "hd95_mm": 18.468201720125936,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8728649734430234,
+          "hd95_mm": 4.3407334506023325,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8660986263454421,
+          "hd95_mm": 10.892903508182208,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9526581634638355,
+          "hd95_mm": 39.975222652287634,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7496635039328647,
+          "hd95_mm": 7.945740570046811,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9401017029290317,
+          "hd95_mm": 12.91464623239301,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8821739447059831,
+          "hd95_mm": 22.06528065450999,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z/synapse_test_selection/20261028T072656Z_c6ab2a6d/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E11",
+      "name": "baseline-repair_2 第2次",
+      "run": "outputs/baseline-repair_2/G6_2/20261029T022332Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 181,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8644123117651091,
+      "mean_hd95_mm": 20.644387368687376,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": true,
+      "cuda_protocol": "ce2d_stableseg_execution_v2",
+      "roi_enabled": true,
+      "network_class": "models.eoseg.EoSegMultiQSegFusion",
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "use_text": null,
+      "use_probability": null,
+      "enhance_patch": null,
+      "enhance_query": null,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z/synapse_test_selection/20261029T022451Z_3453b054/best_test.ckpt",
+      "checkpoint_sha256": "342be50894d20fc153d176a7b6cca26c6cfae6d990d0c84f78dd9caacd7b9ff1",
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9056231803307931,
+          "hd95_mm": 25.50253702163039,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7268264701774781,
+          "hd95_mm": 18.744725187531703,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8824788248259298,
+          "hd95_mm": 29.07524637265365,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8701768170134279,
+          "hd95_mm": 19.985986520077855,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9611597924339468,
+          "hd95_mm": 9.675855770143349,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.750365555783617,
+          "hd95_mm": 24.508274931549593,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9363277117175501,
+          "hd95_mm": 26.479563156203337,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8823401418381299,
+          "hd95_mm": 11.18290998970914,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z/synapse_test_selection/20261029T022451Z_3453b054/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E12",
+      "name": "ASEE+CCPS完整主模型（V2）",
+      "run": "outputs/experiments/asee_ccps_full_v2/20261030T233233Z",
+      "state": "running",
+      "exit_code": null,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 211,
+      "global_step": 29118,
+      "best_epoch": 198,
+      "last_evaluated_epoch": 211,
+      "evaluation_window": "171-211",
+      "evaluated_epochs": 41,
+      "case_rows": 492,
+      "mean_dice": 0.8632731683893575,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": true,
+      "cuda_protocol": "ce2d_stableseg_execution_v2",
+      "roi_enabled": true,
+      "network_class": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "use_text": true,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {
+        "selector_mode": "visual_prior",
+        "selector_on_patch": true,
+        "selector_on_query": false,
+        "selector_hidden_dim": 256,
+        "selector_init_probability": 0.95,
+        "detach_prior_for_selector": false,
+        "patch_gate_effect": "both"
+      },
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z/synapse_test_selection/20261030T233258Z_37cace9d/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.905671534110695,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.747086563246631,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8948243224967825,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.867068297323699,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9565135833265481,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7273892730039963,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9312833837608315,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8763483898456763,
+          "hd95_mm": null,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z/synapse_test_selection/20261030T233258Z_37cace9d/selection_summary.json",
+      "training_identity": {
+        "pid": 893059,
+        "start_ticks": "110881020",
+        "state": "R",
+        "cmdline": "/Disk/HDD/Sk/miniconda3/envs/DeepLearning_xiakun/bin/python runtime/synapse_metric_mode/run.py fit --config outputs/experiments/asee_ccps_full_v2/preparation/full.yaml --seed_everything=0 --compute_hd95_mm=false --tta_views=1 --trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z --trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z --trainer.logger.init_args.name=asee-ccps-full-v2-full-main --trainer.callbacks=[{\"class_path\": \"metric_mode.MetricModeSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z\"}}, {\"class_path\": \"asee_launch.Startup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z\", \"smoke\": false}}] --deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z/protocol_records ",
+        "cwd": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse"
+      }
+    },
+    {
+      "id": "E13",
+      "name": "ASEE双先验主实验（原CUDA）",
+      "run": "outputs/innovation1/asee_plan/20261022T044551Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 220,
+      "global_step": 30360,
+      "best_epoch": 196,
+      "last_evaluated_epoch": 220,
+      "evaluation_window": "171-220",
+      "evaluated_epochs": 50,
+      "case_rows": 600,
+      "mean_dice": 0.8544748447697083,
+      "mean_hd95_mm": null,
+      "mean_hd95_voxel": 21.668917357050155,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": false,
+      "network_class": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "use_text": true,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {},
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8808467386002509,
+          "hd95_mm": null,
+          "hd95_voxel": 46.64306681660821
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7307261886754177,
+          "hd95_mm": null,
+          "hd95_voxel": 16.850720329295083
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8766660482525959,
+          "hd95_mm": null,
+          "hd95_voxel": 17.60497408400862
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8572392662024629,
+          "hd95_mm": null,
+          "hd95_voxel": 28.336020629462396
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9576375675718172,
+          "hd95_mm": null,
+          "hd95_voxel": 39.50806208477872
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7258393273862914,
+          "hd95_mm": null,
+          "hd95_voxel": 5.015425102592261
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9337145875646985,
+          "hd95_mm": null,
+          "hd95_voxel": 14.499999415044279
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8731290339041314,
+          "hd95_mm": null,
+          "hd95_voxel": 4.893070394611674
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E14",
+      "name": "ASEE+CCPS 低LR补训100轮（V2）",
+      "run": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z",
+      "state": "completed",
+      "exit_code": 0,
+      "seed": 0,
+      "lr": 2e-05,
+      "max_epochs": 100,
+      "completed_epochs": 100,
+      "global_step": 13800,
+      "best_epoch": 15,
+      "last_evaluated_epoch": 100,
+      "evaluation_window": "1-100",
+      "evaluated_epochs": 100,
+      "case_rows": 1200,
+      "mean_dice": 0.8638177282503033,
+      "mean_hd95_mm": 25.98778816969089,
+      "mean_hd95_voxel": null,
+      "cuda_repair_enabled": true,
+      "cuda_protocol": "ce2d_stableseg_execution_v2",
+      "roi_enabled": true,
+      "network_class": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "use_text": true,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {
+        "selector_mode": "visual_prior",
+        "selector_on_patch": true,
+        "selector_on_query": false,
+        "selector_hidden_dim": 256,
+        "selector_init_probability": 0.95,
+        "detach_prior_for_selector": false,
+        "patch_gate_effect": "both"
+      },
+      "warm_start": true,
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "optimizer_and_scheduler_reset": true,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/synapse_test_selection/20261028T124805Z_f151bb6a/best_test.ckpt",
+      "checkpoint_sha256": "f035b11ca34a5de2e06927ab6788244caa4a1ce1034bfd1ea9e4bd9c1fb657ba",
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9045263181958587,
+          "hd95_mm": 37.55215707294442,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7431221924424233,
+          "hd95_mm": 17.489415603097843,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8877431180244476,
+          "hd95_mm": 33.41466229990634,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8728267960958007,
+          "hd95_mm": 13.807599716514979,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9470762480956553,
+          "hd95_mm": 73.62473217483635,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7325319924249004,
+          "hd95_mm": 7.676391786486778,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9367057803439504,
+          "hd95_mm": 11.218020641083081,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8860093803793907,
+          "hd95_mm": 13.119326062657331,
+          "hd95_voxel": null
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/synapse_test_selection/20261028T124805Z_f151bb6a/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E15",
+      "name": "ASEE+CCPS seed0（原CUDA）",
+      "run": "outputs/innovation2/ccps_plan/20261023T121754Z",
+      "state": "stopped_by_user",
+      "exit_code": 1,
+      "seed": 0,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 214,
+      "global_step": 29532,
+      "best_epoch": 187,
+      "last_evaluated_epoch": 213,
+      "evaluation_window": "171-213",
+      "evaluated_epochs": 43,
+      "case_rows": 516,
+      "mean_dice": 0.8624297902218245,
+      "mean_hd95_mm": 29.74475817771973,
+      "mean_hd95_voxel": 29.113595048587335,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": false,
+      "network_class": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "use_text": true,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {
+        "selector_mode": "visual_prior",
+        "selector_on_patch": true,
+        "selector_on_query": false,
+        "selector_hidden_dim": 256,
+        "selector_init_probability": 0.95,
+        "detach_prior_for_selector": false,
+        "patch_gate_effect": "both"
+      },
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9031403640412928,
+          "hd95_mm": 38.43197341698049,
+          "hd95_voxel": 38.041944212100816
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7465148030726705,
+          "hd95_mm": 17.30636277939848,
+          "hd95_voxel": 17.065418295480168
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8782899593625412,
+          "hd95_mm": 58.24933037338233,
+          "hd95_voxel": 62.16364203444613
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8724180984826818,
+          "hd95_mm": 11.47847458408591,
+          "hd95_voxel": 8.735832567128506
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9451140917073401,
+          "hd95_mm": 76.09297339895522,
+          "hd95_voxel": 81.87148949528354
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7373222582878824,
+          "hd95_mm": 7.558413816511611,
+          "hd95_voxel": 4.855905505606489
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9353998453061201,
+          "hd95_mm": 16.804600931046885,
+          "hd95_voxel": 14.009801799108034
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8812389015140675,
+          "hd95_mm": 12.035936121396931,
+          "hd95_voxel": 6.1647264795449885
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/selection_summary.json",
+      "training_identity": null
+    },
+    {
+      "id": "E16",
+      "name": "ASEE+CCPS seed42（原CUDA）",
+      "run": "outputs/innovation2/ccps_seed42/20261024T131734Z",
+      "state": "stopped_by_user",
+      "exit_code": 1,
+      "seed": 42,
+      "lr": 0.0002,
+      "max_epochs": 220,
+      "completed_epochs": 198,
+      "global_step": 27324,
+      "best_epoch": 186,
+      "last_evaluated_epoch": 197,
+      "evaluation_window": "171-197",
+      "evaluated_epochs": 27,
+      "case_rows": 324,
+      "mean_dice": 0.8409039793733836,
+      "mean_hd95_mm": 49.705576514329515,
+      "mean_hd95_voxel": 48.26947384701812,
+      "cuda_repair_enabled": false,
+      "cuda_protocol": "original_cuda",
+      "roi_enabled": false,
+      "network_class": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "use_text": true,
+      "use_probability": true,
+      "enhance_patch": true,
+      "enhance_query": true,
+      "ccps_config": {
+        "selector_mode": "visual_prior",
+        "selector_on_patch": true,
+        "selector_on_query": false,
+        "selector_hidden_dim": 256,
+        "selector_init_probability": 0.95,
+        "detach_prior_for_selector": false,
+        "patch_gate_effect": "both"
+      },
+      "warm_start": false,
+      "source_checkpoint": null,
+      "optimizer_and_scheduler_reset": null,
+      "tta_views": 1,
+      "checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_seed42/20261024T131734Z/synapse_test_selection/20261024T132218Z_f39d912f/best_test.ckpt",
+      "checkpoint_sha256": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.870622265602202,
+          "hd95_mm": 59.69514950711625,
+          "hd95_voxel": 58.23055782219341
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.723632413755646,
+          "hd95_mm": 17.117935467440677,
+          "hd95_voxel": 17.950363100792973
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.7791801346540984,
+          "hd95_mm": 110.31425595563279,
+          "hd95_voxel": 107.32874148848487
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8593991933170498,
+          "hd95_mm": 27.096036456385534,
+          "hd95_voxel": 25.381672809050738
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9594873730653068,
+          "hd95_mm": 30.802639049440753,
+          "hd95_voxel": 21.914181948045268
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7362185054953182,
+          "hd95_mm": 52.31865334866481,
+          "hd95_voxel": 50.87552189071284
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9333736281446868,
+          "hd95_mm": 18.5633316420088,
+          "hd95_voxel": 15.79470543243949
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8653183209527607,
+          "hd95_mm": 81.73661068794652,
+          "hd95_voxel": 88.68004628442539
+        }
+      ],
+      "selection": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_seed42/20261024T131734Z/synapse_test_selection/20261024T132218Z_f39d912f/selection_summary.json",
+      "training_identity": null
+    }
+  ],
+  "tests": [
+    {
+      "id": "T01",
+      "summary": "outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation/independent_test/20261025T224503Z_da030f9e/physical_test_summary.json",
+      "evaluation_folder": "outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation/independent_test/20261025T224503Z_da030f9e",
+      "source_training_id": "E06",
+      "source_training": "原始baseline",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt",
+      "source_checkpoint_epoch": 177,
+      "checkpoint_sha256": "321a085a076773c889af671081b7f9586d66b6ddf8b9ce446eaac8c2c9bbe7cf",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 8,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875,
+        1.125,
+        0.75
+      ],
+      "mean_dice": 0.8684952835297971,
+      "mean_hd95_mm": 12.968489787225494,
+      "mean_hd95_voxel": 10.106414740074934,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9061799686527596,
+          "hd95_mm": 28.879932656935665,
+          "hd95_voxel": 25.515424895330487
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.733077175725385,
+          "hd95_mm": 17.623318675556337,
+          "hd95_voxel": 16.905833468493157
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8888889585656822,
+          "hd95_mm": 9.384891507685998,
+          "hd95_voxel": 10.76756019184347
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8702989291454347,
+          "hd95_mm": 11.034092789766227,
+          "hd95_voxel": 5.200020977935779
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9636491777815755,
+          "hd95_mm": 9.23594828835556,
+          "hd95_voxel": 5.8942776716945735
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7594208330685354,
+          "hd95_mm": 7.583249550645816,
+          "hd95_voxel": 5.024147412445
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9386331625256569,
+          "hd95_mm": 10.656475450362237,
+          "hd95_voxel": 7.122204843157859
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8878140627733476,
+          "hd95_mm": 9.35000937849611,
+          "hd95_voxel": 4.421848459699132
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/run_synapse_roi.py",
+        "test",
+        "--config",
+        "configs/synapse/ablations_journal/m0_baseline_eight_view.yaml",
+        "--ckpt_path=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt",
+        "--tta_views=8",
+        "--compile_test",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M0/20261025T224447Z/evaluation\"}}]",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M0/20261025T224447Z"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T02",
+      "summary": "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b/physical_test_summary.json",
+      "evaluation_folder": "outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation/independent_test/20261025T225405Z_a5c6704b",
+      "source_training_id": "E13",
+      "source_training": "ASEE双先验主实验（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+      "source_checkpoint_epoch": 196,
+      "checkpoint_sha256": "d316bfe9b0b231b62c76da5e52987c381c66fbb4a03deff446a2adf73f93e2f7",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 8,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875,
+        1.125,
+        0.75
+      ],
+      "mean_dice": 0.8608602144472216,
+      "mean_hd95_mm": 11.928217261610605,
+      "mean_hd95_voxel": 9.587378011387722,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9051288754691055,
+          "hd95_mm": 6.321683555750279,
+          "hd95_voxel": 5.4729516946587005
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7242217130124695,
+          "hd95_mm": 17.513253264411222,
+          "hd95_voxel": 17.152724995263785
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.877610988122559,
+          "hd95_mm": 16.644898464828923,
+          "hd95_voxel": 15.32844921726843
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8663842053973497,
+          "hd95_mm": 10.520505940169585,
+          "hd95_voxel": 8.21494075643253
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.962928548283403,
+          "hd95_mm": 9.161732804915045,
+          "hd95_voxel": 6.090535554427984
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7301660457664597,
+          "hd95_mm": 7.779823141109716,
+          "hd95_voxel": 5.139804910116853
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9367780847024686,
+          "hd95_mm": 17.679987351588647,
+          "hd95_voxel": 14.730690921227934
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8836632548239577,
+          "hd95_mm": 9.803853570111423,
+          "hd95_voxel": 4.568926041705546
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/run_synapse_roi.py",
+        "test",
+        "--config",
+        "configs/synapse/ablations_journal/m1_asee_eight_view.yaml",
+        "--ckpt_path=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+        "--tta_views=8",
+        "--compile_test",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M1/20261025T225349Z/evaluation\"}}]",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/M1/20261025T225349Z"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T03",
+      "summary": "outputs/ablations/journal_20261025/S1/20261025T230957Z/eight_view_tests/20261026T091846Z/evaluation/independent_test/20261026T092041Z_6b93c117/physical_test_summary.json",
+      "evaluation_folder": "outputs/ablations/journal_20261025/S1/20261025T230957Z/eight_view_tests/20261026T091846Z/evaluation/independent_test/20261026T092041Z_6b93c117",
+      "source_training_id": "E03",
+      "source_training": "S1仅文本（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training/synapse_test_selection/20261025T231010Z_ca94e093/best_test.ckpt",
+      "source_checkpoint_epoch": 187,
+      "checkpoint_sha256": "e1f9911d934423de5b97c80dad9795c87938119d7774de1c63027ee50fba5ad1",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 8,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875,
+        1.125,
+        0.75
+      ],
+      "mean_dice": 0.8705498238918958,
+      "mean_hd95_mm": 8.87461676437313,
+      "mean_hd95_voxel": 6.599390896353241,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9124792060676397,
+          "hd95_mm": 3.52749473171349,
+          "hd95_voxel": 2.1397023753163076
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7463817953368682,
+          "hd95_mm": 17.411016218334716,
+          "hd95_voxel": 17.491954561434042
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8950243178132194,
+          "hd95_mm": 3.0546987295986128,
+          "hd95_voxel": 2.019489250935264
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8728301260105437,
+          "hd95_mm": 6.999616656175873,
+          "hd95_voxel": 6.758772124735628
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9646013975830838,
+          "hd95_mm": 7.3681162467098,
+          "hd95_voxel": 4.356895483342802
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7472755488221056,
+          "hd95_mm": 8.760523729753093,
+          "hd95_voxel": 5.3864528836470065
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.943379397586786,
+          "hd95_mm": 13.267396874461094,
+          "hd95_voxel": 9.91547746921061
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8824268019149205,
+          "hd95_mm": 10.608070928238353,
+          "hd95_voxel": 4.726383022204275
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/run_synapse_roi.py",
+        "test",
+        "--config",
+        "configs/synapse/ablations_journal/s1_asee_text_only.yaml",
+        "--ckpt_path=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training/synapse_test_selection/20261025T231010Z_ca94e093/best_test.ckpt",
+        "--seed_everything=0",
+        "--tta_views=8",
+        "--compile_test",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/eight_view_tests/20261026T091846Z/evaluation\"}}]",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/eight_view_tests/20261026T091846Z/evaluation"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T04",
+      "summary": "outputs/baseline-repair/G6_1/20261028T072539Z/tta_scale_hflip_8/20261028T121033Z/evaluation/independent_test/20261028T121047Z_b607ca34/physical_test_summary.json",
+      "evaluation_folder": "outputs/baseline-repair/G6_1/20261028T072539Z/tta_scale_hflip_8/20261028T121033Z/evaluation/independent_test/20261028T121047Z_b607ca34",
+      "source_training_id": "E10",
+      "source_training": "baseline-repair 第1次",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z/synapse_test_selection/20261028T072656Z_c6ab2a6d/best_test.ckpt",
+      "source_checkpoint_epoch": 184,
+      "checkpoint_sha256": "05184eb2c7ce87d63c031fc5ade797fb601cdd749f92df18afbeeceb5f117816",
+      "source_training_cuda_repair_enabled": true,
+      "source_training_protocol": "ce2d_stableseg_execution_v2",
+      "tta_views": 8,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875,
+        1.125,
+        0.75
+      ],
+      "mean_dice": 0.869756070434393,
+      "mean_hd95_mm": 9.701722907646111,
+      "mean_hd95_voxel": null,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9095685105819081,
+          "hd95_mm": 3.577429425357504,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7463169643603703,
+          "hd95_mm": 18.14070397793077,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8760565505410072,
+          "hd95_mm": 6.4924698533284735,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8698377463498975,
+          "hd95_mm": 9.732392651283476,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9627937549566115,
+          "hd95_mm": 10.109814133588218,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7594098289558623,
+          "hd95_mm": 7.705159414271923,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9442060962271909,
+          "hd95_mm": 12.241867036100446,
+          "hd95_voxel": null
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8898591115022964,
+          "hd95_mm": 9.613946769308086,
+          "hd95_voxel": null
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/run_synapse_roi.py",
+        "test",
+        "--config",
+        "configs/synapse/ablations_journal/m0_baseline_eight_view.yaml",
+        "--ckpt_path=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z/synapse_test_selection/20261028T072656Z_c6ab2a6d/best_test.ckpt",
+        "--tta_views=8",
+        "--compile_test",
+        "--seed_everything=0",
+        "--model.init_args.compute_hd95_voxel=false",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.precision=16-mixed",
+        "--trainer.logger=false",
+        "--trainer.enable_progress_bar=false",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z/tta_scale_hflip_8/20261028T121033Z/evaluation\", \"label_map\": \"priors/synapse_label_map.verified.json\"}}]",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z/tta_scale_hflip_8/20261028T121033Z"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T05",
+      "summary": "outputs/physical_hd95/innovation1_best/20261023T030526Z/independent_test/20261023T030542Z_ecb584c2/physical_test_summary.json",
+      "evaluation_folder": "outputs/physical_hd95/innovation1_best/20261023T030526Z/independent_test/20261023T030542Z_ecb584c2",
+      "source_training_id": "E13",
+      "source_training": "ASEE双先验主实验（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+      "source_checkpoint_epoch": 196,
+      "checkpoint_sha256": "d316bfe9b0b231b62c76da5e52987c381c66fbb4a03deff446a2adf73f93e2f7",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 1,
+      "tta_scheme": "1-view",
+      "scales": null,
+      "mean_dice": 0.8544748447697083,
+      "mean_hd95_mm": 23.23530976726504,
+      "mean_hd95_voxel": 21.66891735705015,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8808467386002509,
+          "hd95_mm": 48.578204155729686,
+          "hd95_voxel": 46.64306681660821
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7307261886754177,
+          "hd95_mm": 17.506527049415684,
+          "hd95_voxel": 16.850720329295083
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8766660482525959,
+          "hd95_mm": 18.844317624222416,
+          "hd95_voxel": 17.60497408400862
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8572392662024629,
+          "hd95_mm": 28.57510201723022,
+          "hd95_voxel": 28.336020629462396
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9576375675718172,
+          "hd95_mm": 36.41828380001684,
+          "hd95_voxel": 39.50806208477872
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7258393273862914,
+          "hd95_mm": 7.909493907330905,
+          "hd95_voxel": 5.015425102592261
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9337145875646985,
+          "hd95_mm": 17.056874168676337,
+          "hd95_voxel": 14.499999415044279
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8731290339041314,
+          "hd95_mm": 10.993675415498222,
+          "hd95_voxel": 4.893070394611674
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "T06",
+      "summary": "outputs/rechecks/baseline_best_8view/20261026T074728Z/evaluation/independent_test/20261026T074742Z_204712ee/physical_test_summary.json",
+      "evaluation_folder": "outputs/rechecks/baseline_best_8view/20261026T074728Z/evaluation/independent_test/20261026T074742Z_204712ee",
+      "source_training_id": "E06",
+      "source_training": "原始baseline",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt",
+      "source_checkpoint_epoch": 177,
+      "checkpoint_sha256": "321a085a076773c889af671081b7f9586d66b6ddf8b9ce446eaac8c2c9bbe7cf",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 8,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875,
+        1.125,
+        0.75
+      ],
+      "mean_dice": 0.8684952835297971,
+      "mean_hd95_mm": 12.968489787225494,
+      "mean_hd95_voxel": 10.106414740074934,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9061799686527596,
+          "hd95_mm": 28.879932656935665,
+          "hd95_voxel": 25.515424895330487
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.733077175725385,
+          "hd95_mm": 17.623318675556337,
+          "hd95_voxel": 16.905833468493157
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8888889585656822,
+          "hd95_mm": 9.384891507685998,
+          "hd95_voxel": 10.76756019184347
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8702989291454347,
+          "hd95_mm": 11.034092789766227,
+          "hd95_voxel": 5.200020977935779
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9636491777815755,
+          "hd95_mm": 9.23594828835556,
+          "hd95_voxel": 5.8942776716945735
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7594208330685354,
+          "hd95_mm": 7.583249550645816,
+          "hd95_voxel": 5.024147412445
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9386331625256569,
+          "hd95_mm": 10.656475450362237,
+          "hd95_voxel": 7.122204843157859
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8878140627733476,
+          "hd95_mm": 9.35000937849611,
+          "hd95_voxel": 4.421848459699132
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/run_synapse_roi.py",
+        "test",
+        "--config",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/configs/synapse/ablations_journal/m0_baseline_eight_view.yaml",
+        "--ckpt_path=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/best_test.ckpt",
+        "--tta_views=8",
+        "--compile_test",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/rechecks/baseline_best_8view/20261026T074728Z/evaluation\"}}]",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/rechecks/baseline_best_8view/20261026T074728Z"
+      ],
+      "duplicate_of": "T01"
+    },
+    {
+      "id": "T07",
+      "summary": "outputs/teacher_hd95/innovation1_best/20261023T091726Z/independent_test/20261023T091738Z_bb046923/physical_test_summary.json",
+      "evaluation_folder": "outputs/teacher_hd95/innovation1_best/20261023T091726Z/independent_test/20261023T091738Z_bb046923",
+      "source_training_id": "E13",
+      "source_training": "ASEE双先验主实验（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/best_test.ckpt",
+      "source_checkpoint_epoch": 196,
+      "checkpoint_sha256": "d316bfe9b0b231b62c76da5e52987c381c66fbb4a03deff446a2adf73f93e2f7",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 1,
+      "tta_scheme": "1-view",
+      "scales": null,
+      "mean_dice": 0.8544748447697083,
+      "mean_hd95_mm": 23.23530976726504,
+      "mean_hd95_voxel": 21.66891735705015,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8808467386002509,
+          "hd95_mm": 48.578204155729686,
+          "hd95_voxel": 46.64306681660821
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7307261886754177,
+          "hd95_mm": 17.506527049415684,
+          "hd95_voxel": 16.850720329295083
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8766660482525959,
+          "hd95_mm": 18.844317624222416,
+          "hd95_voxel": 17.60497408400862
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8572392662024629,
+          "hd95_mm": 28.57510201723022,
+          "hd95_voxel": 28.336020629462396
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9576375675718172,
+          "hd95_mm": 36.41828380001684,
+          "hd95_voxel": 39.50806208477872
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7258393273862914,
+          "hd95_mm": 7.909493907330905,
+          "hd95_voxel": 5.015425102592261
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9337145875646985,
+          "hd95_mm": 17.056874168676337,
+          "hd95_voxel": 14.499999415044279
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8731290339041314,
+          "hd95_mm": 10.993675415498222,
+          "hd95_voxel": 4.893070394611674
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": true,
+      "inference_argv": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "T08",
+      "summary": "outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z/independent_test/20261024T111315Z_f9bac2c5/physical_test_summary.json",
+      "evaluation_folder": "outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z/independent_test/20261024T111315Z_f9bac2c5",
+      "source_training_id": "E15",
+      "source_training": "ASEE+CCPS seed0（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "source_checkpoint_epoch": 187,
+      "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 4,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875
+      ],
+      "mean_dice": 0.8645222996040287,
+      "mean_hd95_mm": 19.041325346477286,
+      "mean_hd95_voxel": 17.38233058835237,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9124583529966301,
+          "hd95_mm": 4.404652515381975,
+          "hd95_voxel": 2.452056932093729
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.743916974948581,
+          "hd95_mm": 17.489192227586567,
+          "hd95_voxel": 17.257429921012566
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8634554854882565,
+          "hd95_mm": 41.22395236844907,
+          "hd95_voxel": 43.51341236509913
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8696398269598915,
+          "hd95_mm": 32.21898576620066,
+          "hd95_voxel": 32.42895418323225
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9603657681921344,
+          "hd95_mm": 27.579882039749307,
+          "hd95_voxel": 25.981359027644917
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7408631782903932,
+          "hd95_mm": 7.646529763603238,
+          "hd95_voxel": 5.107504283787063
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9370967280643926,
+          "hd95_mm": 11.017825046712787,
+          "hd95_voxel": 7.193434908307435
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8883820818919502,
+          "hd95_mm": 10.749583044134697,
+          "hd95_voxel": 5.124493085641867
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/evaluate_synapse_multiscale_tta.py",
+        "test",
+        "--config",
+        "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_multiscale_tta.yaml",
+        "--ckpt_path",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+        "--compile_test",
+        "--tta_views=4",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.enable_progress_bar=false",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip4/20261024T111222Z\"}}]"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T09",
+      "summary": "outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z/independent_test/20261024T114646Z_7cdde881/physical_test_summary.json",
+      "evaluation_folder": "outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z/independent_test/20261024T114646Z_7cdde881",
+      "source_training_id": "E15",
+      "source_training": "ASEE+CCPS seed0（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "source_checkpoint_epoch": 187,
+      "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 6,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875,
+        1.125
+      ],
+      "mean_dice": 0.8683553620433286,
+      "mean_hd95_mm": 19.065134940474078,
+      "mean_hd95_voxel": 17.70563494465328,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9144031260602263,
+          "hd95_mm": 4.186984154834911,
+          "hd95_voxel": 2.303963252867246
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7578275106013561,
+          "hd95_mm": 16.289697900815188,
+          "hd95_voxel": 16.82379448510552
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8645975694338088,
+          "hd95_mm": 43.24113774327021,
+          "hd95_voxel": 46.701551442538374
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8721480243547973,
+          "hd95_mm": 32.61107515273877,
+          "hd95_voxel": 33.053578083802826
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9615950183155628,
+          "hd95_mm": 27.243577407733806,
+          "hd95_voxel": 25.63711107550795
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7463132297700494,
+          "hd95_mm": 7.537392326550585,
+          "hd95_voxel": 5.025457292405967
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9381594262744626,
+          "hd95_mm": 10.878798815919014,
+          "hd95_voxel": 7.118791982778943
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8917989915363659,
+          "hd95_mm": 10.532416021930134,
+          "hd95_voxel": 4.980831942219404
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/evaluate_synapse_multiscale_tta.py",
+        "test",
+        "--config",
+        "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_multiscale_tta.yaml",
+        "--ckpt_path",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+        "--compile_test",
+        "--tta_views=6",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.enable_progress_bar=false",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip6/20261024T114632Z\"}}]"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T10",
+      "summary": "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37/physical_test_summary.json",
+      "evaluation_folder": "outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z/independent_test/20261024T123808Z_bfa7fe37",
+      "source_training_id": "E15",
+      "source_training": "ASEE+CCPS seed0（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "source_checkpoint_epoch": 187,
+      "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 8,
+      "tta_scheme": "scale_hflip",
+      "scales": [
+        1.0,
+        0.875,
+        1.125,
+        0.75
+      ],
+      "mean_dice": 0.8697870309008454,
+      "mean_hd95_mm": 11.142189393678406,
+      "mean_hd95_voxel": 9.017791954512953,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.9124886382019932,
+          "hd95_mm": 4.599183355423368,
+          "hd95_voxel": 3.2258400999704246
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7534540876657686,
+          "hd95_mm": 16.090102745594788,
+          "hd95_voxel": 16.51306279990966
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8872699929695589,
+          "hd95_mm": 20.65579288602355,
+          "hd95_voxel": 21.883713157325587
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8704022563629877,
+          "hd95_mm": 9.508844028306811,
+          "hd95_voxel": 8.148223349711287
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9628085335147282,
+          "hd95_mm": 9.065352216500797,
+          "hd95_voxel": 5.191359697714234
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7422747407423164,
+          "hd95_mm": 7.517585140080649,
+          "hd95_voxel": 5.0940496075650055
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9373737547293711,
+          "hd95_mm": 11.109361193935852,
+          "hd95_voxel": 7.173178270755314
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8922242430200392,
+          "hd95_mm": 10.591293583561425,
+          "hd95_voxel": 4.912908653152109
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/evaluate_synapse_multiscale_tta.py",
+        "test",
+        "--config",
+        "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_multiscale_tta.yaml",
+        "--ckpt_path",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+        "--compile_test",
+        "--tta_views=8",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.enable_progress_bar=false",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_multiscale_tta.SynapseMultiScaleTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_scale_hflip8/20261024T123754Z\"}}]"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T11",
+      "summary": "outputs/tta/innovation2_best_views2/20261024T084750Z/independent_test/20261024T084804Z_c9b10bc0/physical_test_summary.json",
+      "evaluation_folder": "outputs/tta/innovation2_best_views2/20261024T084750Z/independent_test/20261024T084804Z_c9b10bc0",
+      "source_training_id": "E15",
+      "source_training": "ASEE+CCPS seed0（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "source_checkpoint_epoch": 187,
+      "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 2,
+      "tta_scheme": "legacy_hflip_2",
+      "scales": null,
+      "mean_dice": 0.864429040993798,
+      "mean_hd95_mm": 26.298294824102307,
+      "mean_hd95_voxel": 25.242639827171374,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.90744856586459,
+          "hd95_mm": 38.93067948041373,
+          "hd95_voxel": 38.678934504086406
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.7453359490881057,
+          "hd95_mm": 17.118231941566062,
+          "hd95_voxel": 17.026848877879228
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.8725238455915966,
+          "hd95_mm": 56.71718256953696,
+          "hd95_voxel": 61.0575463182677
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.8716632299352002,
+          "hd95_mm": 30.6935733913013,
+          "hd95_voxel": 30.4939376200162
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.9603734057577973,
+          "hd95_mm": 26.444602556439254,
+          "hd95_voxel": 24.959989062047754
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.7363520793938161,
+          "hd95_mm": 7.556450969222909,
+          "hd95_voxel": 4.9062853645639155
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.9380276650233149,
+          "hd95_mm": 11.126678076958726,
+          "hd95_voxel": 7.177281958818962
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.8837075872959632,
+          "hd95_mm": 21.798959607379512,
+          "hd95_voxel": 17.64029491169085
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/evaluate_synapse_tta.py",
+        "test",
+        "--config",
+        "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_tta.yaml",
+        "--ckpt_path",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+        "--compile_test",
+        "--tta_views=2",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.enable_progress_bar=false",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_views2/20261024T084750Z",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_tta.SynapseTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_views2/20261024T084750Z\"}}]"
+      ],
+      "duplicate_of": null
+    },
+    {
+      "id": "T12",
+      "summary": "outputs/tta/innovation2_best_views4/20261024T091548Z/independent_test/20261024T091602Z_e2823c0a/physical_test_summary.json",
+      "evaluation_folder": "outputs/tta/innovation2_best_views4/20261024T091548Z/independent_test/20261024T091602Z_e2823c0a",
+      "source_training_id": "E15",
+      "source_training": "ASEE+CCPS seed0（原CUDA）",
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "source_checkpoint_epoch": 187,
+      "checkpoint_sha256": "b82664367030fa68ce211cb0d0388fe6aab0609c5e69fe33f5c0f8ca6af5627d",
+      "source_training_cuda_repair_enabled": false,
+      "source_training_protocol": "original_cuda",
+      "tta_views": 4,
+      "tta_scheme": "retired_flip_4_with_vertical",
+      "scales": null,
+      "mean_dice": 0.6015276966456865,
+      "mean_hd95_mm": 71.53977501662719,
+      "mean_hd95_voxel": 80.17400119753063,
+      "organs": [
+        {
+          "label_id": 1,
+          "organ": "主动脉",
+          "dice": 0.8412912662055526,
+          "hd95_mm": 12.408548244410381,
+          "hd95_voxel": 9.304067663234509
+        },
+        {
+          "label_id": 2,
+          "organ": "胆囊",
+          "dice": 0.5575313092725727,
+          "hd95_mm": 16.69000510610915,
+          "hd95_voxel": 17.83084602267432
+        },
+        {
+          "label_id": 3,
+          "organ": "左肾",
+          "dice": 0.5959999240570034,
+          "hd95_mm": 130.91267256562915,
+          "hd95_voxel": 150.75477085861144
+        },
+        {
+          "label_id": 4,
+          "organ": "右肾",
+          "dice": 0.2967155524109943,
+          "hd95_mm": 109.33637944930769,
+          "hd95_voxel": 135.61610838402495
+        },
+        {
+          "label_id": 5,
+          "organ": "肝脏",
+          "dice": 0.8999150580555325,
+          "hd95_mm": 82.34861385297039,
+          "hd95_voxel": 85.92192985654769
+        },
+        {
+          "label_id": 6,
+          "organ": "胰腺",
+          "dice": 0.5012293027496124,
+          "hd95_mm": 16.958315660364338,
+          "hd95_voxel": 10.067468858447477
+        },
+        {
+          "label_id": 7,
+          "organ": "脾脏",
+          "dice": 0.331549891917999,
+          "hd95_mm": 190.32313985825724,
+          "hd95_voxel": 225.24163733298144
+        },
+        {
+          "label_id": 8,
+          "organ": "胃",
+          "dice": 0.7879892684962247,
+          "hd95_mm": 13.340525395969218,
+          "hd95_voxel": 6.655180603723206
+        }
+      ],
+      "training_performed": false,
+      "teacher_adapter": false,
+      "inference_argv": [
+        "scripts/evaluate_synapse_tta.py",
+        "test",
+        "--config",
+        "configs/synapse/vit_query_mul_scale_fusion_asee_ccps_tta.yaml",
+        "--ckpt_path",
+        "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+        "--compile_test",
+        "--tta_views=4",
+        "--trainer.accelerator=gpu",
+        "--trainer.devices=1",
+        "--trainer.logger=false",
+        "--trainer.enable_progress_bar=false",
+        "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_views4/20261024T091548Z",
+        "--trainer.callbacks=[{\"class_path\": \"training.synapse_tta.SynapseTTASelection\", \"init_args\": {\"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/tta/innovation2_best_views4/20261024T091548Z\"}}]"
+      ],
+      "duplicate_of": null
+    }
+  ],
+  "excluded_selection_summaries": [
+    {
+      "path": "outputs/ablations/journal_20261025/optimization/fit_smoke/synapse_test_selection/20261025T215434Z_84f374fa/selection_summary.json",
+      "reason": "冒烟/短测，无正式训练预算"
+    },
+    {
+      "path": "outputs/audit/20261021T123535Z/compiled_retry/synapse_test_selection/20261021T123813Z_93b19092/selection_summary.json",
+      "reason": "冒烟/短测，无正式训练预算"
+    },
+    {
+      "path": "outputs/innovation1/asee_plan_smoke/20261022T043730Z/synapse_test_selection/20261022T043746Z_dd7d8d66/selection_summary.json",
+      "reason": "冒烟/短测，无正式训练预算"
+    },
+    {
+      "path": "outputs/smoke/synapse_test_selection/20261021T024815Z_d63b7ad3/selection_summary.json",
+      "reason": "冒烟/短测，无正式训练预算"
+    }
+  ],
+  "label_map_path": "priors/synapse_label_map.verified.json",
+  "metric_policy": "legacy Dice; no background; each column uses one best checkpoint; HD95_mm and voxel separate",
+  "cuda_flag_definition": "cuda_repair_enabled=true means this project V2 stable CE/point sampling and strict guard were enabled; does not assert every full CUDA training is bitwise reproducible."
+}

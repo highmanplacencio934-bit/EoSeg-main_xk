@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scored_training_records": 16,
+  "training_organ_rows": 128,
+  "independent_test_records": 12,
+  "test_organ_rows": 96,
+  "unscored_seed_records": 4,
+  "unscored_started_then_stopped": 1,
+  "cancelled_before_start": 3,
+  "all_mean_dice_matches_eight_organs": true,
+  "training_source_untouched": true
+}

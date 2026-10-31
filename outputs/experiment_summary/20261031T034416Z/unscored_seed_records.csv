@@ -1,0 +1,5 @@
+﻿name,method,seed,state,started,max_epochs,completed_epochs,global_step,mean_dice,cuda_repair_enabled,cuda_evidence_scope,run,reason
+asee_seed1,asee,1,cancelled_by_user,False,220,,,,False,planned original main.py command; not started,outputs/innovation1/asee_seed_audit/20261023T023553Z/asee_seed1,用户停止/取消，未形成完整测试结果
+asee_seed2,asee,2,cancelled_by_user,False,220,,,,False,planned original main.py command; not started,outputs/innovation1/asee_seed_audit/20261023T023553Z/asee_seed2,用户停止/取消，未形成完整测试结果
+baseline_seed1,baseline,1,stopped_by_user,True,220,26,3588,,False,actual original main.py command,outputs/innovation1/asee_seed_audit/20261023T023553Z/baseline_seed1,用户停止/取消，未形成完整测试结果
+baseline_seed2,baseline,2,cancelled_by_user,False,220,,,,False,planned original main.py command; not started,outputs/innovation1/asee_seed_audit/20261023T023553Z/baseline_seed2,用户停止/取消，未形成完整测试结果

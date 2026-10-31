@@ -1,0 +1,17 @@
+﻿id,name,run,state,exit_code,seed,lr,max_epochs,completed_epochs,global_step,evaluation_window,best_epoch,mean_dice,mean_hd95_mm,mean_hd95_voxel,cuda_repair_enabled,cuda_protocol,roi_enabled,warm_start,source_checkpoint
+E01,S2仅共现（V2）,outputs/ablations/asee_probability_only_v2/20261030T185908Z,completed,0,0,0.0002,220,220,30360,171-220,177,0.8616126423516607,,,True,ce2d_stableseg_execution_v2,True,False,
+E02,S1仅文本（V2）,outputs/ablations/asee_text_only_v2/20261030T125953Z,completed,0,0,0.0002,220,220,30360,171-220,197,0.8650536194889473,,,True,ce2d_stableseg_execution_v2,True,False,
+E03,S1仅文本（原CUDA）,outputs/ablations/journal_20261025/S1/20261025T230957Z/training,completed,0,0,0.0002,220,220,30360,171-220,187,0.8669694186938393,17.270779876296807,14.998108340207263,False,original_cuda,True,False,
+E04,S2仅共现（原CUDA，早停）,outputs/ablations/journal_20261025/S2/20261026T231139Z/training,stopped_by_user,1,0,0.0002,220,211,29118,171-210,195,0.8521448172917713,33.45348739013128,31.93353023912942,False,original_cuda,True,False,
+E05,ASEE双先验主实验（V2修复）,outputs/asee-repair/repeat_1/20261029T075801Z,completed,0,0,0.0002,220,220,30360,171-220,190,0.8638178481592238,,,True,ce2d_stableseg_execution_v2,True,False,
+E06,原始baseline,outputs/baseline/20261021T132635Z,completed,0,0,0.0002,220,220,30360,171-220,177,0.8471846610153185,,47.38956681663292,False,original_cuda,False,False,
+E07,baseline-2（ROI版）,outputs/baseline-2/20261026T130228Z,completed,0,0,0.0002,220,220,30360,171-220,173,0.8591375603756959,32.50934728608681,27.659046811101035,False,original_cuda,True,False,
+E08,baseline-lock 第1次,outputs/baseline-lock/20261030T031914Z,completed,0,0,0.0002,220,220,30360,171-220,175,0.864647840716719,,,False,original_cuda,False,False,
+E09,baseline-lock 第2次,outputs/baseline-lock/repeat_2/20261030T080537Z,completed,0,0,0.0002,220,220,30360,171-220,181,0.8673162796928209,,,False,original_cuda,False,False,
+E10,baseline-repair 第1次,outputs/baseline-repair/G6_1/20261028T072539Z,completed,0,0,0.0002,220,220,30360,171-220,184,0.8628364822664824,17.99772114534208,,True,ce2d_stableseg_execution_v2,True,False,
+E11,baseline-repair_2 第2次,outputs/baseline-repair_2/G6_2/20261029T022332Z,completed,0,0,0.0002,220,220,30360,171-220,181,0.8644123117651091,20.644387368687376,,True,ce2d_stableseg_execution_v2,True,False,
+E12,ASEE+CCPS完整主模型（V2）,outputs/experiments/asee_ccps_full_v2/20261030T233233Z,running,,0,0.0002,220,211,29118,171-211,198,0.8632731683893575,,,True,ce2d_stableseg_execution_v2,True,False,
+E13,ASEE双先验主实验（原CUDA）,outputs/innovation1/asee_plan/20261022T044551Z,completed,0,0,0.0002,220,220,30360,171-220,196,0.8544748447697083,,21.668917357050155,False,original_cuda,False,False,
+E14,ASEE+CCPS 低LR补训100轮（V2）,outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z,completed,0,0,2e-05,100,100,13800,1-100,15,0.8638177282503033,25.98778816969089,,True,ce2d_stableseg_execution_v2,True,True,/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt
+E15,ASEE+CCPS seed0（原CUDA）,outputs/innovation2/ccps_plan/20261023T121754Z,stopped_by_user,1,0,0.0002,220,214,29532,171-213,187,0.8624297902218245,29.74475817771973,29.113595048587335,False,original_cuda,False,False,
+E16,ASEE+CCPS seed42（原CUDA）,outputs/innovation2/ccps_seed42/20261024T131734Z,stopped_by_user,1,42,0.0002,220,198,27324,171-197,186,0.8409039793733836,49.705576514329515,48.26947384701812,False,original_cuda,False,False,

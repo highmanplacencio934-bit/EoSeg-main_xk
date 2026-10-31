@@ -1,0 +1,1730 @@
+[
+  {
+    "experiment_id": "E01",
+    "run": "outputs/ablations/asee_probability_only_v2/20261030T185908Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for selection; unchanged legacy Dice",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 177,
+      "best_mean_dice": 0.8616126423516607,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt",
+      "hd95_mm_enabled": false,
+      "hd95_voxel_enabled": false
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": false,
+          "use_probability": true
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/ablations/asee_probability_only_v2/20261030T185908Z/status.json",
+        "sha256": "0766d483263bb83491f7ff5e2735de1b2c8c01832ff4047b7016241433a0eb4f"
+      },
+      {
+        "path": "outputs/ablations/asee_probability_only_v2/20261030T185908Z/training_exit.json",
+        "sha256": "d75fa0f7d35dfe51397de9a6d763da3956fd519cb00acf76c6f64ebe7dc29763"
+      },
+      {
+        "path": "outputs/ablations/asee_probability_only_v2/20261030T185908Z/launch.json",
+        "sha256": "905551f2b66713b73620ca08b78d6130381f2b3b4386562162e30990ad05a7d3"
+      },
+      {
+        "path": "outputs/ablations/asee_probability_only_v2/20261030T185908Z/startup_verification.json",
+        "sha256": "037cdb3eb9b39875ceec34be2e0934afde567aa248b837d32d88d5f18b04357e"
+      },
+      {
+        "path": "outputs/ablations/asee_probability_only_v2/20261030T185908Z/synapse_test_selection/20261030T185935Z_001efa2a/run_manifest.json",
+        "sha256": "a1bbb570ec198d337fc2fac3420a0092b8d6bc2ee741705f5b812b2d22ec82be"
+      },
+      {
+        "path": "outputs/ablations/asee_probability_only_v2/20261030T185908Z/protocol_records/20261030T185935Z_7f0cdece/protocol_manifest.json",
+        "protocol": "ce2d_stableseg_execution_v2",
+        "profile": "asee",
+        "backend": {
+          "deterministic": true,
+          "warn_only": false,
+          "benchmark": false,
+          "cudnn_deterministic": true,
+          "matmul_precision": "medium"
+        }
+      }
+    ],
+    "argv": [
+      "runtime/synapse_metric_mode/run.py",
+      "fit",
+      "--config",
+      "outputs/ablations/asee_probability_only_v2/preparation/s2.yaml",
+      "--seed_everything=0",
+      "--compute_hd95_mm=false",
+      "--tta_views=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_probability_only_v2/20261030T185908Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_probability_only_v2/20261030T185908Z",
+      "--trainer.logger.init_args.name=asee-probability-only-v2-S2",
+      "--trainer.callbacks=[{\"class_path\": \"metric_mode.MetricModeSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_probability_only_v2/20261030T185908Z\"}}, {\"class_path\": \"asee_launch.Startup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_probability_only_v2/20261030T185908Z\", \"smoke\": false}}]",
+      "--deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_probability_only_v2/20261030T185908Z/protocol_records"
+    ]
+  },
+  {
+    "experiment_id": "E02",
+    "run": "outputs/ablations/asee_text_only_v2/20261030T125953Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for selection; unchanged legacy Dice",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 197,
+      "best_mean_dice": 0.8650536194889473,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt",
+      "hd95_mm_enabled": false,
+      "hd95_voxel_enabled": false
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": false
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/ablations/asee_text_only_v2/20261030T125953Z/status.json",
+        "sha256": "84f01f9597a3cf289fa3f8460365e8467fbf4ce344a43e5b7075cead71ba62a0"
+      },
+      {
+        "path": "outputs/ablations/asee_text_only_v2/20261030T125953Z/training_exit.json",
+        "sha256": "490f9784d60151565b2bf0c89b4e5d180d6a7945afd85b35e567ff6fb00cb408"
+      },
+      {
+        "path": "outputs/ablations/asee_text_only_v2/20261030T125953Z/launch.json",
+        "sha256": "0d6bf12dd29be7e2947af8e8705ffc2f8c94fb167d73a535c2b1538b24233cb8"
+      },
+      {
+        "path": "outputs/ablations/asee_text_only_v2/20261030T125953Z/startup_verification.json",
+        "sha256": "da38ccc02487358cc4bec4de2b3507f6d7a1a9f040178a3946277d9dd9c21c1a"
+      },
+      {
+        "path": "outputs/ablations/asee_text_only_v2/20261030T125953Z/synapse_test_selection/20261030T130018Z_83a1d0b0/run_manifest.json",
+        "sha256": "eab2f324f5c9cfb4ddfc4dd5fa5272a4c6145194491aa3639c6b5382831dd046"
+      },
+      {
+        "path": "outputs/ablations/asee_text_only_v2/20261030T125953Z/protocol_records/20261030T130018Z_ad4acf89/protocol_manifest.json",
+        "protocol": "ce2d_stableseg_execution_v2",
+        "profile": "asee",
+        "backend": {
+          "deterministic": true,
+          "warn_only": false,
+          "benchmark": false,
+          "cudnn_deterministic": true,
+          "matmul_precision": "medium"
+        }
+      }
+    ],
+    "argv": [
+      "runtime/synapse_metric_mode/run.py",
+      "fit",
+      "--config",
+      "outputs/ablations/asee_text_only_v2/preparation/s1.yaml",
+      "--seed_everything=0",
+      "--compute_hd95_mm=false",
+      "--tta_views=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_text_only_v2/20261030T125953Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_text_only_v2/20261030T125953Z",
+      "--trainer.logger.init_args.name=asee-text-only-v2-S1",
+      "--trainer.callbacks=[{\"class_path\": \"metric_mode.MetricModeSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_text_only_v2/20261030T125953Z\"}}, {\"class_path\": \"asee_launch.Startup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_text_only_v2/20261030T125953Z\", \"smoke\": false}}]",
+      "--deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/asee_text_only_v2/20261030T125953Z/protocol_records"
+    ]
+  },
+  {
+    "experiment_id": "E03",
+    "run": "outputs/ablations/journal_20261025/S1/20261025T230957Z/training",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 187,
+      "best_mean_dice": 0.8669694186938393,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": false
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/ablations/journal_20261025/S1/20261025T230957Z/status.json",
+        "sha256": "3ce3b23e0c51031b6a7169713e9909a219479bb83c3687a67a3fcf713238db46"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S1/20261025T230957Z/training_exit.json",
+        "sha256": "7c434b42c6e2a9a8b90f478629709d198cb29b18eef23d981bf09281bbbae735"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S1/20261025T230957Z/launch.json",
+        "sha256": "996029c659d83b824eb462e27ff08e4f291f8c30c69b24bd46a0b6901a79acd9"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S1/20261025T230957Z/training/synapse_test_selection/20261025T231010Z_ca94e093/run_manifest.json",
+        "sha256": "32f94c2799f41ee836c43dd24fc5957808a1f6e4448944bd7ec7c7a67dba8c3c"
+      }
+    ],
+    "argv": [
+      "scripts/run_synapse_roi.py",
+      "fit",
+      "--config",
+      "configs/synapse/ablations_journal/s1_asee_text_only.yaml",
+      "--seed_everything=0",
+      "--tta_views=1",
+      "--trainer.accelerator=gpu",
+      "--trainer.devices=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/training\"}}]",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S1/20261025T230957Z/wandb",
+      "--trainer.logger.init_args.name=journal_s1_seed0_20261025T230957Z"
+    ]
+  },
+  {
+    "experiment_id": "E04",
+    "run": "outputs/ablations/journal_20261025/S2/20261026T231139Z/training",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 210,
+      "expected_test_cases": 12,
+      "best_epoch": 195,
+      "best_mean_dice": 0.8521448172917713,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": false,
+          "use_probability": true
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/ablations/journal_20261025/S2/20261026T231139Z/status.json",
+        "sha256": "fc35c19d863b4c4931e00bf5b1383908c20538939bd33c7781ffc321cf604ab9"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S2/20261026T231139Z/training_exit.json",
+        "sha256": "6933c0507a90f6dac981359e8ff1cea839b2d3dccc1ea8cd5b1e59bd11674bfe"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S2/20261026T231139Z/launch.json",
+        "sha256": "7f899a966548c754aa65a3e0fc6eb1c8691673abf6a7f2a0d67044a3e7f6f30a"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S2/20261026T231139Z/startup_verification.json",
+        "sha256": "7de1cbaa92e87fd8d88ce215d55382463679e59aa1b209e024ed5ff8e9f5cf9b"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S2/20261026T231139Z/early_stop_report.json",
+        "sha256": "d80efea3b511871d288d7072e9c45b21f4eea0b0970bb540d9a070a8ff49c52f"
+      },
+      {
+        "path": "outputs/ablations/journal_20261025/S2/20261026T231139Z/training/synapse_test_selection/20261026T231154Z_63a12319/run_manifest.json",
+        "sha256": "9353f66d506d12b43c571fcf9b8ef02361f19a00da0aad1f6bc60cc0c01ea060"
+      }
+    ],
+    "argv": [
+      "scripts/run_synapse_roi.py",
+      "fit",
+      "--config",
+      "configs/synapse/ablations_journal/s2_asee_probability_only.yaml",
+      "--seed_everything=0",
+      "--tta_views=1",
+      "--trainer.accelerator=gpu",
+      "--trainer.devices=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/training\"}}]",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/ablations/journal_20261025/S2/20261026T231139Z/wandb",
+      "--trainer.logger.init_args.name=journal_s2_seed0_20261026T231139Z"
+    ]
+  },
+  {
+    "experiment_id": "E05",
+    "run": "outputs/asee-repair/repeat_1/20261029T075801Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for selection; unchanged legacy Dice",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 190,
+      "best_mean_dice": 0.8638178481592238,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt",
+      "hd95_mm_enabled": false,
+      "hd95_voxel_enabled": false
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": true
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/asee-repair/repeat_1/20261029T075801Z/status.json",
+        "sha256": "c49eaa0670c7b25426fc0c7ecefadec0f3ce909c07f2a1082c90d873953a4663"
+      },
+      {
+        "path": "outputs/asee-repair/repeat_1/20261029T075801Z/training_exit.json",
+        "sha256": "f1966e5e352ac5dece8dbe8cd69fbfb450774e34fa94d795d7abd54023828cd1"
+      },
+      {
+        "path": "outputs/asee-repair/repeat_1/20261029T075801Z/launch.json",
+        "sha256": "f4e78e2c6b131b6231c4df8e23bba3dc4ddbd8397b1f60dd462e1cc7a6be331b"
+      },
+      {
+        "path": "outputs/asee-repair/repeat_1/20261029T075801Z/startup_verification.json",
+        "sha256": "b4fcc1984980208b0f1d84ed51f6014d24b3f5d9a57427ab7374475f2f5195e0"
+      },
+      {
+        "path": "outputs/asee-repair/repeat_1/20261029T075801Z/synapse_test_selection/20261029T075825Z_449bb9df/run_manifest.json",
+        "sha256": "52b0f8c3286470b82ab959e01ab0f9b98b1af217980125f0e58cdb0bd2be4e43"
+      },
+      {
+        "path": "outputs/asee-repair/repeat_1/20261029T075801Z/protocol_records/20261029T075825Z_f88f6ff1/protocol_manifest.json",
+        "protocol": "ce2d_stableseg_execution_v2",
+        "profile": "asee",
+        "backend": {
+          "deterministic": true,
+          "warn_only": false,
+          "benchmark": false,
+          "cudnn_deterministic": true,
+          "matmul_precision": "medium"
+        }
+      }
+    ],
+    "argv": [
+      "runtime/synapse_metric_mode/run.py",
+      "fit",
+      "--config",
+      "runtime/synapse_metric_mode/configs/asee.yaml",
+      "--seed_everything=0",
+      "--compute_hd95_mm=false",
+      "--tta_views=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z",
+      "--trainer.logger.init_args.name=asee-repair-repeat1",
+      "--trainer.callbacks=[{\"class_path\": \"metric_mode.MetricModeSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z\"}}, {\"class_path\": \"asee_launch.Startup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z\", \"smoke\": false}}]",
+      "--deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/asee-repair/repeat_1/20261029T075801Z/protocol_records"
+    ]
+  },
+  {
+    "experiment_id": "E06",
+    "run": "outputs/baseline/20261021T132635Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 177,
+      "best_mean_dice": 0.8471846610153185,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "network": {
+        "class_path": "models.eoseg.EoSegMultiQSegFusion",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "num_q": 16
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/baseline/20261021T132635Z/status.json",
+        "sha256": "1ee6b58c1a530f8a8a8477b10567c01140aa7bd0a9e74ef4c5f339d99df9980c"
+      },
+      {
+        "path": "outputs/baseline/20261021T132635Z/launch.json",
+        "sha256": "459d154e1cc08c8a687221fb5bce8006aa3e0835938a2b50ccd5b95fe06e7e13"
+      },
+      {
+        "path": "outputs/baseline/20261021T132635Z/synapse_test_selection/20261021T132645Z_81f3214a/run_manifest.json",
+        "sha256": "8a4d022158e3bb5c479a60f0730f909120cbb12d3c6c8c30d38529d808b53ac5"
+      }
+    ],
+    "argv": [
+      "main.py",
+      "fit",
+      "--config",
+      "configs/synapse/vit_query_mul_scale_fusion.yaml",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_test_selection.SynapseTestSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline/20261021T132635Z\"}}]"
+    ]
+  },
+  {
+    "experiment_id": "E07",
+    "run": "outputs/baseline-2/20261026T130228Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 173,
+      "best_mean_dice": 0.8591375603756959,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg.EoSegMultiQSegFusion",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "num_q": 16
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/baseline-2/20261026T130228Z/status.json",
+        "sha256": "d1d0209fcd88b424ba0350c9f04d2930f885685402568f67a5d04647a691d1ef"
+      },
+      {
+        "path": "outputs/baseline-2/20261026T130228Z/training_exit.json",
+        "sha256": "8f7cdc2375a961f83288082084ca76e64a9bb873a73917c1e208c1540fef91aa"
+      },
+      {
+        "path": "outputs/baseline-2/20261026T130228Z/launch.json",
+        "sha256": "38a6ef84dcd16cdf388c5a895a638a941be494fc42c2952671c309522e2141c2"
+      },
+      {
+        "path": "outputs/baseline-2/20261026T130228Z/startup_verification.json",
+        "sha256": "db6f7acc1d237a192d4e04ff787d0b71b94183f62cc779e26769c7ccec09a41a"
+      },
+      {
+        "path": "outputs/baseline-2/20261026T130228Z/synapse_test_selection/20261026T130239Z_ffcc3345/run_manifest.json",
+        "sha256": "69a4f796db3c5c4af4c1197bd225578343b424771f1a49f5d2571c80495ed0ce"
+      }
+    ],
+    "argv": [
+      "scripts/run_synapse_roi.py",
+      "fit",
+      "--config",
+      "configs/synapse/baseline_2_roi.yaml",
+      "--seed_everything=0",
+      "--tta_views=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-2/20261026T130228Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-2/20261026T130228Z",
+      "--trainer.logger.init_args.name=baseline-2",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-2/20261026T130228Z\", \"label_map\": \"priors/synapse_label_map.verified.json\"}}]"
+    ]
+  },
+  {
+    "experiment_id": "E08",
+    "run": "outputs/baseline-lock/20261030T031914Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; legacy Dice",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 175,
+      "best_mean_dice": 0.864647840716719,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt",
+      "hd95_mm_enabled": false,
+      "hd95_voxel_enabled": false,
+      "roi_enabled": false,
+      "deterministic_repair_enabled": false
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "network": {
+        "class_path": "models.eoseg.EoSegMultiQSegFusion",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "num_q": 16
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/baseline-lock/20261030T031914Z/status.json",
+        "sha256": "dd148774610a4d6171544325ace8399a6b45e91a688a736aa4c1ea0f728300e1"
+      },
+      {
+        "path": "outputs/baseline-lock/20261030T031914Z/training_exit.json",
+        "sha256": "3cf978eab175fe6801d6d97b1fe577ffe07e32e4b63ac1daee048620e7aedc09"
+      },
+      {
+        "path": "outputs/baseline-lock/20261030T031914Z/launch.json",
+        "sha256": "170be8ef0ccaebaf64c4f0e773348186c12bc774145af9bb92432b6e31e80035"
+      },
+      {
+        "path": "outputs/baseline-lock/20261030T031914Z/startup_verification.json",
+        "sha256": "68631fc1d202f474fca4d1492537d034cf3b783bcb7403c8db98ce9688d20776"
+      },
+      {
+        "path": "outputs/baseline-lock/20261030T031914Z/synapse_test_selection/20261030T031928Z_9fb167de/run_manifest.json",
+        "sha256": "f6c6fe84d5261227221f0ca83a96d86ee40cb7cefaf808b101e1eab90d54a06c"
+      }
+    ],
+    "argv": [
+      "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/preparation/run.py",
+      "fit",
+      "--config",
+      "configs/synapse/vit_query_mul_scale_fusion.yaml",
+      "--seed_everything=0",
+      "--compute_hd95_mm=false",
+      "--compute_hd95_voxel=false",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/20261030T031914Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/20261030T031914Z",
+      "--trainer.logger.init_args.name=baseline-lock",
+      "--trainer.callbacks=[{\"class_path\": \"baseline_lock.DiceOnlySelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/20261030T031914Z\"}}, {\"class_path\": \"baseline_lock.VerifyStartup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/20261030T031914Z\", \"smoke\": false}}]"
+    ]
+  },
+  {
+    "experiment_id": "E09",
+    "run": "outputs/baseline-lock/repeat_2/20261030T080537Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; legacy Dice",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 181,
+      "best_mean_dice": 0.8673162796928209,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt",
+      "hd95_mm_enabled": false,
+      "hd95_voxel_enabled": false,
+      "roi_enabled": false,
+      "deterministic_repair_enabled": false
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "network": {
+        "class_path": "models.eoseg.EoSegMultiQSegFusion",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "num_q": 16
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/baseline-lock/repeat_2/20261030T080537Z/status.json",
+        "sha256": "dd148774610a4d6171544325ace8399a6b45e91a688a736aa4c1ea0f728300e1"
+      },
+      {
+        "path": "outputs/baseline-lock/repeat_2/20261030T080537Z/training_exit.json",
+        "sha256": "811ebb3b8043ded17e6a4c73b7d3c9274784d087006aa9af490a94e6999608e8"
+      },
+      {
+        "path": "outputs/baseline-lock/repeat_2/20261030T080537Z/launch.json",
+        "sha256": "7a28e637889f64b00d25953fe405858ada6a64c116a8e4c92d0f2561591e64b3"
+      },
+      {
+        "path": "outputs/baseline-lock/repeat_2/20261030T080537Z/startup_verification.json",
+        "sha256": "68631fc1d202f474fca4d1492537d034cf3b783bcb7403c8db98ce9688d20776"
+      },
+      {
+        "path": "outputs/baseline-lock/repeat_2/20261030T080537Z/synapse_test_selection/20261030T080551Z_e015b90f/run_manifest.json",
+        "sha256": "7fdf47fdb538565318458fa7f2d6898de1cf0ff0a9bd0fff9cffeb4f4221b6e4"
+      }
+    ],
+    "argv": [
+      "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/preparation/run.py",
+      "fit",
+      "--config",
+      "configs/synapse/vit_query_mul_scale_fusion.yaml",
+      "--seed_everything=0",
+      "--compute_hd95_mm=false",
+      "--compute_hd95_voxel=false",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/repeat_2/20261030T080537Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/repeat_2/20261030T080537Z",
+      "--trainer.logger.init_args.name=baseline-lock",
+      "--trainer.callbacks=[{\"class_path\": \"baseline_lock.DiceOnlySelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/repeat_2/20261030T080537Z\"}}, {\"class_path\": \"baseline_lock.VerifyStartup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-lock/repeat_2/20261030T080537Z\", \"smoke\": false}}]"
+    ]
+  },
+  {
+    "experiment_id": "E10",
+    "run": "outputs/baseline-repair/G6_1/20261028T072539Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 184,
+      "best_mean_dice": 0.8628364822664824,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg.EoSegMultiQSegFusion",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "num_q": 16
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/baseline-repair/G6_1/20261028T072539Z/status.json",
+        "sha256": "b2ba83b9a0dac174b9dad2d994e5ccd5d6df13cc4c51e4519e355995549a989a"
+      },
+      {
+        "path": "outputs/baseline-repair/G6_1/20261028T072539Z/training_exit.json",
+        "sha256": "41bdaa056078fb7b36730c376dc49b946576b688d481cdc471fa34eee4870a45"
+      },
+      {
+        "path": "outputs/baseline-repair/G6_1/20261028T072539Z/launch.json",
+        "sha256": "6ddb80b153e4cb7ebf934544d2ee6ab3ff6ef39468af6c57e0d14ae72ef9ce40"
+      },
+      {
+        "path": "outputs/baseline-repair/G6_1/20261028T072539Z/startup_verification.json",
+        "sha256": "56e54dfc2fb572bd555ddfd0d096221799594fb68c1ac9b6741cf88a5290ee6d"
+      },
+      {
+        "path": "outputs/baseline-repair/G6_1/20261028T072539Z/synapse_test_selection/20261028T072656Z_c6ab2a6d/run_manifest.json",
+        "sha256": "9baebdcd6c51edc295b2970394e563ee687ff831bac38257dc805e9b9b3b0409"
+      },
+      {
+        "path": "outputs/baseline-repair/G6_1/20261028T072539Z/protocol_records/20261028T072657Z_915cf491/protocol_manifest.json",
+        "protocol": "ce2d_stableseg_execution_v2",
+        "profile": "baseline",
+        "backend": {
+          "deterministic": true,
+          "warn_only": false,
+          "benchmark": false,
+          "cudnn_deterministic": true,
+          "matmul_precision": "medium"
+        }
+      }
+    ],
+    "argv": [
+      "scripts/run_synapse_deterministic_v2.py",
+      "fit",
+      "--config",
+      "configs/synapse/deterministic_v2/baseline.yaml",
+      "--seed_everything=0",
+      "--tta_views=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z",
+      "--trainer.logger.init_args.name=baseline-repair-G6-1",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z\", \"label_map\": \"priors/synapse_label_map.verified.json\"}}, {\"class_path\": \"scripts.launch_synapse_g6.G6InitialState\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z\"}}]",
+      "--deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair/G6_1/20261028T072539Z/protocol_records"
+    ]
+  },
+  {
+    "experiment_id": "E11",
+    "run": "outputs/baseline-repair_2/G6_2/20261029T022332Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 181,
+      "best_mean_dice": 0.8644123117651091,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.synapse_physical_semantic.SynapsePhysicalHD95Semantic",
+      "network": {
+        "class_path": "models.eoseg.EoSegMultiQSegFusion",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "num_q": 16
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/baseline-repair_2/G6_2/20261029T022332Z/status.json",
+        "sha256": "9dfaac692853b8ee844c4e97ee0aff6b1785088b8410fade9b05c2aa6fa0badc"
+      },
+      {
+        "path": "outputs/baseline-repair_2/G6_2/20261029T022332Z/training_exit.json",
+        "sha256": "5f70b1bffcbff2127b4d868f99e62658cb16fdddd2de7a0fbcae91ea20fe188b"
+      },
+      {
+        "path": "outputs/baseline-repair_2/G6_2/20261029T022332Z/launch.json",
+        "sha256": "a53c0c1744a850a6967b383ccf48cd870cbedeae650f9d69070c17da1104f978"
+      },
+      {
+        "path": "outputs/baseline-repair_2/G6_2/20261029T022332Z/startup_verification.json",
+        "sha256": "56e54dfc2fb572bd555ddfd0d096221799594fb68c1ac9b6741cf88a5290ee6d"
+      },
+      {
+        "path": "outputs/baseline-repair_2/G6_2/20261029T022332Z/synapse_test_selection/20261029T022451Z_3453b054/run_manifest.json",
+        "sha256": "f3a49fdd27957d5c1d05118469f330a0cc379aefe24ac069f71176688659b55f"
+      },
+      {
+        "path": "outputs/baseline-repair_2/G6_2/20261029T022332Z/protocol_records/20261029T022451Z_ba421c14/protocol_manifest.json",
+        "protocol": "ce2d_stableseg_execution_v2",
+        "profile": "baseline",
+        "backend": {
+          "deterministic": true,
+          "warn_only": false,
+          "benchmark": false,
+          "cudnn_deterministic": true,
+          "matmul_precision": "medium"
+        }
+      }
+    ],
+    "argv": [
+      "scripts/run_synapse_deterministic_v2.py",
+      "fit",
+      "--config",
+      "configs/synapse/deterministic_v2/baseline.yaml",
+      "--seed_everything=0",
+      "--tta_views=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z",
+      "--trainer.logger.init_args.name=baseline-repair-G6-2",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z\", \"label_map\": \"priors/synapse_label_map.verified.json\"}}, {\"class_path\": \"scripts.launch_synapse_g6.G6InitialState\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z\"}}]",
+      "--deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/baseline-repair_2/G6_2/20261029T022332Z/protocol_records"
+    ]
+  },
+  {
+    "experiment_id": "E12",
+    "run": "outputs/experiments/asee_ccps_full_v2/20261030T233233Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for selection; unchanged legacy Dice",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 211,
+      "expected_test_cases": 12,
+      "best_epoch": 198,
+      "best_mean_dice": 0.8632731683893575,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt",
+      "hd95_mm_enabled": false,
+      "hd95_voxel_enabled": false
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "network": {
+        "class_path": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": true,
+          "selector_mode": "visual_prior",
+          "selector_on_patch": true,
+          "selector_on_query": false,
+          "selector_hidden_dim": 256,
+          "selector_init_probability": 0.95,
+          "detach_prior_for_selector": false,
+          "patch_gate_effect": "both"
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/experiments/asee_ccps_full_v2/20261030T233233Z/status.json",
+        "sha256": "718053760adc28c0ed7a57c5b5a016c6068847f800cbb0562072012dfc8840f0"
+      },
+      {
+        "path": "outputs/experiments/asee_ccps_full_v2/20261030T233233Z/launch.json",
+        "sha256": "e73e8153da033a9551bd82efab7fa816d62d0c5bbc406c1737cb0cc897463376"
+      },
+      {
+        "path": "outputs/experiments/asee_ccps_full_v2/20261030T233233Z/startup_verification.json",
+        "sha256": "fa0248ae77b618e4ec1c2370c1cb307ed34b215f09a7bf692b969e9ce6126971"
+      },
+      {
+        "path": "outputs/experiments/asee_ccps_full_v2/20261030T233233Z/synapse_test_selection/20261030T233258Z_37cace9d/run_manifest.json",
+        "sha256": "a85d7a7430050915d74cb35e5e5b5f0df1ba02e6237bdabd7ed8da4b642ff2ff"
+      },
+      {
+        "path": "outputs/experiments/asee_ccps_full_v2/20261030T233233Z/protocol_records/20261030T233258Z_2817a3ab/protocol_manifest.json",
+        "protocol": "ce2d_stableseg_execution_v2",
+        "profile": "ccps",
+        "backend": {
+          "deterministic": true,
+          "warn_only": false,
+          "benchmark": false,
+          "cudnn_deterministic": true,
+          "matmul_precision": "medium"
+        }
+      }
+    ],
+    "argv": [
+      "runtime/synapse_metric_mode/run.py",
+      "fit",
+      "--config",
+      "outputs/experiments/asee_ccps_full_v2/preparation/full.yaml",
+      "--seed_everything=0",
+      "--compute_hd95_mm=false",
+      "--tta_views=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z",
+      "--trainer.logger.init_args.name=asee-ccps-full-v2-full-main",
+      "--trainer.callbacks=[{\"class_path\": \"metric_mode.MetricModeSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z\"}}, {\"class_path\": \"asee_launch.Startup\", \"init_args\": {\"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z\", \"smoke\": false}}]",
+      "--deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/experiments/asee_ccps_full_v2/20261030T233233Z/protocol_records"
+    ]
+  },
+  {
+    "experiment_id": "E13",
+    "run": "outputs/innovation1/asee_plan/20261022T044551Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 220,
+      "expected_test_cases": 12,
+      "best_epoch": 196,
+      "best_mean_dice": 0.8544748447697083,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.mask_classification_semantic.MaskClassificationSemantic",
+      "network": {
+        "class_path": "models.eoseg_asee.EoSegMultiQSegFusionASEE",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": true
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/innovation1/asee_plan/20261022T044551Z/status.json",
+        "sha256": "776fc42babf30f96e7023c5fe3709f18cc55b8b06086b22322c7f5b505b2789d"
+      },
+      {
+        "path": "outputs/innovation1/asee_plan/20261022T044551Z/launch.json",
+        "sha256": "1545c4a3169657756acc50d30bde7ffb880de3380c266e1cfe79f846e4e59a71"
+      },
+      {
+        "path": "outputs/innovation1/asee_plan/20261022T044551Z/synapse_test_selection/20261022T044607Z_1ba7c5b9/run_manifest.json",
+        "sha256": "fb0e89cf14f5582603c004bea616ddd57e640f602af591c2299a9cd00f2bc75e"
+      }
+    ],
+    "argv": [
+      "main.py",
+      "fit",
+      "--config",
+      "configs/synapse/vit_query_mul_scale_fusion_asee_plan.yaml",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_test_selection.SynapseTestSelection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation1/asee_plan/20261022T044551Z\"}}]"
+    ]
+  },
+  {
+    "experiment_id": "E14",
+    "run": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 100,
+      "first_evaluation_epoch": 1,
+      "last_evaluated_epoch": 100,
+      "expected_test_cases": 12,
+      "best_epoch": 15,
+      "best_mean_dice": 0.8638177282503033,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt",
+      "weights_only_warm_start": true,
+      "source_checkpoint": "/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt",
+      "source_best_epoch": 187,
+      "additional_epoch_numbering": "1-100; epoch0 means source best",
+      "best_origin": "additional epoch 15",
+      "current_protocol": "ce2d_stableseg_execution_v2",
+      "optimizer_and_scheduler_reset": true
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "network": {
+        "class_path": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": true,
+          "selector_mode": "visual_prior",
+          "selector_on_patch": true,
+          "selector_on_query": false,
+          "selector_hidden_dim": 256,
+          "selector_init_probability": 0.95,
+          "detach_prior_for_selector": false,
+          "patch_gate_effect": "both"
+        }
+      },
+      "lr": 2e-05,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/status.json",
+        "sha256": "8a2f0fa104047a438dac53935709f251b8e32f0f4cc24132ceef9295fcc59d69"
+      },
+      {
+        "path": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/training_exit.json",
+        "sha256": "08bfcc8e59b330fe63ddbed632259ab49983295b983822e4774031997140b185"
+      },
+      {
+        "path": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/launch.json",
+        "sha256": "0abe479b8d0aa4911dfbb1970dba16e0d4e7ad0155a8d3beacfff6f8ecefa7f1"
+      },
+      {
+        "path": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/startup_verification.json",
+        "sha256": "fd3d16392272a889a000e5d027d0dcc2f7a7cf61b24244d99af29615feedcaf0"
+      },
+      {
+        "path": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/synapse_test_selection/20261028T124805Z_f151bb6a/run_manifest.json",
+        "sha256": "152178ad4d8bea9eea606d02de496382707b0ab8658c6293266d4c43765be398"
+      },
+      {
+        "path": "outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/protocol_records/20261028T124807Z_9933f2d5/protocol_manifest.json",
+        "protocol": "ce2d_stableseg_execution_v2",
+        "profile": "ccps",
+        "backend": {
+          "deterministic": true,
+          "warn_only": false,
+          "benchmark": false,
+          "cudnn_deterministic": true,
+          "matmul_precision": "medium"
+        }
+      }
+    ],
+    "argv": [
+      "-c",
+      "fit",
+      "--config",
+      "configs/synapse/deterministic_v2/ccps.yaml",
+      "--model.init_args.lr=2e-5",
+      "--trainer.max_epochs=100",
+      "--seed_everything=0",
+      "--tta_views=1",
+      "--trainer.accelerator=gpu",
+      "--trainer.devices=1",
+      "--trainer.enable_model_summary=false",
+      "--trainer.enable_progress_bar=false",
+      "--trainer.logger=false",
+      "--trainer.callbacks=[{\"class_path\": \"low_lr_callback.LowLRSelection\", \"init_args\": {\"source_checkpoint\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/best_test.ckpt\", \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z\", \"last_n_epochs\": 100, \"expected_test_cases\": 12}}]",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z",
+      "--deterministic_output_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_low_lr_2e-5_100ep/20261028T124208Z/protocol_records"
+    ]
+  },
+  {
+    "experiment_id": "E15",
+    "run": "outputs/innovation2/ccps_plan/20261023T121754Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 213,
+      "expected_test_cases": 12,
+      "best_epoch": 187,
+      "best_mean_dice": 0.8624297902218245,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 0,
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "network": {
+        "class_path": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": true,
+          "selector_mode": "visual_prior",
+          "selector_on_patch": true,
+          "selector_on_query": false,
+          "selector_hidden_dim": 256,
+          "selector_init_probability": 0.95,
+          "detach_prior_for_selector": false,
+          "patch_gate_effect": "both"
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/innovation2/ccps_plan/20261023T121754Z/status.json",
+        "sha256": "f5263d0e77e1f306580fdf2e958d628bd5e73c4eb898f9db9f1a331338548d0a"
+      },
+      {
+        "path": "outputs/innovation2/ccps_plan/20261023T121754Z/launch.json",
+        "sha256": "6f0857bdb6d926390b5524fafbc5982ec5d4bdd05b1b941d5bbbc2b8bc37d6c3"
+      },
+      {
+        "path": "outputs/innovation2/ccps_plan/20261023T121754Z/synapse_test_selection/20261023T121806Z_c99f1c48/run_manifest.json",
+        "sha256": "5bff5c023fef3d272bb6a84dc25995917bc3c22e9b9532a5d02cdb0df7f075e3"
+      }
+    ],
+    "argv": [
+      "main.py",
+      "fit",
+      "--config",
+      "configs/synapse/vit_query_mul_scale_fusion_asee_ccps.yaml",
+      "--trainer.accelerator=gpu",
+      "--trainer.devices=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_plan/20261023T121754Z\"}}]"
+    ]
+  },
+  {
+    "experiment_id": "E16",
+    "run": "outputs/innovation2/ccps_seed42/20261024T131734Z",
+    "selection_snapshot": {
+      "selection_policy": "test set used for checkpoint selection; no gradient updates",
+      "epoch_numbering": "one-based",
+      "max_epochs": 220,
+      "first_evaluation_epoch": 171,
+      "last_evaluated_epoch": 197,
+      "expected_test_cases": 12,
+      "best_epoch": 186,
+      "best_mean_dice": 0.8409039793733836,
+      "best_checkpoint": "best_test.ckpt",
+      "last_checkpoint": "last.ckpt"
+    },
+    "source_config": {
+      "seed_everything": 42,
+      "model_class": "training.mask_classification_ccps.MaskClassificationSemanticCCPS",
+      "network": {
+        "class_path": "models.eoseg_asee_ccps.EoSegMultiQSegFusionASEECCPS",
+        "init_args": {
+          "encoder": {
+            "class_path": "models.vit.ViT",
+            "init_args": {
+              "patch_size": 16,
+              "backbone_name": "vit_large_patch14_reg4_dinov2"
+            }
+          },
+          "prior_path": "priors/synapse_asee_v1.pt",
+          "num_q": 16,
+          "queries_per_class": 2,
+          "patch_update": "plan",
+          "freeze_text_projection": false,
+          "enhance_patch": true,
+          "enhance_query": true,
+          "use_text": true,
+          "use_probability": true,
+          "selector_mode": "visual_prior",
+          "selector_on_patch": true,
+          "selector_on_query": false,
+          "selector_hidden_dim": 256,
+          "selector_init_probability": 0.95,
+          "detach_prior_for_selector": false,
+          "patch_gate_effect": "both"
+        }
+      },
+      "lr": 0.0002,
+      "data": {
+        "class_path": "datasets.synapse_semantic.SynapseSemantic",
+        "init_args": {
+          "train_base_dir": "project_TransUNet/data/Synapse/train_npz",
+          "test_base_dir": "project_TransUNet/data/Synapse/test_vol_h5",
+          "list_dir": "project_TransUNet/TransUNet/lists/lists_Synapse",
+          "img_size": [
+            384,
+            384
+          ],
+          "num_classes": 9,
+          "batch_size": 16,
+          "num_workers": 8,
+          "color_jitter_enabled": true,
+          "scale_range": [
+            0.5,
+            2.0
+          ],
+          "check_empty_targets": true,
+          "ignore_idx": 255,
+          "drop_background": false,
+          "make_rgb": true,
+          "train_split": "train",
+          "test_split": "test_vol"
+        }
+      },
+      "precision": "16-mixed",
+      "trainer_deterministic": null
+    },
+    "cuda_repair_evidence": [
+      {
+        "path": "outputs/innovation2/ccps_seed42/20261024T131734Z/status.json",
+        "sha256": "e3e72d2b055db268a5bec5f6f9bc86ad9ca36e97829cd5e7804eb9f7e43560d5"
+      },
+      {
+        "path": "outputs/innovation2/ccps_seed42/20261024T131734Z/launch.json",
+        "sha256": "9d8bee97b496914fa2bf1f075580e97d1a741b25dc57e1c6f35b706debc08efb"
+      },
+      {
+        "path": "outputs/innovation2/ccps_seed42/20261024T131734Z/synapse_test_selection/20261024T132218Z_f39d912f/run_manifest.json",
+        "sha256": "237e168cd2b517f447db730a7e341669b5035bf0cfe9d28d1e3c30ceffd45c41"
+      }
+    ],
+    "argv": [
+      "main.py",
+      "fit",
+      "--config",
+      "configs/synapse/vit_query_mul_scale_fusion_asee_ccps.yaml",
+      "--trainer.accelerator=gpu",
+      "--trainer.devices=1",
+      "--trainer.default_root_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_seed42/20261024T131734Z",
+      "--trainer.callbacks=[{\"class_path\": \"training.synapse_physical_selection.SynapsePhysicalHD95Selection\", \"init_args\": {\"last_n_epochs\": 50, \"expected_test_cases\": 12, \"output_dir\": \"/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_seed42/20261024T131734Z\"}}]",
+      "--seed_everything=42",
+      "--trainer.logger.init_args.save_dir=/Disk/HDD/Sk/EoSeg-main_Synapse_acdc/EoSeg-main_synapse/outputs/innovation2/ccps_seed42/20261024T131734Z",
+      "--trainer.logger.init_args.name=vit_query_mul_scale_fusion_asee_ccps_seed42"
+    ]
+  }
+]
